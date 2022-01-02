@@ -1,0 +1,35 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #667;
+}
+
+nav {
+  height: 10em;
+  border-bottom: solid 1px #667;
+  margin-bottom: 5em;
+}
+
+h1 {
+  font-size: 14em;
+}
+
+.envysion {
+  left: 5%;
+  top: 3%;
+}
+
+.digital {
+  left: 5%;
+  top: 17%;
+}
+
+.marketing {
+  left: 5%;
+  top: 31%;
+}
+
+/*# sourceMappingURL=style.css.map */

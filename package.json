@@ -1,0 +1,11 @@
+{
+  "name": "envysion",
+  "version": "1.0.0",
+  "description": "envysion digital marketing website",
+  "scripts": {
+    "compile:sass": "node-sass src/scss/main.scss src/style.css"
+  },
+  "dependencies": {
+    "sass": "^1.42.0"
+  }
+}
