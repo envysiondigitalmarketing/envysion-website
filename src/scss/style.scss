@@ -4,20 +4,72 @@ body, html {
     font-size: 62.5%;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    color: #667;
+    color: #666677;
     width: 100%;
 };
 nav {
     height: 6rem;
-    border-bottom: solid 1px #667;
+    border-bottom: solid 1px #e0e0e3;
     margin-bottom: 3rem;
+    background-color: #fff;
+}
+@keyframes moveInRight {
+    // from {margin-left: 0; opacity: 0;}
+    // to {margin-left: 1rem; opacity: 1;}
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        opacity: .2;
+        transform: translate(.25rem);/*Bouncing effect*/
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+};
+@keyframes moveInSlogan {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+        // transform: translateX(10rem);
+    }
+    80% {
+        opacity: .2;
+        transform: translateY(-.5rem);/*Bouncing effect*/
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 h1 {
     font-size: 4rem;
     margin: .5rem 0 .5rem 1rem;
+    display: inline-block;
+};
+.envysion {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+};
+.digital {
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+};
+.marketing {
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
 };
 .slogan {
     font-family: 'Sansburg Signature', sans-serif;
     font-size: 4rem;
     margin: .5rem 0 .5rem 1rem;
+    display: inline-block;
+    animation-name: moveInSlogan;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
 }
