@@ -13,6 +13,16 @@ nav {
     margin-bottom: 3rem;
     background-color: #fff;
 }
+.wavy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
 @keyframes moveInRight {
     // from {margin-left: 0; opacity: 0;}
     // to {margin-left: 1rem; opacity: 1;}
@@ -48,6 +58,7 @@ h1 {
     font-size: 4rem;
     margin: .5rem 0 .5rem 1rem;
     display: inline-block;
+    color: #fff;
 };
 .envysion {
     animation-name: moveInRight;
@@ -72,4 +83,5 @@ h1 {
     animation-name: moveInSlogan;
     animation-duration: 4s;
     animation-timing-function: ease-out;
+    color: black;
 }
