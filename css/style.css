@@ -5,31 +5,24 @@ body, html {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #667;
+  width: 100%;
 }
 
 nav {
-  height: 10em;
+  height: 6rem;
   border-bottom: solid 1px #667;
-  margin-bottom: 5em;
+  margin-bottom: 3rem;
 }
 
 h1 {
-  font-size: 14em;
+  font-size: 4rem;
+  margin: 0.5rem 0 0.5rem 1rem;
 }
 
-.envysion {
-  left: 5%;
-  top: 3%;
-}
-
-.digital {
-  left: 5%;
-  top: 17%;
-}
-
-.marketing {
-  left: 5%;
-  top: 31%;
+.slogan {
+  font-family: "Sansburg Signature", sans-serif;
+  font-size: 4rem;
+  margin: 0.5rem 0 0.5rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
