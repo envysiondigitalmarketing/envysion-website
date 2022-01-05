@@ -4,36 +4,9 @@ body, html {
     font-size: 62.5%;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    color: #666677;
+    color: #000000;// color: #666677;
     width: 100%;
 };
-nav {
-    height: 4rem;
-    border-bottom: solid 1px #e0e0e3;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    h2 {
-        margin: 0 1rem;
-        font-size: 3rem;
-        color: #000000;
-    }
-}
-.hero {
-    height: auto;
-    width: auto;
-}
-.wavy {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-}
 @keyframes moveInRight {
     0% {
         opacity: 0;
@@ -55,53 +28,94 @@ nav {
     }
     80% {
         opacity: .2;
-        transform: translateX(-.25rem);
+        transform: translate(2rem);
     }
     100% {
         opacity: 1;
         transform: translate(0);
     }
 }
-.hero-header {
-    font-size: 3rem;
-    margin: .5rem 0 .5rem 1rem;
-    display: inline-block;
-    color: #000000;
-    animation-name: moveInRight;
-    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    &__envysion {
-        animation-duration: 1s;
-        margin-top: 3rem;
+.nav-and-hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    nav {
+        height: 5%;
+        border-bottom: solid 1px #e0e0e3;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        h2 {
+            margin: 0 1%;
+            font-size: 300%;
+        }
+    }
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .hero-video {
+        // position: relative;
+        // height: 100vh;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .hero-text-div {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    @mixin hero-text {
+        font-size: 500%;
+        margin: .5rem 0 .5rem 1rem;
+        animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+    .hero-heading {
+        @include hero-text;
+        animation-name: moveInRight;
+        &__envysion {
+            animation-duration: 1s;
+            margin-top: 3rem;
+        };
+        &__digital {
+            animation-duration: 1.5s;
+        };
+        &__marketing {
+            animation-duration: 2s;
+        };
     };
-    &__digital {
-        animation-duration: 1.5s;
-    };
-    &__marketing {
-        animation-duration: 2s;
-    };
-};
-.hero-slogan {
-    font-family: 'Witha Sign II', sans-serif;
-    color: #000000;
-    font-size: 3rem;
-    font-weight: 300;
-    margin: .5rem 0 .5rem 1rem;
-    display: inline-block;
-    animation-name: moveInSlogan;
-    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    &__we {
-        animation-duration: 3s;
+    .hero-slogan {
+        @include hero-text;
+        font-family: 'Witha Sign II', sans-serif;
+        display: inline-block;
+        animation-name: moveInSlogan;
+        &__we {
+            animation-duration: 3s;
+        }
+        &__can {
+            animation-duration: 3.1s;
+        }
+        &__when {
+            animation-duration: 3.2s;
+        }
+        &__we--two {
+            animation-duration: 3.3s;
+        }
+        &__envysion {
+            animation-duration: 3.4s;
+        }
     }
-    &__can {
-        animation-duration: 3.1s;
-    }
-    &__when {
-        animation-duration: 3.2s;
-    }
-    &__we--two {
-        animation-duration: 3.3s;
-    }
-    &__envysion {
-        animation-duration: 3.4s;
-    }
+}
+.about {
+    height: 40rem;
+    background-color: tomato;
 }

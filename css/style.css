@@ -4,38 +4,8 @@ body, html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  color: #666677;
-  width: 100%;
-}
-
-nav {
-  height: 4rem;
-  border-bottom: solid 1px #e0e0e3;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-}
-nav h2 {
-  margin: 0 1rem;
-  font-size: 3rem;
   color: #000000;
-}
-
-.hero {
-  height: auto;
-  width: auto;
-}
-
-.wavy {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
+  width: 100%;
 }
 
 @keyframes moveInRight {
@@ -59,56 +29,94 @@ nav h2 {
   }
   80% {
     opacity: 0.2;
-    transform: translateX(-0.25rem);
+    transform: translate(2rem);
   }
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
-.hero-header {
-  font-size: 3rem;
-  margin: 0.5rem 0 0.5rem 1rem;
-  display: inline-block;
-  color: #000000;
-  animation-name: moveInRight;
-  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+.nav-and-hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.hero-header__envysion {
+.nav-and-hero nav {
+  height: 5%;
+  border-bottom: solid 1px #e0e0e3;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.nav-and-hero nav h2 {
+  margin: 0 1%;
+  font-size: 300%;
+}
+.nav-and-hero .hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.nav-and-hero .hero-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.nav-and-hero .hero-text-div {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav-and-hero .hero-heading {
+  font-size: 500%;
+  margin: 0.5rem 0 0.5rem 1rem;
+  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  animation-name: moveInRight;
+}
+.nav-and-hero .hero-heading__envysion {
   animation-duration: 1s;
   margin-top: 3rem;
 }
-.hero-header__digital {
+.nav-and-hero .hero-heading__digital {
   animation-duration: 1.5s;
 }
-.hero-header__marketing {
+.nav-and-hero .hero-heading__marketing {
   animation-duration: 2s;
 }
-
-.hero-slogan {
-  font-family: "Witha Sign II", sans-serif;
-  color: #000000;
-  font-size: 3rem;
-  font-weight: 300;
+.nav-and-hero .hero-slogan {
+  font-size: 500%;
   margin: 0.5rem 0 0.5rem 1rem;
+  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  font-family: "Witha Sign II", sans-serif;
   display: inline-block;
   animation-name: moveInSlogan;
-  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
-.hero-slogan__we {
+.nav-and-hero .hero-slogan__we {
   animation-duration: 3s;
 }
-.hero-slogan__can {
+.nav-and-hero .hero-slogan__can {
   animation-duration: 3.1s;
 }
-.hero-slogan__when {
+.nav-and-hero .hero-slogan__when {
   animation-duration: 3.2s;
 }
-.hero-slogan__we--two {
+.nav-and-hero .hero-slogan__we--two {
   animation-duration: 3.3s;
 }
-.hero-slogan__envysion {
+.nav-and-hero .hero-slogan__envysion {
   animation-duration: 3.4s;
+}
+
+.about {
+  height: 40rem;
+  background-color: tomato;
 }
 
 /*# sourceMappingURL=style.css.map */
