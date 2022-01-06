@@ -18,12 +18,6 @@ body, html {
     top: 0;
     bottom: 0;
 }
-.menu-cover {
-    @include cover;
-    background-color: #ffffff;
-    opacity: .7;
-    z-index: 2;
-}
 @keyframes moveInRight {
     0% {
         opacity: 0;
@@ -52,28 +46,44 @@ body, html {
         transform: translate(0);
     }
 }
+.menu-cover {
+    @include cover;
+    background-color: #ffffff;
+    opacity: .7;
+    z-index: 5;
+}
 .top {
     height: 100%;
     display: flex;
     flex-direction: column;
     &__logo {
-        max-width: 40%;
+        // max-width: 40%;
+        max-width: 100%;
         max-height: auto;
-        margin-left: 1rem;
+        display: inline-block;
     };
     &__nav {
         height: 7%;
-        border-bottom: solid 1px #ffffff;
+        border-bottom: solid 2px #063831;
         display: flex;
         align-items: center;
         background-color: white;
         width: 100%;
         position: fixed;
-        z-index: 5;
+        z-index: 3;
         h2 {
             margin: 0 1%;
             font-size: 300%;
         };
+        &--button {
+            background: none;
+            color: inherit;
+            border: none;
+            max-width: 40%;
+            height: 100%;
+            cursor: pointer;
+            margin-left: 1%
+        }
     };
     .behind-nav {
         position: relative;
