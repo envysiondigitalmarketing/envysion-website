@@ -2,9 +2,10 @@ body, html {
     height: 100%;
     margin: 0;
     font-size: 62.5%;
-    font-family: "Lato", sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    // font-family: "Lato", sans-serif;
     font-weight: 400;
-    color: #000000;// color: #ffffff;
+    color: #063831;// color: #000000;// color: #ffffff;
     width: 100%;
 };
 @mixin cover {
@@ -51,20 +52,32 @@ body, html {
         transform: translate(0);
     }
 }
-.nav-and-hero {
+.top {
     height: 100%;
     display: flex;
     flex-direction: column;
-    nav {
-        height: 5%;
+    &__logo {
+        max-width: 40%;
+        max-height: auto;
+        margin-left: 1rem;
+    };
+    &__nav {
+        height: 7%;
         border-bottom: solid 1px #ffffff;
         display: flex;
         align-items: center;
-        background-color: transparent;
+        background-color: white;
+        width: 100%;
+        position: fixed;
+        z-index: 5;
         h2 {
             margin: 0 1%;
             font-size: 300%;
-        }
+        };
+    };
+    .behind-nav {
+        position: relative;
+        height: 7%;
     }
     .hero {
         position: relative;

@@ -2,9 +2,9 @@ body, html {
   height: 100%;
   margin: 0;
   font-size: 62.5%;
-  font-family: "Lato", sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 400;
-  color: #000000;
+  color: #063831;
   width: 100%;
 }
 
@@ -50,28 +50,40 @@ body, html {
     transform: translate(0);
   }
 }
-.nav-and-hero {
+.top {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.nav-and-hero nav {
-  height: 5%;
+.top__logo {
+  max-width: 40%;
+  max-height: auto;
+  margin-left: 1rem;
+}
+.top__nav {
+  height: 7%;
   border-bottom: solid 1px #ffffff;
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
 }
-.nav-and-hero nav h2 {
+.top__nav h2 {
   margin: 0 1%;
   font-size: 300%;
 }
-.nav-and-hero .hero {
+.top .behind-nav {
+  position: relative;
+  height: 7%;
+}
+.top .hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
-.nav-and-hero .hero-video {
+.top .hero-video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -82,29 +94,29 @@ body, html {
   bottom: 0;
   z-index: -1;
 }
-.nav-and-hero .hero-text-div {
+.top .hero-text-div {
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
 }
-.nav-and-hero .hero-heading {
+.top .hero-heading {
   font-size: 500%;
   margin: 0.5rem 0 0.5rem 1rem;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   animation-name: moveInRight;
 }
-.nav-and-hero .hero-heading__envysion {
+.top .hero-heading__envysion {
   animation-duration: 1s;
   margin-top: 3rem;
 }
-.nav-and-hero .hero-heading__digital {
+.top .hero-heading__digital {
   animation-duration: 1.5s;
 }
-.nav-and-hero .hero-heading__marketing {
+.top .hero-heading__marketing {
   animation-duration: 2s;
 }
-.nav-and-hero .hero-slogan {
+.top .hero-slogan {
   font-size: 500%;
   margin: 0.5rem 0 0.5rem 1rem;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
@@ -112,19 +124,19 @@ body, html {
   display: inline-block;
   animation-name: moveInSlogan;
 }
-.nav-and-hero .hero-slogan__we {
+.top .hero-slogan__we {
   animation-duration: 3s;
 }
-.nav-and-hero .hero-slogan__can {
+.top .hero-slogan__can {
   animation-duration: 3.1s;
 }
-.nav-and-hero .hero-slogan__when {
+.top .hero-slogan__when {
   animation-duration: 3.2s;
 }
-.nav-and-hero .hero-slogan__we--two {
+.top .hero-slogan__we--two {
   animation-duration: 3.3s;
 }
-.nav-and-hero .hero-slogan__envysion {
+.top .hero-slogan__envysion {
   animation-duration: 3.4s;
 }
 
