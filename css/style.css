@@ -8,6 +8,20 @@ body, html {
   width: 100%;
 }
 
+.menu-cover {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  opacity: 0.7;
+  z-index: 2;
+}
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -43,7 +57,7 @@ body, html {
 }
 .nav-and-hero nav {
   height: 5%;
-  border-bottom: solid 1px #e0e0e3;
+  border-bottom: solid 1px #ffffff;
   display: flex;
   align-items: center;
   background-color: transparent;

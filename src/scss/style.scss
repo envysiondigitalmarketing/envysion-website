@@ -4,9 +4,25 @@ body, html {
     font-size: 62.5%;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    color: #000000;// color: #666677;
+    color: #000000;// color: #ffffff;
     width: 100%;
 };
+@mixin cover {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.menu-cover {
+    @include cover;
+    background-color: #ffffff;
+    opacity: .7;
+    z-index: 2;
+}
 @keyframes moveInRight {
     0% {
         opacity: 0;
@@ -41,7 +57,7 @@ body, html {
     flex-direction: column;
     nav {
         height: 5%;
-        border-bottom: solid 1px #e0e0e3;
+        border-bottom: solid 1px #ffffff;
         display: flex;
         align-items: center;
         background-color: transparent;
@@ -56,17 +72,11 @@ body, html {
         overflow: hidden;
     }
     .hero-video {
+        @include cover;
+        z-index: -1;
+
         // position: relative;
         // height: 100vh;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
     }
     .hero-text-div {
         display: inline-block;
