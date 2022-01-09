@@ -1,15 +1,19 @@
+$navHeightVar: 7%;
+$mainColor: #063831;
 body, html {
     height: 100%;
     margin: 0;
     font-size: 62.5%;
-    font-family: 'League Spartan', sans-serif;
-    // font-family: "Lato", sans-serif;
+    font-family: 'League Spartan', sans-serif;// font-family: "Lato", sans-serif;
     font-weight: 400;
-    color: #063831;// color: #000000;// color: #ffffff;
+    color: $mainColor;
     width: 100%;
+    scroll-padding-top: $navHeightVar;
 };
+
+
+
 @mixin cover {
-    width: 100vw;
     height: 100vh;
     object-fit: cover;
     position: fixed;
@@ -18,6 +22,28 @@ body, html {
     top: 0;
     bottom: 0;
 }
+@mixin transformTranslateNegative50 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin hero-text {
+    font-size: 500%;
+    margin: .5rem 0 .5rem 1rem;
+    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+@mixin anchorTags {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+@mixin navHeight($height) {
+    height: $height;
+}
+
+
+
 @keyframes moveInRight {
     0% {
         opacity: 0;
@@ -48,72 +74,116 @@ body, html {
 }
 .menu-cover {
     @include cover;
+    width: 80vw;
     background-color: #ffffff;
-    opacity: .7;
+    opacity: .95;
     z-index: 2;
+    &__list {
+        margin-top: 7%;
+        margin-left: 1%;
+    }
+    &__list--ul {
+        list-style-type: none;
+        @include hero-text;
+        padding: 0;
+    }
+    &__list--li {
+        margin-bottom: 8%;
+    }
+    &__list--anchor {
+        display: inline-block;
+        // position: absolute;
+    }
+    &__list--anchor:link {
+        @include anchorTags;
+        cursor: pointer;
+    }
+    &__list--anchor:visited {
+        @include anchorTags;
+        cursor: pointer;
+    }
 }
 .top {
     height: 100%;
     display: flex;
     flex-direction: column;
     &__logo {
-        // max-width: 40%;
         max-width: 100%;
         max-height: auto;
         display: inline-block;
     };
     &__nav {
-        height: 7%;
-        border-bottom: solid 2px #063831;
+        @include navHeight($navHeightVar);
+        border-bottom: solid 2px $mainColor;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         background-color: white;
-        width: 100%;
         position: fixed;
         z-index: 1;
-        &--button-left {
+        width: 100%;
+        overflow: hidden;
+        box-shadow: 0 2.5rem 4rem rgba(8, 6, 6, 0.5);
+        &--button-logo {
             background: none;
             color: inherit;
             border: none;
             max-width: 40%;
             height: 100%;
             cursor: pointer;
-            margin-left: 1%
+            margin-left: 3%;
+            margin-top: 4%;
         };
-        // &--button-right {
-        .menu {
+        &--button-x {
             width: 10%;
             height: 60%;
-            // margin: 8%;
-            background-image: linear-gradient(to right, #e91e63, #f44336);
+            background-image: linear-gradient(to right, $mainColor, #000000);
             cursor: pointer;
             border-radius: 15%;
             position: relative;
+            margin-right: 4%;
+            z-index: 3;
         };
-        .menu div {
+        &--button-x div  {
             width: 75%;
             height: 12px;
             margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include transformTranslateNegative50;
         }
-        .menu span {
+        &--button-x span  {
             background: #fff;
             width: 100%;
-            height: 3px;
-            border-radius: 5px;
+            height: 2px;
+            border-radius: 100px;
             display: block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include transformTranslateNegative50;
+            transition: transform .5s, width .5s;
+        }
+        &--button-x .line-1 {
+            width: 50%;
+            transform: translate(-100%, -10px);
+        }
+        &--button-x .line-3 {
+            left: auto;
+            right: 0;
+            width: 50%;
+            transform: translate(0, 7px);
+        }
+        &--button-x-open .line-1 {
+            transform: translate(0, 0) rotate(-47deg);
+            transform-origin: 0 0;
+        }
+        &--button-x-open .line-3 {
+            transform: translate(-95%, 0) rotate(-45deg);
+            transform-origin: 100% 0;
+        }
+        &--button-x-open .line-2 {
+            transform: translate(-45%, -45%) rotate(45deg);
         }
     };
     .behind-nav {
         position: relative;
-        height: 7%;
+        @include navHeight($navHeightVar);
     }
     .hero {
         position: relative;
@@ -122,6 +192,7 @@ body, html {
     }
     .hero-video {
         @include cover;
+        width: 100vw;
         z-index: -1;
     }
     .hero-text-div {
@@ -129,11 +200,6 @@ body, html {
         position: absolute;
         top: 0;
         left: 0;
-    }
-    @mixin hero-text {
-        font-size: 500%;
-        margin: .5rem 0 .5rem 1rem;
-        animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
     }
     .hero-heading {
         @include hero-text;
@@ -174,4 +240,20 @@ body, html {
 .about {
     height: 40rem;
     background-color: tomato;
+}
+.services {
+    height: 40rem;
+    background-color: black;
+}
+.why-envysion {
+    height: 40rem;
+    background-color: blue;
+}
+.pricing {
+    height: 40rem;
+    background-color: yellow;
+}
+.contact {
+    height: 40rem;
+    background-color: green;
 }

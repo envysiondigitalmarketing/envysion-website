@@ -4,23 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name='theme-color' content='#fff'> -->
     <style>
         @import url('http://fonts.cdnfonts.com/css/witha-sign-ii');
         @import url('http://fonts.cdnfonts.com/css/league-spartan');
     </style>
+    <link rel="tab logo" type="image/png" href="./assets/envysion.png">
     <link rel="stylesheet" href="../css/style.css">
     <title>Envysion Digital Marketing</title>
 </head>
 <body>
-    <section class='menu-cover' hidden></section>
-    <section class='top'>
+    <section class='top' id='home'>
+        <section class='menu-cover' id='menu-cover'>
+            <section class='menu-cover__list'>
+                <ul class='menu-cover__list--ul'>
+                    <li class='menu-cover__list--li'>
+                        <a 
+                        class='menu-cover__list--anchor' 
+                        href="#home" 
+                        id='home-button'>Home
+                        </a>
+                    </li>
+                    <li class='menu-cover__list--li'>
+                        <a 
+                        class='menu-cover__list--anchor' 
+                        href="#about" 
+                        id='about-button'>About
+                        </a>
+                    </li>
+                    <li class='menu-cover__list--li'>
+                        <a 
+                        class='menu-cover__list--anchor' 
+                        href="#services" 
+                        id='services-button'>Services
+                        </a>
+                    </li>
+                    <li class='menu-cover__list--li'>
+                        <a 
+                        class='menu-cover__list--anchor' 
+                        href="#why-envysion" 
+                        id='why-envysion-button'>Why Envision
+                        </a>
+                    </li>
+                    <li class='menu-cover__list--li'>
+                        <a 
+                        class='menu-cover__list--anchor' 
+                        href="#pricing" 
+                        id='pricing-button'>Pricing
+                        </a>
+                    </li>
+                    <li class='menu-cover__list--li'>
+                        <a 
+                        class='menu-cover__list--anchor' 
+                        href="#contact" 
+                        id='contact-button'>Contact
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
         <nav class='top__nav'>
-            <button class='top__nav--button-left'>
-                <img src='assets/envysion.png' alt="company logo" class='top__logo'>
-            </button>
-            <!-- <div class='top__nav--button-right'> -->
-            <div class='menu'>
+            <!-- <button class='top__nav--button-logo'> -->
+                <a class='top__nav--button-logo' href='#top'><img src='assets/envysion.png' alt="company logo" class='top__logo'></a>
+            <!-- </button> -->
+            <div class='top__nav--button-x' id='top__nav--button-x'>
                 <div>
                     <span class='line-1'></span>
                     <span class='line-2'></span>
@@ -28,7 +74,8 @@
                 </div>
             </div>
         </nav>
-        <div class='behind-nav'></div>
+        <div class='behind-nav'>
+        </div>
         <section class='hero'>
             <video autoplay loop class='hero-video' muted plays-inline>
                 <source src='assets/meeting.mp4' type='video/mp4'>
@@ -44,7 +91,17 @@
                 <p class='hero-slogan hero-slogan__envysion'>Envysion</p>
             </div>
         </section>
-    </section>
+    </section class='top'>
+    <div id='about'></div>
     <section class='about'></section>
+    <div id='services'></div>
+    <section class='services'></section>
+    <div id='why-envysion'></div>
+    <section class='why-envysion'></section>
+    <div id='pricing'></div>
+    <section class='pricing'></section>
+    <div id='contact'></div>
+    <section class='contact'></section>
+    <script src="./main.js"></script>
 </body>
 </html>
