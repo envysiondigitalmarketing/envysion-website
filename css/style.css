@@ -68,6 +68,9 @@ body, html {
 .menu-cover__list--anchor {
   display: inline-block;
 }
+.menu-cover__list--anchor:hover {
+  transform: translateX(15%);
+}
 .menu-cover__list--anchor:link {
   text-decoration: inherit;
   color: inherit;

@@ -1,5 +1,8 @@
 $navHeightVar: 7%;
 $mainColor: #063831;
+
+
+
 body, html {
     height: 100%;
     margin: 0;
@@ -96,7 +99,9 @@ body, html {
     }
     &__list--anchor {
         display: inline-block;
-        // position: absolute;
+    }
+    &__list--anchor:hover {
+        transform: translateX(15%);
     }
     &__list--anchor:link {
         @include anchorTags;
@@ -108,6 +113,8 @@ body, html {
         cursor: pointer;
     }
 }
+
+
 .top {
     height: 100%;
     display: flex;
@@ -242,10 +249,14 @@ body, html {
         }
     }
 }
+
+
 .about {
     height: 40rem;
     background-color: tomato;
 }
+
+
 .services {
     height: 40rem;
     background-color: black;
