@@ -1,4 +1,4 @@
-const xButton = document.getElementById('top__nav--button-x');
+const xButton = document.getElementById('home__nav--button-x');
 const menuCover = document.getElementById('menu-cover');
 const home = document.getElementById('home-button');
 const about = document.getElementById('about-button');
@@ -14,7 +14,7 @@ const theHiddenThing = () => {
     menuCover.style.visibility == 'hidden' ? menuCover.style.visibility = 'visible' : menuCover.style.visibility = 'hidden';
 };
 const openAndClose = () => {
-    xButton.classList.toggle('top__nav--button-x-open');
+    xButton.classList.toggle('home__nav--button-x-open');
     theHiddenThing();
 }
 

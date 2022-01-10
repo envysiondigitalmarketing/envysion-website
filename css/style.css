@@ -85,17 +85,17 @@ body, html {
   cursor: pointer;
 }
 
-.top {
+.home {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.top__logo {
+.home__logo {
   max-width: 100%;
   max-height: auto;
   display: inline-block;
 }
-.top__nav {
+.home__nav {
   height: 7%;
   border-bottom: solid 2px #063831;
   display: flex;
@@ -108,7 +108,7 @@ body, html {
   overflow: hidden;
   box-shadow: 0 2.5rem 4rem rgba(8, 6, 6, 0.5);
 }
-.top__nav--button-logo {
+.home__nav--button-logo {
   background: none;
   color: inherit;
   border: none;
@@ -118,7 +118,7 @@ body, html {
   margin-left: 3%;
   margin-top: 4%;
 }
-.top__nav--button-x {
+.home__nav--button-x {
   width: 10%;
   height: 60%;
   background-image: linear-gradient(to right, #063831, #000000);
@@ -128,7 +128,7 @@ body, html {
   margin-right: 4%;
   z-index: 3;
 }
-.top__nav--button-x div {
+.home__nav--button-x div {
   width: 75%;
   height: 12px;
   margin: 0;
@@ -137,7 +137,7 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.top__nav--button-x span {
+.home__nav--button-x span {
   background: #fff;
   width: 100%;
   height: 2px;
@@ -149,37 +149,37 @@ body, html {
   transform: translate(-50%, -50%);
   transition: transform 0.5s, width 0.5s;
 }
-.top__nav--button-x .line-1 {
+.home__nav--button-x .line-1 {
   width: 50%;
   transform: translate(-100%, -10px);
 }
-.top__nav--button-x .line-3 {
+.home__nav--button-x .line-3 {
   left: auto;
   right: 0;
   width: 50%;
   transform: translate(0, 7px);
 }
-.top__nav--button-x-open .line-1 {
+.home__nav--button-x-open .line-1 {
   transform: translate(0, 0) rotate(-47deg);
   transform-origin: 0 0;
 }
-.top__nav--button-x-open .line-3 {
+.home__nav--button-x-open .line-3 {
   transform: translate(-95%, 0) rotate(-45deg);
   transform-origin: 100% 0;
 }
-.top__nav--button-x-open .line-2 {
+.home__nav--button-x-open .line-2 {
   transform: translate(-45%, -45%) rotate(45deg);
 }
-.top .behind-nav {
+.home .behind-nav {
   position: relative;
   height: 7%;
 }
-.top .hero {
+.home .hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
-.top .hero-video {
+.home .hero-video {
   height: 100vh;
   object-fit: cover;
   position: fixed;
@@ -190,29 +190,29 @@ body, html {
   width: 100vw;
   z-index: -1;
 }
-.top .hero-text-div {
+.home .hero-text-div {
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
 }
-.top .hero-heading {
+.home .hero-heading {
   font-size: 500%;
   margin: 0.5rem 0 0.5rem 1rem;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   animation-name: moveInRight;
 }
-.top .hero-heading__envysion {
+.home .hero-heading__envysion {
   animation-duration: 1s;
   margin-top: 3rem;
 }
-.top .hero-heading__digital {
+.home .hero-heading__digital {
   animation-duration: 1.5s;
 }
-.top .hero-heading__marketing {
+.home .hero-heading__marketing {
   animation-duration: 2s;
 }
-.top .hero-slogan {
+.home .hero-slogan {
   font-size: 500%;
   margin: 0.5rem 0 0.5rem 1rem;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
@@ -220,19 +220,19 @@ body, html {
   display: inline-block;
   animation-name: moveInSlogan;
 }
-.top .hero-slogan__we {
+.home .hero-slogan__we {
   animation-duration: 3s;
 }
-.top .hero-slogan__can {
+.home .hero-slogan__can {
   animation-duration: 3.1s;
 }
-.top .hero-slogan__when {
+.home .hero-slogan__when {
   animation-duration: 3.2s;
 }
-.top .hero-slogan__we--two {
+.home .hero-slogan__we--two {
   animation-duration: 3.3s;
 }
-.top .hero-slogan__envysion {
+.home .hero-slogan__envysion {
   animation-duration: 3.4s;
 }
 
