@@ -45,9 +45,9 @@ body, html {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 80vw;
-  background-color: #ffffff;
-  opacity: 0.95;
+  width: 70vw;
+  background-image: url("../../src/assets/stripes-light.png");
+  opacity: 0.97;
   z-index: 2;
 }
 .menu-cover__list {
@@ -63,6 +63,7 @@ body, html {
 }
 .menu-cover__list--li {
   margin-bottom: 8%;
+  position: relative;
 }
 .menu-cover__list--anchor {
   display: inline-block;
@@ -72,6 +73,7 @@ body, html {
   color: inherit;
   cursor: auto;
   cursor: pointer;
+  position: relative;
 }
 .menu-cover__list--anchor:visited {
   text-decoration: inherit;

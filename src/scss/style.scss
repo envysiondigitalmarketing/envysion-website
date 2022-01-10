@@ -72,11 +72,14 @@ body, html {
         transform: translate(0);
     }
 }
+
+
+
 .menu-cover {
     @include cover;
-    width: 80vw;
-    background-color: #ffffff;
-    opacity: .95;
+    width: 70vw;
+    background-image: url('../../src/assets/stripes-light.png');// background-color: #ffffff;
+    opacity: .97;
     z-index: 2;
     &__list {
         margin-top: 7%;
@@ -89,6 +92,7 @@ body, html {
     }
     &__list--li {
         margin-bottom: 8%;
+        position: relative;
     }
     &__list--anchor {
         display: inline-block;
@@ -97,6 +101,7 @@ body, html {
     &__list--anchor:link {
         @include anchorTags;
         cursor: pointer;
+        position: relative;
     }
     &__list--anchor:visited {
         @include anchorTags;
