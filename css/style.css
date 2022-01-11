@@ -237,8 +237,28 @@ body, html {
 }
 
 .about {
-  height: 40rem;
+  height: 100vh;
   background-color: tomato;
+  position: relative;
+  overflow: hidden;
+}
+.about h3 {
+  font-family: "Witha Sign II", sans-serif;
+  font-size: 500%;
+  margin: 0;
+  position: absolute;
+  position: relative;
+  top: 3%;
+  left: 5%;
+}
+.about h2 {
+  margin: 0;
+  position: absolute;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  font-size: 500%;
+  margin-right: 5%;
 }
 
 .services {
