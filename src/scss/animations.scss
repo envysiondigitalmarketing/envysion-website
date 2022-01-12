@@ -1,0 +1,28 @@
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        opacity: .2;
+        transform: translate(.25rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+};
+@keyframes moveInSlogan {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        opacity: .2;
+        transform: translate(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

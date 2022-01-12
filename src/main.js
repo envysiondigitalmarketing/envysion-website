@@ -6,7 +6,6 @@ const services = document.getElementById('services-button');
 const whyEnvysion = document.getElementById('why-envysion-button');
 const pricing = document.getElementById('pricing-button');
 const contact = document.getElementById('contact-button');
-// let xButtonMenuCover = document.getElementById('menu-cover__button-x');
 
 
 
@@ -30,7 +29,3 @@ services.onclick = () => {openAndClose()};
 whyEnvysion.onclick = () => {openAndClose()};
 pricing.onclick = () => {openAndClose()};
 contact.onclick = () => {openAndClose()};
-// xButtonMenuCover.onclick = () => {
-//     xButtonMenuCover.classList.toggle('menu-cover__button-x');
-//     theHiddenThing();
-// }

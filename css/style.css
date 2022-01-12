@@ -1,51 +1,31 @@
-.menu-cover {
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 70vw;
-  background-image: url("../../src/assets/stripes-light.png");
-  opacity: 0.97;
-  z-index: 2;
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    opacity: 0.2;
+    transform: translate(0.25rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
-.menu-cover__list {
-  margin-top: 7%;
-  margin-left: 1%;
+@keyframes moveInSlogan {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    opacity: 0.2;
+    transform: translate(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
-.menu-cover__list--ul {
-  list-style-type: none;
-  font-size: 500%;
-  margin: 0.5rem 0 0.5rem 1rem;
-  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  padding: 0;
-}
-.menu-cover__list--li {
-  margin-bottom: 8%;
-  position: relative;
-}
-.menu-cover__list--anchor {
-  display: inline-block;
-}
-.menu-cover__list--anchor:hover {
-  transform: translateX(15%);
-}
-.menu-cover__list--anchor:link {
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
-  cursor: pointer;
-  position: relative;
-}
-.menu-cover__list--anchor:visited {
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
-  cursor: pointer;
-}
-
 .home {
   height: 100%;
   display: flex;
@@ -197,6 +177,54 @@
   animation-duration: 3.4s;
 }
 
+.menu-cover {
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 70vw;
+  background-image: url("../../src/assets/stripes-light.png");
+  opacity: 0.97;
+  z-index: 2;
+}
+.menu-cover__list {
+  margin-top: 7%;
+  margin-left: 1%;
+}
+.menu-cover__list--ul {
+  list-style-type: none;
+  font-size: 500%;
+  margin: 0.5rem 0 0.5rem 1rem;
+  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  padding: 0;
+}
+.menu-cover__list--li {
+  margin-bottom: 8%;
+  position: relative;
+}
+.menu-cover__list--anchor {
+  display: inline-block;
+}
+.menu-cover__list--anchor:hover {
+  transform: translateX(15%);
+}
+.menu-cover__list--anchor:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+  cursor: pointer;
+  position: relative;
+}
+.menu-cover__list--anchor:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+  cursor: pointer;
+}
+
 .about {
   height: 93vh;
   background-color: tomato;
@@ -236,6 +264,11 @@
 .pricing {
   height: 93vh;
   background-color: yellow;
+}
+
+.contact {
+  height: 93vh;
+  background-color: green;
 }
 
 body, html {
