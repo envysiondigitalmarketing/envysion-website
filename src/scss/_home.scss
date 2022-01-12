@@ -1,0 +1,134 @@
+.home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &__logo {
+        max-width: 100%;
+        max-height: auto;
+        display: inline-block;
+    };
+    &__nav {
+        @include navHeight($navHeightVar);
+        border-bottom: solid 2px $mainColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        overflow: hidden;
+        box-shadow: 0 2.5rem 4rem rgba(8, 6, 6, 0.5);
+        &--button-logo {
+            background: none;
+            color: inherit;
+            border: none;
+            max-width: 40%;
+            height: 100%;
+            cursor: pointer;
+            margin-left: 3%;
+            margin-top: 4%;
+        };
+        &--button-x {
+            width: 10%;
+            height: 60%;
+            background-image: linear-gradient(to right, $mainColor, #000000);
+            cursor: pointer;
+            border-radius: 15%;
+            position: relative;
+            margin-right: 4%;
+            z-index: 3;
+        };
+        &--button-x div  {
+            width: 75%;
+            height: 12px;
+            margin: 0;
+            @include transformTranslateNegative50;
+        }
+        &--button-x span  {
+            background: #fff;
+            width: 100%;
+            height: 2px;
+            border-radius: 100px;
+            display: block;
+            @include transformTranslateNegative50;
+            transition: transform .5s, width .5s;
+        }
+        &--button-x .line-1 {
+            width: 50%;
+            transform: translate(-100%, -10px);
+        }
+        &--button-x .line-3 {
+            left: auto;
+            right: 0;
+            width: 50%;
+            transform: translate(0, 7px);
+        }
+        &--button-x-open .line-1 {
+            transform: translate(0, 0) rotate(-47deg);
+            transform-origin: 0 0;
+        }
+        &--button-x-open .line-3 {
+            transform: translate(-95%, 0) rotate(-45deg);
+            transform-origin: 100% 0;
+        }
+        &--button-x-open .line-2 {
+            transform: translate(-45%, -45%) rotate(45deg);
+        }
+    };
+    .behind-nav {
+        position: relative;
+        @include navHeight($navHeightVar);
+    }
+    .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .hero-video {
+        @include cover;
+        width: 100vw;
+        z-index: -1;
+    }
+    .hero-text-div {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .hero-heading {
+        @include hero-text;
+        animation-name: moveInRight;
+        &__envysion {
+            animation-duration: 1s;
+            margin-top: 3rem;
+        };
+        &__digital {
+            animation-duration: 1.5s;
+        };
+        &__marketing {
+            animation-duration: 2s;
+        };
+    };
+    .hero-slogan {
+        @include hero-text;
+        font-family: 'Witha Sign II', sans-serif;
+        display: inline-block;
+        animation-name: moveInSlogan;
+        &__we {
+            animation-duration: 3s;
+        }
+        &__can {
+            animation-duration: 3.1s;
+        }
+        &__when {
+            animation-duration: 3.2s;
+        }
+        &__we--two {
+            animation-duration: 3.3s;
+        }
+        &__envysion {
+            animation-duration: 3.4s;
+        }
+    }
+}

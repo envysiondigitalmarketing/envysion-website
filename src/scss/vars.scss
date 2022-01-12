@@ -1,0 +1,31 @@
+$navHeightVar: 7vh;
+$mainColor: #063831;
+
+@mixin cover {
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+@mixin transformTranslateNegative50 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin hero-text {
+    font-size: 500%;
+    margin: .5rem 0 .5rem 1rem;
+    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+@mixin anchorTags {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+@mixin navHeight($height) {
+    height: $height;
+}
