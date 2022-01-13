@@ -1,11 +1,10 @@
 .about {
-    height: 100vh - $navHeightVar;
-    background-color: #FEFDFF;
+    height: 100vh - $navHeightVar;background-image: linear-gradient(transparent, $secondColor);
     position: relative;
     overflow: hidden;
     & h3 {
         font-family: 'Witha Sign II', sans-serif;
-        font-size: 500%;
+        font-size: 700%;
         margin: 0;
         position: absolute;
         position: relative;
@@ -21,4 +20,14 @@
         font-size: 500%;
         margin-right: 5%;
     };
+    & p {
+        font-size: 300%;
+        font-family: 'League Spartan', sans-serif;
+        color: $mainColor;
+        padding: 4%;
+        position: absolute;
+        top: 20%;
+        letter-spacing: .2rem;
+        line-height: 1.3;
+    }
 }

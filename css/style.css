@@ -160,6 +160,7 @@
   font-family: "Witha Sign II", sans-serif;
   display: inline-block;
   animation-name: moveInSlogan;
+  font-size: 700%;
 }
 .home .hero-slogan__we {
   animation-duration: 3s;
@@ -233,13 +234,13 @@
 
 .about {
   height: 93vh;
-  background-color: #FEFDFF;
+  background-image: linear-gradient(transparent, #97B1AB);
   position: relative;
   overflow: hidden;
 }
 .about h3 {
   font-family: "Witha Sign II", sans-serif;
-  font-size: 500%;
+  font-size: 700%;
   margin: 0;
   position: absolute;
   position: relative;
@@ -254,6 +255,16 @@
   left: 5%;
   font-size: 500%;
   margin-right: 5%;
+}
+.about p {
+  font-size: 300%;
+  font-family: "League Spartan", sans-serif;
+  color: #063831;
+  padding: 4%;
+  position: absolute;
+  top: 20%;
+  letter-spacing: 0.2rem;
+  line-height: 1.3;
 }
 
 .services {
