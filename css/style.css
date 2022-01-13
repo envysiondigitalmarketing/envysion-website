@@ -178,21 +178,22 @@
 }
 
 .menu-cover {
-  height: 100vh;
-  object-fit: cover;
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
-  width: 70vw;
-  background-image: url("../../src/assets/stripes-light.png");
-  opacity: 0.97;
+  top: 10%;
+  display: flex;
+  justify-content: flex-end;
+  background: transparent;
   z-index: 2;
 }
 .menu-cover__list {
   margin-top: 7%;
   margin-left: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
 }
 .menu-cover__list--ul {
   list-style-type: none;
@@ -203,20 +204,25 @@
 }
 .menu-cover__list--li {
   margin-bottom: 8%;
-  position: relative;
+  background-image: url("../../src/assets/stripes-light.png");
+  border-top-left-radius: 5px;
+  box-shadow: 0 2.5rem 4rem rgba(8, 6, 6, 0.5);
+  opacity: 0.85;
+  border-bottom-left-radius: 5px;
+  padding: 3%;
+  padding-bottom: 1%;
 }
 .menu-cover__list--anchor {
-  display: inline-block;
+  margin-bottom: 8%;
 }
 .menu-cover__list--anchor:hover {
-  transform: translateX(15%);
+  transform: translateY(15%);
 }
 .menu-cover__list--anchor:link {
   text-decoration: inherit;
   color: inherit;
   cursor: auto;
   cursor: pointer;
-  position: relative;
 }
 .menu-cover__list--anchor:visited {
   text-decoration: inherit;
@@ -227,7 +233,7 @@
 
 .about {
   height: 93vh;
-  background-color: tomato;
+  background-color: #FEFDFF;
   position: relative;
   overflow: hidden;
 }

@@ -18,7 +18,7 @@
         z-index: 1;
         width: 100%;
         overflow: hidden;
-        box-shadow: 0 2.5rem 4rem rgba(8, 6, 6, 0.5);
+        box-shadow: $box-shadow;
         &--button-logo {
             background: none;
             color: inherit;
