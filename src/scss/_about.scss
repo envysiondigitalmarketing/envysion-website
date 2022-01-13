@@ -1,9 +1,10 @@
 .about {
-    height: 100vh - $navHeightVar;background-image: linear-gradient(transparent, $secondColor);
+    height: 100vh - $navHeightVar;
+    background-image: linear-gradient(transparent, $secondColor);
     position: relative;
     overflow: hidden;
     & h3 {
-        font-family: 'Witha Sign II', sans-serif;
+        // font-family: 'Witha Sign II', sans-serif;
         font-size: 700%;
         margin: 0;
         position: absolute;
@@ -12,6 +13,7 @@
         left: 5%;
     }
     & h2 {
+        font-family: 'Witha Sign II', sans-serif;
         margin: 0;
         position: absolute;
         position: relative;
