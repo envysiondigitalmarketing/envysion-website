@@ -1,6 +1,12 @@
 $navHeightVar: 7vh;
-$mainColor: #063831;
 $box-shadow: 0 2.5rem 4rem rgba(8, 6, 6, 0.5);
+//Classy Palette
+$mainColor: #063831;
+$secondColor: #97B1AB;
+$thirdColor: #647C77;
+$fourthColor: #1D324B;
+$fifthColor: #4D607C;
+
 
 @mixin cover {
     height: 100vh;
