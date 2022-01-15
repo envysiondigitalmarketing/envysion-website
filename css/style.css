@@ -256,24 +256,26 @@
   padding: 0 4%;
 }
 .about .cta-orange__about {
-  width: 25%;
-  padding: 3%;
+  width: 6em;
+  padding: 0.75em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   background-color: #FFA50A;
   color: #FEFDFF;
-  margin-top: 5%;
+  font-size: 300%;
+  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
   align-self: center;
 }
 .about .cta-orange__about:link {
   color: #FEFDFF;
-  font-size: 300%;
-  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
 }
 .about .cta-orange__about :visited {
   color: #FEFDFF;
-  font-size: 500;
 }
 
 .services {
@@ -318,34 +320,36 @@
   transition: height 0.5s;
 }
 .services .cta-orange__services {
-  width: 25%;
-  padding: 3%;
+  width: 6em;
+  padding: 0.75em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   background-color: #FFA50A;
   color: #FEFDFF;
-  margin-top: 5%;
+  font-size: 300%;
+  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
   align-self: center;
   margin-bottom: 20%;
 }
 .services .cta-orange__services:link {
   color: #FEFDFF;
-  font-size: 300%;
-  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
 }
 .services .cta-orange__services :visited {
   color: #FEFDFF;
-  font-size: 500;
 }
 
 .why-envysion {
   height: 93vh;
   background-color: #FEFDFF;
+  margin-top: -0.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -0.5%;
 }
 .why-envysion h2 {
   font-size: 500%;
