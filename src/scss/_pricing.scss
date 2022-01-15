@@ -1,4 +1,4 @@
 .pricing {
-    height: 100vh - $navHeightVar;
-    background-color: yellow;
+    height: $sectionHeight;
+    background-image: linear-gradient($thisWhite, $secondColor);
 }

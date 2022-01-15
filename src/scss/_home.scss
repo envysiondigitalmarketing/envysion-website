@@ -8,12 +8,12 @@
         display: inline-block;
     };
     &__nav {
-        @include navHeight($navHeightVar);
+        @include navHeight($navHeight);
         border-bottom: solid 2px $mainColor;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: white;
+        background-color: $thisWhite;
         position: fixed;
         z-index: 1;
         width: 100%;
@@ -78,12 +78,13 @@
     };
     .behind-nav {
         position: relative;
-        @include navHeight($navHeightVar);
+        @include navHeight($navHeight);
     }
     .hero {
         position: relative;
         height: 100vh;
         overflow: hidden;
+        background-image: linear-gradient(transparent, $thisWhite);
     }
     .hero-video {
         @include cover;
@@ -112,10 +113,11 @@
     };
     .hero-slogan {
         @include hero-text;
-        font-family: 'Witha Sign II', sans-serif;
+        // font-family: 'Witha Sign II', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         display: inline-block;
         animation-name: moveInSlogan;
-        font-size: 700%;
+        font-size: 400%;
         &__we {
             animation-duration: 3s;
         }

@@ -1,35 +1,45 @@
 .about {
-    height: 100vh - $navHeightVar;
-    background-image: linear-gradient(transparent, $secondColor);
+    height: $sectionHeight;
+    background-color: $thisWhite;
     position: relative;
     overflow: hidden;
-    & h3 {
-        // font-family: 'Witha Sign II', sans-serif;
-        font-size: 700%;
-        margin: 0;
+    & h2 {
+        font-size: 500%;
+
+
         position: absolute;
         position: relative;
         top: 3%;
         left: 5%;
+        margin-top: 0;
+        margin-bottom: 0;
     }
-    & h2 {
-        font-family: 'Witha Sign II', sans-serif;
+    & h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 400%;
+        
+
         margin: 0;
         position: absolute;
         position: relative;
         top: 5%;
         left: 5%;
-        font-size: 500%;
-        margin-right: 5%;
+        margin-right: 12%;
+        margin-top: 0;
+        margin-bottom: 0;
     };
     & p {
+        font-family: 'Open Sans', sans-serif;
         font-size: 300%;
-        font-family: 'League Spartan', sans-serif;
+        font-weight: 500;
         color: $mainColor;
+        letter-spacing: .2rem;
+
         padding: 4%;
+        margin-top: 0;
         position: absolute;
         top: 20%;
-        letter-spacing: .2rem;
+        left: 1%;
         line-height: 1.3;
     }
 }

@@ -2,7 +2,7 @@
     @include cover;
     background-image: linear-gradient(transparent, $secondColor 75%), url('../../src/assets/stripes-light.png');
     z-index: 2;
-    opacity: .9;
+    opacity: .95;
     // position: fixed;
     // left: 0;
     // right: 0;
@@ -25,7 +25,7 @@
     }
     &__list--li {
         margin-bottom: 4%;
-        color: $fourthColor;
+        // color: $fourthColor;
         // background-image: url('../../src/assets/stripes-light.png');
         // box-shadow: $box-shadow;
         opacity: 1;

@@ -1,4 +1,5 @@
-$navHeightVar: 7vh;
+$navHeight: 7vh;
+$sectionHeight: 100vh - $navHeight;
 $box-shadow: 0 2.5rem 4rem rgba(8, 6, 6, 0.5);
 //Classy Palette
 $mainColor: #063831;
@@ -26,7 +27,7 @@ $thisWhite: #FEFDFF;
 }
 @mixin hero-text {
     font-size: 500%;
-    margin: .5rem 0 .5rem 1rem;
+    margin: .5rem 0 .5rem 1.5rem;
     animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 @mixin anchorTags {

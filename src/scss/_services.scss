@@ -1,5 +1,45 @@
 .services {
-    height: 100vh - $navHeightVar;
-    width: 100vw;
-    background-color: black;
+    height: $sectionHeight;
+    background-color: $thisWhite;
+    position: relative;
+    overflow-x: hidden;
+    margin-top: -.5%;
+
+    & h2 {
+        font-size: 500%;
+
+
+        position: absolute;
+        position: relative;
+        top: 3%;
+        left: 5%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &__list {
+        margin: 0;
+        position: absolute;
+        position: relative;
+        top: 5%;
+        left: 5%;
+        margin-right: 12%;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 5%;
+    }
+    &__header {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 400%;
+        display: inline-block;
+        cursor: pointer;
+    };
+    &__paragraph {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 300%;
+        font-weight: 500;
+        color: $mainColor;
+        letter-spacing: .2rem;
+        margin-top: 0;
+        transition: height 0.5s;
+    }
 }
