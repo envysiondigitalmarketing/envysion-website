@@ -1,36 +1,42 @@
 .services {
-    height: $sectionHeight;
+    min-height: $sectionHeight;
     background-color: $thisWhite;
-    position: relative;
-    overflow-x: hidden;
+    // overflow: hidden;
     margin-top: -.5%;
+    padding: $paddingForCentering;
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
     & h2 {
         font-size: 500%;
-
-
-        position: absolute;
-        position: relative;
-        top: 3%;
-        left: 5%;
-        margin-top: 0;
-        margin-bottom: 0;
+        display: inline-block;
+        margin-top: 15%;
+        align-self: center;
+        // margin-bottom: 10%;
     }
+
     &__list {
-        margin: 0;
-        position: absolute;
-        position: relative;
-        top: 5%;
-        left: 5%;
-        margin-right: 12%;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 10%;
         height: 5%;
+
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__div {
+        width: 95%;
     }
     &__header {
         font-family: 'Open Sans', sans-serif;
         font-size: 400%;
-        display: inline-block;
+        align-self: center;
         cursor: pointer;
     };
     &__paragraph {
@@ -41,5 +47,10 @@
         letter-spacing: .2rem;
         margin-top: 0;
         transition: height 0.5s;
+    }
+    .cta-orange__services {
+        @include callToAction;
+        align-self: center;
+        margin-bottom: 20%;
     }
 }

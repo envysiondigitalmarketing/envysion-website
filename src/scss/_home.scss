@@ -9,6 +9,7 @@
     };
     &__nav {
         @include navHeight($navHeight);
+        width: 100%;
         border-bottom: solid 2px $mainColor;
         display: flex;
         justify-content: space-between;
@@ -16,7 +17,7 @@
         background-color: $thisWhite;
         position: fixed;
         z-index: 1;
-        width: 100%;
+        max-width: 100%;
         overflow: hidden;
         box-shadow: $box-shadow;
         &--button-logo {
@@ -36,8 +37,10 @@
             cursor: pointer;
             border-radius: 15%;
             position: relative;
-            margin-right: 4%;
+            // margin-right: 4%;
             z-index: 3;
+
+            right: 4%;
         };
         &--button-x div  {
             width: 75%;
@@ -93,16 +96,16 @@
     }
     .hero-text-div {
         display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
     }
     .hero-heading {
         @include hero-text;
         animation-name: moveInRight;
         &__envysion {
             animation-duration: 1s;
-            margin-top: 3rem;
+            margin-top: 10%;
         };
         &__digital {
             animation-duration: 1.5s;

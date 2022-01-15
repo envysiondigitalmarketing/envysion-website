@@ -1,6 +1,9 @@
 $navHeight: 7vh;
 $sectionHeight: 100vh - $navHeight;
-$box-shadow: 0 2.5rem 4rem rgba(8, 6, 6, 0.5);
+$box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+
+$paddingForCentering: 0 4%;
+
 //Classy Palette
 $mainColor: #063831;
 $secondColor: #97B1AB;
@@ -37,4 +40,23 @@ $thisWhite: #FEFDFF;
 }
 @mixin navHeight($height) {
     height: $height;
+}
+@mixin callToAction {
+    width: 25%;
+    padding: 3%;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #FFA50A;
+    color: $thisWhite;
+    margin-top: 5%;
+    &:link {
+        color: $thisWhite;
+        font-size: 300%;
+        box-shadow: $box-shadow;
+    }
+    :visited {
+        color: $thisWhite;
+        font-size: 500;
+    }
 }

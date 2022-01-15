@@ -1,5 +1,5 @@
 .contact {
     height: $sectionHeight;
-    background-color: $secondColor;
+    background-image: linear-gradient($secondColor, $thirdColor);
     margin-top: -.5%;
 }
