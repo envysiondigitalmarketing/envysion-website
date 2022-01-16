@@ -268,14 +268,22 @@
   background-color: #FFA50A;
   color: #FEFDFF;
   font-size: 300%;
-  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+  transition: 0.2s;
   align-self: center;
 }
 .about .cta-orange__about:link {
   color: #FEFDFF;
 }
-.about .cta-orange__about :visited {
+.about .cta-orange__about:visited {
   color: #FEFDFF;
+}
+.about .cta-orange__about:hover {
+  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+  transform: translateY(-7px);
+}
+.about .cta-orange__about:active {
+  box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
+  transform: translateY(0px);
 }
 
 .services {
@@ -332,15 +340,23 @@
   background-color: #FFA50A;
   color: #FEFDFF;
   font-size: 300%;
-  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+  transition: 0.2s;
   align-self: center;
   margin-bottom: 20%;
 }
 .services .cta-orange__services:link {
   color: #FEFDFF;
 }
-.services .cta-orange__services :visited {
+.services .cta-orange__services:visited {
   color: #FEFDFF;
+}
+.services .cta-orange__services:hover {
+  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+  transform: translateY(-7px);
+}
+.services .cta-orange__services:active {
+  box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
+  transform: translateY(0px);
 }
 
 .why-envysion {
@@ -377,6 +393,10 @@ body, html {
   color: #063831;
   width: 100%;
   scroll-padding-top: 7vh;
+}
+
+#reference-link {
+  color: #0000EE;
 }
 
 /*# sourceMappingURL=style.css.map */

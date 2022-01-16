@@ -57,11 +57,19 @@ $thisWhite: #FEFDFF;
     background-color: #FFA50A;
     color: $thisWhite;
     font-size: 300%;
-    box-shadow: $box-shadow;
+    transition: .2s;
     &:link {
         color: $thisWhite;
     }
-    :visited {
+    &:visited {
         color: $thisWhite;
+    }
+    &:hover {
+        box-shadow: $box-shadow;
+        transform: translateY(-7px);
+    }
+    &:active {
+        box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
+        transform: translateY(0px);
     }
 }
