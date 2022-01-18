@@ -1,10 +1,9 @@
 .services {
-    min-height: $sectionHeight;
-    background-color: $thisWhite;
-    // overflow: hidden;
+    min-height: $sectionHeight + .5vh;
     margin-top: -.5%;
     padding: $paddingForCentering;
-
+    background-color: $thisWhite;
+    // overflow: hidden;
 
 
     display: flex;
@@ -16,7 +15,6 @@
         display: inline-block;
         margin-top: 15%;
         align-self: center;
-        // margin-bottom: 10%;
     }
 
     &__list {
@@ -35,6 +33,23 @@
         font-size: 400%;
         align-self: center;
         cursor: pointer;
+        display: inline-block;
+        margin-bottom: 2%;
+        &::after {
+            content: '';
+            height: 2px;
+            width: 0%;
+            background-color: $mainColor;
+            display: block;
+            transition: .5s ease-in-out;
+        }
+        &:hover::after {
+            content: '';
+            height: 2px;
+            width: 100%;
+            background-color: $mainColor;
+            display: block;
+        }
     };
     &__paragraph {
         font-family: 'Open Sans', sans-serif;

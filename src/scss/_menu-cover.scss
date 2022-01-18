@@ -18,6 +18,22 @@
     &__list--li {
         margin-bottom: 4%;
         opacity: 1;
+        width: fit-content;
+        &::after {
+            content: '';
+            height: 2px;
+            width: 0%;
+            background-color: $mainColor;
+            display: block;
+            transition: .5s ease-in-out;
+        }
+        &:hover::after {
+            content: '';
+            height: 2px;
+            width: 100%;
+            background-color: $mainColor;
+            display: block;
+        }
     }
     &__list--anchor:link {
         @include anchorTags;

@@ -206,6 +206,22 @@
 .menu-cover__list--li {
   margin-bottom: 4%;
   opacity: 1;
+  width: fit-content;
+}
+.menu-cover__list--li::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #063831;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.menu-cover__list--li:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #063831;
+  display: block;
 }
 .menu-cover__list--anchor:link {
   text-decoration: inherit;
@@ -221,7 +237,7 @@
 }
 
 .about {
-  height: 93vh;
+  min-height: 93.5vh;
   background-color: #FEFDFF;
   position: relative;
   overflow: hidden;
@@ -256,8 +272,7 @@
   padding: 0 4%;
 }
 .about .cta-orange__about {
-  width: 6em;
-  padding: 0.75em;
+  padding: 0.75em 1em;
   margin-top: 1em;
   display: flex;
   flex-direction: column;
@@ -287,10 +302,10 @@
 }
 
 .services {
-  min-height: 93vh;
-  background-color: #FEFDFF;
+  min-height: 93.5vh;
   margin-top: -0.5%;
   padding: 0 4%;
+  background-color: #FEFDFF;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -317,6 +332,23 @@
   font-size: 400%;
   align-self: center;
   cursor: pointer;
+  display: inline-block;
+  margin-bottom: 2%;
+}
+.services__header::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #063831;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.services__header:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #063831;
+  display: block;
 }
 .services__paragraph {
   font-family: "Open Sans", sans-serif;
@@ -328,8 +360,7 @@
   transition: height 0.5s;
 }
 .services .cta-orange__services {
-  width: 6em;
-  padding: 0.75em;
+  padding: 0.75em 1em;
   margin-top: 1em;
   display: flex;
   flex-direction: column;
@@ -375,6 +406,7 @@
 
 .pricing {
   height: 93vh;
+  margin-top: -0.5%;
   background-image: linear-gradient(#FEFDFF, #97B1AB);
 }
 

@@ -1,5 +1,6 @@
 .about {
-    height: $sectionHeight;
+    // height: $sectionHeight;
+    min-height: $sectionHeight + .5vh;
     background-color: $thisWhite;
     position: relative;
     overflow: hidden;
