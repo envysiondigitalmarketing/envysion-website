@@ -18,14 +18,15 @@
     &__list--li {
         margin-bottom: 4%;
         opacity: 1;
+        width: -moz-fit-content;
         width: fit-content;
         &::after {
             content: '';
-            height: 2px;
+            height: 1px;
             width: 0%;
             background-color: $mainColor;
             display: block;
-            transition: .5s ease-in-out;
+            transition: .05s ease-in-out;
         }
         &:hover::after {
             content: '';
