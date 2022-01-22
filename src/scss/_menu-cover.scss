@@ -20,20 +20,8 @@
         opacity: 1;
         width: -moz-fit-content;
         width: fit-content;
-        &::after {
-            content: '';
-            height: 1px;
-            width: 0%;
-            background-color: $mainColor;
-            display: block;
-            transition: .05s ease-in-out;
-        }
-        &:hover::after {
-            content: '';
-            height: 2px;
-            width: 100%;
-            background-color: $mainColor;
-            display: block;
+        &:hover {
+            color: $fifthColor;
         }
     }
     &__list--anchor:link {
