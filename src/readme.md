@@ -1,14 +1,17 @@
 <!-- 
 npm i -g sass
 sass --watch style.scss:../../css/style.css
+-->
 
-
+<!-- 
 - Add content
-    - Footer
     - Separate pages
-        - Services
-        - Pricing
-        - Contact
+        - Services | Pricing | Contact
+        - add services content
+        - get individual videos for each
+        - change headers
+    - Footer
+    - Add dropdown to menu-cover?
 
 
 - Minimize css with variables
@@ -22,5 +25,5 @@ Later:
 - Branches
     - Insurance agencies
 - Blog
-- Case studies and portfolio available upon request
+- Case studies available upon request
  -->

@@ -29,8 +29,12 @@
             cursor: pointer;
             margin-left: 3%;
             margin-top: 4%;
+            animation-name: moveInRight;
+            animation-duration: .5s;
         };
         &--button-x {
+            animation-name: moveInRight;
+            animation-duration: .5s;
             width: 10%;
             height: 60%;
             background-image: linear-gradient(to right, $mainColor, #000000);

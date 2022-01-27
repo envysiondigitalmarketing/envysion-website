@@ -1,10 +1,13 @@
 @import './utilities/vars.scss';
 @import './utilities/animations.scss';
 
+@import './home/home';
 @import './home/about';
 @import './home/services';
 @import './home/why-envysion';
-@import './home/home';
+
+@import './services/services-main';
+@import './services/services-list';
 
 @import './_menu-cover';
 @import './_pricing';

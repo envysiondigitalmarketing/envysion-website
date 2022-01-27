@@ -15,14 +15,32 @@ const emailAndSMSHeader = document.querySelector('.services__header--email-and-s
 const advertsHeader = document.querySelector('.services__header--adverts');
 const allHeaders = document.querySelector('.services__header');
 
+const twoWebsitesHeader = document.querySelector('.services-II__header--websites');
+const twoSeoHeader = document.querySelector('.services-II__header--seo');
+const twoEmailAndSMSHeader = document.querySelector('.services-II__header--email-and-sms');
+const twoAdvertsHeader = document.querySelector('.services-II__header--adverts');
+const twoAllHeaders = document.querySelector('.services-II__header');
+
 const websitesParagraph = document.querySelector('.services__paragraph--websites');
 const seoParagraph = document.querySelector('.services__paragraph--seo');
 const emailAndSMSParagraph = document.querySelector('.services__paragraph--email-and-sms');
 const advertsParagraph = document.querySelector('.services__paragraph--adverts');
 
+const twoWebsitesParagraph = document.querySelector('.services-II__paragraph--websites');
+const twoSeoParagraph = document.querySelector('.services-II__paragraph--seo');
+const twoEmailAndSMSParagraph = document.querySelector('.services-II__paragraph--email-and-sms');
+const twoAdvertsParagraph = document.querySelector('.services-II__paragraph--adverts');
+
 const quoraCreativeLink = document.querySelector('.quoracreative-link');
 
-
+const websitesParagraphSample = `Your website is your digital hub, the place everyone will go when they want to learn more about your business. In many ways your website [...] <a id='reference-link' href='./services.html''>Read More &#8640;</a>`
+const websitesParagraphFull = `Your website is your digital hub, the place everyone will go when they want to learn more about your business. In many ways your website will be a chance at a first impression. Let’s make it a good one. Every site we create is hand-coded and designed specifically to encourage customers to take the next step and reach out to your business.`
+const seoParagraphSample = `Did you know that 68% of online experiences begin with a search engine (<a id='reference-link' onclick='window.open("https://videos.brightedge.com/research-report/BrightEdge_ChannelReport2019_FINAL.pdf", "_blank", "width=800, height=800");'>BrightEdge</a>), 92.96% of global traffic comes from Google (<a id='reference-link' onclick='window.open("https://sparktoro.com/blog/2018-search-market-share-myths-vs-realities-of-google-bing-amazon-facebook-duckduckgo-more/", "_blank", "width=800, height=800");'>Sparktoro</a>), and only 0.78% of Google searchers click on results from the 2nd page (<a id='reference-link' onclick='window.open("https://backlinko.com/google-ctr-stats", "_blank", "width=800, height=800");'>Backlinko</a>)? If you want [...] <a id='reference-link' href='./services.html''>Read More &#8640;</a>`;
+const seoParagraphFull = `Did you know that 68% of online experiences begin with a search engine (<a id='reference-link' onclick='window.open("https://videos.brightedge.com/research-report/BrightEdge_ChannelReport2019_FINAL.pdf", "_blank", "width=800, height=800");'>BrightEdge</a>), 92.96% of global traffic comes from Google (<a id='reference-link' onclick='window.open("https://sparktoro.com/blog/2018-search-market-share-myths-vs-realities-of-google-bing-amazon-facebook-duckduckgo-more/", "_blank", "width=800, height=800");'>Sparktoro</a>), and only 0.78% of Google searchers click on results from the 2nd page (<a id='reference-link' onclick='window.open("https://backlinko.com/google-ctr-stats", "_blank", "width=800, height=800");'>Backlinko</a>)? If you want customers who are searching for your product or service to find you it is imperative that you use search engine optimization to bring your company up in the search results and avoid becoming a needle in a haystack.`
+const emailAndSMSParagraphSample = `Email marketing and SMS marketing are great tools to generate new leads and keep your current customers up to date with the latest information about your business. A recent study has shown that for every dollar your company spends on email marketing alone you can expect a return of $42 <a id='reference-link' onclick='window.open("https://dma.org.uk/uploads/misc/marketers-email-tracker-2019.pdf", "_blank", "width=800, height=800");'>(DMA)</a> and 98% of text messages sent are [...] <a id='reference-link' href='./services.html''>Read More &#8640;</a>`;
+const emailAndSMSParagraphFull = `Email marketing and SMS marketing are great tools to generate new leads and keep your current customers up to date with the latest information about your business. A recent study has shown that for every dollar your company spends on email marketing alone you can expect a return of $42 <a id='reference-link' onclick='window.open("https://dma.org.uk/uploads/misc/marketers-email-tracker-2019.pdf", "_blank", "width=800, height=800");'>(DMA)</a> and 98% of text messages sent are viewed by the receiver <a id='reference-link' onclick='window.open("https://www.gartner.com/en/marketing/insights/articles/tap-into-the-marketing-power-of-sms", "_blank", "width=800, height=800");'>(Gartner Marketing and Communications)</a>. If you’re interested in reaching out to new potential clients or you simply want a direct communication channel with your customers that you could use to launch new sales or products you can not go wrong with email marketing or SMS marketing. Not sure which one is right for you? No problem, give us a call and we can find a plan that best suits your needs.`
+const advertsParagraphSample = `Harness the power of Google, Facebook, or Instagram ads to drive traffic to your website. These platforms have been refined over time to [...] <a id='reference-link' href='./services.html''>Read More &#8640;</a>`;
+const advertsParagraphFull = `Harness the power of Google, Facebook, or Instagram ads to drive traffic to your website. These platforms have been refined over time to become great options for gaining visibility and reaching out to potential customers within your niche. Don't have content for your ads? Envysion has you covered. Just let us know what product or service you would like advertised and we will do the rest.`;
 
 const theHiddenThing = (itemInQuestion) => {
     itemInQuestion.style.visibility == 'hidden' ? itemInQuestion.style.visibility = 'visible' : itemInQuestion.style.visibility = 'hidden';
@@ -32,12 +50,24 @@ const openAndClose = () => {
     theHiddenThing(menuCover);
 }
 const selectService = (itemInQuestion, theString) => {
-    if (itemInQuestion.innerHTML == '') {
+    if (!itemInQuestion.innerHTML) {
         websitesParagraph.innerHTML = '';
         seoParagraph.innerHTML = '';
         emailAndSMSParagraph.innerHTML = '';
         advertsParagraph.innerHTML = '';
-        itemInQuestion.innerHTML = `${theString}`;
+        itemInQuestion.innerHTML = theString;
+    } else {
+        itemInQuestion.innerHTML = '';
+    }
+}
+
+const twoSelectService = (itemInQuestion, theString) => {
+    if (!itemInQuestion.innerHTML) {
+        twoWebsitesParagraph.innerHTML = '';
+        twoSeoParagraph.innerHTML = '';
+        twoEmailAndSMSParagraph.innerHTML = '';
+        twoAdvertsParagraph.innerHTML = '';
+        itemInQuestion.innerHTML = theString;
     } else {
         itemInQuestion.innerHTML = '';
     }
@@ -45,7 +75,9 @@ const selectService = (itemInQuestion, theString) => {
 
 
 
-onload = () => {theHiddenThing(menuCover)};
+onload = () => {
+    theHiddenThing(menuCover)
+};
 
 xButton.onclick = () => {openAndClose()};
 home.onclick = () => {openAndClose()};
@@ -55,13 +87,31 @@ whyEnvysion.onclick = () => {openAndClose()};
 pricing.onclick = () => {openAndClose()};
 contact.onclick = () => {openAndClose()};
 
-websitesHeader.onclick = () => {
-    selectService(websitesParagraph, `Your website is your digital hub, the place everyone will go when they want to learn more about your business. In many ways your website will be a chance at a first impression. Let’s make it a good one. Every site we create is hand-coded and designed specifically to encourage customers to take the next step and reach out to your business.`)
-};
-seoHeader.onclick = () => {selectService(seoParagraph, `Did you know that 68% of online experiences begin with a search engine (<a id='reference-link' onclick='window.open("https://videos.brightedge.com/research-report/BrightEdge_ChannelReport2019_FINAL.pdf", "_blank", "width=800, height=800");'>BrightEdge</a>), 92.96% of global traffic comes from Google (<a id='reference-link' onclick='window.open("https://sparktoro.com/blog/2018-search-market-share-myths-vs-realities-of-google-bing-amazon-facebook-duckduckgo-more/", "_blank", "width=800, height=800");'>Sparktoro</a>), and only 0.78% of Google searchers click on results from the 2nd page (<a id='reference-link' onclick='window.open("https://backlinko.com/google-ctr-stats", "_blank", "width=800, height=800");'>Backlinko</a>)? If you want customers who are searching for your product or service to find you it is imperative that you use search engine optimization to bring your company up in the search results and avoid becoming a needle in a haystack.`)};//
-emailAndSMSHeader.onclick = () => {selectService(emailAndSMSParagraph, `Email marketing and SMS marketing are great tools to generate new leads and keep your current customers up to date with the latest information about your business. A recent study has shown that for every dollar your company spends on email marketing alone you can expect a return of $42 <a id='reference-link' onclick='window.open("https://dma.org.uk/uploads/misc/marketers-email-tracker-2019.pdf", "_blank", "width=800, height=800");'>(DMA)</a> and 98% of text messages sent are viewed by the receiver <a id='reference-link' onclick='window.open("https://www.gartner.com/en/marketing/insights/articles/tap-into-the-marketing-power-of-sms", "_blank", "width=800, height=800");'>(Gartner Marketing and Communications)</a>. If you’re interested in reaching out to new potential clients or you simply want a direct communication channel with your customers that you could use to launch new sales or products you can not go wrong with email marketing or SMS marketing. Not sure which one is right for you? No problem, give us a call and we can find a plan that best suits your needs.`)};
-advertsHeader.onclick = () => {selectService(advertsParagraph, `Harness the power of Google, Facebook, or Instagram ads to drive traffic to your website. These platforms have been refined over time to become great options for gaining visibility and reaching out to potential customers within your niche. No need to create content for your ads, Envysion has you covered. Just let us know what product or service you would like advertised and we will do the rest.`)};
+websitesHeader ? websitesHeader.onclick = () => {
+    selectService(websitesParagraph, websitesParagraphSample)
+} : null;
+twoWebsitesHeader ? twoWebsitesHeader.onclick = () => {
+    twoSelectService(twoWebsitesParagraph, websitesParagraphFull)
+} : null;
+seoHeader ? seoHeader.onclick = () => {
+    selectService(seoParagraph, seoParagraphSample)
+} : null;
+twoSeoHeader ? twoSeoHeader.onclick = () => {
+    twoSelectService(twoSeoParagraph, seoParagraphFull)
+} : null;
+emailAndSMSHeader ? emailAndSMSHeader.onclick = () => {
+    selectService(emailAndSMSParagraph, emailAndSMSParagraphSample)
+} : null;
+twoEmailAndSMSHeader ? twoEmailAndSMSHeader.onclick = () => {
+    twoSelectService(twoEmailAndSMSParagraph, emailAndSMSParagraphFull)
+} : null;
+advertsHeader ? advertsHeader.onclick = () => {
+    selectService(advertsParagraph, advertsParagraphSample)
+} : null;
+twoAdvertsHeader ? twoAdvertsHeader.onclick = () => {
+    twoSelectService(twoAdvertsParagraph, advertsParagraphFull)
+} : null;
 
-quoraCreativeLink.onclick = () => {
+quoraCreativeLink ? quoraCreativeLink.onclick = () => {
     window.open('https://quoracreative.com/article/mobile-marketing-statistics', '_blank', "width=800, height=800");
-}
+} : null;
