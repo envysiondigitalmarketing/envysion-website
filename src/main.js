@@ -81,9 +81,9 @@ onload = () => {
 
 xButton.onclick = () => {openAndClose()};
 home.onclick = () => {openAndClose()};
-about.onclick = () => {openAndClose()};
+// about.onclick = () => {openAndClose()};
 services.onclick = () => {openAndClose()};
-whyEnvysion.onclick = () => {openAndClose()};
+// whyEnvysion.onclick = () => {openAndClose()};
 pricing.onclick = () => {openAndClose()};
 contact.onclick = () => {openAndClose()};
 

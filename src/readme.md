@@ -6,12 +6,8 @@ sass --watch style.scss:../../css/style.css
 <!-- 
 - Add content
     - Separate pages
-        - Services | Pricing | Contact
-        - add services content
-        - get individual videos for each
+        - Contact | Pricing
         - change headers
-    - Footer
-    - Add dropdown to menu-cover?
 
 
 - Minimize css with variables
@@ -20,6 +16,9 @@ sass --watch style.scss:../../css/style.css
 - Style more if needed
 - Remove extra fonts
 
+- Add links to footer
+- Get/Add phone number
+- Add Javascript to phone and email in footer
 
 Later:
 - Branches

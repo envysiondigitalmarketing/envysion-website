@@ -14,7 +14,7 @@
     & h2 {
         font-size: 500%;
         margin-top: 15%;
-        margin-bottom: 0;
+        margin-bottom: 10%;
     }
     & h3 {
         font-family: 'Open Sans', sans-serif;
@@ -37,6 +37,7 @@
         width: 80%;
         height: fit-content;
         padding: $paddingForCentering;
+        padding-bottom: 30%;
     }
     &__list--div {
         margin-top: 5%;

@@ -26,6 +26,76 @@
     transform: translate(0);
   }
 }
+@keyframes shutter-in-top {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-8px);
+  }
+  20% {
+    transform: translateY(8px);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(8px);
+  }
+  70% {
+    transform: translateY(-8px);
+  }
+  80% {
+    transform: translateY(6.4px);
+  }
+  90% {
+    transform: translateY(-6.4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-8px);
+  }
+  20% {
+    transform: translateX(8px);
+  }
+  30% {
+    transform: translateX(-8px);
+  }
+  40% {
+    transform: translateX(8px);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+  60% {
+    transform: translateX(8px);
+  }
+  70% {
+    transform: translateX(-8px);
+  }
+  80% {
+    transform: translateX(6.4px);
+  }
+  90% {
+    transform: translateX(-6.4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .home {
   height: 100%;
   display: flex;
@@ -190,6 +260,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
 }
 .about h2 {
   font-size: 500%;
@@ -336,7 +407,7 @@
 .why-envysion h2 {
   font-size: 500%;
   margin-top: 15%;
-  margin-bottom: 0;
+  margin-bottom: 10%;
 }
 .why-envysion h3 {
   font-family: "Open Sans", sans-serif;
@@ -359,6 +430,7 @@
   width: 80%;
   height: fit-content;
   padding: 0 4%;
+  padding-bottom: 30%;
 }
 .why-envysion__list--div {
   margin-top: 5%;
@@ -574,16 +646,18 @@
 }
 
 .menu-cover {
-  height: 100vh;
+  height: 92.75vh;
   object-fit: cover;
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
   bottom: 0;
   background-image: linear-gradient(transparent, #97B1AB 75%), url("../../src/assets/global/stripes-light.png");
   z-index: 2;
   opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .menu-cover__list {
   margin-top: 7%;
@@ -595,10 +669,10 @@
   width: 75%;
 }
 .menu-cover__list--ul {
-  list-style-type: none;
   font-size: 500%;
   margin: 0.5rem 0 0.5rem 1.5rem;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  list-style-type: none;
   padding: 0;
 }
 .menu-cover__list--li {
@@ -609,6 +683,16 @@
 }
 .menu-cover__list--li:hover {
   color: #4D607C;
+  animation-name: shake-horizontal;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  /* shorthand 
+  animation: shake-vertical 1s ease 0s 1 normal none;
+  */
 }
 .menu-cover__list--anchor:link {
   text-decoration: inherit;
@@ -671,6 +755,54 @@
   height: 93vh;
   background-image: linear-gradient(#FEFDFF, #97B1AB, #647C77);
   margin-top: -0.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer hr {
+  margin: 0;
+  width: 80%;
+  border-color: #063831;
+}
+.footer .footer-logo {
+  margin-top: 15%;
+  width: 75%;
+}
+.footer .footer-mission-statement {
+  font-size: 300%;
+}
+.footer .footer-social-links__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5%;
+  width: 100%;
+  margin: 5% 0;
+}
+.footer .footer-social-links__link {
+  width: 10%;
+  height: 100%;
+}
+.footer .footer-social-links__logo {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transform: translate(0%, -15%);
+}
+.footer .footer-social-links__logo:hover {
+  animation-name: shutter-in-top;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  /* shorthand 
+  animation: shake-vertical 1s ease 0s 1 normal none;
+  */
+}
+.footer .footer-contacts {
+  font-size: 225%;
 }
 
 body, html {

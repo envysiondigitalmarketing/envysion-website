@@ -1,8 +1,18 @@
 .menu-cover {
-    @include cover;
+    // @include cover;
+    height: 99.75vh - $navHeight;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    // top: 0;
+    bottom: 0;
     background-image: linear-gradient(transparent, $secondColor 75%), url('../../src/assets/global/stripes-light.png');
     z-index: 2;
     opacity: .95;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     &__list {
         margin-top: 7%;
         margin-left: 1%;
@@ -13,8 +23,8 @@
         width: 75%;
     }
     &__list--ul {
-        list-style-type: none;
         @include hero-text;
+        list-style-type: none;
         padding: 0;
     }
     &__list--li {
@@ -24,6 +34,16 @@
         width: fit-content;
         &:hover {
             color: $fifthColor;
+            animation-name: shake-horizontal;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            /* shorthand 
+            animation: shake-vertical 1s ease 0s 1 normal none;
+            */ 
         }
     }
     &__list--anchor:link {
