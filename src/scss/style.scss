@@ -9,10 +9,13 @@
 @import './services/services-main';
 @import './services/services-list';
 
-@import './_menu-cover';
 @import './_pricing';
-@import './footer';
 
+@import './contact/contact-main';
+@import './contact/contact-section';
+
+@import './_menu-cover';
+@import './footer';
 
 
 body, html {

@@ -4,9 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/witha-sign-ii');
+        @import url('http://fonts.cdnfonts.com/css/league-spartan');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel='icon' type="image/png" href="../src/assets/global/letter-e.png">
     <title>Envysion Digital Marketing</title>
 </head>
 <body>
-    
+    <section class='home' id='home'>
+        <section class='menu-cover' id='menu-cover'>
+            <section class='menu-cover__list'>
+                <ul class='menu-cover__list--ul'>
+                    <li class='menu-cover__list--li'>
+                        <a 
+                        class='menu-cover__list--anchor' 
+                        href="./index.html#home"
+                        data-text='Home'
+                        id='home-button'>Home
+                        </a>
+                    </li>
+                    <li class='menu-cover__list--li'>
+                        <a 
+                        class='menu-cover__list--anchor' 
+                        href="services.html" 
+                        data-text='Services'
+                        id='services-button'>Services
+                        </a>
+                    </li>
+                    <li class='menu-cover__list--li'>
+                        <a 
+                        class='menu-cover__list--anchor' 
+                        href="pricing.html" 
+                        data-text='Pricing'
+                        id='pricing-button'>Pricing
+                        </a>
+                    </li>
+                    <li class='menu-cover__list--li'>
+                        <a 
+                        class='menu-cover__list--anchor' 
+                        href="contact.html" 
+                        data-text='Contact'
+                        id='contact-button'>Contact
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <nav class='home__nav'>
+            <a class='home__nav--button-logo' href='index.html#home'><img src='assets/global/envysion.png' alt="company logo" class='home__logo'></a>
+            <div class='home__nav--button-x' id='home__nav--button-x'>
+                <div>
+                    <span class='line-1'></span>
+                    <span class='line-2'></span>
+                    <span class='line-3'></span>
+                </div>
+            </div>
+        </nav>
+        <div class='behind-nav'>
+        </div>
+        <section class='hero'>
+            <video autoplay loop class='hero-video' muted plays-inline>
+                <source src='assets/home/meeting.mp4' type='video/mp4'>
+            </video>
+            <div class='contact-hero-text-div'>
+                <h2 class='contact-hero-heading contact-hero-heading__contact'>Contact</h2>
+            </div>
+        </section>
+    </section>
+    <section class='contact-section' id='contact-section'>
+        <h2>Contact</h2>
+        <div class='contact__list'>
+            <div class='services-II__div services-II__div--websites'>
+                <h3 class='services-II__header--websites services-II__header'>Websites</h3>
+                <p class='services-II__paragraph services-II__paragraph--websites'></p>
+                <hr>
+            </div>
+            <div class='services-II__div services-II__div--seo'>
+                <h3 class='services-II__header services-II__header--seo'>Search Engine Optimization</h3>
+                <p class='services-II__paragraph services-II__paragraph--seo'></p>
+                <hr>
+            </div>
+            <div class='services-II__div services-II__div--email-and-sms'>
+                <h3 class='services-II__header services-II__header--email-and-sms'>Email and SMS Marketing</h3>
+                <p class='services-II__paragraph services-II__paragraph--email-and-sms'></p>
+                <hr>
+            </div>
+            <div class='services-II__div services-II__div--adverts'>
+                <h3 class='services-II__header services-II__header--adverts'>Targeted Advertisements</h3>
+                <p class='services-II__paragraph services-II__paragraph--adverts'></p>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <footer class='footer' id='footer'>
+        <hr>
+        <img src="./assets/global/envysion.png" alt="company logo" class="footer-logo">
+        <p class="footer-mission-statement">We can when we Envysion</p>
+        <div class="footer-social-links__div">
+            <a href="#" class="footer-social-links__link">
+                <img src="../src/assets/footer/facebook.png" alt="facebook logo" class="footer-social-links__logo">
+            </a>
+            <a href="#" class="footer-social-links__link">
+                <img src="../src/assets/footer/instagram.png" alt="instagram logo" class="footer-social-links__logo">
+            </a>
+            <a href="#" class="footer-social-links__link">
+                <img src="../src/assets/footer/twitter.png" alt="twitter logo" class="footer-social-links__logo">
+            </a>
+            <a href="#" class="footer-social-links__link">
+                <img src="../src/assets/footer/linkedin.png" alt="linkedin logo" class="footer-social-links__logo">
+            </a>
+            <a href="#" class="footer-social-links__link">
+                <img src="../src/assets/footer/rss.png" alt="rss logo" class="footer-social-links__logo">
+            </a>
+        </div>
+        <p class="footer-contacts">contact@envysiondm.com</p>
+        <p class="footer-contacts">303.000.0000</p>
+    </footer>
+    <script src="./main.js"></script>
 </body>
 </html>

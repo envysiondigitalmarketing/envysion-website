@@ -98,13 +98,13 @@
         width: 100vw;
         z-index: -1;
     }
-    .services-hero-text-div {
+    .contact-hero-text-div {
         display: inline-block;
     }
-    .services-hero-heading {
+    .contact-hero-heading {
         @include hero-text;
         animation-name: moveInRight;
-        &__services {
+        &__contact {
             animation-duration: 1s;
             margin-top: 25%;
         };
