@@ -36,6 +36,7 @@
     }
     .cta-orange__about {
         @include callToAction;
+        margin-top: 15%;
         align-self: center;
     }
 }

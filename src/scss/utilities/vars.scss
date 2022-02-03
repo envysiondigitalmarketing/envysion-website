@@ -44,6 +44,7 @@ $thisWhite: #FEFDFF;
 @mixin callToAction {
     padding: .75em 1em;
     margin-top: 1em;
+    margin-bottom: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,12 +56,12 @@ $thisWhite: #FEFDFF;
     color: $thisWhite;
     font-size: 300%;
     transition: .2s;
-    &:link {
-        color: $thisWhite;
-    }
-    &:visited {
-        color: $thisWhite;
-    }
+    // &:link {
+    //     color: $thisWhite;
+    // }
+    // &:visited {
+    //     color: $thisWhite;
+    // }
     &:hover {
         box-shadow: $box-shadow;
         transform: translateY(-7px);
@@ -68,5 +69,20 @@ $thisWhite: #FEFDFF;
     &:active {
         box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
         transform: translateY(0px);
+    }
+}
+@mixin andSection {
+    min-height: $sectionHeight + .5vh;
+    margin-top: -.5%;
+    padding: $paddingForCentering;
+    background-color: $thisWhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    & h2 {
+        font-size: 500%;
+        display: inline-block;
+        margin-top: 15%;
+        align-self: center;
     }
 }

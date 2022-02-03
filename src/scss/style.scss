@@ -9,7 +9,8 @@
 @import './services/services-main';
 @import './services/services-list';
 
-@import './_pricing';
+@import './pricing/pricing-main';
+@import './pricing/pricing-section';
 
 @import './contact/contact-main';
 @import './contact/contact-section';

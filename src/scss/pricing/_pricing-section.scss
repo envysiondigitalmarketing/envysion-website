@@ -1,16 +1,6 @@
-.services-II {
-    min-height: $sectionHeight + .5vh;
-    margin-top: -.5%;
-    padding: $paddingForCentering;
-    background-color: $thisWhite;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    & h2 {
-        font-size: 500%;
-        display: inline-block;
-        margin-top: 15%;
-        align-self: center;
+.pricing {
+    &-section {
+        @include andSection;
     }
 
     &__list {
