@@ -4,7 +4,7 @@ sass --watch style.scss:../../css/style.css
 -->
 
 <!-- 
-- Add separate pages - Contact | Pricing
+- Complete separate pages - Contact | Pricing
 
 
 

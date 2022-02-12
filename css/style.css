@@ -923,11 +923,96 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+.contact-section .form-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .contact-section h2 {
   font-size: 500%;
   display: inline-block;
   margin-top: 15%;
   align-self: center;
+}
+.contact-section form {
+  align-self: center;
+  align-items: center;
+  width: 70%;
+  height: 85%;
+  margin: 0;
+  margin-top: -10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-section .input-div {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+.contact-section input {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #063831;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 200%;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 100;
+  color: #063831;
+  z-index: 2;
+}
+.contact-section input:focus {
+  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+}
+.contact-section input:focus ~ span,
+.contact-section input:valid ~ span {
+  transform: translateX(-10px) translateY(-32px);
+  font-size: 12px;
+}
+.contact-section input[type=submit] {
+  background: #063831;
+  color: #FEFDFF;
+  cursor: pointer;
+  border: none;
+  max-width: 50%;
+  transition: 0.2s;
+}
+.contact-section input[type=submit]:hover {
+  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+  transform: translateY(-7px);
+}
+.contact-section input[type=submit]:active {
+  box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
+  transform: translateY(0px);
+}
+.contact-section span {
+  z-index: 1;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 200%;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 100;
+  color: #063831;
+  transition: 0.5s;
+  pointer-events: none;
 }
 .contact .cta-orange__services {
   padding: 0.75em 1em;
@@ -993,16 +1078,6 @@
 }
 .menu-cover__list--li:hover {
   color: #4D607C;
-  animation-name: shake-horizontal;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  /* shorthand 
-  animation: shake-vertical 1s ease 0s 1 normal none;
-  */
 }
 .menu-cover__list--anchor:link {
   text-decoration: inherit;

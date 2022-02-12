@@ -34,16 +34,6 @@
         width: fit-content;
         &:hover {
             color: $fifthColor;
-            animation-name: shake-horizontal;
-            animation-duration: 1s;
-            animation-timing-function: ease;
-            animation-delay: 0s;
-            animation-iteration-count: 1;
-            animation-direction: normal;
-            animation-fill-mode: none;
-            /* shorthand 
-            animation: shake-vertical 1s ease 0s 1 normal none;
-            */ 
         }
     }
     &__list--anchor:link {
