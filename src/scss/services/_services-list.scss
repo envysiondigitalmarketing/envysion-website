@@ -1,4 +1,6 @@
 .services-II {
+    animation-name: moveInRight;
+    animation-duration: .7s;
     min-height: $sectionHeight + .5vh;
     margin-top: -.5%;
     padding: $paddingForCentering;
@@ -15,7 +17,7 @@
 
     &__list {
         margin-top: 0;
-        margin-bottom: 10%;
+        margin-bottom: 50%;
         height: 5%;
         display: flex;
         flex-direction: column;

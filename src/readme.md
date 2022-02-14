@@ -4,13 +4,13 @@ sass --watch style.scss:../../css/style.css
 -->
 
 <!-- 
-- Complete separate pages - Contact | Pricing
+- Complete content - Pricing | php
 
 
 
-- Minimize css with variables
 - Make Responsive
     - Maybe restyle upon growing
+- Minimize css with variables
 - Style more if needed
 - Remove extra fonts
 
