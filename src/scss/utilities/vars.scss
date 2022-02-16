@@ -86,3 +86,18 @@ $thisWhite: #FEFDFF;
         align-self: center;
     }
 }
+@mixin inputs {
+    height: 3em;
+    width: 100%;
+    background: transparent;
+    border: 1px solid $mainColor;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 200%;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 100;
+    color: $mainColor;
+    z-index: 1;
+}

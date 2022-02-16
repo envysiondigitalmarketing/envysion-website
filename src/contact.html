@@ -100,16 +100,6 @@
                         >
                         <span>Company</span>
                     </div>
-                    <div class="input-div input-div__interested-in">
-                        <input 
-                        title="text"
-                        type="text" 
-                        name="interested-in" 
-                        id="interested-in" 
-                        required='required'
-                        >
-                        <span>Interested In</span>
-                    </div>
                     <div class="input-div input-div__email">
                         <input 
                         title="email"
@@ -129,6 +119,24 @@
                         required='required'
                         >
                         <span>Phone</span>
+                    </div>
+                    <div class="input-div input-div__interested-in">
+                        <!-- <input 
+                        title="text"
+                        type="text" 
+                        name="interested-in" 
+                        id="interested-in" 
+                        required='required'
+                        > -->
+                        <!-- <label for="services"><span>Interested In</span></label> -->
+                        <select title='interested-in-drop-down' name="interested-in-drop-down" id="interested-in-drop-down" required='required'>
+                            <option value="" disabled selected>Select</option>
+                            <option value="websites">Websites</option>
+                            <option value="seo">Search Engine Optimization</option>
+                            <option value="email-marketing">Email Marketing</option>
+                            <option value="sms-marketing">SMS Marketing</option>
+                            <option value="advertisements">Advertisements</option>
+                        </select>
                     </div>
                     <div class="input-div input-div__submit">
                         <input 

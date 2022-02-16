@@ -36,24 +36,13 @@
             position: relative;
         }
         input {
-            // position: absolute;
-            // height: 2.5em;
-            height: 3em;
-            width: 100%;
-            background: transparent;
-            border: 1px solid $mainColor;
-            border-radius: 4px;
-            padding: 10px;
-            box-sizing: border-box;
-            outline: none;
-            
-            font-size: 200%;
-            font-family: 'League Spartan', sans-serif;
-            font-weight: 100;
-            color: $mainColor;
-            z-index: 1;
-
-            // margin-bottom: 4em;
+            @include inputs;
+        }
+        select {
+            @include inputs;
+        }
+        option {
+            @include inputs;
         }
         span {
             z-index: 0;
@@ -75,6 +64,9 @@
             pointer-events: none;
         }
         input:focus {
+            box-shadow: $box-shadow;
+        }
+        select:focus, option:focus {
             box-shadow: $box-shadow;
         }
         input:focus ~ span,

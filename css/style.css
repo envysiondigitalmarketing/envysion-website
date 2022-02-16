@@ -639,6 +639,36 @@
   color: #063831;
   z-index: 1;
 }
+.contact-section select {
+  height: 3em;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #063831;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 200%;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 100;
+  color: #063831;
+  z-index: 1;
+}
+.contact-section option {
+  height: 3em;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #063831;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 200%;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 100;
+  color: #063831;
+  z-index: 1;
+}
 .contact-section span {
   z-index: 0;
   position: absolute;
@@ -658,6 +688,9 @@
   pointer-events: none;
 }
 .contact-section input:focus {
+  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+}
+.contact-section select:focus, .contact-section option:focus {
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
 }
 .contact-section input:focus ~ span,
