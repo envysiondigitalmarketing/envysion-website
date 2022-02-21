@@ -41,6 +41,19 @@ $thisWhite: #FEFDFF;
 @mixin navHeight($height) {
     height: $height;
 }
+
+@mixin hoverButton {
+    transition: .2s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: $box-shadow;
+        transform: translateY(-7px);
+    }
+    &:active {
+        box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
+        transform: translateY(0px);
+    }
+}
 @mixin callToAction {
     padding: .75em 1em;
     margin-top: 1em;
@@ -55,21 +68,7 @@ $thisWhite: #FEFDFF;
     background-color: #FFA50A;
     color: $thisWhite;
     font-size: 300%;
-    transition: .2s;
-    // &:link {
-    //     color: $thisWhite;
-    // }
-    // &:visited {
-    //     color: $thisWhite;
-    // }
-    &:hover {
-        box-shadow: $box-shadow;
-        transform: translateY(-7px);
-    }
-    &:active {
-        box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
-        transform: translateY(0px);
-    }
+    @include hoverButton;
 }
 @mixin andSection {
     min-height: $sectionHeight + .5vh;
@@ -96,8 +95,21 @@ $thisWhite: #FEFDFF;
     box-sizing: border-box;
     outline: none;
     font-size: 200%;
-    font-family: 'League Spartan', sans-serif;
+    // font-family: 'League Spartan', sans-serif;
+    font-family: 'league_spartanbold';
     font-weight: 100;
     color: $mainColor;
     z-index: 1;
+}
+
+@mixin carousel {
+    width: 100%;
+    height: 80em;
+    border-radius: 2em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }

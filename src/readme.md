@@ -4,19 +4,26 @@ sass --watch style.scss:../../css/style.css
 -->
 
 <!-- 
-- Complete content - Pricing | php
-
+- Complete content - pricing | Write content, design it, add it
+    - Carousel
+        - Websites
+            One page: $1,500
+            Three pages: $3,000
+            Four or more pages: <a id='reference-link' href='./contact.html''>Contact us &#8640;</a>
+        - Search Engine Optimization: $1,000/mo
+        - Email or SMS Marketing: $1,000/mo
+        - Digital Advertisements: $1,500/mo
 
 
 - Make Responsive
     - Maybe restyle upon growing
 - Minimize css with variables
-- Style more if needed
-- Remove extra fonts
+- Remove extra - fonts | images/videos
 
 - Make socials, add links to footer
 - Get/Add phone number
 - Add Javascript to phone and email in footer
+- Escape sql injections in form?
 
 
 
@@ -25,7 +32,7 @@ Later:
     - Insurance agencies
     - Real estate
     - Mortgage lenders
+    - Auto
 - Blog
 - Case studies available upon request
-- Escape sql injections in form?
  -->

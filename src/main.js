@@ -42,6 +42,70 @@ const emailAndSMSParagraphFull = `Email marketing and SMS marketing are great to
 const advertsParagraphSample = `Harness the power of Google, Facebook, or Instagram ads to drive traffic to your website. These platforms have been refined over time to [...] <a id='reference-link' href='./services.html''>Read More &#8640;</a>`;
 const advertsParagraphFull = `Harness the power of Google, Facebook, or Instagram ads to drive traffic to your website. These platforms have been refined over time to become great options for gaining visibility and reaching out to potential customers within your niche. Don't have content for your ads? Envysion has you covered. Just let us know what product or service you would like advertised and we will do the rest.`;
 
+const carouselContainer = document.querySelector('.carousel-container');
+
+const carouselWebsites = document.querySelector('.carousel-container__websites');
+const carouselSEO = document.querySelector('.carousel-container__search-engine-optimization');
+const carouselEmailMarketing = document.querySelector('.carousel-container__email-marketing');
+const carouselSMSMarketing = document.querySelector('.carousel-container__sms-marketing');
+const carouselDigitalAdvertisements = document.querySelector('.carousel-container__digital-advertisements');
+
+const carouselClasses = [
+    'carousel-container__websites',
+    'carousel-container__search-engine-optimization',
+    'carousel-container__email-marketing',
+    'carousel-container__sms-marketing',
+    'carousel-container__digital-advertisements',
+]
+
+const currentCarousel = document.getElementById('current-carousel');
+
+const websitesDiv = `<div class="carousel-container">
+<div class="carousel-container__websites" id='current-carousel'>
+    <button class="right-arrow">
+        <img class='right-arrow__img' src="../src/assets/pricing/right-arrow.png" alt="right arrow">
+    </button>
+</div>
+</div>`
+
+const SEODiv = `<div class="carousel-container">
+<div class="carousel-container__search-engine-optimization">
+    <button class="right-arrow">
+        <img class='right-arrow__img'  src="../src/assets/pricing/right-arrow.png" alt="right arrow">
+    </button>
+</div>
+</div>`
+
+const emailDiv = `<div class="carousel-container">
+<div class="carousel-container__email-marketing">
+    <button class="right-arrow">
+        <img class='right-arrow__img'  src="../src/assets/pricing/right-arrow.png" alt="right arrow">
+    </button>
+</div>
+</div>`
+
+const SMSDiv = `<div class="carousel-container">
+<div class="carousel-container__sms-marketing">
+    <button class="right-arrow">
+        <img class='right-arrow__img'  src="../src/assets/pricing/right-arrow.png" alt="right arrow">
+    </button>
+</div>
+</div>`
+
+const advertisementsDiv = `<div class="carousel-container">
+<div class="carousel-container__digital-advertisements">
+    <button class="right-arrow">
+        <img class='right-arrow__img'  src="../src/assets/pricing/right-arrow.png" alt="right arrow">
+    </button>
+</div>
+</div>`
+
+
+
+
+
+
+
 const theHiddenThing = (itemInQuestion) => {
     itemInQuestion.style.visibility == 'hidden' ? itemInQuestion.style.visibility = 'visible' : itemInQuestion.style.visibility = 'hidden';
 };
@@ -73,11 +137,38 @@ const twoSelectService = (itemInQuestion, theString) => {
     }
 }
 
+const carouselScroll = () => {
+    let count;
+    carouselClasses.forEach((i) => {
+        if (i === currentCarousel.classList) {
+            document.querySelector(currentCarousel.classList).parentNode.remove
+            count = carouselClasses[i];
+            count === 4 ? currentCarousel = document.getElementById(carouselClasses[0]) : 
+            document.querySelector(`.${carouselClasses[count]}`).id = currentCarousel;
+        }
+    })
+}
+
+
+
+
+
+
 
 
 onload = () => {
     theHiddenThing(menuCover)
 };
+
+
+
+
+
+
+
+
+
+
 
 xButton.onclick = () => {openAndClose()};
 home.onclick = () => {openAndClose()};

@@ -211,10 +211,11 @@
   display: inline-block;
 }
 .home .hero-heading {
+  animation-name: moveInRight;
+  animation-duration: 0.7s;
   font-size: 500%;
   margin: 0.5rem 0 0.5rem 1.5rem;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  animation-name: moveInRight;
 }
 .home .hero-heading__envysion {
   animation-duration: 1s;
@@ -301,6 +302,7 @@
   color: #FEFDFF;
   font-size: 300%;
   transition: 0.2s;
+  cursor: pointer;
   margin-top: 15%;
   align-self: center;
 }
@@ -373,6 +375,7 @@
   color: #FEFDFF;
   font-size: 300%;
   transition: 0.2s;
+  cursor: pointer;
   align-self: center;
   margin-top: 20%;
 }
@@ -447,6 +450,7 @@
   color: #FEFDFF;
   font-size: 300%;
   transition: 0.2s;
+  cursor: pointer;
   margin-bottom: 30%;
   margin-top: 15%;
 }
@@ -521,6 +525,7 @@
   color: #FEFDFF;
   font-size: 300%;
   transition: 0.2s;
+  cursor: pointer;
   align-self: center;
   margin-top: 20%;
 }
@@ -541,8 +546,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  animation-name: moveInRight;
-  animation-duration: 0.7s;
 }
 .pricing-section h2 {
   font-size: 500%;
@@ -550,7 +553,91 @@
   margin-top: 15%;
   align-self: center;
 }
-.pricing .cta-orange__services {
+.pricing-section h2 {
+  animation-name: moveInRight;
+  animation-duration: 0.7s;
+}
+.pricing-section .carousel-container {
+  width: 90%;
+  height: 80em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 2em;
+  position: relative;
+  background: none;
+  margin-bottom: 4em;
+}
+.pricing-section .carousel-container__content {
+  width: 100%;
+  height: 80em;
+  border-radius: 2em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  border: 1px solid #063831;
+  position: relative;
+  animation-name: moveInRight;
+  animation-duration: 0.7s;
+}
+.pricing-section .carousel-container__content--websites {
+  background-image: url("../../../src/assets/pricing/websites.jpg");
+}
+.pricing-section .carousel-container__content--search-engine-optimization {
+  background-image: url("../../../src/assets/pricing/seo.jpg");
+}
+.pricing-section .carousel-container__content--email-marketing {
+  background-image: url("../../../src/assets/pricing/email-marketing.jpg");
+}
+.pricing-section .carousel-container__content--sms-marketing {
+  background-image: url("../../../src/assets/pricing/sms-marketing.jpg");
+}
+.pricing-section .carousel-container__content--digital-advertisements {
+  background-image: url("../../../src/assets/pricing/digital-advertisements.jpg");
+}
+.pricing-section .carousel-container .right-arrow {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+.pricing-section .carousel-container .right-arrow__img {
+  width: 100%;
+  height: 100%;
+}
+.pricing-section .next {
+  height: 4em;
+  width: 8em;
+  border-radius: 5em;
+  border: 1px solid #063831;
+  background: #FEFDFF;
+  align-self: center;
+  margin-bottom: 2em;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.pricing-section .next:hover {
+  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+  transform: translateY(-7px);
+}
+.pricing-section .next:active {
+  box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
+  transform: translateY(0px);
+}
+.pricing-section .cta-orange__services {
   padding: 0.75em 1em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -564,14 +651,15 @@
   color: #FEFDFF;
   font-size: 300%;
   transition: 0.2s;
+  cursor: pointer;
   align-self: center;
   margin-top: 20%;
 }
-.pricing .cta-orange__services:hover {
+.pricing-section .cta-orange__services:hover {
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
   transform: translateY(-7px);
 }
-.pricing .cta-orange__services:active {
+.pricing-section .cta-orange__services:active {
   box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
   transform: translateY(0px);
 }
@@ -634,7 +722,7 @@
   box-sizing: border-box;
   outline: none;
   font-size: 200%;
-  font-family: "League Spartan", sans-serif;
+  font-family: "league_spartanbold";
   font-weight: 100;
   color: #063831;
   z-index: 1;
@@ -649,7 +737,7 @@
   box-sizing: border-box;
   outline: none;
   font-size: 200%;
-  font-family: "League Spartan", sans-serif;
+  font-family: "league_spartanbold";
   font-weight: 100;
   color: #063831;
   z-index: 1;
@@ -664,7 +752,7 @@
   box-sizing: border-box;
   outline: none;
   font-size: 200%;
-  font-family: "League Spartan", sans-serif;
+  font-family: "league_spartanbold";
   font-weight: 100;
   color: #063831;
   z-index: 1;
@@ -681,7 +769,7 @@
   box-sizing: border-box;
   outline: none;
   font-size: 200%;
-  font-family: "League Spartan", sans-serif;
+  font-family: "league_spartanbold";
   font-weight: 100;
   color: #063831;
   transition: 0.5s;
@@ -705,6 +793,7 @@
   border: none;
   max-width: 50%;
   transition: 0.2s;
+  cursor: pointer;
 }
 .contact-section input[type=submit]:hover {
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
@@ -728,6 +817,7 @@
   color: #FEFDFF;
   font-size: 300%;
   transition: 0.2s;
+  cursor: pointer;
   align-self: center;
   margin-top: 20%;
 }
@@ -809,6 +899,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .footer hr {
   margin: 0;
@@ -821,6 +912,14 @@
 }
 .footer .footer-mission-statement {
   font-size: 300%;
+}
+.footer .footer-copyright {
+  font-size: 100%;
+  margin-bottom: 2em;
+  position: absolute;
+  bottom: 1%;
+  color: #FEFDFF;
+  letter-spacing: 0.2em;
 }
 .footer .footer-social-links__div {
   display: flex;
@@ -867,7 +966,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-size: 62.5%;
-  font-family: "League Spartan", sans-serif;
+  font-family: "league_spartanbold";
   font-weight: 400;
   color: #063831;
   width: 100%;

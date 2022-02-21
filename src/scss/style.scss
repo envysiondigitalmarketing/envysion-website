@@ -1,5 +1,5 @@
-@import './utilities/vars.scss';
 @import './utilities/animations.scss';
+@import './utilities/vars.scss';
 
 @import './home/home';
 @import './home/about';
@@ -20,7 +20,8 @@ body, html {
     height: 100%;
     margin: 0;
     font-size: 62.5%;
-    font-family: 'League Spartan', sans-serif;
+    // font-family: 'League Spartan', sans-serif;
+    font-family: 'league_spartanbold';
     font-weight: 400;
     color: $mainColor;
     width: 100%;

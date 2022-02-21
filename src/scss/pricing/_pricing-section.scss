@@ -1,12 +1,82 @@
-.pricing {
-    &-section {
-        @include andSection;
+.pricing-section {
+    @include andSection;
+
+    h2 {
         animation-name: moveInRight;
         animation-duration: .7s;
     }
-    
-    //
-    
+
+    .carousel-container {
+        width: 90%;
+        height: 80em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        border-radius: 2em;
+        position: relative;
+        background: none;
+        margin-bottom: 4em;
+
+        &__content {
+            @include carousel;
+            border: 1px solid $mainColor;
+            position: relative;
+            animation-name: moveInRight;
+            animation-duration: .7s;
+        }
+
+        &__content--websites {
+            background-image: url('../../../src/assets/pricing/websites.jpg');
+        }
+        &__content--search-engine-optimization {
+            background-image: url('../../../src/assets/pricing/seo.jpg');
+        }
+        &__content--email-marketing {
+            background-image: url('../../../src/assets/pricing/email-marketing.jpg');
+        }
+        &__content--sms-marketing {
+            background-image: url('../../../src/assets/pricing/sms-marketing.jpg');
+        }
+        &__content--digital-advertisements {
+            background-image: url('../../../src/assets/pricing/digital-advertisements.jpg');
+        }
+
+        .right-arrow {
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+            width: 15%;
+            height: 10%;
+
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(0%, -50%);
+        }
+
+        .right-arrow__img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .next {
+        height: 4em;
+        width: 8em;
+        border-radius: 5em;
+        border: 1px solid $mainColor;
+        background: $thisWhite;
+
+        align-self: center;
+        margin-bottom: 2em;
+        @include hoverButton;
+    }
+
     .cta-orange__services {
         @include callToAction;
         align-self: center;

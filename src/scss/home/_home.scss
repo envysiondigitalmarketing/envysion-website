@@ -102,8 +102,10 @@
         display: inline-block;
     }
     .hero-heading {
-        @include hero-text;
+
         animation-name: moveInRight;
+        animation-duration: .7s;
+        @include hero-text;
         &__envysion {
             animation-duration: 1s;
             margin-top: 10%;
