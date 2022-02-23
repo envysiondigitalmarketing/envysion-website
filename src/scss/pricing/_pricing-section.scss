@@ -14,54 +14,70 @@
         align-items: center;
         align-self: center;
         border-radius: 2em;
-        position: relative;
-        background: none;
-        margin-bottom: 4em;
 
-        &__content {
+        
+        transform-style: preserve-3d;
+        transition: all .5s ease;
+
+        &:hover {
+            transform: rotateY(180deg);
+        }
+
+        .carousel-container__content-front, .carousel-container__content-back {
             @include carousel;
             border: 1px solid $mainColor;
-            position: relative;
             animation-name: moveInRight;
-            animation-duration: .7s;
-        }
-
-        &__content--websites {
-            background-image: url('../../../src/assets/pricing/websites.jpg');
-        }
-        &__content--search-engine-optimization {
-            background-image: url('../../../src/assets/pricing/seo.jpg');
-        }
-        &__content--email-marketing {
-            background-image: url('../../../src/assets/pricing/email-marketing.jpg');
-        }
-        &__content--sms-marketing {
-            background-image: url('../../../src/assets/pricing/sms-marketing.jpg');
-        }
-        &__content--digital-advertisements {
-            background-image: url('../../../src/assets/pricing/digital-advertisements.jpg');
-        }
-
-        .right-arrow {
-            background: none;
-            color: inherit;
-            border: none;
-            padding: 0;
-            font: inherit;
-            cursor: pointer;
-            outline: inherit;
-            width: 15%;
-            height: 10%;
-
+            transform-style: preserve-3d;
             position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translate(0%, -50%);
-        }
-
-        .right-arrow__img {
             width: 100%;
             height: 100%;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            border-radius: 2em;
+            perspective: 1000px;
+        }
+
+        &__content-back {
+            background-color: lawngreen;
+            transform:rotateY(180deg);
+        }
+        &__content-front--websites {
+            background-image: url('../../../src/assets/pricing/websites.jpg');
+        }
+        &__content-back--websites {
+            //
+        }
+
+
+        &__content-front--search-engine-optimization {
+            background-image: url('../../../src/assets/pricing/seo.jpg');
+        }
+        &__content-back--search-engine-optimization {
+            //
+        }
+
+
+        &__content-front--email-marketing {
+            background-image: url('../../../src/assets/pricing/email-marketing.jpg');
+        }
+        &__content-back--email-marketing {
+            //
+        }
+
+
+        &__content-front--sms-marketing {
+            background-image: url('../../../src/assets/pricing/sms-marketing.jpg');
+        }
+        &__content-back--sms-marketing {
+            //
+        }
+
+
+        &__content-front--digital-advertisements {
+            background-image: url('../../../src/assets/pricing/digital-advertisements.jpg');
+        }
+        &__content-back--digital-advertisements {
+            //
         }
     }
 
@@ -75,11 +91,5 @@
         align-self: center;
         margin-bottom: 2em;
         @include hoverButton;
-    }
-
-    .cta-orange__services {
-        @include callToAction;
-        align-self: center;
-        margin-top: 20%;
     }
 }

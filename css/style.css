@@ -565,58 +565,51 @@
   align-items: center;
   align-self: center;
   border-radius: 2em;
-  position: relative;
-  background: none;
-  margin-bottom: 4em;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
-.pricing-section .carousel-container__content {
+.pricing-section .carousel-container:hover {
+  transform: rotateY(180deg);
+}
+.pricing-section .carousel-container .carousel-container__content-front, .pricing-section .carousel-container .carousel-container__content-back {
   width: 100%;
   height: 80em;
   border-radius: 2em;
   background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-position: center center;
   border: 1px solid #063831;
-  position: relative;
   animation-name: moveInRight;
-  animation-duration: 0.7s;
-}
-.pricing-section .carousel-container__content--websites {
-  background-image: url("../../../src/assets/pricing/websites.jpg");
-}
-.pricing-section .carousel-container__content--search-engine-optimization {
-  background-image: url("../../../src/assets/pricing/seo.jpg");
-}
-.pricing-section .carousel-container__content--email-marketing {
-  background-image: url("../../../src/assets/pricing/email-marketing.jpg");
-}
-.pricing-section .carousel-container__content--sms-marketing {
-  background-image: url("../../../src/assets/pricing/sms-marketing.jpg");
-}
-.pricing-section .carousel-container__content--digital-advertisements {
-  background-image: url("../../../src/assets/pricing/digital-advertisements.jpg");
-}
-.pricing-section .carousel-container .right-arrow {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  width: 15%;
-  height: 10%;
+  transform-style: preserve-3d;
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0%, -50%);
-}
-.pricing-section .carousel-container .right-arrow__img {
   width: 100%;
   height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 2em;
+  perspective: 1000px;
+}
+.pricing-section .carousel-container__content-back {
+  background-color: lawngreen;
+  transform: rotateY(180deg);
+}
+.pricing-section .carousel-container__content-front--websites {
+  background-image: url("../../../src/assets/pricing/websites.jpg");
+}
+.pricing-section .carousel-container__content-front--search-engine-optimization {
+  background-image: url("../../../src/assets/pricing/seo.jpg");
+}
+.pricing-section .carousel-container__content-front--email-marketing {
+  background-image: url("../../../src/assets/pricing/email-marketing.jpg");
+}
+.pricing-section .carousel-container__content-front--sms-marketing {
+  background-image: url("../../../src/assets/pricing/sms-marketing.jpg");
+}
+.pricing-section .carousel-container__content-front--digital-advertisements {
+  background-image: url("../../../src/assets/pricing/digital-advertisements.jpg");
 }
 .pricing-section .next {
   height: 4em;
@@ -634,32 +627,6 @@
   transform: translateY(-7px);
 }
 .pricing-section .next:active {
-  box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
-  transform: translateY(0px);
-}
-.pricing-section .cta-orange__services {
-  padding: 0.75em 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  background-color: #FFA50A;
-  color: #FEFDFF;
-  font-size: 300%;
-  transition: 0.2s;
-  cursor: pointer;
-  align-self: center;
-  margin-top: 20%;
-}
-.pricing-section .cta-orange__services:hover {
-  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
-  transform: translateY(-7px);
-}
-.pricing-section .cta-orange__services:active {
   box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
   transform: translateY(0px);
 }
