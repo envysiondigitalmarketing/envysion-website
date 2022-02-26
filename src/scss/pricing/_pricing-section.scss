@@ -1,5 +1,8 @@
 .pricing-section {
     @include andSection;
+    
+    animation-name: moveInRight;
+    animation-duration: .7s;
 
     h2 {
         animation-name: moveInRight;
@@ -13,29 +16,38 @@
         justify-content: center;
         align-items: center;
         align-self: center;
-        border-radius: 2em;
-
-        
         transform-style: preserve-3d;
         transition: all .5s ease;
+
+        // animation-name: moveInRight;
+        // animation-duration: .7s;
 
         &:hover {
             transform: rotateY(180deg);
         }
 
-        .carousel-container__content-front, .carousel-container__content-back {
+        &__content-front, &__content-back {
             @include carousel;
             border: 1px solid $mainColor;
-            animation-name: moveInRight;
             transform-style: preserve-3d;
             position: absolute;
-            width: 100%;
-            height: 100%;
             backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
-            border-radius: 2em;
             perspective: 1000px;
+
+            // animation-name: moveInRight;
+            // animation-duration: .7s;
+
+            display: flex;
+            flex-direction: column;
         }
+        
+        &__content-front--header {
+            margin: 0;
+            margin-top: 1em;
+            justify-self: center;
+            // color: $thisWhite;
+        };
 
         &__content-back {
             background-color: lawngreen;
@@ -81,7 +93,8 @@
         }
     }
 
-    .next {
+    .next {    
+        margin: 2em 0;
         height: 4em;
         width: 8em;
         border-radius: 5em;
@@ -89,7 +102,7 @@
         background: $thisWhite;
 
         align-self: center;
-        margin-bottom: 2em;
+        // margin-bottom: 0;
         @include hoverButton;
     }
 }

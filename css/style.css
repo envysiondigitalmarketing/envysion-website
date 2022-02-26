@@ -546,6 +546,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  animation-name: moveInRight;
+  animation-duration: 0.7s;
 }
 .pricing-section h2 {
   font-size: 500%;
@@ -564,16 +566,15 @@
   justify-content: center;
   align-items: center;
   align-self: center;
-  border-radius: 2em;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
 }
 .pricing-section .carousel-container:hover {
   transform: rotateY(180deg);
 }
-.pricing-section .carousel-container .carousel-container__content-front, .pricing-section .carousel-container .carousel-container__content-back {
+.pricing-section .carousel-container__content-front, .pricing-section .carousel-container__content-back {
   width: 100%;
-  height: 80em;
+  height: 100%;
   border-radius: 2em;
   background-repeat: no-repeat;
   background-size: cover;
@@ -582,15 +583,18 @@
   -o-background-size: cover;
   background-position: center center;
   border: 1px solid #063831;
-  animation-name: moveInRight;
   transform-style: preserve-3d;
   position: absolute;
-  width: 100%;
-  height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  border-radius: 2em;
   perspective: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.pricing-section .carousel-container__content-front--header {
+  margin: 0;
+  margin-top: 1em;
+  justify-self: center;
 }
 .pricing-section .carousel-container__content-back {
   background-color: lawngreen;
@@ -612,13 +616,13 @@
   background-image: url("../../../src/assets/pricing/digital-advertisements.jpg");
 }
 .pricing-section .next {
+  margin: 2em 0;
   height: 4em;
   width: 8em;
   border-radius: 5em;
   border: 1px solid #063831;
   background: #FEFDFF;
   align-self: center;
-  margin-bottom: 2em;
   transition: 0.2s;
   cursor: pointer;
 }

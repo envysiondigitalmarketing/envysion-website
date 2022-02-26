@@ -50,56 +50,63 @@ const carouselEmailMarketing = document.querySelector('.carousel-container__emai
 const carouselSMSMarketing = document.querySelector('.carousel-container__sms-marketing');
 const carouselDigitalAdvertisements = document.querySelector('.carousel-container__digital-advertisements');
 
+const nextButton = document.querySelector('.next');
+
 const carouselClasses = [
-    'carousel-container__websites',
-    'carousel-container__search-engine-optimization',
-    'carousel-container__email-marketing',
-    'carousel-container__sms-marketing',
-    'carousel-container__digital-advertisements',
+    'carousel-container__content-front--websites',
+    'carousel-container__content-front--search-engine-optimization',
+    'carousel-container__content-front--email-marketing',
+    'carousel-container__content-front--sms-marketing',
+    'carousel-container__content-front--digital-advertisements',
 ]
 
 const currentCarousel = document.getElementById('current-carousel');
 
-const websitesDiv = `<div class="carousel-container">
-<div class="carousel-container__websites" id='current-carousel'>
-    <button class="right-arrow">
-        <img class='right-arrow__img' src="../src/assets/pricing/right-arrow.png" alt="right arrow">
-    </button>
+const websitesDiv = `
+<div class="carousel-container__content-front carousel-container__content-front--websites">
+    <h2 class="carousel-container__content-front--header">Websites</h2>
+</div>
+<div class="carousel-container__content-back carousel-container__content-back--websites">
+</div>
+</div>
+`
+
+const SEODiv = `
+<div class="carousel-container__content-front carousel-container__content-front--websites">
+    <h2 class="carousel-container__content-front--header">Search Engine Optimization</h2>
+</div>
+<div class="carousel-container__content-back carousel-container__content-back--websites">
+</div>
+</div>
+`
+
+const emailDiv = `
+<div class="carousel-container__content-front carousel-container__content-front--websites">
+    <h2 class="carousel-container__content-front--header">Email Marketing</h2>
+</div>
+<div class="carousel-container__content-back carousel-container__content-back--websites">
 </div>
 </div>`
 
-const SEODiv = `<div class="carousel-container">
-<div class="carousel-container__search-engine-optimization">
-    <button class="right-arrow">
-        <img class='right-arrow__img'  src="../src/assets/pricing/right-arrow.png" alt="right arrow">
-    </button>
+const SMSDiv = `
+<div class="carousel-container__content-front carousel-container__content-front--websites">
+    <h2 class="carousel-container__content-front--header">SMS Marketing</h2>
+</div>
+<div class="carousel-container__content-back carousel-container__content-back--websites">
 </div>
 </div>`
 
-const emailDiv = `<div class="carousel-container">
-<div class="carousel-container__email-marketing">
-    <button class="right-arrow">
-        <img class='right-arrow__img'  src="../src/assets/pricing/right-arrow.png" alt="right arrow">
-    </button>
+const advertisementsDiv = `
+<div class="carousel-container__content-front carousel-container__content-front--websites">
+    <h2 class="carousel-container__content-front--header">Advertisements</h2>
+</div>
+<div class="carousel-container__content-back carousel-container__content-back--websites">
 </div>
 </div>`
 
-const SMSDiv = `<div class="carousel-container">
-<div class="carousel-container__sms-marketing">
-    <button class="right-arrow">
-        <img class='right-arrow__img'  src="../src/assets/pricing/right-arrow.png" alt="right arrow">
-    </button>
-</div>
-</div>`
+const carouselDivs = [websitesDiv, SEODiv, emailDiv, SMSDiv, advertisementsDiv];
 
-const advertisementsDiv = `<div class="carousel-container">
-<div class="carousel-container__digital-advertisements">
-    <button class="right-arrow">
-        <img class='right-arrow__img'  src="../src/assets/pricing/right-arrow.png" alt="right arrow">
-    </button>
-</div>
-</div>`
-
+let count = 0;
 
 
 
@@ -138,16 +145,15 @@ const twoSelectService = (itemInQuestion, theString) => {
 }
 
 const carouselScroll = () => {
-    let count;
-    carouselClasses.forEach((i) => {
-        if (i === currentCarousel.classList) {
-            document.querySelector(currentCarousel.classList).parentNode.remove
-            count = carouselClasses[i];
-            count === 4 ? currentCarousel = document.getElementById(carouselClasses[0]) : 
-            document.querySelector(`.${carouselClasses[count]}`).id = currentCarousel;
-        }
-    })
+    if (count === 4) {
+        count = 0;
+        currentCarousel.innerHTML = carouselDivs[count];
+    } else {
+        count += 1;
+        currentCarousel.innerHTML = carouselDivs[count];
+    }
 }
+
 
 
 
@@ -159,7 +165,6 @@ const carouselScroll = () => {
 onload = () => {
     theHiddenThing(menuCover)
 };
-
 
 
 
@@ -206,3 +211,7 @@ twoAdvertsHeader ? twoAdvertsHeader.onclick = () => {
 quoraCreativeLink ? quoraCreativeLink.onclick = () => {
     window.open('https://quoracreative.com/article/mobile-marketing-statistics', '_blank', "width=800, height=800");
 } : null;
+
+nextButton.onclick = () => {
+    carouselScroll();
+}
