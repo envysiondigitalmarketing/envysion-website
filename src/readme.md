@@ -6,10 +6,6 @@ sass --watch style.scss:../../css/style.css
 <!-- 
 - Complete content - pricing | Write content, design it, add it
     - Carousel
-        - Websites
-            One page: $1,500
-            Three pages: $3,000
-            Four or more pages: <a id='reference-link' href='./contact.html''>Contact us &#8640;</a>
         - Search Engine Optimization: $1,000/mo
         - Email or SMS Marketing: $1,000/mo
         - Digital Advertisements: $1,500/mo

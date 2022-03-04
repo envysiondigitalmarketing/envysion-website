@@ -464,6 +464,13 @@
 }
 
 .services-II {
+  min-height: 93.5vh;
+  margin-top: -0.5%;
+  padding: 0 4%;
+  background-color: #FEFDFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   animation-name: moveInRight;
   animation-duration: 0.7s;
   min-height: 93.5vh;
@@ -555,10 +562,6 @@
   margin-top: 15%;
   align-self: center;
 }
-.pricing-section h2 {
-  animation-name: moveInRight;
-  animation-duration: 0.7s;
-}
 .pricing-section .carousel-container {
   width: 90%;
   height: 80em;
@@ -568,9 +571,10 @@
   align-self: center;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
+  position: relative;
 }
 .pricing-section .carousel-container:hover {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateY(-14px);
 }
 .pricing-section .carousel-container__content-front, .pricing-section .carousel-container__content-back {
   width: 100%;
@@ -591,14 +595,49 @@
   display: flex;
   flex-direction: column;
 }
-.pricing-section .carousel-container__content-front--header {
-  margin: 0;
-  margin-top: 1em;
+.pricing-section .carousel-container__content-back {
+  align-self: center;
   justify-self: center;
 }
+.pricing-section .carousel-container__content-front--header, .pricing-section .carousel-container__content-back--header {
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+  margin-right: 10%;
+  padding: 0 0.5em;
+  background: #FEFDFF;
+  opacity: 0.85;
+  font-family: "Open sans";
+  color: #063831;
+  font-size: 4em;
+  font-weight: 100;
+  width: 100%;
+  margin-bottom: 0;
+  align-self: flex-start;
+  box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
+}
+.pricing-section .carousel-container__content-front--header {
+  margin-top: 1em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px #063831;
+  border-top: solid;
+  border-bottom: solid;
+  border-right: solid;
+  padding: 0.5em;
+}
+.pricing-section .carousel-container__content-back--header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  margin-top: 0;
+  border-radius: 5px;
+  border: 1px solid #1D324B;
+}
 .pricing-section .carousel-container__content-back {
-  background-color: lawngreen;
   transform: rotateY(180deg);
+  background-image: linear-gradient(to bottom, #FEFDFF, #063831);
 }
 .pricing-section .carousel-container__content-front--websites {
   background-image: url("../../../src/assets/pricing/websites.jpg");
@@ -683,37 +722,7 @@
   justify-content: center;
   position: relative;
 }
-.contact-section input {
-  height: 3em;
-  width: 100%;
-  background: transparent;
-  border: 1px solid #063831;
-  border-radius: 4px;
-  padding: 10px;
-  box-sizing: border-box;
-  outline: none;
-  font-size: 200%;
-  font-family: "league_spartanbold";
-  font-weight: 100;
-  color: #063831;
-  z-index: 1;
-}
-.contact-section select {
-  height: 3em;
-  width: 100%;
-  background: transparent;
-  border: 1px solid #063831;
-  border-radius: 4px;
-  padding: 10px;
-  box-sizing: border-box;
-  outline: none;
-  font-size: 200%;
-  font-family: "league_spartanbold";
-  font-weight: 100;
-  color: #063831;
-  z-index: 1;
-}
-.contact-section option {
+.contact-section input, .contact-section select, .contact-section option {
   height: 3em;
   width: 100%;
   background: transparent;
@@ -746,10 +755,7 @@
   transition: 0.5s;
   pointer-events: none;
 }
-.contact-section input:focus {
-  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
-}
-.contact-section select:focus, .contact-section option:focus {
+.contact-section input:focus, .contact-section select:focus, .contact-section option:focus {
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
 }
 .contact-section input:focus ~ span,

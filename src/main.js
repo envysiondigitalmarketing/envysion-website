@@ -72,35 +72,35 @@ const websitesDiv = `
 `
 
 const SEODiv = `
-<div class="carousel-container__content-front carousel-container__content-front--websites">
+<div class="carousel-container__content-front carousel-container__content-front--search-engine-optimization">
     <h2 class="carousel-container__content-front--header">Search Engine Optimization</h2>
 </div>
-<div class="carousel-container__content-back carousel-container__content-back--websites">
+<div class="carousel-container__content-back carousel-container__content-back--search-engine-optimization">
 </div>
 </div>
 `
 
 const emailDiv = `
-<div class="carousel-container__content-front carousel-container__content-front--websites">
+<div class="carousel-container__content-front carousel-container__content-front--email-marketing">
     <h2 class="carousel-container__content-front--header">Email Marketing</h2>
 </div>
-<div class="carousel-container__content-back carousel-container__content-back--websites">
+<div class="carousel-container__content-back carousel-container__content-back--email-marketing">
 </div>
 </div>`
 
 const SMSDiv = `
-<div class="carousel-container__content-front carousel-container__content-front--websites">
+<div class="carousel-container__content-front carousel-container__content-front--sms-marketing">
     <h2 class="carousel-container__content-front--header">SMS Marketing</h2>
 </div>
-<div class="carousel-container__content-back carousel-container__content-back--websites">
+<div class="carousel-container__content-back carousel-container__content-back--sms-marketing">
 </div>
 </div>`
 
 const advertisementsDiv = `
-<div class="carousel-container__content-front carousel-container__content-front--websites">
+<div class="carousel-container__content-front carousel-container__content-front--digital-advertisements">
     <h2 class="carousel-container__content-front--header">Advertisements</h2>
 </div>
-<div class="carousel-container__content-back carousel-container__content-back--websites">
+<div class="carousel-container__content-back carousel-container__content-back--digital-advertisements">
 </div>
 </div>`
 

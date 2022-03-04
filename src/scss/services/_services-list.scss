@@ -1,4 +1,5 @@
 .services-II {
+    @include andSection;
     animation-name: moveInRight;
     animation-duration: .7s;
     min-height: $sectionHeight + .5vh;
@@ -8,12 +9,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    & h2 {
-        font-size: 500%;
-        display: inline-block;
-        margin-top: 15%;
-        align-self: center;
-    }
 
     &__list {
         margin-top: 0;

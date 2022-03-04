@@ -1,13 +1,7 @@
 .pricing-section {
     @include andSection;
-    
     animation-name: moveInRight;
     animation-duration: .7s;
-
-    h2 {
-        animation-name: moveInRight;
-        animation-duration: .7s;
-    }
 
     .carousel-container {
         width: 90%;
@@ -18,12 +12,10 @@
         align-self: center;
         transform-style: preserve-3d;
         transition: all .5s ease;
-
-        // animation-name: moveInRight;
-        // animation-duration: .7s;
+        position: relative;
 
         &:hover {
-            transform: rotateY(180deg);
+            transform: rotateY(180deg) translateY(-14px);
         }
 
         &__content-front, &__content-back {
@@ -34,24 +26,54 @@
             backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
             perspective: 1000px;
-
-            // animation-name: moveInRight;
-            // animation-duration: .7s;
-
             display: flex;
             flex-direction: column;
         }
-        
-        &__content-front--header {
-            margin: 0;
-            margin-top: 1em;
-            justify-self: center;
-            // color: $thisWhite;
-        };
 
         &__content-back {
-            background-color: lawngreen;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        &__content-front--header, &__content-back--header {            
+            max-width: fit-content;
+            max-width: -moz-fit-content;
+            margin-right: 10%;
+            padding: 0 .5em;
+            background: $thisWhite;
+            opacity: .85;
+            font-family: 'Open sans';
+            color: $mainColor;
+            font-size: 4em;
+            font-weight: 100;
+            width: 100%;
+            margin-bottom: 0;
+            align-self: flex-start;
+            box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
+        };
+
+        &__content-front--header {
+            margin-top: 1em;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: 1px $mainColor;
+            border-top:  solid;
+            border-bottom:  solid;
+            border-right:  solid;
+            padding: .5em;
+        }
+
+        &__content-back--header {
+            @include transformTranslateNegative50;
+            padding: 1em;
+            margin-top: 0;
+            border-radius: 5px;
+            border: 1px solid $fourthColor;
+        }
+
+        &__content-back {
             transform:rotateY(180deg);
+            background-image: linear-gradient(to bottom, $thisWhite, $mainColor);
         }
         &__content-front--websites {
             background-image: url('../../../src/assets/pricing/websites.jpg');
@@ -102,7 +124,6 @@
         background: $thisWhite;
 
         align-self: center;
-        // margin-bottom: 0;
         @include hoverButton;
     }
 }

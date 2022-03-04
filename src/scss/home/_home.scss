@@ -119,7 +119,6 @@
     };
     .hero-slogan {
         @include hero-text;
-        // font-family: 'Witha Sign II', sans-serif;
         font-family: 'Open Sans', sans-serif;
         display: inline-block;
         animation-name: moveInSlogan;
