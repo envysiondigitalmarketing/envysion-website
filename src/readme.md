@@ -4,13 +4,6 @@ sass --watch style.scss:../../css/style.css
 -->
 
 <!-- 
-- Complete content - pricing | Write content, design it, add it
-    - Carousel
-        - Search Engine Optimization: $1,000/mo
-        - Email or SMS Marketing: $1,000/mo
-        - Digital Advertisements: $1,500/mo
-
-
 - Make Responsive
     - Maybe restyle upon growing
 - Minimize css with variables

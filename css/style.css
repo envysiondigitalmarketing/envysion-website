@@ -562,6 +562,9 @@
   margin-top: 15%;
   align-self: center;
 }
+.pricing-section .pricing-header {
+  margin-bottom: 1.5em;
+}
 .pricing-section .carousel-container {
   width: 90%;
   height: 80em;
@@ -595,10 +598,6 @@
   display: flex;
   flex-direction: column;
 }
-.pricing-section .carousel-container__content-back {
-  align-self: center;
-  justify-self: center;
-}
 .pricing-section .carousel-container__content-front--header, .pricing-section .carousel-container__content-back--header {
   max-width: fit-content;
   max-width: -moz-fit-content;
@@ -609,7 +608,7 @@
   font-family: "Open sans";
   color: #063831;
   font-size: 4em;
-  font-weight: 100;
+  font-weight: 200;
   width: 100%;
   margin-bottom: 0;
   align-self: flex-start;
@@ -638,6 +637,8 @@
 .pricing-section .carousel-container__content-back {
   transform: rotateY(180deg);
   background-image: linear-gradient(to bottom, #FEFDFF, #063831);
+  align-self: center;
+  justify-self: center;
 }
 .pricing-section .carousel-container__content-front--websites {
   background-image: url("../../../src/assets/pricing/websites.jpg");
@@ -673,6 +674,33 @@
   box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
   transform: translateY(0px);
 }
+.pricing-section .cta-orange__pricing {
+  padding: 0.75em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #FFA50A;
+  color: #FEFDFF;
+  font-size: 300%;
+  transition: 0.2s;
+  cursor: pointer;
+  align-self: center;
+  position: absolute;
+  bottom: 1em;
+}
+.pricing-section .cta-orange__pricing:hover {
+  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+  transform: translateY(-7px);
+}
+.pricing-section .cta-orange__pricing:active {
+  box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
+  transform: translateY(0px);
+}
 
 .home__nav {
   z-index: 2;
@@ -689,6 +717,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 0;
 }
 .contact-section h2 {
   font-size: 500%;
@@ -698,17 +727,12 @@
 }
 .contact-section .form-container {
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin: 0;
 }
 .contact-section form {
-  align-self: center;
-  align-items: center;
   width: 70%;
   height: 100%;
-  margin: 0;
-  margin-top: 10%;
+  margin: 5% auto 0;
 }
 .contact-section .input-div {
   width: 70%;
@@ -731,7 +755,7 @@
   padding: 10px;
   box-sizing: border-box;
   outline: none;
-  font-size: 200%;
+  font-size: 225%;
   font-family: "league_spartanbold";
   font-weight: 100;
   color: #063831;
@@ -748,7 +772,7 @@
   padding: 10px;
   box-sizing: border-box;
   outline: none;
-  font-size: 200%;
+  font-size: 225%;
   font-family: "league_spartanbold";
   font-weight: 100;
   color: #063831;
@@ -761,7 +785,7 @@
 .contact-section input:focus ~ span,
 .contact-section input:valid ~ span {
   transform: translateX(-10px) translateY(-32px);
-  font-size: 12px;
+  font-size: 200%;
 }
 .contact-section input[type=submit] {
   background: #063831;
@@ -878,6 +902,16 @@
   align-items: center;
   position: relative;
 }
+.footer-bottom {
+  width: 100%;
+  background-color: #063831;
+  height: 7%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -1%;
+  display: flex;
+  justify-content: center;
+}
 .footer hr {
   margin: 0;
   width: 80%;
@@ -885,7 +919,7 @@
 }
 .footer .footer-logo {
   margin-top: 15%;
-  width: 75%;
+  width: 65%;
 }
 .footer .footer-mission-statement {
   font-size: 300%;
@@ -951,6 +985,11 @@ body, html {
 }
 
 #reference-link {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.reference-link {
   color: #0000EE;
   text-decoration: underline;
 }

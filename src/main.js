@@ -64,44 +64,104 @@ const currentCarousel = document.getElementById('current-carousel');
 
 const websitesDiv = `
 <div class="carousel-container__content-front carousel-container__content-front--websites">
-    <h2 class="carousel-container__content-front--header">Websites</h2>
+    <h2 class="carousel-container__content-front--header">
+        <span>Web</span><br>
+        <span>Development&nbsp;&nbsp;&#8640;</span>
+    </h2>
 </div>
 <div class="carousel-container__content-back carousel-container__content-back--websites">
-</div>
+    <h2 class="carousel-container__content-back--header">
+        <span>1 Page: $1,500.00</span><hr>
+        <span>3 Pages: $3,000.00</span><hr>
+        <span>4 or More: Contact Us</span>
+    </h2>
+    <a 
+    class='cta-orange cta-orange__pricing'
+    href="contact.html" 
+    data-text='Contact'
+    >Contact Us
+    </a>
 </div>
 `
 
 const SEODiv = `
 <div class="carousel-container__content-front carousel-container__content-front--search-engine-optimization">
-    <h2 class="carousel-container__content-front--header">Search Engine Optimization</h2>
+    <h2 class="carousel-container__content-front--header">
+        <span>Search</span><br>
+        <span>Engine</span><br>
+        <span>Optimization&nbsp;&#8640;</span>
+    </h2>
 </div>
 <div class="carousel-container__content-back carousel-container__content-back--search-engine-optimization">
-</div>
+    <h2 class="carousel-container__content-back--header">
+        <span>$1,000.00/Month</span><br>
+    </h2>
+    <a 
+    class='cta-orange cta-orange__pricing'
+    href="contact.html" 
+    data-text='Contact'
+    >Contact Us
+    </a>
 </div>
 `
 
 const emailDiv = `
 <div class="carousel-container__content-front carousel-container__content-front--email-marketing">
-    <h2 class="carousel-container__content-front--header">Email Marketing</h2>
+    <h2 class="carousel-container__content-front--header">
+        <span>Email</span><br>
+        <span>Marketing&nbsp;&#8640;</span>
+    </h2>
 </div>
 <div class="carousel-container__content-back carousel-container__content-back--email-marketing">
-</div>
+    <h2 class="carousel-container__content-back--header">
+        <span>$1,000.00/Month</span><br>
+    </h2>
+    <a 
+    class='cta-orange cta-orange__pricing'
+    href="contact.html" 
+    data-text='Contact'
+    >Contact Us
+    </a>
 </div>`
 
 const SMSDiv = `
 <div class="carousel-container__content-front carousel-container__content-front--sms-marketing">
-    <h2 class="carousel-container__content-front--header">SMS Marketing</h2>
+    <h2 class="carousel-container__content-front--header">
+        <span>SMS</span><br>
+        <span>Marketing&nbsp;&#8640;</span>
+    </h2>
 </div>
 <div class="carousel-container__content-back carousel-container__content-back--sms-marketing">
-</div>
+    <h2 class="carousel-container__content-back--header">
+        <span>$1,000.00/Month</span><br>
+    </h2>
+    <a 
+    class='cta-orange cta-orange__pricing'
+    href="contact.html" 
+    data-text='Contact'
+    >Contact Us
+    </a>
 </div>`
 
 const advertisementsDiv = `
 <div class="carousel-container__content-front carousel-container__content-front--digital-advertisements">
-    <h2 class="carousel-container__content-front--header">Advertisements</h2>
+    <h2 class="carousel-container__content-front--header">
+        <span>Digital</span><br>
+        <span>Advertisements&nbsp;&#8640;</span>
+    </h2>
 </div>
-<div class="carousel-container__content-back carousel-container__content-back--digital-advertisements">
-</div>
+<div 
+class="carousel-container__content-back carousel-container__content-back--digital-advertisements"
+>
+    <h2 class="carousel-container__content-back--header">
+        <span>$1,500.00/Month</span><br>
+    </h2>
+    <a 
+    class='cta-orange cta-orange__pricing'
+    href="contact.html" 
+    data-text='Contact'
+    >Contact Us
+    </a>
 </div>`
 
 const carouselDivs = [websitesDiv, SEODiv, emailDiv, SMSDiv, advertisementsDiv];
