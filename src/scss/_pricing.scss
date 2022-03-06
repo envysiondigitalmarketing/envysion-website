@@ -1,0 +1,35 @@
+.pricing {
+    background-image: linear-gradient($thisWhite, $secondColor);
+    min-height: $sectionHeight + .5vh;
+    margin-top: -.5%;
+    padding: $paddingForCentering;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items: center;
+    overflow: hidden;
+    & h2 {
+        font-size: 500%;
+        margin-top: 15%;
+        margin-bottom: 0;
+    }
+    & h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 400%;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 15%;
+        margin-top: 5%;
+        padding: $paddingForCentering
+    }
+    & p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 300%;
+        font-weight: 500;
+        letter-spacing: .1rem;
+        margin-top: 15%;
+        line-height: 1.3;
+    }
+}

@@ -1,0 +1,115 @@
+$navHeight: 7vh;
+$sectionHeight: 100vh - $navHeight;
+$box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+
+$paddingForCentering: 0 4%;
+
+//Classy Palette
+$mainColor: #063831;
+$secondColor: #97B1AB;
+$thirdColor: #647C77;
+$fourthColor: #1D324B;
+$fifthColor: #4D607C;
+$thisWhite: #FEFDFF;
+
+
+@mixin cover {
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+@mixin transformTranslateNegative50 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin hero-text {
+    font-size: 500%;
+    margin: .5rem 0 .5rem 1.5rem;
+    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+@mixin anchorTags {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+@mixin navHeight($height) {
+    height: $height;
+}
+
+@mixin hoverButton {
+    transition: .2s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: $box-shadow;
+        transform: translateY(-7px);
+    }
+    &:active {
+        box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
+        transform: translateY(0px);
+    }
+}
+@mixin callToAction {
+    padding: .75em 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #FFA50A;
+    color: $thisWhite;
+    font-size: 300%;
+    @include hoverButton;
+}
+@mixin andSection {
+    min-height: $sectionHeight + .5vh;
+    margin-top: -.5%;
+    padding: $paddingForCentering;
+    background-color: $thisWhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    & h2 {
+        font-size: 500%;
+        display: inline-block;
+        margin-top: 15%;
+        align-self: center;
+    }
+}
+@mixin inputs {
+    height: 3em;
+    width: 100%;
+    background: transparent;
+    border: 1px solid $mainColor;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 225%;
+    // font-family: 'League Spartan', sans-serif;
+    font-family: 'league_spartanbold';
+    font-weight: 100;
+    color: $mainColor;
+    z-index: 1;
+}
+
+@mixin carousel {
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+}

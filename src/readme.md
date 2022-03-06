@@ -1,4 +1,27 @@
 <!-- 
 npm i -g sass
 sass --watch style.scss:../../css/style.css
+-->
+
+<!-- 
+- Make Responsive
+    - Maybe restyle upon growing
+- Minimize css with variables
+- Remove extra - fonts | images/videos
+
+- Make socials, add links to footer
+- Get/Add phone number
+- Add Javascript to phone and email in footer
+- Escape sql injections in form?
+
+
+
+Later:
+- Branches
+    - Insurance agencies
+    - Real estate
+    - Mortgage lenders
+    - Auto
+- Blog
+- Case studies available upon request
  -->

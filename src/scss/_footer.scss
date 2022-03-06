@@ -1,0 +1,87 @@
+.footer {
+    height: 65vh - $navHeight;
+    // height: $sectionHeight;
+
+    background-image: linear-gradient($thisWhite, $secondColor, $thirdColor);
+    margin-top: -.5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    &-bottom {
+        width: 100%; background-color: #063831; height: 7%; position: absolute; bottom: 0; margin-bottom: -1%; display: flex; justify-content: center;
+    }
+
+    hr {
+        margin: 0; width: 80%; border-color: $mainColor;
+    }
+    
+    // .footer-container {
+    //     height: 100%;
+    // }
+
+    .footer-logo {
+        margin-top: 15%;
+        width: 65%;
+    }
+
+    .footer-mission-statement {
+        font-size: 300%;
+    }
+
+    .footer-copyright {
+        font-size: 100%;
+        margin-bottom: 2em;
+        position: absolute;
+        bottom: 1%;
+        color: $thisWhite;
+        letter-spacing: .2em;
+    }
+
+    .footer-social-links {
+        &__div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10%;
+            width: 100%;
+            margin: 0;
+        }
+        &__link {
+            width: 10%;
+            height: 100%;
+            padding: 0 1%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__logo {
+            width: 80%;
+            margin-left: 30%;
+            margin-right: 30%;
+            height: auto;
+            cursor: pointer;
+            transform: translate(0%, -15%);
+        }
+        &__logo:hover {
+            animation-name: shutter-in-top;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            /* shorthand 
+            animation: shake-vertical 1s ease 0s 1 normal none;
+            */ 
+        }
+    }
+
+    .footer-contacts {
+        font-size: 225%;
+    }
+}
