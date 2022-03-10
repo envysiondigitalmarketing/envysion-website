@@ -577,7 +577,7 @@
   position: relative;
 }
 .pricing-section .carousel-container:hover {
-  transform: rotateY(180deg) translateY(-14px);
+  transform: rotateY(180deg) translateY(-3%);
 }
 .pricing-section .carousel-container__content-front, .pricing-section .carousel-container__content-back {
   width: 100%;
