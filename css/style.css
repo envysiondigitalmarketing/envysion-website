@@ -348,9 +348,10 @@
   cursor: pointer;
   display: inline-block;
   margin-bottom: 3%;
+  transition: 0.6s;
 }
 .services__header:hover {
-  color: #4D607C;
+  color: #97B1AB;
 }
 .services__paragraph {
   font-family: "Open Sans", sans-serif;

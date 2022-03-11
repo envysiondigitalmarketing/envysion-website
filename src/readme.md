@@ -1,9 +1,7 @@
-<!-- 
-npm i -g sass
-sass --watch style.scss:../../css/style.css
--->
+<!-- npm i -g sass | sass --watch style.scss:../../css/style.css -->
 <!-- 
 
+Now
 - Add a statement about a free review
 - Make Responsive
 - Clean up
@@ -17,12 +15,18 @@ sass --watch style.scss:../../css/style.css
 - Security
     - Escape sql injections in form?
     - Cloudflare?
+
 Later
-- Branches
-    - Insurance agencies
-    - Real estate
-    - Mortgage lenders
-    - Auto
-- Blog
-- Case studies available upon request
+
+- More Services
+    - Blogging
+        - Outsource from Fiverr
+    - Branches
+        - Insurance agencies
+        - Real estate
+        - Mortgage lenders
+        - Auto
+- Site Content
+    - Blog on Envysion site
+    - Case studies available upon request
  -->
