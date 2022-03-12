@@ -102,9 +102,10 @@
   flex-direction: column;
 }
 .home__logo {
-  max-width: 100%;
-  max-height: auto;
-  display: inline-block;
+  width: 100%;
+  height: auto;
+  align-self: center;
+  margin-left: 5%;
 }
 .home__nav {
   height: 7vh;
@@ -112,7 +113,6 @@
   border-bottom: solid 2px #063831;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #FEFDFF;
   position: fixed;
   z-index: 1;
@@ -124,11 +124,10 @@
   background: none;
   color: inherit;
   border: none;
-  max-width: 40%;
-  height: 100%;
+  width: 40%;
+  height: max-content;
+  align-self: center;
   cursor: pointer;
-  margin-left: 3%;
-  margin-top: 4%;
   animation-name: moveInRight;
   animation-duration: 0.5s;
 }
@@ -141,6 +140,8 @@
   cursor: pointer;
   border-radius: 15%;
   position: relative;
+  align-self: center;
+  margin-top: -2%;
   z-index: 3;
   right: 4%;
 }

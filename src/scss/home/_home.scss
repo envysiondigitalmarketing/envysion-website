@@ -3,17 +3,20 @@
     display: flex;
     flex-direction: column;
     &__logo {
-        max-width: 100%;
-        max-height: auto;
-        display: inline-block;
+        width: 100%;
+        height: auto;
+        align-self: center;
+        margin-left: 5%
     };
     &__nav {
         @include navHeight($navHeight);
         width: 100%;
         border-bottom: solid 2px $mainColor;
         display: flex;
+        // display: flex;
+        // justify-content: center;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
         background-color: $thisWhite;
         position: fixed;
         z-index: 1;
@@ -24,11 +27,12 @@
             background: none;
             color: inherit;
             border: none;
-            max-width: 40%;
-            height: 100%;
+            width: 40%;
+            height: max-content;
+            align-self: center;
             cursor: pointer;
-            margin-left: 3%;
-            margin-top: 4%;
+            // margin-left: 3%;
+            // margin-top: 4%;
             animation-name: moveInRight;
             animation-duration: .5s;
         };
@@ -41,6 +45,8 @@
             cursor: pointer;
             border-radius: 15%;
             position: relative;
+            align-self: center;
+            margin-top: -2%;
             // margin-right: 4%;
             z-index: 3;
 
