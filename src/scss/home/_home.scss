@@ -14,10 +14,8 @@
         height: 10em;
         border-bottom: solid 2px $mainColor;
         display: flex;
-        // display: flex;
-        // justify-content: center;
         justify-content: space-between;
-        // align-items: center;
+
         background-color: $thisWhite;
         position: fixed;
         z-index: 1;
@@ -39,15 +37,17 @@
         &--button-x {
             animation-name: moveInRight;
             animation-duration: .5s;
-            width: 10%;
             height: 60%;
+            width: 10%;
+
             background-image: linear-gradient(to right, $mainColor, #000000);
             cursor: pointer;
             border-radius: 15%;
             position: relative;
             align-self: center;
-            margin-top: -2%;
+            // margin-top: -2%;
             // margin-right: 4%;
+            margin: auto 0;
             z-index: 3;
 
             right: 4%;
@@ -144,5 +144,88 @@
         &__envysion {
             animation-duration: 3.4s;
         }
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .home {
+        &__nav {
+            @include navHeight(9vh);
+        };
+        .behind-nav {
+            @include navHeight(9vh);
+        }
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .home {
+        &__nav {
+            @include navHeight(11vh);
+        };
+        .behind-nav {
+            @include navHeight(11vh);
+        }
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .home {
+        &__nav {
+            // @include navHeight(13vh);
+            &--button-x {
+                width: 9%;
+            };
+        };
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 8%;
+            };
+        };
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 7%;
+            };
+        };
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 6%;
+            };
+        };
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 5%;
+            };
+        };
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 4%;
+            };
+        };
     }
 }

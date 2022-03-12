@@ -134,14 +134,14 @@
 .home__nav--button-x {
   animation-name: moveInRight;
   animation-duration: 0.5s;
-  width: 10%;
   height: 60%;
+  width: 10%;
   background-image: linear-gradient(to right, #063831, #000000);
   cursor: pointer;
   border-radius: 15%;
   position: relative;
   align-self: center;
-  margin-top: -2%;
+  margin: auto 0;
   z-index: 3;
   right: 4%;
 }
@@ -253,6 +253,52 @@
   animation-duration: 3.4s;
 }
 
+@media screen and (min-width: 430px) {
+  .home__nav {
+    height: 9vh;
+  }
+  .home .behind-nav {
+    height: 9vh;
+  }
+}
+@media screen and (min-width: 560px) {
+  .home__nav {
+    height: 11vh;
+  }
+  .home .behind-nav {
+    height: 11vh;
+  }
+}
+@media screen and (min-width: 670px) {
+  .home__nav--button-x {
+    width: 9%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .home__nav--button-x {
+    width: 8%;
+  }
+}
+@media screen and (min-width: 880px) {
+  .home__nav--button-x {
+    width: 7%;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .home__nav--button-x {
+    width: 6%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .home__nav--button-x {
+    width: 5%;
+  }
+}
+@media screen and (min-width: 1420px) {
+  .home__nav--button-x {
+    width: 4%;
+  }
+}
 .about {
   min-height: 93.5vh;
   background-color: #FEFDFF;
