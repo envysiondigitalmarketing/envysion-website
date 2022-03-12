@@ -30,7 +30,7 @@ $thisWhite: #FEFDFF;
 }
 @mixin hero-text {
     font-size: 500%;
-    margin: .5rem 0 .5rem 1.5rem;
+    margin: .5rem 0 .5rem 0;
     animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 @mixin anchorTags {
