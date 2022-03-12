@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     &__logo {
-        height: 8em;
+        height: 6em;
         width: auto;
         align-self: center;
         margin-left: 5%
@@ -149,17 +149,36 @@
     }
 }
 
+// @media screen and (max-width: 430px) {
+//     .home {
+//         &__nav {
+//             @include navHeight(9vh);
+//         };
+//         .behind-nav {
+//             @include navHeight(9vh);
+//         }
+//         .hero-heading {
+//             &__envysion {
+//                 margin-top: 9%;
+//             };
+//         };
+//     }
+// }
+
 @media screen and (min-width: 430px) {
     .home {
         &__nav {
             @include navHeight(9vh);
+            &--button-x {
+                width: 8%;
+            };
         };
         .behind-nav {
             @include navHeight(9vh);
         }
         .hero-heading {
             &__envysion {
-                margin-top: 9%;
+                margin-top: 7%;
             };
         };
     }
@@ -175,44 +194,13 @@
         }
         .hero-heading {
             &__envysion {
-                margin-top: 8%;
-            };
-        };
-    }
-}
-
-@media screen and (min-width: 670px) {
-    .home {
-        &__nav {
-            // @include navHeight(13vh);
-            &--button-x {
-                width: 9%;
-            };
-        };
-        .hero-heading {
-            &__envysion {
-                margin-top: 7%;
-            };
-        };
-    }
-}
-
-@media screen and (min-width: 750px) {
-    .home {
-        &__nav {
-            &--button-x {
-                width: 8%;
-            };
-        };
-        .hero-heading {
-            &__envysion {
                 margin-top: 6%;
             };
         };
     }
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 670px) {
     .home {
         &__nav {
             &--button-x {
@@ -227,7 +215,7 @@
     }
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 750px) {
     .home {
         &__nav {
             &--button-x {
@@ -236,7 +224,37 @@
         };
         .hero-heading {
             &__envysion {
-                margin-top: 4.5%;
+                margin-top: 4%;
+            };
+        };
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 5%;
+            };
+        };
+        .hero-heading {
+            &__envysion {
+                margin-top: 3%;
+            };
+        };
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 4%;
+            };
+        };
+        .hero-heading {
+            &__envysion {
+                margin-top: 2%;
             };
         };
     }
@@ -246,12 +264,7 @@
     .home {
         &__nav {
             &--button-x {
-                width: 5%;
-            };
-        };
-        .hero-heading {
-            &__envysion {
-                margin-top: 3.5%;
+                width: 3%;
             };
         };
     }
@@ -261,12 +274,12 @@
     .home {
         &__nav {
             &--button-x {
-                width: 4%;
+                width: 2%;
             };
         };
         .hero-heading {
             &__envysion {
-                margin-top: 2.5%;
+                margin-top: .5%;
             };
         };
     }

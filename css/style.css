@@ -102,7 +102,7 @@
   flex-direction: column;
 }
 .home__logo {
-  height: 8em;
+  height: 6em;
   width: auto;
   align-self: center;
   margin-left: 5%;
@@ -216,7 +216,7 @@
 .home .hero-heading {
   animation-name: moveInRight;
   animation-duration: 0.7s;
-  font-size: 500%;
+  font-size: 400%;
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
@@ -231,7 +231,7 @@
   animation-duration: 2s;
 }
 .home .hero-slogan {
-  font-size: 500%;
+  font-size: 400%;
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   font-family: "Open Sans", sans-serif;
@@ -259,11 +259,14 @@
   .home__nav {
     height: 9vh;
   }
+  .home__nav--button-x {
+    width: 8%;
+  }
   .home .behind-nav {
     height: 9vh;
   }
   .home .hero-heading__envysion {
-    margin-top: 9%;
+    margin-top: 7%;
   }
 }
 @media screen and (min-width: 560px) {
@@ -274,26 +277,10 @@
     height: 11vh;
   }
   .home .hero-heading__envysion {
-    margin-top: 8%;
-  }
-}
-@media screen and (min-width: 670px) {
-  .home__nav--button-x {
-    width: 9%;
-  }
-  .home .hero-heading__envysion {
-    margin-top: 7%;
-  }
-}
-@media screen and (min-width: 750px) {
-  .home__nav--button-x {
-    width: 8%;
-  }
-  .home .hero-heading__envysion {
     margin-top: 6%;
   }
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 670px) {
   .home__nav--button-x {
     width: 7%;
   }
@@ -301,28 +288,41 @@
     margin-top: 5%;
   }
 }
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 750px) {
   .home__nav--button-x {
     width: 6%;
   }
   .home .hero-heading__envysion {
-    margin-top: 4.5%;
+    margin-top: 4%;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 880px) {
   .home__nav--button-x {
     width: 5%;
   }
   .home .hero-heading__envysion {
-    margin-top: 3.5%;
+    margin-top: 3%;
   }
 }
-@media screen and (min-width: 1420px) {
+@media screen and (min-width: 1040px) {
   .home__nav--button-x {
     width: 4%;
   }
   .home .hero-heading__envysion {
-    margin-top: 2.5%;
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .home__nav--button-x {
+    width: 3%;
+  }
+}
+@media screen and (min-width: 1420px) {
+  .home__nav--button-x {
+    width: 2%;
+  }
+  .home .hero-heading__envysion {
+    margin-top: 0.5%;
   }
 }
 .about {
@@ -388,6 +388,109 @@
   transform: translateY(0px);
 }
 
+@media screen and (min-width: 600px) {
+  .about h2 {
+    padding: 0 6%;
+  }
+  .about h3 {
+    padding: 0 6%;
+  }
+  .about p {
+    padding: 0 6%;
+  }
+}
+@media screen and (min-width: 670px) {
+  .about h2 {
+    padding: 0 8%;
+  }
+  .about h3 {
+    padding: 0 8%;
+  }
+  .about p {
+    padding: 0 8%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .about h2 {
+    padding: 0 10%;
+  }
+  .about h3 {
+    padding: 0 10%;
+  }
+  .about p {
+    padding: 0 10%;
+    margin-top: 4%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .about h2 {
+    padding: 0 12%;
+  }
+  .about h3 {
+    padding: 0 12%;
+  }
+  .about p {
+    padding: 0 12%;
+    margin-top: 3%;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .about h2 {
+    padding: 0 14%;
+  }
+  .about h3 {
+    padding: 0 14%;
+  }
+  .about p {
+    padding: 0 14%;
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .about h2 {
+    padding: 0 16%;
+  }
+  .about h3 {
+    padding: 0 16%;
+  }
+  .about p {
+    padding: 0 16%;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .about h2 {
+    padding: 0 18%;
+  }
+  .about h3 {
+    padding: 0 18%;
+  }
+  .about p {
+    padding: 0 18%;
+    margin-top: 1%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about h2 {
+    padding: 0 20%;
+  }
+  .about h3 {
+    padding: 0 20%;
+  }
+  .about p {
+    padding: 0 20%;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .about h2 {
+    padding: 0 22%;
+  }
+  .about h3 {
+    padding: 0 22%;
+  }
+  .about p {
+    padding: 0 22%;
+  }
+}
 .services {
   min-height: 93.5vh;
   margin-top: -0.5%;
@@ -929,7 +1032,7 @@
   width: 75%;
 }
 .menu-cover__list--ul {
-  font-size: 500%;
+  font-size: 400%;
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   list-style-type: none;

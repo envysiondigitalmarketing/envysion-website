@@ -40,3 +40,133 @@
         align-self: center;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .about {
+        & h2 {
+            padding: 0 6%;
+        }
+        & h3 {
+            padding: 0 6%;
+        };
+        & p {
+            padding: 0 6%;
+        }
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .about {
+        & h2 {
+            padding: 0 8%;
+        }
+        & h3 {
+            padding: 0 8%;
+        };
+        & p {
+            padding: 0 8%;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .about {
+        & h2 {
+            padding: 0 10%;
+        }
+        & h3 {
+            padding: 0 10%;
+        };
+        & p {
+            padding: 0 10%;
+            margin-top: 4%;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .about {
+        & h2 {
+            padding: 0 12%;
+        }
+        & h3 {
+            padding: 0 12%;
+        };
+        & p {
+            padding: 0 12%;
+            margin-top: 3%;
+        }
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .about {
+        & h2 {
+            padding: 0 14%;
+        }
+        & h3 {
+            padding: 0 14%;
+        };
+        & p {
+            padding: 0 14%;
+            margin-top: 2%;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .about {
+        & h2 {
+            padding: 0 16%;
+        }
+        & h3 {
+            padding: 0 16%;
+        };
+        & p {
+            padding: 0 16%;
+        }
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .about {
+        & h2 {
+            padding: 0 18%;
+        }
+        & h3 {
+            padding: 0 18%;
+        };
+        & p {
+            padding: 0 18%;
+            margin-top: 1%;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .about {
+        & h2 {
+            padding: 0 20%;
+        }
+        & h3 {
+            padding: 0 20%;
+        };
+        & p {
+            padding: 0 20%;
+        }
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .about {
+        & h2 {
+            padding: 0 22%;
+        }
+        & h3 {
+            padding: 0 22%;
+        };
+        & p {
+            padding: 0 22%;
+        }
+    }
+}
