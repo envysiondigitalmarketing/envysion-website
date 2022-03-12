@@ -3,14 +3,15 @@
     display: flex;
     flex-direction: column;
     &__logo {
-        width: 100%;
-        height: auto;
+        height: 8em;
+        width: auto;
         align-self: center;
         margin-left: 5%
     };
     &__nav {
         @include navHeight($navHeight);
         width: 100%;
+        height: 10em;
         border-bottom: solid 2px $mainColor;
         display: flex;
         // display: flex;
@@ -20,7 +21,6 @@
         background-color: $thisWhite;
         position: fixed;
         z-index: 1;
-        max-width: 100%;
         overflow: hidden;
         box-shadow: $box-shadow;
         &--button-logo {
