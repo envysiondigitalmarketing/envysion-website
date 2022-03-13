@@ -67,7 +67,7 @@ $thisWhite: #FEFDFF;
     text-decoration: none;
     background-color: #FFA50A;
     color: $thisWhite;
-    font-size: 300%;
+    font-size: 250%;
     @include hoverButton;
 }
 @mixin andSection {
