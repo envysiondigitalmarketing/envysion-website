@@ -1,3 +1,10 @@
+// $mainColor: #063831;
+// $secondColor: #97B1AB;
+// $thirdColor: #647C77;
+// $fourthColor: #1D324B;
+// $fifthColor: #4D607C;
+// $thisWhite: #FEFDFF;
+
 .about {
     // height: $sectionHeight;
     min-height: $sectionHeight + .5vh;
@@ -13,7 +20,8 @@
         font-size: 400%;
         margin: 0;
         margin-top: 5%;
-        padding: $paddingForCentering
+        padding: $paddingForCentering;
+        align-self: center;
     }
     & h3 {
         font-family: 'Open Sans', sans-serif;
