@@ -1218,13 +1218,11 @@ body, html {
   width: 100%;
   scroll-padding-top: 7vh;
 }
-
-#reference-link {
-  color: #0000EE;
-  text-decoration: underline;
+body ::selection, html ::selection {
+  background-color: #97B1AB;
 }
 
-.reference-link {
+#reference-link, .reference-link {
   color: #0000EE;
   text-decoration: underline;
 }

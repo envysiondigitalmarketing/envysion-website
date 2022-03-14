@@ -26,14 +26,12 @@ body, html {
     color: $mainColor;
     width: 100%;
     scroll-padding-top: $navHeight;
+    ::selection{
+        background-color: $secondColor;
+    }
 };
 
-#reference-link {
-    color: #0000EE;
-    text-decoration: underline;
-}
-
-.reference-link {
+#reference-link, .reference-link {
     color: #0000EE;
     text-decoration: underline;
 }
