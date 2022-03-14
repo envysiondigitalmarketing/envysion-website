@@ -2,7 +2,6 @@
 <!-- 
 
 Now
-- Add a statement about a free review
 - Make Responsive
 - Clean up
     - Minimize css with variables
@@ -21,6 +20,7 @@ Later
 - More Services
     - Blogging
         - Outsource from Fiverr
+        - Copy writing
     - Branches
         - Insurance agencies
         - Real estate
