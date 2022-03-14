@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
+    width: 100%;
     & h2 {
         font-size: 400%;
         margin: 0;
@@ -109,7 +110,7 @@
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 980px) {
     .about {
         & h2 {
             padding: 0 16%;

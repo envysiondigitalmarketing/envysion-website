@@ -98,6 +98,7 @@
 }
 .home {
   min-height: 100%;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -124,9 +125,10 @@
   background: none;
   color: inherit;
   border: none;
-  width: 40%;
+  width: max-content;
   height: max-content;
   align-self: center;
+  margin-left: 20px;
   cursor: pointer;
   animation-name: moveInRight;
   animation-duration: 0.5s;
@@ -192,26 +194,30 @@
   height: 7vh;
 }
 .home .hero {
-  position: relative;
   height: 100vh;
   overflow: hidden;
+  min-width: 100vw;
   background-image: linear-gradient(transparent, #FEFDFF);
 }
 .home .hero-video {
   height: 100vh;
+  overflow: hidden;
   object-fit: cover;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  width: 100vw;
+  overflow: hidden;
+  width: 100%;
   z-index: -1;
 }
 .home .hero-text-div {
   display: inline-block;
-  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   padding: 0 4%;
+  margin-top: 2%;
 }
 .home .hero-heading {
   animation-name: moveInRight;
@@ -255,6 +261,17 @@
   animation-duration: 3.4s;
 }
 
+@media screen and (max-width: 430px) {
+  .home__nav {
+    height: 9vh;
+  }
+  .home .behind-nav {
+    height: 9vh;
+  }
+  .home .hero-heading__envysion {
+    margin-top: 9%;
+  }
+}
 @media screen and (min-width: 430px) {
   .home__nav {
     height: 9vh;
@@ -335,6 +352,7 @@
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
+  width: 100%;
 }
 .about h2 {
   font-size: 400%;
@@ -437,7 +455,7 @@
     margin-bottom: 5%;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 980px) {
   .about h2 {
     padding: 0 16%;
   }
@@ -542,7 +560,8 @@
 .services h2 {
   font-size: 500%;
   display: inline-block;
-  margin-top: 15%;
+  margin-top: 20%;
+  margin-bottom: 20px;
   align-self: center;
 }
 .services__list {
