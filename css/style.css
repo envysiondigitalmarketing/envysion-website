@@ -214,9 +214,7 @@
 }
 .home .hero-text-div {
   display: inline-block;
-  max-width: 100%;
-  overflow: hidden;
-  padding: 0 4%;
+  padding: 0 5%;
   margin-top: 2%;
 }
 .home .hero-heading {
@@ -473,7 +471,6 @@
   transition: 0.2s;
   cursor: pointer;
   align-self: center;
-  margin-top: 20%;
 }
 .services .cta-orange__services:hover {
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
