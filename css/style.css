@@ -450,7 +450,7 @@
 }
 .services__paragraph {
   font-family: "Open Sans", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 500;
   color: #063831;
   letter-spacing: 0.1rem;
@@ -510,7 +510,7 @@
 }
 .why-envysion p {
   font-family: "Open Sans", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 500;
   letter-spacing: 0.1rem;
   margin-top: 15%;
@@ -603,11 +603,11 @@
   margin-bottom: 3%;
 }
 .services-II__header:hover {
-  color: #4D607C;
+  color: #97B1AB;
 }
 .services-II__paragraph {
   font-family: "Open Sans", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 500;
   color: #063831;
   letter-spacing: 0.1rem;
