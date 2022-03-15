@@ -1,6 +1,6 @@
 .footer {
-    height: 65vh - $navHeight;
-    // height: $sectionHeight;
+    // height: 65vh - $navHeight;
+    height: $sectionHeight;
 
     background-image: linear-gradient($thisWhite, $secondColor, $thirdColor);
     margin-top: -.5%;
@@ -11,17 +11,24 @@
 
     position: relative;
 
-    &-bottom {
-        width: 100%; background-color: #063831; height: 7%; position: absolute; bottom: 0; margin-bottom: -1%; display: flex; justify-content: center;
-    }
+    // &-bottom {
+    //     width: 100%; background-color: #063831; height: 7%; position: absolute; bottom: 0; margin-bottom: -1%; display: flex; justify-content: center;
+    // }
 
     hr {
-        margin: 0; width: 80%; border-color: $mainColor;
+        margin: 0; 
+        width: 98%;
+        border-color: $mainColor;
+        align-self: center;
     }
     
-    // .footer-container {
-    //     height: 100%;
-    // }
+    .footer-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: $paddingForCentering;
+    }
 
     .footer-logo {
         margin-top: 15%;
@@ -30,22 +37,21 @@
 
     .footer-mission-statement {
         font-size: 300%;
-    }
 
-    .footer-copyright {
-        font-size: 100%;
-        margin-bottom: 2em;
-        position: absolute;
-        bottom: 1%;
-        color: $thisWhite;
-        letter-spacing: .2em;
+        font-family: 'Open Sans', sans-serif;
+        // font-size: 250%;
+        font-weight: 500;
+        // color: $mainColor;
+        letter-spacing: .1rem;
+        // margin-top: 5%;
+        line-height: 1.3;
     }
 
     .footer-social-links {
         &__div {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             height: 10%;
             width: 100%;
             margin: 0;
@@ -83,5 +89,35 @@
 
     .footer-contacts {
         font-size: 225%;
+
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 0;
+        // font-size: 250%;
+        // font-weight: 500;
+        // // color: $mainColor;
+        // letter-spacing: .1rem;
+        // margin-top: 5%;
+        // line-height: 1.3;
+    }
+
+    .footer-copyright {
+        // font-size: 100%;
+        // margin-bottom: 2em;
+        // position: absolute;
+        // bottom: 1%;
+        // color: $thisWhite;
+        // letter-spacing: .2em;
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 250%;
+        font-weight: 500;
+        // color: $mainColor;
+        letter-spacing: .1rem;
+        margin-top: 5%;
+        line-height: 1.3;
+        
+        position: absolute;
+        bottom: 1%;
+        color: $thisWhite;
     }
 }
