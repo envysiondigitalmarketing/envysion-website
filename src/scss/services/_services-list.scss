@@ -28,6 +28,7 @@
         cursor: pointer;
         display: inline-block;
         margin-bottom: 3%;
+        transition: .6s;
         &:hover {
             color: $secondColor;
         }

@@ -596,6 +596,7 @@
   cursor: pointer;
   display: inline-block;
   margin-bottom: 3%;
+  transition: 0.6s;
 }
 .services-II__header:hover {
   color: #97B1AB;
@@ -959,7 +960,7 @@
   width: fit-content;
 }
 .menu-cover__list--li:hover {
-  color: #4D607C;
+  color: #97B1AB;
 }
 .menu-cover__list--anchor:link {
   text-decoration: inherit;
