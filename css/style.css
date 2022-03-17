@@ -383,8 +383,8 @@
 }
 .about .cta-orange__about {
   padding: 0.75em 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 15%;
+  margin-bottom: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -432,13 +432,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 4%;
 }
 .services__div {
   width: 95%;
 }
 .services__header {
   font-family: "Open Sans", sans-serif;
-  font-size: 400%;
+  font-size: 300%;
   align-self: center;
   cursor: pointer;
   display: inline-block;
@@ -459,8 +460,8 @@
 }
 .services .cta-orange__services {
   padding: 0.75em 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 15%;
+  margin-bottom: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -518,6 +519,7 @@
 }
 .why-envysion__list {
   height: fit-content;
+  padding: 0 4%;
   padding-bottom: 10%;
 }
 .why-envysion__list--div {
@@ -532,8 +534,8 @@
 }
 .why-envysion .cta-orange {
   padding: 0.75em 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 15%;
+  margin-bottom: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -615,8 +617,8 @@
 }
 .services-II .cta-orange__services {
   padding: 0.75em 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 15%;
+  margin-bottom: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -772,8 +774,8 @@
 }
 .pricing-section .cta-orange__pricing {
   padding: 0.75em 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 15%;
+  margin-bottom: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -902,8 +904,8 @@
 }
 .contact .cta-orange__services {
   padding: 0.75em 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 15%;
+  margin-bottom: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
