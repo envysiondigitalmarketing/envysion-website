@@ -7,7 +7,7 @@
         height: 6em;
         width: auto;
         align-self: center;
-        margin-left: 5%
+        // margin-left: 5%
     };
     &__nav {
         @include navHeight($navHeight);
@@ -29,26 +29,23 @@
             width: max-content;
             height: max-content;
             align-self: center;
-            margin-left: 20px;
+            margin-left: 10px;
             cursor: pointer;
-            // margin-left: 3%;
-            // margin-top: 4%;
             animation-name: moveInRight;
             animation-duration: .5s;
+            margin-top: 3%;
         };
         &--button-x {
             animation-name: moveInRight;
             animation-duration: .5s;
             height: 60%;
-            width: 10%;
+            width: 12%;
 
             background-image: linear-gradient(to right, $mainColor, #000000);
             cursor: pointer;
             border-radius: 15%;
             position: relative;
             align-self: center;
-            // margin-top: -2%;
-            // margin-right: 4%;
             margin: auto 0;
             z-index: 3;
 
@@ -96,22 +93,19 @@
         @include navHeight($navHeight);
     }
     .hero {
-        // position: relative;
         height: 100vh;
         overflow: hidden;
-        min-width: 100vw;
+        min-width: 101vw;
         background-image: linear-gradient(transparent, $thisWhite);
     }
     .hero-video {
         @include cover;
         overflow: hidden;
-        width: 100%;
+        max-width: 100%;
         z-index: -1;
     }
     .hero-text-div {
         display: inline-block;
-        // max-width: 100%;
-        // overflow: hidden;
         padding: 0 5%;
         margin-top: 2%;
     }

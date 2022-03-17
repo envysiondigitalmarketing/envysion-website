@@ -1,15 +1,15 @@
 .why-envysion {
-    // min-height: $sectionHeight;
-    // background-image: linear-gradient($thisWhite, $secondColor);
-    background-color: $thisWhite;
     min-height: $sectionHeight + .5vh;
+    background-color: $thisWhite;
+
+    position: relative;
+    overflow: hidden;
     margin-top: -.5%;
-    padding: $paddingForCentering;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    min-width: 101%;
 
     & h2 {
         font-size: 500%;

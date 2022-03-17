@@ -16,8 +16,7 @@ $thisWhite: #FEFDFF;
 @mixin cover {
     height: 100vh;
     overflow: hidden;
-    // min-width: 100%;
-    // max-width: 100%;
+    min-width: 100%;
     object-fit: cover;
     position: fixed;
     left: 0;

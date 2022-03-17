@@ -106,7 +106,6 @@
   height: 6em;
   width: auto;
   align-self: center;
-  margin-left: 5%;
 }
 .home__nav {
   height: 7vh;
@@ -128,16 +127,17 @@
   width: max-content;
   height: max-content;
   align-self: center;
-  margin-left: 20px;
+  margin-left: 10px;
   cursor: pointer;
   animation-name: moveInRight;
   animation-duration: 0.5s;
+  margin-top: 3%;
 }
 .home__nav--button-x {
   animation-name: moveInRight;
   animation-duration: 0.5s;
   height: 60%;
-  width: 10%;
+  width: 12%;
   background-image: linear-gradient(to right, #063831, #000000);
   cursor: pointer;
   border-radius: 15%;
@@ -196,12 +196,13 @@
 .home .hero {
   height: 100vh;
   overflow: hidden;
-  min-width: 100vw;
+  min-width: 101vw;
   background-image: linear-gradient(transparent, #FEFDFF);
 }
 .home .hero-video {
   height: 100vh;
   overflow: hidden;
+  min-width: 100%;
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -209,7 +210,7 @@
   top: 0;
   bottom: 0;
   overflow: hidden;
-  width: 100%;
+  max-width: 100%;
   z-index: -1;
 }
 .home .hero-text-div {
@@ -345,12 +346,11 @@
   background-color: #FEFDFF;
   position: relative;
   overflow: hidden;
-  margin-top: -0.2%;
+  margin-top: -0.5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  position: relative;
-  width: 100%;
+  min-width: 101%;
 }
 .about-container {
   padding: 0 5%;
@@ -409,12 +409,14 @@
 
 .services {
   min-height: 93.5vh;
-  margin-top: -0.5%;
-  padding: 0 4%;
   background-color: #FEFDFF;
+  position: relative;
+  overflow: hidden;
+  margin-top: -0.5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  min-width: 101%;
 }
 .services h2 {
   font-size: 500%;
@@ -482,14 +484,15 @@
 }
 
 .why-envysion {
-  background-color: #FEFDFF;
   min-height: 93.5vh;
+  background-color: #FEFDFF;
+  position: relative;
+  overflow: hidden;
   margin-top: -0.5%;
-  padding: 0 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  min-width: 101%;
 }
 .why-envysion h2 {
   font-size: 500%;
@@ -655,11 +658,12 @@
   align-self: center;
 }
 .pricing-section .pricing-header {
-  margin-bottom: 1.5em;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 .pricing-section .carousel-container {
   width: 90%;
-  height: 80em;
+  height: 65em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -952,6 +956,7 @@
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   list-style-type: none;
   padding: 0;
+  margin-left: 5%;
 }
 .menu-cover__list--li {
   margin-bottom: 4%;
@@ -986,13 +991,15 @@
 }
 
 .footer {
-  height: 93vh;
+  min-height: 93.5vh;
   background-image: linear-gradient(#FEFDFF, #97B1AB, #647C77);
   margin-top: -0.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow: hidden;
+  min-width: 101%;
 }
 .footer hr {
   margin: 0;
