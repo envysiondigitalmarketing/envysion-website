@@ -666,12 +666,12 @@
   align-self: center;
 }
 .pricing-section .pricing-header {
-  margin-top: 10%;
+  margin-top: 15%;
   margin-bottom: 10%;
 }
 .pricing-section .carousel-container {
   width: 90%;
-  height: 65em;
+  height: 55em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -679,6 +679,7 @@
   transform-style: preserve-3d;
   transition: all 0.5s ease;
   position: relative;
+  margin-top: 5%;
 }
 .pricing-section .carousel-container:hover {
   transform: rotateY(180deg) translateY(-3%);
@@ -711,7 +712,7 @@
   opacity: 0.85;
   font-family: "Open sans";
   color: #063831;
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: 200;
   width: 100%;
   margin-bottom: 0;
@@ -795,7 +796,7 @@
   cursor: pointer;
   align-self: center;
   position: absolute;
-  bottom: 1em;
+  bottom: 0.25em;
 }
 .pricing-section .cta-orange__pricing:hover {
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
