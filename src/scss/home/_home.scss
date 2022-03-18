@@ -106,7 +106,7 @@
     }
     .hero-text-div {
         display: inline-block;
-        padding: 0 5%;
+        padding: $paddingForCentering;
         margin-top: 2%;
     }
     .hero-heading {
@@ -130,7 +130,7 @@
         font-family: 'Open Sans', sans-serif;
         display: inline-block;
         animation-name: moveInSlogan;
-        font-size: 300%;
+        font-size: 275%;
         &__we {
             animation-duration: 3s;
         }

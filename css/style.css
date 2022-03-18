@@ -221,7 +221,7 @@
 .home .hero-heading {
   animation-name: moveInRight;
   animation-duration: 0.7s;
-  font-size: 400%;
+  font-size: 450%;
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
@@ -236,13 +236,13 @@
   animation-duration: 2s;
 }
 .home .hero-slogan {
-  font-size: 400%;
+  font-size: 450%;
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   font-family: "Open Sans", sans-serif;
   display: inline-block;
   animation-name: moveInSlogan;
-  font-size: 300%;
+  font-size: 275%;
 }
 .home .hero-slogan__we {
   animation-duration: 3s;
@@ -358,7 +358,7 @@
   flex-direction: column;
 }
 .about h2 {
-  font-size: 400%;
+  font-size: 450%;
   margin: 5% 0 0 0;
   align-self: center;
   justify-self: center;
@@ -419,7 +419,7 @@
   min-width: 101%;
 }
 .services h2 {
-  font-size: 500%;
+  font-size: 450%;
   display: inline-block;
   margin-top: 20%;
   margin-bottom: 20px;
@@ -496,7 +496,7 @@
   min-width: 101%;
 }
 .why-envysion h2 {
-  font-size: 500%;
+  font-size: 450%;
   margin-top: 15%;
   margin-bottom: 10%;
 }
@@ -507,7 +507,7 @@
   margin-top: 0;
   margin-bottom: 15%;
   margin-top: 5%;
-  padding: 0 4%;
+  padding: 0 5%;
   text-decoration: underline #063831;
   font-style: italic;
 }
@@ -563,27 +563,29 @@
 
 .services-II {
   min-height: 93.5vh;
+  background-color: #FEFDFF;
   margin-top: -0.5%;
-  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 93.5vh;
+  margin-top: -0.5%;
+  padding: 0 5%;
   background-color: #FEFDFF;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   animation-name: moveInRight;
   animation-duration: 0.7s;
-  min-height: 93.5vh;
-  margin-top: -0.5%;
-  padding: 0 4%;
-  background-color: #FEFDFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 .services-II h2 {
   font-size: 500%;
   display: inline-block;
   margin-top: 15%;
   align-self: center;
+}
+.services-II h2 {
+  font-size: 450%;
 }
 .services-II__list {
   margin-top: 0;
@@ -598,7 +600,7 @@
 }
 .services-II__header {
   font-family: "Open Sans", sans-serif;
-  font-size: 400%;
+  font-size: 300%;
   align-self: center;
   cursor: pointer;
   display: inline-block;
@@ -633,7 +635,8 @@
   transition: 0.2s;
   cursor: pointer;
   align-self: center;
-  margin-top: 10%;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 .services-II .cta-orange__services:hover {
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
@@ -647,7 +650,7 @@
 .pricing-section {
   min-height: 93.5vh;
   margin-top: -0.5%;
-  padding: 0 4%;
+  padding: 0 5%;
   background-color: #FEFDFF;
   display: flex;
   flex-direction: column;
@@ -812,11 +815,12 @@
   height: 100%;
   min-height: 93.5vh;
   margin-top: -0.5%;
-  padding: 0 4%;
+  padding: 0 5%;
   background-color: #FEFDFF;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-size: 75%;
   margin: 0;
 }
 .contact-section h2 {
@@ -955,7 +959,7 @@
   width: 75%;
 }
 .menu-cover__list--ul {
-  font-size: 400%;
+  font-size: 450%;
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   list-style-type: none;
@@ -1016,7 +1020,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 4%;
+  padding: 0 5%;
 }
 .footer .footer-logo {
   margin-top: 15%;

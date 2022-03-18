@@ -1,14 +1,21 @@
 .services-II {
-    @include andSection;
-    animation-name: moveInRight;
-    animation-duration: .7s;
     min-height: $sectionHeight + .5vh;
-    margin-top: -.5%;
-    padding: $paddingForCentering;
     background-color: $thisWhite;
+
+    margin-top: -.5%;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
+    @include andSection;
+    animation-name: moveInRight;
+    animation-duration: .7s;
+    // padding: $paddingForCentering;
+
+    h2 {
+        font-size: 450%;
+    };
 
     &__list {
         margin-top: 0;
@@ -23,7 +30,8 @@
     }
     &__header {
         font-family: 'Open Sans', sans-serif;
-        font-size: 400%;
+        // font-size: 300%;
+        font-size: 300%;
         align-self: center;
         cursor: pointer;
         display: inline-block;
@@ -45,6 +53,7 @@
     .cta-orange__services {
         @include callToAction;
         align-self: center;
-        margin-top: 10%;
+        margin-top: 15%;
+        margin-bottom: 15%;
     }
 }

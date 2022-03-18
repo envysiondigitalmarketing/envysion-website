@@ -2,7 +2,7 @@ $navHeight: 7vh;
 $sectionHeight: 100vh - $navHeight;
 $box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
 
-$paddingForCentering: 0 4%;
+$paddingForCentering: 0 5%;
 
 //Classy Palette
 $mainColor: #063831;
@@ -31,7 +31,7 @@ $thisWhite: #FEFDFF;
     transform: translate(-50%, -50%);
 }
 @mixin hero-text {
-    font-size: 400%;
+    font-size: 450%;
     margin: .5rem 0 .5rem 0;
     animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
