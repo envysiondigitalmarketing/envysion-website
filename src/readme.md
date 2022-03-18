@@ -21,12 +21,13 @@ Later
     - Blogging
         - Outsource from Fiverr
         - Copy writing
-    - Branches
+    - Reputation Management (Reviews)
+    - Blockchain (NFTs)
+    - Niches/Branches
         - Insurance agencies
         - Real estate
         - Mortgage lenders
         - Auto
-    - Reputation Management (Reviews)
 - Site Content
     - Blog on Envysion site
     - Case studies available upon request

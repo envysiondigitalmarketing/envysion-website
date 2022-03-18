@@ -432,7 +432,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 4%;
+  padding: 0 5%;
 }
 .services__div {
   width: 95%;
@@ -502,12 +502,14 @@
 }
 .why-envysion h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 400%;
+  font-size: 300%;
   margin: 0;
   margin-top: 0;
   margin-bottom: 15%;
   margin-top: 5%;
   padding: 0 4%;
+  text-decoration: underline #063831;
+  font-style: italic;
 }
 .why-envysion p {
   font-family: "Open Sans", sans-serif;
@@ -519,7 +521,7 @@
 }
 .why-envysion__list {
   height: fit-content;
-  padding: 0 4%;
+  padding: 0 5%;
   padding-bottom: 10%;
 }
 .why-envysion__list--div {
