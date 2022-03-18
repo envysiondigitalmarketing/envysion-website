@@ -1,5 +1,6 @@
 .pricing-section {
     @include andSection;
+    min-height: $sectionHeight + 6vh;
     animation-name: moveInRight;
     animation-duration: .7s;
 
