@@ -136,8 +136,8 @@
 .home__nav--button-x {
   animation-name: moveInRight;
   animation-duration: 0.5s;
-  height: 60%;
-  width: 12%;
+  height: 53%;
+  width: 11%;
   background-image: linear-gradient(to right, #063831, #000000);
   cursor: pointer;
   border-radius: 15%;
@@ -275,9 +275,6 @@
   .home__nav {
     height: 9vh;
   }
-  .home__nav--button-x {
-    width: 8%;
-  }
   .home .behind-nav {
     height: 9vh;
   }
@@ -297,46 +294,26 @@
   }
 }
 @media screen and (min-width: 670px) {
-  .home__nav--button-x {
-    width: 7%;
-  }
   .home .hero-heading__envysion {
     margin-top: 5%;
   }
 }
 @media screen and (min-width: 750px) {
-  .home__nav--button-x {
-    width: 6%;
-  }
   .home .hero-heading__envysion {
     margin-top: 4%;
   }
 }
 @media screen and (min-width: 880px) {
-  .home__nav--button-x {
-    width: 5%;
-  }
   .home .hero-heading__envysion {
     margin-top: 3%;
   }
 }
 @media screen and (min-width: 1040px) {
-  .home__nav--button-x {
-    width: 4%;
-  }
   .home .hero-heading__envysion {
     margin-top: 2%;
   }
 }
-@media screen and (min-width: 1100px) {
-  .home__nav--button-x {
-    width: 3%;
-  }
-}
 @media screen and (min-width: 1420px) {
-  .home__nav--button-x {
-    width: 2%;
-  }
   .home .hero-heading__envysion {
     margin-top: 0.5%;
   }

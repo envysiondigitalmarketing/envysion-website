@@ -23,11 +23,13 @@ Later
         - Copy writing
     - Reputation Management (Reviews)
     - Blockchain (NFTs)
-    - Niches/Branches
+    - Niches and Branches
         - Insurance agencies
+        - Law Firms
+        - Architects
         - Real estate
         - Mortgage lenders
-        - Auto
+        - Auto?
 - Site Content
     - Blog on Envysion site
     - Case studies available upon request

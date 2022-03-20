@@ -38,8 +38,8 @@
         &--button-x {
             animation-name: moveInRight;
             animation-duration: .5s;
-            height: 60%;
-            width: 12%;
+            height: 53%;
+            width: 11%;
 
             background-image: linear-gradient(to right, $mainColor, #000000);
             cursor: pointer;
@@ -169,9 +169,9 @@
     .home {
         &__nav {
             @include navHeight(9vh);
-            &--button-x {
-                width: 8%;
-            };
+            // &--button-x {
+            //     width: 8%;
+            // };
         };
         .behind-nav {
             @include navHeight(9vh);
@@ -203,9 +203,9 @@
 @media screen and (min-width: 670px) {
     .home {
         &__nav {
-            &--button-x {
-                width: 7%;
-            };
+            // &--button-x {
+            //     width: 7%;
+            // };
         };
         .hero-heading {
             &__envysion {
@@ -218,9 +218,9 @@
 @media screen and (min-width: 750px) {
     .home {
         &__nav {
-            &--button-x {
-                width: 6%;
-            };
+            // &--button-x {
+            //     width: 6%;
+            // };
         };
         .hero-heading {
             &__envysion {
@@ -233,9 +233,9 @@
 @media screen and (min-width: 880px) {
     .home {
         &__nav {
-            &--button-x {
-                width: 5%;
-            };
+            // &--button-x {
+            //     width: 5%;
+            // };
         };
         .hero-heading {
             &__envysion {
@@ -248,9 +248,9 @@
 @media screen and (min-width: 1040px) {
     .home {
         &__nav {
-            &--button-x {
-                width: 4%;
-            };
+            // &--button-x {
+            //     width: 4%;
+            // };
         };
         .hero-heading {
             &__envysion {
@@ -263,9 +263,9 @@
 @media screen and (min-width: 1100px) {
     .home {
         &__nav {
-            &--button-x {
-                width: 3%;
-            };
+            // &--button-x {
+            //     width: 3%;
+            // };
         };
     }
 }
@@ -273,9 +273,9 @@
 @media screen and (min-width: 1420px) {
     .home {
         &__nav {
-            &--button-x {
-                width: 2%;
-            };
+            // &--button-x {
+            //     width: 2%;
+            // };
         };
         .hero-heading {
             &__envysion {
