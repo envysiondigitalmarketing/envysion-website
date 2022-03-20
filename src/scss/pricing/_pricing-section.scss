@@ -12,7 +12,7 @@
 
     .carousel-container {
         width: 90%;
-        height: 55em;
+        height: 55vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -47,7 +47,7 @@
             opacity: .85;
             font-family: 'Open sans';
             color: $mainColor;
-            font-size: 2.5em;
+            font-size: 2.5vh;
             font-weight: 200;
             width: 100%;
             margin-bottom: 0;
@@ -68,6 +68,7 @@
 
         &__content-back--header {
             @include transformTranslateNegative50;
+            top: 40%;
             padding: 1em;
             margin-top: 0;
             border-radius: 5px;
