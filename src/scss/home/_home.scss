@@ -10,7 +10,7 @@
         // margin-left: 5%
     };
     &__nav {
-        @include navHeight($navHeight);
+        // @include navHeight($navHeight);
         width: 100%;
         height: 10em;
         border-bottom: solid 2px $mainColor;
@@ -114,6 +114,7 @@
         animation-name: moveInRight;
         animation-duration: .7s;
         @include hero-text;
+        font-size: $heading;
         &__envysion {
             animation-duration: 1s;
             margin-top: 10%;
@@ -149,36 +150,40 @@
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (min-width: 325px) {
     .home {
         &__nav {
-            @include navHeight(9vh);
-        };
-        .behind-nav {
-            @include navHeight(9vh);
-        }
-        .hero-heading {
-            &__envysion {
-                margin-top: 9%;
+            &--button-x {
+                width: 9%;
             };
         };
     }
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 374px) {
     .home {
         &__nav {
-            @include navHeight(9vh);
-            // &--button-x {
-            //     width: 8%;
-            // };
+            height: 11em;
         };
         .behind-nav {
-            @include navHeight(9vh);
+            height: 11em;
         }
         .hero-heading {
             &__envysion {
                 margin-top: 7%;
+            };
+        };
+        .hero-slogan {
+            font-size: 325%;
+        }
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 8%;
             };
         };
     }
@@ -186,101 +191,102 @@
 
 @media screen and (min-width: 560px) {
     .home {
+        &__logo {
+            height: 8em;
+            margin-top: -10%;
+            margin-left: 5%;
+        };
         &__nav {
-            @include navHeight(11vh);
+            height: 15em;
+            &--button-x {
+                width: 8%;
+            };
         };
         .behind-nav {
-            @include navHeight(11vh);
+            height: 15em;
+        }
+        .hero-text-div {
+            margin-top: 3%;
         }
         .hero-heading {
-            &__envysion {
-                margin-top: 6%;
-            };
-        };
-    }
-}
-
-@media screen and (min-width: 670px) {
-    .home {
-        &__nav {
-            // &--button-x {
-            //     width: 7%;
-            // };
-        };
-        .hero-heading {
-            &__envysion {
-                margin-top: 5%;
-            };
-        };
+            font-size: 500%;////////////////////////////////////
+        }
     }
 }
 
 @media screen and (min-width: 750px) {
     .home {
         &__nav {
-            // &--button-x {
-            //     width: 6%;
-            // };
-        };
-        .hero-heading {
-            &__envysion {
-                margin-top: 4%;
+            &--button-x {
+                width: 6.5%;
             };
         };
-    }
-}
+        &__logo {
+            margin-top: -10%;
+        }
+    };
+};
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 840px) {
     .home {
         &__nav {
-            // &--button-x {
-            //     width: 5%;
-            // };
-        };
-        .hero-heading {
-            &__envysion {
-                margin-top: 3%;
+            &--button-x {
+                width: 5.5%;
             };
         };
-    }
-}
+    };
+};
 
 @media screen and (min-width: 1040px) {
     .home {
         &__nav {
-            // &--button-x {
-            //     width: 4%;
-            // };
-        };
-        .hero-heading {
-            &__envysion {
-                margin-top: 2%;
+            &--button-x {
+                width: 4.5%;
             };
         };
-    }
-}
+        &__logo {
+            margin-top: -15%;
+        }
+    };
+};
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
     .home {
-        &__nav {
-            // &--button-x {
-            //     width: 3%;
-            // };
+        &__logo {
+            height: 9em;
+            width: auto;
         };
-    }
-}
-
-@media screen and (min-width: 1420px) {
-    .home {
         &__nav {
-            // &--button-x {
-            //     width: 2%;
-            // };
-        };
-        .hero-heading {
-            &__envysion {
-                margin-top: .5%;
+            &--button-x {
+                width: 4%;
             };
         };
-    }
-}
+        .hero-heading {
+            font-size: 550%;////////////////////////////////////
+        }
+        .hero-slogan {
+            font-size: 375%;////////////////////////////////////
+        }
+    };
+};
+
+@media screen and (min-width: 1400px) {
+    .home {
+        &__logo {
+            margin-top: -20%;
+        }
+    };
+};
+
+@media screen and (min-width: 1600px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 3%;
+            };
+        };
+        &__logo {
+            margin-top: -25%;
+        }
+    };
+};

@@ -3,6 +3,8 @@
 
 Now
 - Make Responsive
+    - rest of home, below hero
+    - all other pages
 - Clean up
     - Minimize css with variables
     - Remove extra - fonts | images/videos

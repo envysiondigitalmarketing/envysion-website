@@ -1,11 +1,12 @@
 .menu-cover {
     // @include cover;
-    height: 99.75vh - $navHeight;
+    // height: 99.75vh - $navHeight;
+    height: 100%;
     object-fit: cover;
     position: fixed;
     left: 0;
     right: 0;
-    // top: 0;
+    top: 0;
     bottom: 0;
     background-image: linear-gradient(transparent, $secondColor 75%), url('../../src/assets/global/stripes-light.png');
     z-index: 2;
@@ -24,6 +25,7 @@
     }
     &__list--ul {
         @include hero-text;
+        font-size: 450%;
         list-style-type: none;
         padding: 0;
         margin-left: 5%;

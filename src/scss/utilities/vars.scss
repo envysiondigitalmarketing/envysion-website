@@ -1,9 +1,3 @@
-$navHeight: 7vh;
-$sectionHeight: 100vh - $navHeight;
-$box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
-
-$paddingForCentering: 0 5%;
-
 //Classy Palette
 $mainColor: #063831;
 $secondColor: #97B1AB;
@@ -11,6 +5,13 @@ $thirdColor: #647C77;
 $fourthColor: #1D324B;
 $fifthColor: #4D607C;
 $thisWhite: #FEFDFF;
+
+$navHeight: 10vh;
+$sectionHeight: 100vh - $navHeight;
+$box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+$heading: 450%;
+
+$paddingForCentering: 0 5%;
 
 
 @mixin cover {
@@ -31,7 +32,6 @@ $thisWhite: #FEFDFF;
     transform: translate(-50%, -50%);
 }
 @mixin hero-text {
-    font-size: 450%;
     margin: .5rem 0 .5rem 0;
     animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }

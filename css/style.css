@@ -108,7 +108,6 @@
   align-self: center;
 }
 .home__nav {
-  height: 7vh;
   width: 100%;
   height: 10em;
   border-bottom: solid 2px #063831;
@@ -191,7 +190,7 @@
 }
 .home .behind-nav {
   position: relative;
-  height: 7vh;
+  height: 10vh;
 }
 .home .hero {
   height: 100vh;
@@ -221,9 +220,9 @@
 .home .hero-heading {
   animation-name: moveInRight;
   animation-duration: 0.7s;
-  font-size: 450%;
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  font-size: 450%;
 }
 .home .hero-heading__envysion {
   animation-duration: 1s;
@@ -236,7 +235,6 @@
   animation-duration: 2s;
 }
 .home .hero-slogan {
-  font-size: 450%;
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   font-family: "Open Sans", sans-serif;
@@ -260,66 +258,103 @@
   animation-duration: 3.4s;
 }
 
-@media screen and (max-width: 430px) {
-  .home__nav {
-    height: 9vh;
-  }
-  .home .behind-nav {
-    height: 9vh;
-  }
-  .home .hero-heading__envysion {
-    margin-top: 9%;
+@media screen and (min-width: 325px) {
+  .home__nav--button-x {
+    width: 9%;
   }
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 374px) {
   .home__nav {
-    height: 9vh;
+    height: 11em;
   }
   .home .behind-nav {
-    height: 9vh;
+    height: 11em;
   }
   .home .hero-heading__envysion {
     margin-top: 7%;
   }
+  .home .hero-slogan {
+    font-size: 325%;
+  }
+}
+@media screen and (min-width: 450px) {
+  .home__nav--button-x {
+    width: 8%;
+  }
 }
 @media screen and (min-width: 560px) {
+  .home__logo {
+    height: 8em;
+    margin-top: -10%;
+    margin-left: 5%;
+  }
   .home__nav {
-    height: 11vh;
+    height: 15em;
+  }
+  .home__nav--button-x {
+    width: 8%;
   }
   .home .behind-nav {
-    height: 11vh;
+    height: 15em;
   }
-  .home .hero-heading__envysion {
-    margin-top: 6%;
+  .home .hero-text-div {
+    margin-top: 3%;
   }
-}
-@media screen and (min-width: 670px) {
-  .home .hero-heading__envysion {
-    margin-top: 5%;
+  .home .hero-heading {
+    font-size: 500%;
   }
 }
 @media screen and (min-width: 750px) {
-  .home .hero-heading__envysion {
-    margin-top: 4%;
+  .home__nav--button-x {
+    width: 6.5%;
+  }
+  .home__logo {
+    margin-top: -10%;
   }
 }
-@media screen and (min-width: 880px) {
-  .home .hero-heading__envysion {
-    margin-top: 3%;
+@media screen and (min-width: 840px) {
+  .home__nav--button-x {
+    width: 5.5%;
   }
 }
 @media screen and (min-width: 1040px) {
-  .home .hero-heading__envysion {
-    margin-top: 2%;
+  .home__nav--button-x {
+    width: 4.5%;
+  }
+  .home__logo {
+    margin-top: -15%;
   }
 }
-@media screen and (min-width: 1420px) {
-  .home .hero-heading__envysion {
-    margin-top: 0.5%;
+@media screen and (min-width: 1200px) {
+  .home__logo {
+    height: 9em;
+    width: auto;
+  }
+  .home__nav--button-x {
+    width: 4%;
+  }
+  .home .hero-heading {
+    font-size: 550%;
+  }
+  .home .hero-slogan {
+    font-size: 375%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .home__logo {
+    margin-top: -20%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .home__nav--button-x {
+    width: 3%;
+  }
+  .home__logo {
+    margin-top: -25%;
   }
 }
 .about {
-  min-height: 93.5vh;
+  min-height: 90.5vh;
   background-color: #FEFDFF;
   position: relative;
   overflow: hidden;
@@ -385,7 +420,7 @@
 }
 
 .services {
-  min-height: 93.5vh;
+  min-height: 90.5vh;
   background-color: #FEFDFF;
   position: relative;
   overflow: hidden;
@@ -462,7 +497,7 @@
 }
 
 .why-envysion {
-  min-height: 93.5vh;
+  min-height: 90.5vh;
   background-color: #FEFDFF;
   position: relative;
   overflow: hidden;
@@ -539,13 +574,13 @@
 }
 
 .services-II {
-  min-height: 93.5vh;
+  min-height: 90.5vh;
   background-color: #FEFDFF;
   margin-top: -0.5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 93.5vh;
+  min-height: 90.5vh;
   margin-top: -0.5%;
   padding: 0 5%;
   background-color: #FEFDFF;
@@ -625,14 +660,14 @@
 }
 
 .pricing-section {
-  min-height: 93.5vh;
+  min-height: 90.5vh;
   margin-top: -0.5%;
   padding: 0 5%;
   background-color: #FEFDFF;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 99vh;
+  min-height: 96vh;
   animation-name: moveInRight;
   animation-duration: 0.7s;
 }
@@ -796,7 +831,7 @@
   animation-name: moveInRight;
   animation-duration: 0.7s;
   height: 100%;
-  min-height: 93.5vh;
+  min-height: 90.5vh;
   margin-top: -0.5%;
   padding: 0 5%;
   background-color: #FEFDFF;
@@ -919,11 +954,12 @@
 }
 
 .menu-cover {
-  height: 92.75vh;
+  height: 100%;
   object-fit: cover;
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   bottom: 0;
   background-image: linear-gradient(transparent, #97B1AB 75%), url("../../src/assets/global/stripes-light.png");
   z-index: 2;
@@ -942,9 +978,9 @@
   width: 75%;
 }
 .menu-cover__list--ul {
-  font-size: 450%;
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  font-size: 450%;
   list-style-type: none;
   padding: 0;
   margin-left: 5%;
@@ -982,7 +1018,7 @@
 }
 
 .footer {
-  min-height: 93.5vh;
+  min-height: 90.5vh;
   background-image: linear-gradient(#FEFDFF, #97B1AB, #647C77);
   margin-top: -0.5%;
   display: flex;
@@ -1079,7 +1115,7 @@ body, html {
   font-weight: 400;
   color: #063831;
   width: 100%;
-  scroll-padding-top: 7vh;
+  scroll-padding-top: 10vh;
 }
 body ::selection, html ::selection {
   background-color: #97B1AB;
