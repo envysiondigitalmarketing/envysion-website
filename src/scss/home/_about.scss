@@ -16,7 +16,7 @@
         flex-direction: column;
     }
     & h2 {
-        font-size: 450%;
+        font-size: $firstH2;
         margin: 5% 0 0 0;
         align-self: center;
         justify-self: center;
@@ -33,7 +33,7 @@
     };
     & p {
         font-family: 'Open Sans', sans-serif;
-        font-size: 250%;
+        font-size: $firstP;
         font-weight: 500;
         color: $mainColor;
         letter-spacing: .1rem;
@@ -42,26 +42,70 @@
         // padding: $paddingForCentering;
         // margin-bottom: 15%;
     }
-    .cta-orange__about {
-        @include callToAction;
-        align-self: center;
+}
+
+@media screen and (min-width: 470px) {
+    .about {
+        p {
+            font-size: 325%;
+        }
     }
 }
 
-// @media screen and (min-width: 600px) {
-//     .about {
-//         & h2 {
-//             padding: 0 6%;
-//         }
-//         & h3 {
-//             padding: 0 6%;
-//         };
-//         & p {
-//             padding: 0 6%;
-//             margin-bottom: 10%;
-//         }
-//     }
-// }
+@media screen and (min-width: 540px) {
+    .about {
+        &-container {
+            padding: 0 10%;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .about {
+        &-container {
+            padding: 0 15%;
+        }
+        p {
+            font-size: 350%;
+        }
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .about {
+        &-container {
+            padding: 0 20%;
+        }
+        p {
+            font-size: 400%;
+        }
+        h2 {
+            font-size: $secondH2;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .about {
+        &-container {
+            padding: 0 20%;
+        }
+        p {
+            font-size: 400%;
+        }
+        h2 {
+            font-size: $thirdH2;
+        }
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .about {
+        &-container {
+            padding: 0 25%;
+        }
+    }
+}
 
 // @media screen and (min-width: 670px) {
 //     .about {

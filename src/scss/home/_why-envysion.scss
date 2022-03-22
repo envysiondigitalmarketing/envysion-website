@@ -51,9 +51,4 @@
     &__list--icon {
         height: 20em;
     }
-    .cta-orange {
-        @include callToAction;
-        margin-bottom: 30%;
-        margin-top: 15%;
-    }
 }

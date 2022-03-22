@@ -29,6 +29,16 @@ body, html {
     ::selection{
         background-color: $secondColor;
     }
+    .cta-orange {
+        @include callToAction;
+        &__about, &__services {
+            align-self: center;
+        }
+        // &__why-envysion {
+        //     margin-bottom: 30%;
+        //     margin-top: 15%;
+        // }
+    }
 };
 
 #reference-link, .reference-link {
