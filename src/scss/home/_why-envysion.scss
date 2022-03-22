@@ -12,9 +12,7 @@
     min-width: 101%;
 
     & h2 {
-        font-size: 450%;
-        margin-top: 15%;
-        margin-bottom: 10%;
+        @include homeH2;
     }
     & h3 {
         font-family: 'Open Sans', sans-serif;

@@ -1,5 +1,6 @@
 .services {
-    min-height: $sectionHeight + .5vh;
+    // min-height: $sectionHeight + .5vh;
+    min-height: max-content;
     background-color: $thisWhite;
 
     position: relative;
@@ -12,11 +13,7 @@
     min-width: 101%;
 
     & h2 {
-        font-size: 450%;
-        display: inline-block;
-        margin-top: 20%;
-        margin-bottom: 20px;
-        align-self: center;
+        @include homeH2;
     }
 
     &__list {
@@ -54,155 +51,65 @@
     }
 }
 
-// @media screen and (min-width: 360px) {
-//     .services {
-//         & h2 {
-//             margin-top: 15%;
-//         }
-//     }
-// }
+@media screen and (min-width: 470px) {
+    .services {
+        p {
+            font-size: 325%;
+        }
+    }
+}
 
-// @media screen and (min-width: 390px) {
-//     .services {
-//         & h2 {
-//             margin-top: 10%;
-//         }
-//     }
-// }
+@media screen and (min-width: 540px) {
+    .services {
+        &__list {
+            padding: 0 10%;
+        }
+    }
+}
 
-// @media screen and (min-width: 418px) {
-//     .services {
-//         & h2 {
-//             margin-top: 7%;
-//         }
-//     }
-// }
+@media screen and (min-width: 760px) {
+    .services {
+        &__list {
+            padding: 0 15%;
+        }
+        p {
+            font-size: 350%;
+        }
+    }
+}
 
-// @media screen and (min-width: 440px) {
-//     .services {
-//         & h2 {
-//             margin-top: 5%;
-//         }
-//     }
-// }
+@media screen and (min-width: 1050px) {
+    .services {
+        &__list {
+            padding: 0 20%;
+        }
+        p {
+            font-size: 400%;
+        }
+        h2 {
+            font-size: $secondH2;
+        }
+    }
+}
 
-// @media screen and (min-width: 500px) {
-//     .services {
-//         & h2 {
-//             margin-top: 0%;
-//         }
-//     }
-// }
+@media screen and (min-width: 1300px) {
+    .services {
+        &__list {
+            padding: 0 20%;
+        }
+        p {
+            font-size: 400%;
+        }
+        h2 {
+            font-size: $thirdH2;
+        }
+    }
+}
 
-// @media screen and (min-width: 600px) {
-//     .services {
-//         &__div {
-//             padding: 0 6%;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 670px) {
-//     .home {
-//         &__nav {
-//             &--button-x {
-//                 width: 7%;
-//             };
-//         };
-//         .hero-heading {
-//             &__envysion {
-//                 margin-top: 5%;
-//             };
-//         };
-//     }
-//     .services {
-//         &__div {
-//             padding: 0 8%;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 750px) {
-//     .home {
-//         &__nav {
-//             &--button-x {
-//                 width: 6%;
-//             };
-//         };
-//         .hero-heading {
-//             &__envysion {
-//                 margin-top: 4%;
-//             };
-//         };
-//     }
-//     .services {
-//         &__div {
-//             padding: 0 12%;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 880px) {
-//     .home {
-//         &__nav {
-//             &--button-x {
-//                 width: 5%;
-//             };
-//         };
-//         .hero-heading {
-//             &__envysion {
-//                 margin-top: 3%;
-//             };
-//         };
-//     }
-//     .services {
-//         &__div {
-//             padding: 0 14%;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 1040px) {
-//     .home {
-//         &__nav {
-//             &--button-x {
-//                 width: 4%;
-//             };
-//         };
-//         .hero-heading {
-//             &__envysion {
-//                 margin-top: 2%;
-//             };
-//         };
-//     }
-//     .services {
-//         &__div {
-//             padding: 0 18%;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 1100px) {
-//     .home {
-//         &__nav {
-//             &--button-x {
-//                 width: 3%;
-//             };
-//         };
-//     }
-// }
-
-// @media screen and (min-width: 1420px) {
-//     .home {
-//         &__nav {
-//             &--button-x {
-//                 width: 2%;
-//             };
-//         };
-//         .hero-heading {
-//             &__envysion {
-//                 margin-top: .5%;
-//             };
-//         };
-//     }
-// }
+@media screen and (min-width: 1450px) {
+    .services {
+        &__list {
+            padding: 0 25%;
+        }
+    }
+}

@@ -9,7 +9,6 @@ $thisWhite: #FEFDFF;
 $navHeight: 10vh;
 $sectionHeight: 100vh - $navHeight;
 $box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
-$heading: 450%;
 
 $paddingForCentering: 0 5%;
 
@@ -130,4 +129,14 @@ $thirdH2: 550%;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center center;
+}
+
+@mixin homeH2 {
+    margin: 5% 0 5% 0;
+    align-self: center;
+}
+
+@mixin nonHomeH2 {
+    margin: 10% 0 5% 0;
+    align-self: center;
 }

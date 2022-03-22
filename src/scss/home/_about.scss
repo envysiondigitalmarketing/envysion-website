@@ -16,11 +16,7 @@
         flex-direction: column;
     }
     & h2 {
-        font-size: $firstH2;
-        margin: 5% 0 0 0;
-        align-self: center;
-        justify-self: center;
-        width: 100%;
+        @include homeH2;
     }
     & h3 {
         font-family: 'Open Sans', sans-serif;

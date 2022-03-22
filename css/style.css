@@ -222,7 +222,6 @@
   animation-duration: 0.7s;
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  font-size: 450%;
 }
 .home .hero-heading__envysion {
   animation-duration: 1s;
@@ -370,11 +369,8 @@
   flex-direction: column;
 }
 .about h2 {
-  font-size: 450%;
-  margin: 5% 0 0 0;
+  margin: 5% 0 5% 0;
   align-self: center;
-  justify-self: center;
-  width: 100%;
 }
 .about h3 {
   font-family: "Open Sans", sans-serif;
@@ -440,7 +436,7 @@
   }
 }
 .services {
-  min-height: 90.5vh;
+  min-height: max-content;
   background-color: #FEFDFF;
   position: relative;
   overflow: hidden;
@@ -451,10 +447,7 @@
   min-width: 101%;
 }
 .services h2 {
-  font-size: 450%;
-  display: inline-block;
-  margin-top: 20%;
-  margin-bottom: 20px;
+  margin: 5% 0 5% 0;
   align-self: center;
 }
 .services__list {
@@ -491,6 +484,51 @@
   transition: height 0.5s;
 }
 
+@media screen and (min-width: 470px) {
+  .services p {
+    font-size: 325%;
+  }
+}
+@media screen and (min-width: 540px) {
+  .services__list {
+    padding: 0 10%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .services__list {
+    padding: 0 15%;
+  }
+  .services p {
+    font-size: 350%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .services__list {
+    padding: 0 20%;
+  }
+  .services p {
+    font-size: 400%;
+  }
+  .services h2 {
+    font-size: 500%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .services__list {
+    padding: 0 20%;
+  }
+  .services p {
+    font-size: 400%;
+  }
+  .services h2 {
+    font-size: 550%;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .services__list {
+    padding: 0 25%;
+  }
+}
 .why-envysion {
   min-height: 90.5vh;
   background-color: #FEFDFF;
@@ -503,9 +541,8 @@
   min-width: 101%;
 }
 .why-envysion h2 {
-  font-size: 450%;
-  margin-top: 15%;
-  margin-bottom: 10%;
+  margin: 5% 0 5% 0;
+  align-self: center;
 }
 .why-envysion h3 {
   font-family: "Open Sans", sans-serif;
@@ -566,7 +603,8 @@
   align-self: center;
 }
 .services-II h2 {
-  font-size: 450%;
+  margin: 10% 0 5% 0;
+  align-self: center;
 }
 .services-II__list {
   margin-top: 0;
@@ -647,8 +685,8 @@
   align-self: center;
 }
 .pricing-section .pricing-header {
-  margin-top: 15%;
-  margin-bottom: 10%;
+  margin: 10% 0 5% 0;
+  align-self: center;
 }
 .pricing-section .carousel-container {
   width: 90%;
@@ -794,7 +832,8 @@
 }
 
 .contact h2 {
-  font-size: 450%;
+  margin: 10% 0 5% 0;
+  align-self: center;
 }
 .contact-section {
   animation-name: moveInRight;
@@ -938,7 +977,7 @@
   justify-content: flex-start;
 }
 .menu-cover__list {
-  margin-top: 7%;
+  margin-top: 13vh;
   margin-left: 1%;
   margin-right: 0;
   display: flex;
@@ -1115,6 +1154,9 @@ body .cta-orange:active, html .cta-orange:active {
 }
 body .cta-orange__about, body .cta-orange__services, html .cta-orange__about, html .cta-orange__services {
   align-self: center;
+}
+body h2, html h2 {
+  font-size: 450%;
 }
 
 #reference-link, .reference-link {

@@ -5,9 +5,7 @@
     animation-duration: .7s;
 
     .pricing-header {
-        // margin-top: 10%;
-        margin-top: 15%;
-        margin-bottom: 10%;
+        @include nonHomeH2;
     }
 
     .carousel-container {

@@ -14,7 +14,7 @@
     // padding: $paddingForCentering;
 
     h2 {
-        font-size: 450%;
+        @include nonHomeH2;
     };
 
     &__list {

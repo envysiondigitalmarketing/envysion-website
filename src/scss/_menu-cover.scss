@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: flex-start;
     &__list {
-        margin-top: 7%;
+        margin-top: $navHeight + 3vh;
         margin-left: 1%;
         margin-right: 0;
         display: flex;

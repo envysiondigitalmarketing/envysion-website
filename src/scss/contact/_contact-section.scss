@@ -3,7 +3,7 @@
 }
 .contact {
     h2{
-        font-size: 450%;
+        @include nonHomeH2;
     }
     &-section {
         animation-name: moveInRight;
