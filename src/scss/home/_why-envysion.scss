@@ -78,13 +78,13 @@
 
 @media screen and (min-width: 1050px) {
     .why-envysion {
+        h2 {
+            font-size: $secondH2;
+        }
         &__list {
             padding: 0 20%;
             p {
                 font-size: 400%;
-            }
-            h2 {
-                font-size: $secondH2;
             }
             h3 {
                 font-size: 425%;
@@ -95,11 +95,11 @@
 
 @media screen and (min-width: 1300px) {
     .why-envysion {
+        h2 {
+            font-size: $thirdH2;
+        }
         &__list {
             padding: 0 20%;
-            h2 {
-                font-size: $thirdH2;
-            }
         }
     }
 }

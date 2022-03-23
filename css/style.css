@@ -435,12 +435,12 @@
 .services {
   min-height: 90.5vh;
   background-color: #FEFDFF;
-  position: relative;
-  overflow: hidden;
   margin-top: -0.5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
   min-width: 101%;
 }
 .services h2 {
@@ -606,25 +606,25 @@
   }
 }
 @media screen and (min-width: 1050px) {
+  .why-envysion h2 {
+    font-size: 500%;
+  }
   .why-envysion__list {
     padding: 0 20%;
   }
   .why-envysion__list p {
     font-size: 400%;
   }
-  .why-envysion__list h2 {
-    font-size: 500%;
-  }
   .why-envysion__list h3 {
     font-size: 425%;
   }
 }
 @media screen and (min-width: 1300px) {
+  .why-envysion h2 {
+    font-size: 550%;
+  }
   .why-envysion__list {
     padding: 0 20%;
-  }
-  .why-envysion__list h2 {
-    font-size: 550%;
   }
 }
 @media screen and (min-width: 1450px) {
@@ -639,21 +639,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 90.5vh;
-  margin-top: -0.5%;
-  padding: 0 5%;
-  background-color: #FEFDFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  min-width: 101%;
+  padding: 0;
   animation-name: moveInRight;
   animation-duration: 0.7s;
-}
-.services-II h2 {
-  font-size: 500%;
-  display: inline-block;
-  margin-top: 15%;
-  align-self: center;
 }
 .services-II h2 {
   margin: 10% 0 5% 0;
@@ -661,7 +650,7 @@
 }
 .services-II__list {
   margin-top: 0;
-  margin-bottom: 50%;
+  margin-bottom: 10%;
   height: 5%;
   display: flex;
   flex-direction: column;
@@ -719,6 +708,57 @@
   transform: translateY(0px);
 }
 
+@media screen and (min-width: 470px) {
+  .services-II p {
+    font-size: 325%;
+  }
+  .services-II__header {
+    font-size: 350%;
+  }
+}
+@media screen and (min-width: 540px) {
+  .services-II__list {
+    padding: 0 10%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .services-II__list {
+    padding: 0 15%;
+  }
+  .services-II p {
+    font-size: 350%;
+  }
+  .services-II__header {
+    font-size: 375%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .services-II__list {
+    padding: 0 20%;
+  }
+  .services-II p {
+    font-size: 400%;
+  }
+  .services-II h2 {
+    font-size: 500%;
+  }
+  .services-II__header {
+    font-size: 425%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .services-II__list {
+    padding: 0 20%;
+  }
+  .services-II h2 {
+    font-size: 550%;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .services-II__list {
+    padding: 0 25%;
+  }
+}
 .pricing-section {
   min-height: 90.5vh;
   margin-top: -0.5%;
