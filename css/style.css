@@ -581,6 +581,57 @@
   height: 20em;
 }
 
+@media screen and (min-width: 470px) {
+  .why-envysion__list p {
+    font-size: 325%;
+  }
+  .why-envysion__list h3 {
+    font-size: 350%;
+  }
+}
+@media screen and (min-width: 540px) {
+  .why-envysion__list {
+    padding: 0 10%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .why-envysion__list {
+    padding: 0 15%;
+  }
+  .why-envysion__list p {
+    font-size: 350%;
+  }
+  .why-envysion__list h3 {
+    font-size: 375%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .why-envysion__list {
+    padding: 0 20%;
+  }
+  .why-envysion__list p {
+    font-size: 400%;
+  }
+  .why-envysion__list h2 {
+    font-size: 500%;
+  }
+  .why-envysion__list h3 {
+    font-size: 425%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .why-envysion__list {
+    padding: 0 20%;
+  }
+  .why-envysion__list h2 {
+    font-size: 550%;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .why-envysion__list {
+    padding: 0 25%;
+  }
+}
 .services-II {
   min-height: 90.5vh;
   background-color: #FEFDFF;

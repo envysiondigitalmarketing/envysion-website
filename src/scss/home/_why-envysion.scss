@@ -40,3 +40,74 @@
         height: 20em;
     }
 }
+
+@media screen and (min-width: 470px) {
+    .why-envysion {
+        &__list {
+            p {
+                font-size: 325%;
+            }
+            h3 {
+                font-size: 350%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .why-envysion {
+        &__list {
+            padding: 0 10%;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .why-envysion {
+        &__list {
+            padding: 0 15%;
+            p {
+                font-size: 350%;
+            }
+            h3 {
+                font-size: 375%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .why-envysion {
+        &__list {
+            padding: 0 20%;
+            p {
+                font-size: 400%;
+            }
+            h2 {
+                font-size: $secondH2;
+            }
+            h3 {
+                font-size: 425%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .why-envysion {
+        &__list {
+            padding: 0 20%;
+            h2 {
+                font-size: $thirdH2;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .why-envysion {
+        &__list {
+            padding: 0 25%;
+        }
+    }
+}
