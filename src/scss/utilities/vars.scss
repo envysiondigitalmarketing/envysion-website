@@ -12,11 +12,12 @@ $box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
 
 $paddingForCentering: 0 5%;
 
-$firstH2: 450%;
+
 $firstP: 300%;
 
-$secondH2: 500%;
 
+$firstH2: 450%;
+$secondH2: 500%;
 $thirdH2: 550%; 
 
 @mixin cover {
@@ -139,4 +140,19 @@ $thirdH2: 550%;
 @mixin nonHomeH2 {
     margin: 10% 0 5% 0;
     align-self: center;
+}
+
+@mixin homeH3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 325%;
+    text-decoration: underline $mainColor;
+    font-style: italic;
+}
+
+@mixin homeP {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $firstP;
+    font-weight: 500;
+    color: $mainColor;
+    letter-spacing: .1rem;
 }

@@ -1,6 +1,6 @@
 .services {
-    // min-height: $sectionHeight + .5vh;
-    min-height: max-content;
+    min-height: $sectionHeight + .5vh;
+    // min-height: max-content;
     background-color: $thisWhite;
 
     position: relative;
@@ -29,23 +29,18 @@
         width: 95%;
     }
     &__header {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 300%;
-        align-self: center;
-        cursor: pointer;
-        display: inline-block;
-        margin-bottom: 3%;
+        @include homeH3;
         transition: .6s;
+        margin-bottom: 3%;
+        cursor: pointer;
+        // align-self: center;
+        display: inline-block;
         &:hover {
             color: $secondColor;
         }
     };
     &__paragraph {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 250%;
-        font-weight: 500;
-        color: $mainColor;
-        letter-spacing: .1rem;
+        @include homeP;
         margin-top: 0;
         transition: height 0.5s;
     }
@@ -55,6 +50,9 @@
     .services {
         p {
             font-size: 325%;
+        }
+        &__header {
+            font-size: 350%;
         }
     }
 }
@@ -75,6 +73,9 @@
         p {
             font-size: 350%;
         }
+        &__header {
+            font-size: 375%;
+        }
     }
 }
 
@@ -89,6 +90,9 @@
         h2 {
             font-size: $secondH2;
         }
+        &__header {
+            font-size: 425%;
+        }
     }
 }
 
@@ -96,9 +100,6 @@
     .services {
         &__list {
             padding: 0 20%;
-        }
-        p {
-            font-size: 400%;
         }
         h2 {
             font-size: $thirdH2;

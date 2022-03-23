@@ -28,15 +28,9 @@
         // padding: $paddingForCentering
     };
     & p {
-        font-family: 'Open Sans', sans-serif;
-        font-size: $firstP;
-        font-weight: 500;
-        color: $mainColor;
-        letter-spacing: .1rem;
+        @include homeP;
         margin-top: 5%;
         line-height: 1.5;
-        // padding: $paddingForCentering;
-        // margin-bottom: 15%;
     }
 }
 
@@ -85,9 +79,6 @@
     .about {
         &-container {
             padding: 0 20%;
-        }
-        p {
-            font-size: 400%;
         }
         h2 {
             font-size: $thirdH2;
