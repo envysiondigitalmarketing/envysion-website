@@ -1,19 +1,23 @@
 .about {
-    min-height: $sectionHeight + .5vh;
+    min-height: 150vh;
+    // min-height: $sectionHeight + .5vh;
     background-color: $thisWhite;
 
-    position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     margin-top: -.5%;
+    // position: relative;
+    // margin-bottom: 10vh;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-width: 101%;
+    // min-width: 102vw;
+    min-width: 103vw;
     &-container {
         padding: $paddingForCentering;
         display: flex;
         flex-direction: column;
+        min-height: max-content;
     }
     & h2 {
         @include homeH2;
@@ -32,6 +36,9 @@
         margin-top: 5%;
         line-height: 1.5;
     }
+    // .cta-orange {
+    //     margin-bottom: 0;
+    // }
 }
 
 @media screen and (min-width: 470px) {

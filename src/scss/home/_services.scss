@@ -1,5 +1,7 @@
 .services {
-    min-height: $sectionHeight + .5vh;
+    // min-height: $sectionHeight + .5vh;
+    min-height: 100vh;
+    min-width: 103vw;
     background-color: $thisWhite;
 
     margin-top: -.5%;
@@ -8,10 +10,8 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    position: relative;
+    // position: relative; 
     overflow: hidden;
-
-    min-width: 101%;
 
     & h2 {
         @include homeH2;
@@ -20,7 +20,7 @@
     &__list {
         margin-top: 0;
         margin-bottom: 10%;
-        height: 5%;
+        // height: 5%;
         display: flex;
         flex-direction: column;
         align-items: center;
