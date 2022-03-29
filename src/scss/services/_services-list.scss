@@ -90,18 +90,15 @@
 
 @media screen and (min-width: 540px) {
     .services-II {
-        // padding: 0 10%;
-        &__list {
-            // padding: 0 10%;
+        &__div {
+            width: 70%;
         }
     }
 }
 
 @media screen and (min-width: 760px) {
     .services-II {
-        // padding: 0 15%;
         &__list {
-            // padding: 0 15%;
         }
         p {
             font-size: 350%;
@@ -131,44 +128,31 @@
         width: 70vw;
     }
     .services-II {
-        padding: 0 15%;
         grid-area: two;
-        padding: 0;right: 0;
         position: relative;
-        width: 70vw;
-        float: left;
-        max-height: 100%;
+        max-width: 70vw;
+        min-width: 70vw;
+        max-height: max-content;
         overflow: hidden;
         margin-bottom: 0;
+        align-items: flex-start;
         &__list {
             width: 70vw;
             margin-bottom: 0;
             max-height: 100%;
         }
         .cta-orange__services {
-            margin-bottom: 0;
+            margin-bottom: 25%;
         }
-    }
-    .footer {
-        bottom: 0;
-        overflow: hidden;
-        position: relative;
-        height: 100vh;
-        margin: 0;
-        max-width: 30vw;
-        float: right;
-        grid-area: three;
-        &-container {
-            margin-top: 10vh;
+        h2 {
+            margin-left: 1.5%;
         }
     }
 }
 
 @media screen and (min-width: 1050px) {
     .services-II {
-        padding: 0 20%;
         &__list {
-            // padding: 0 20%;
         }
         p {
             font-size: 400%;
@@ -184,9 +168,7 @@
 
 @media screen and (min-width: 1300px) {
     .services-II {
-        padding: 0 20%;
         &__list {
-            // padding: 0 20%;
         }
         h2 {
             font-size: $thirdH2;
@@ -194,11 +176,9 @@
     }
 }
 
-@media screen and (min-width: 1450px) {
-    .services-II {
-        padding: 0 25%;
-        &__list {
-            // padding: 0 25%;
-        }
-    }
-}
+// @media screen and (min-width: 1450px) {
+//     .services-II {
+//         &__list {
+//         }
+//     }
+// }

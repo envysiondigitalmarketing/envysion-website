@@ -37,7 +37,7 @@
         padding: $paddingForCentering;
     }
 
-    .footer-logo {
+    &-logo {
         margin-top: 15%;
         width: 65%;
     }
@@ -132,6 +132,10 @@
         bottom: 1%;
         color: $thisWhite;
     }
+}
+
+@media screen and (min-width: 1000px) {
+    //
 }
 
 // @media screen and (min-width: 470px) {

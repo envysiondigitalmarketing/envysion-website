@@ -759,6 +759,11 @@
     font-size: 350%;
   }
 }
+@media screen and (min-width: 540px) {
+  .services-II__div {
+    width: 70%;
+  }
+}
 @media screen and (min-width: 760px) {
   .services-II p {
     font-size: 350%;
@@ -787,16 +792,14 @@
   }
 
   .services-II {
-    padding: 0 15%;
     grid-area: two;
-    padding: 0;
-    right: 0;
     position: relative;
-    width: 70vw;
-    float: left;
-    max-height: 100%;
+    max-width: 70vw;
+    min-width: 70vw;
+    max-height: max-content;
     overflow: hidden;
     margin-bottom: 0;
+    align-items: flex-start;
   }
   .services-II__list {
     width: 70vw;
@@ -804,27 +807,13 @@
     max-height: 100%;
   }
   .services-II .cta-orange__services {
-    margin-bottom: 0;
+    margin-bottom: 25%;
   }
-
-  .footer {
-    bottom: 0;
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
-    margin: 0;
-    max-width: 30vw;
-    float: right;
-    grid-area: three;
-  }
-  .footer-container {
-    margin-top: 10vh;
+  .services-II h2 {
+    margin-left: 1.5%;
   }
 }
 @media screen and (min-width: 1050px) {
-  .services-II {
-    padding: 0 20%;
-  }
   .services-II p {
     font-size: 400%;
   }
@@ -836,16 +825,8 @@
   }
 }
 @media screen and (min-width: 1300px) {
-  .services-II {
-    padding: 0 20%;
-  }
   .services-II h2 {
     font-size: 550%;
-  }
-}
-@media screen and (min-width: 1450px) {
-  .services-II {
-    padding: 0 25%;
   }
 }
 .pricing-section {
@@ -1231,7 +1212,7 @@
   align-items: flex-start;
   padding: 0 5%;
 }
-.footer .footer-logo {
+.footer-logo {
   margin-top: 15%;
   width: 65%;
 }
