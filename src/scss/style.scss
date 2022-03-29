@@ -37,6 +37,9 @@ body, html {
         &__about, &__services {
             align-self: center;
         }
+        &__about {
+            // margin: 10% 0 40% 0;
+        }
         // &__why-envysion {
         //     margin-bottom: 30%;
         //     margin-top: 15%;
@@ -65,7 +68,7 @@ body, html {
         grid-area: one;
     }
     .main {
-        // grid-area: two;
+        grid-area: two;
         // min-height: 100vh;
         // max-height: 100vh;
         right: 0;
@@ -77,13 +80,23 @@ body, html {
         overflow-y: scroll;
         padding: 0;
     }
+    // .home {
+    //     max-width: 70vw;
+    //     min-width: 70vw;
+    // }
+    // .hero {
+    //     min-width: 70vw;
+    //     max-width: 70vw;
+    // }
     .footer {
+        grid-area: three;
         bottom: 0;
         overflow: hidden;
         position: relative;
         height: 100vh;
         margin: 0;
-        width: 30vw;
+        min-width: 30vw;
+        max-width: 30vw;
         float: right;
         &-container {
             margin-top: 10vh;

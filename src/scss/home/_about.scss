@@ -1,5 +1,5 @@
 .about {
-    min-height: 150vh;
+    min-height: 100vh;
     // min-height: $sectionHeight + .5vh;
     background-color: $thisWhite;
 
@@ -65,6 +65,13 @@
         p {
             font-size: 350%;
         }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .about {
+        max-width: 70vw;
+        min-width: 70vw !important;
     }
 }
 

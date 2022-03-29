@@ -242,6 +242,13 @@
     };
 };
 
+@media screen and (min-width: 1000px) {
+    .home, .hero {
+        max-width: 70vw;
+        min-width: 70vw !important;
+    }
+}
+
 @media screen and (min-width: 1040px) {
     .home {
         &__nav {

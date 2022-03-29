@@ -1,6 +1,6 @@
 .why-envysion {
     // min-height: $sectionHeight + .5vh;
-    min-height: 275vh;
+    min-height: 350vh;
     background-color: $thisWhite;
 
     position: relative;
@@ -75,6 +75,18 @@
                 font-size: 375%;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .why-envysion {
+        max-width: 70vw;
+        min-width: 70vw !important;
+    }
+    .tech-focused {
+        // margin-top: 95%;
+        // margin-bottom: 0
+        justify-self: center;
     }
 }
 

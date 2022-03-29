@@ -1,6 +1,7 @@
 .services {
     // min-height: $sectionHeight + .5vh;
     min-height: 100vh;
+    // min-height: 200vh;
     min-width: 103vw;
     background-color: $thisWhite;
 
@@ -77,6 +78,13 @@
         &__header {
             font-size: 375%;
         }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .services {
+        max-width: 70vw;
+        min-width: 70vw !important;
     }
 }
 
