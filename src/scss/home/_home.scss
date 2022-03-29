@@ -107,7 +107,6 @@
         @include cover;
         overflow: hidden;
         max-width: 100%;
-        // max-width: 70vw;
         z-index: -1;
     }
     .hero-text-div {
@@ -246,6 +245,12 @@
     .home, .hero {
         max-width: 70vw;
         min-width: 70vw !important;
+    }
+    .hero-video {
+        @include cover;
+        overflow: hidden;
+        max-width: 100%;
+        z-index: -1;
     }
 }
 

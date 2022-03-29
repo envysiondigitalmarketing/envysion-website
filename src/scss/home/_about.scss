@@ -72,11 +72,13 @@
     .about {
         max-width: 70vw;
         min-width: 70vw !important;
+        min-height: 200vh;
     }
 }
 
 @media screen and (min-width: 1050px) {
     .about {
+        min-height: 230vh;
         &-container {
             padding: 0 20%;
         }

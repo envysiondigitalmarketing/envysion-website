@@ -1,6 +1,6 @@
 .services {
     // min-height: $sectionHeight + .5vh;
-    min-height: 100vh;
+    min-height: 125vh;
     // min-height: 200vh;
     min-width: 103vw;
     background-color: $thisWhite;
@@ -90,6 +90,7 @@
 
 @media screen and (min-width: 1050px) {
     .services {
+        min-height: 125vh;
         &__list {
             padding: 0 20%;
         }

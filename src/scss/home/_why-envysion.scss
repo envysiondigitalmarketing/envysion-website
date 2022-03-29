@@ -36,6 +36,7 @@
         height: 30%;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
     }
     &__list--icon {
@@ -92,11 +93,12 @@
 
 @media screen and (min-width: 1050px) {
     .why-envysion {
+        min-height: 400vh;
         h2 {
             font-size: $secondH2;
         }
         &__list {
-            padding: 0 20%;
+            // padding: 0 20%;
             p {
                 font-size: 400%;
             }
