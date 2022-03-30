@@ -1,6 +1,6 @@
 .why-envysion {
     // min-height: $sectionHeight + .5vh;
-    min-height: 350vh;
+    min-height: 325vh;
     background-color: $thisWhite;
 
     position: relative;
@@ -83,25 +83,42 @@
     .why-envysion {
         max-width: 70vw;
         min-width: 70vw !important;
+        min-height: 350vh;
+        // .test {
+        //     position: relative;
+        //     max-width: 70vw;
+        //     min-width: 70vw !important;
+        // }
+        // img {
+        //     height: auto;
+        //     width: 100%;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     max-width: 70vw;
+        // }
+        // p {
+        //     background-color: whitesmoke;
+        //     opacity: .7;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        // }
     }
     .tech-focused {
-        // margin-top: 95%;
-        // margin-bottom: 0
         justify-self: center;
     }
 }
 
 @media screen and (min-width: 1050px) {
     .why-envysion {
-        min-height: 400vh;
+        min-height: 350vh;
+        padding-top: 10%;
         h2 {
             font-size: $secondH2;
         }
         &__list {
-            // padding: 0 20%;
-            p {
-                font-size: 400%;
-            }
             h3 {
                 font-size: 425%;
             }

@@ -23,7 +23,6 @@ body, html {
     max-width: 100vw;
     margin: 0;
     font-size: 62.5%;
-    // font-family: 'League Spartan', sans-serif;
     font-family: 'league_spartanbold';
     font-weight: 400;
     color: $mainColor;
@@ -37,13 +36,6 @@ body, html {
         &__about, &__services {
             align-self: center;
         }
-        &__about {
-            // margin: 10% 0 40% 0;
-        }
-        // &__why-envysion {
-        //     margin-bottom: 30%;
-        //     margin-top: 15%;
-        // }
     }
     h2 {
         font-size: $firstH2;
@@ -69,8 +61,6 @@ body, html {
     }
     .main {
         grid-area: two;
-        // min-height: 100vh;
-        // max-height: 100vh;
         right: 0;
         position: relative;
         max-width: 70vw;
@@ -80,14 +70,6 @@ body, html {
         overflow-y: scroll;
         padding: 0;
     }
-    // .home {
-    //     max-width: 70vw;
-    //     min-width: 70vw;
-    // }
-    // .hero {
-    //     min-width: 70vw;
-    //     max-width: 70vw;
-    // }
     .footer {
         grid-area: three;
         bottom: 0;
@@ -101,11 +83,5 @@ body, html {
         &-container {
             margin-top: 10vh;
         }
-        // min-height: 100vh;
-        // max-height: 100vh;
-        // grid-area: three;
-        // right: 0;
-        // margin-top: 100vh;
-        // padding-top: 5%;
     }
 }

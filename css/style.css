@@ -374,7 +374,7 @@
   }
 }
 .about {
-  min-height: 100vh;
+  min-height: 215vh;
   background-color: #FEFDFF;
   overflow-x: hidden;
   margin-top: -0.5%;
@@ -411,17 +411,31 @@
   line-height: 1.5;
 }
 
+@media screen and (min-width: 340px) {
+  .about {
+    min-height: 185vh;
+  }
+}
 @media screen and (min-width: 470px) {
+  .about {
+    min-height: 200vh;
+  }
   .about p {
     font-size: 325%;
   }
 }
 @media screen and (min-width: 540px) {
+  .about {
+    min-height: 180vh;
+  }
   .about-container {
     padding: 0 10%;
   }
 }
 @media screen and (min-width: 760px) {
+  .about {
+    min-height: 160vh;
+  }
   .about-container {
     padding: 0 15%;
   }
@@ -442,9 +456,6 @@
   }
   .about-container {
     padding: 0 20%;
-  }
-  .about p {
-    font-size: 400%;
   }
   .about h2 {
     font-size: 500%;
@@ -572,7 +583,7 @@
   }
 }
 .why-envysion {
-  min-height: 350vh;
+  min-height: 325vh;
   background-color: #FEFDFF;
   position: relative;
   overflow-x: hidden;
@@ -648,6 +659,7 @@
   .why-envysion {
     max-width: 70vw;
     min-width: 70vw !important;
+    min-height: 350vh;
   }
 
   .tech-focused {
@@ -656,13 +668,11 @@
 }
 @media screen and (min-width: 1050px) {
   .why-envysion {
-    min-height: 400vh;
+    min-height: 350vh;
+    padding-top: 10%;
   }
   .why-envysion h2 {
     font-size: 500%;
-  }
-  .why-envysion__list p {
-    font-size: 400%;
   }
   .why-envysion__list h3 {
     font-size: 425%;
@@ -837,9 +847,6 @@
   }
 }
 @media screen and (min-width: 1050px) {
-  .services-II p {
-    font-size: 400%;
-  }
   .services-II h2 {
     font-size: 500%;
   }
