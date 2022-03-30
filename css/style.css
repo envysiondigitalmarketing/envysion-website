@@ -452,7 +452,7 @@
 }
 @media screen and (min-width: 1050px) {
   .about {
-    min-height: 230vh;
+    min-height: 210vh;
   }
   .about-container {
     padding: 0 20%;
@@ -558,9 +558,6 @@
   }
   .services__list {
     padding: 0 20%;
-  }
-  .services p {
-    font-size: 400%;
   }
   .services h2 {
     font-size: 500%;
