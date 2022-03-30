@@ -103,6 +103,15 @@
     }
 }
 
+@media screen and (min-width: 350px) {
+    .footer {
+        &-logo {
+            margin-top: 25%;
+            width: 45%;
+        }
+    }
+}
+
 @media screen and (min-width: 500px) {
     .footer {
         &-container {
