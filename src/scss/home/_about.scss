@@ -1,5 +1,5 @@
 .about {
-    min-height: 215vh;
+    min-height: 175vh;
     // min-height: $sectionHeight + .5vh;
     background-color: $thisWhite;
 
@@ -39,14 +39,14 @@
 }
 
 @media screen and (min-width: 340px) {
-    .about {
-        min-height: 185vh;
-    }
+    // .about {
+    //     min-height: 185vh;
+    // }
 }
 
 @media screen and (min-width: 470px) {
     .about {
-        min-height: 200vh;
+        // min-height: 200vh;
         p {
             font-size: 300%;
         }

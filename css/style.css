@@ -374,7 +374,7 @@
   }
 }
 .about {
-  min-height: 215vh;
+  min-height: 175vh;
   background-color: #FEFDFF;
   overflow-x: hidden;
   margin-top: -0.5%;
@@ -411,15 +411,7 @@
   line-height: 1.5;
 }
 
-@media screen and (min-width: 340px) {
-  .about {
-    min-height: 185vh;
-  }
-}
 @media screen and (min-width: 470px) {
-  .about {
-    min-height: 200vh;
-  }
   .about p {
     font-size: 300%;
   }
@@ -580,7 +572,7 @@
   }
 }
 .why-envysion {
-  min-height: 325vh;
+  min-height: 275vh;
   background-color: #FEFDFF;
   position: relative;
   overflow-x: hidden;
