@@ -44,15 +44,30 @@
     }
 }
 
+@media screen and (min-width: 340px) {
+    .why-envysion {
+        &__list {
+            // &--icon {
+            //     width: 100%;
+            //     height: auto;
+            // }
+        }
+    }
+}
+
 @media screen and (min-width: 470px) {
     .why-envysion {
         &__list {
             p {
-                font-size: 325%;
+                font-size: 300%;
             }
             h3 {
                 font-size: 350%;
             }
+            // &--icon {
+            //     width: 60%;
+            //     height: auto;
+            // }
         }
     }
 }
@@ -84,6 +99,7 @@
         max-width: 70vw;
         min-width: 70vw !important;
         min-height: 350vh;
+        padding-top: 10%;
         // .test {
         //     position: relative;
         //     max-width: 70vw;
@@ -114,7 +130,6 @@
 @media screen and (min-width: 1050px) {
     .why-envysion {
         min-height: 350vh;
-        padding-top: 10%;
         h2 {
             font-size: $secondH2;
         }
