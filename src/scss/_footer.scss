@@ -156,6 +156,11 @@
 }
 
 @media screen and (min-width: 1000px) {
+    .footer {
+        &-logo {
+            margin-top: 20%;
+        }
+    }
     .footer-social-links {
         &__div {
             height: 5% !important;
