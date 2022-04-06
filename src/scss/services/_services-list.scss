@@ -15,7 +15,6 @@
 .services-II {
     height: max-content;
     overflow-y: scroll;
-    // background-color: $thisWhite;
 
     margin-top: $navHeight;
 
@@ -145,10 +144,14 @@
             max-height: 100%;
         }
         .cta-orange__services {
-            margin-bottom: 25%;
+            margin-bottom: 5%;
+            margin-top: 5%;
         }
         h2 {
             margin-left: 1.5%;
+        }
+        &__div {
+            width: 60%;
         }
     }
 }
@@ -159,9 +162,6 @@
         }
         h2 {
             font-size: $secondH2;
-        }
-        &__header {
-            font-size: 425%;
         }
     }
 }
@@ -175,10 +175,3 @@
         }
     }
 }
-
-// @media screen and (min-width: 1450px) {
-//     .services-II {
-//         &__list {
-//         }
-//     }
-// }

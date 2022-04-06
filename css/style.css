@@ -839,18 +839,19 @@
     max-height: 100%;
   }
   .services-II .cta-orange__services {
-    margin-bottom: 25%;
+    margin-bottom: 5%;
+    margin-top: 5%;
   }
   .services-II h2 {
     margin-left: 1.5%;
+  }
+  .services-II__div {
+    width: 60%;
   }
 }
 @media screen and (min-width: 1050px) {
   .services-II h2 {
     font-size: 500%;
-  }
-  .services-II__header {
-    font-size: 425%;
   }
 }
 @media screen and (min-width: 1300px) {
