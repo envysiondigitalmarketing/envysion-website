@@ -8,7 +8,7 @@
 .pricing-section {
     @include andSection;
     padding: 0;
-    min-height: $sectionHeight + 6vh;
+    min-height: 80vh;
     animation-name: moveInRight;
     animation-duration: .7s;
     margin-top: $navHeight;
@@ -156,7 +156,14 @@
 
 @media screen and (min-width: 400px) {
     .carousel-container {
+        width: 70% !important;
+    }
+}//height: 55vh;
+
+@media screen and (min-width: 420px) {
+    .carousel-container {
         width: 75% !important;
+        height: 50vh !important;
     }
 }
 
@@ -194,24 +201,22 @@
 
 @media screen and (min-width: 650px) {
     .pricing-header {
-        margin-top: 10% !important;
+        // margin-top: 10% !important;
     }
     .carousel-container {
-        width: 50% !important;
+        width: 40% !important;
     }
 }
 
 @media screen and (min-width: 750px) {
-    .pricing-section {
-        .next {
-            margin-top: 1%;
-        }
+    .carousel-container {
+        // width: 45% !important;
     }
 }
 
 @media screen and (min-width: 800px) {
     .carousel-container {
-        width: 45% !important;
+        // width: 45% !important;
     }
 }
 
@@ -229,7 +234,7 @@
     .pricing {
         &-section {
             .pricing-header {
-                margin-top: 7% !important;
+                // margin-top: 7% !important;
             }
         }
     }
@@ -239,7 +244,7 @@
     .pricing {
         &-section {
             .pricing-header {
-                margin-top: .25%;
+                // margin-top: .25%;
             }
         }
     }
@@ -270,7 +275,7 @@
             margin-bottom: 0 !important;
         }
         .pricing-header {
-            margin-top: 7% !important;
+            // margin-top: 7% !important;
         }
     }
 }
@@ -293,5 +298,20 @@
 @media screen and (min-width: 1150px) {
     .carousel-container {
         width: 35% !important;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .pricing {
+        &-section {
+            .pricing-header {
+                font-size: $thirdH2;
+            }
+        }
+    }
+    .carousel-container {
+        height: 45vh !important;
+        width: 25% !important;
+
     }
 }
