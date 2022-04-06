@@ -83,6 +83,14 @@
     }
 }
 
+@media screen and (min-width: 500px) {
+    .services-II {
+            h2 {
+                margin-top: 10%;
+            }
+    }
+}
+
 @media screen and (min-width: 540px) {
     .services-II {
         &__div {

@@ -8,7 +8,7 @@
         height: 6em;
         width: auto;
         align-self: center;
-        // margin-left: 5%
+        margin-top: -5%;
     };
     &__nav {
         // @include navHeight($navHeight);
@@ -180,6 +180,9 @@
         .hero-slogan {
             font-size: 325%;
         }
+        &__logo {
+            margin-top: -10%;
+        };
     }
 }
 
@@ -238,6 +241,9 @@
                 width: 5.5%;
             };
         };
+        &__logo {
+            margin-top: -15%;
+        };
     };
 };
 
@@ -262,7 +268,7 @@
             };
         };
         &__logo {
-            margin-top: -15%;
+            margin-top: -20%;
         }
     };
 };
@@ -270,8 +276,7 @@
 @media screen and (min-width: 1200px) {
     .home {
         &__logo {
-            height: 9em;
-            width: auto;
+            margin-top: -25%;
         };
         &__nav {
             &--button-x {

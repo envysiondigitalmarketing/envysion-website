@@ -106,6 +106,7 @@
   height: 6em;
   width: auto;
   align-self: center;
+  margin-top: -5%;
 }
 .home__nav {
   width: 100%;
@@ -275,6 +276,9 @@
   .home .hero-slogan {
     font-size: 325%;
   }
+  .home__logo {
+    margin-top: -10%;
+  }
 }
 @media screen and (min-width: 450px) {
   .home__nav--button-x {
@@ -315,6 +319,9 @@
   .home__nav--button-x {
     width: 5.5%;
   }
+  .home__logo {
+    margin-top: -15%;
+  }
 }
 @media screen and (min-width: 1000px) {
   .home, .hero {
@@ -342,13 +349,12 @@
     width: 4.5%;
   }
   .home__logo {
-    margin-top: -15%;
+    margin-top: -20%;
   }
 }
 @media screen and (min-width: 1200px) {
   .home__logo {
-    height: 9em;
-    width: auto;
+    margin-top: -25%;
   }
   .home__nav--button-x {
     width: 4%;
@@ -780,6 +786,11 @@
     font-size: 350%;
   }
 }
+@media screen and (min-width: 500px) {
+  .services-II h2 {
+    margin-top: 10%;
+  }
+}
 @media screen and (min-width: 540px) {
   .services-II__div {
     width: 70%;
@@ -972,7 +983,7 @@
   background-image: url("../../../src/assets/pricing/digital-advertisements.jpg");
 }
 .pricing-section .next {
-  margin: 2em 0;
+  margin: 2em 0 4em 0;
   height: 4em;
   width: 8em;
   border-radius: 5em;
@@ -1033,9 +1044,19 @@
     width: 60% !important;
   }
 }
+@media screen and (min-width: 500px) {
+  .pricing-section .pricing-header {
+    margin-top: 10%;
+  }
+}
 @media screen and (min-width: 550px) {
   .carousel-container {
     width: 55% !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  .pricing-section .pricing-header {
+    margin-bottom: 1%;
   }
 }
 @media screen and (min-width: 650px) {
@@ -1047,9 +1068,34 @@
     width: 50% !important;
   }
 }
+@media screen and (min-width: 750px) {
+  .pricing-section .next {
+    margin-top: 1%;
+  }
+}
 @media screen and (min-width: 800px) {
   .carousel-container {
     width: 45% !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  .pricing-section .pricing-header {
+    margin-bottom: 0%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .pricing-section .pricing-header {
+    margin-top: 7% !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  .pricing-section .pricing-header {
+    margin-top: 0.25%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .carousel-container {
+    width: 35% !important;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1061,9 +1107,8 @@
   .pricing-section .next {
     margin-bottom: 0 !important;
   }
-  .pricing-section h2 {
-    margin-top: 8% !important;
-    margin-bottom: 0% !important;
+  .pricing-section .pricing-header {
+    margin-top: 7% !important;
   }
 }
 @media screen and (min-width: 1050px) {
@@ -1071,17 +1116,25 @@
     width: 40% !important;
   }
 }
-@media screen and (min-width: 1100px) {
-  .pricing-section h2 {
-    margin-top: 6% !important;
-    margin-bottom: 0% !important;
-  }
-}
 @media screen and (min-width: 1150px) {
   .carousel-container {
     width: 35% !important;
   }
 }
+.main {
+  width: 103vw;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.contact--home {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .home__nav {
   z-index: 2;
 }
@@ -1093,7 +1146,7 @@
 .contact-section {
   animation-name: moveInRight;
   animation-duration: 0.7s;
-  height: 100%;
+  height: max-content;
   min-height: 90.5vh;
   margin-top: -0.5%;
   padding: 0 5%;
@@ -1103,6 +1156,8 @@
   justify-content: flex-start;
   font-size: 75%;
   margin: 0;
+  padding: 0;
+  margin-top: 10vh;
 }
 .contact-section h2 {
   font-size: 500%;
@@ -1216,6 +1271,90 @@
   transform: translateY(0px);
 }
 
+@media screen and (min-width: 420px) {
+  .contact-section form {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 470px) {
+  .contact-section p {
+    font-size: 300%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .contact-section form {
+    width: 50%;
+  }
+  .contact-section h2 {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .contact-section form {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .contact-section p {
+    font-size: 350%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .contact-section form {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas: "one one one one one one" "two two two two two three";
+  }
+
+  body {
+    width: 100vw;
+  }
+
+  .nav-area {
+    grid-area: one;
+  }
+
+  .main {
+    width: 70vw;
+  }
+
+  .contact {
+    grid-area: two;
+    position: relative;
+    max-width: 70vw;
+    min-width: 70vw;
+    max-height: max-content;
+    overflow: hidden;
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
+  .contact-section {
+    width: 70vw;
+    margin-bottom: 0;
+    max-height: 100%;
+  }
+  .contact .cta-orange__services {
+    margin-bottom: 25%;
+  }
+  .contact h2 {
+    margin-left: 1.5%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .contact-section h2 {
+    font-size: 500%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .contact-section h2 {
+    font-size: 550%;
+  }
+}
 .menu-cover {
   height: 100%;
   object-fit: cover;
@@ -1312,7 +1451,8 @@
   font-size: 300%;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  letter-spacing: 0.1rem;
+  font-weight: bolder;
+  font-style: italic;
   margin: 5% 0;
 }
 .footer .footer-contacts {
