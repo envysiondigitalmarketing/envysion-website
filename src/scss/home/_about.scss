@@ -46,7 +46,6 @@
 
 @media screen and (min-width: 470px) {
     .about {
-        // min-height: 200vh;
         p {
             font-size: 300%;
         }
@@ -67,9 +66,6 @@
         min-height: 160vh;
         &-container {
             padding: 0 15%;
-        }
-        p {
-            font-size: 350%;
         }
     }
 }

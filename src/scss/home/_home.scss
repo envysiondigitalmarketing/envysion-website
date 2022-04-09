@@ -129,6 +129,8 @@
         &__marketing {
             animation-duration: 2s;
         };
+        color: transparent;
+        -webkit-text-stroke: 1px #063831;
     };
     .hero-slogan {
         @include hero-text;

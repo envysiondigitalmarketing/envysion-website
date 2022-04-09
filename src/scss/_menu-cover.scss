@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: flex-start;
     &__list {
-        margin-top: $navHeight + 3vh;
+        margin-top: 13vh;
         margin-left: 1%;
         margin-right: 0;
         display: flex;
@@ -59,3 +59,19 @@
         right: 4%;
     };
 };
+
+@media screen and (min-width: 560px) {
+    .menu-cover {
+        &__list {
+            margin-top: 18vh;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .menu-cover {
+        &__list--ul {
+            font-size: 550%;
+        }
+    }
+}
