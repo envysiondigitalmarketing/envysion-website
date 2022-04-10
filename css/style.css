@@ -239,7 +239,6 @@
 .home .hero-slogan {
   margin: 0.5rem 0 0.5rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  font-family: "Open Sans", sans-serif;
   display: inline-block;
   animation-name: moveInSlogan;
   font-size: 275%;
@@ -647,7 +646,7 @@
   .why-envysion {
     max-width: 70vw;
     min-width: 70vw !important;
-    min-height: 350vh;
+    min-height: 300vh;
     padding-top: 10%;
   }
 
@@ -656,9 +655,6 @@
   }
 }
 @media screen and (min-width: 1050px) {
-  .why-envysion {
-    min-height: 350vh;
-  }
   .why-envysion h2 {
     font-size: 500%;
   }
@@ -1641,6 +1637,11 @@ body h2, html h2 {
   }
   .footer-container {
     margin-top: 10vh;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .cta-orange {
+    margin-bottom: 0 !important;
   }
 }
 

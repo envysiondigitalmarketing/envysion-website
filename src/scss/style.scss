@@ -88,3 +88,9 @@ body, html {
         }
     }
 }
+
+@media screen and (min-width: 1000px) {
+    .cta-orange {
+        margin-bottom: 0 !important;
+    }
+}

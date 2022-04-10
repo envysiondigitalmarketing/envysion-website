@@ -134,7 +134,7 @@
     };
     .hero-slogan {
         @include hero-text;
-        font-family: 'Open Sans', sans-serif;
+        // font-family: 'Open Sans', sans-serif;
         display: inline-block;
         animation-name: moveInSlogan;
         font-size: 275%;

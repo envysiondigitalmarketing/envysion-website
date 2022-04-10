@@ -95,29 +95,8 @@
     .why-envysion {
         max-width: 70vw;
         min-width: 70vw !important;
-        min-height: 350vh;
+        min-height: 300vh;
         padding-top: 10%;
-        // .test {
-        //     position: relative;
-        //     max-width: 70vw;
-        //     min-width: 70vw !important;
-        // }
-        // img {
-        //     height: auto;
-        //     width: 100%;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     max-width: 70vw;
-        // }
-        // p {
-        //     background-color: whitesmoke;
-        //     opacity: .7;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     width: 100%;
-        // }
     }
     .tech-focused {
         justify-self: center;
@@ -126,7 +105,6 @@
 
 @media screen and (min-width: 1050px) {
     .why-envysion {
-        min-height: 350vh;
         h2 {
             font-size: $secondH2;
         }
