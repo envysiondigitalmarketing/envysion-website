@@ -752,7 +752,7 @@
   transition: 0.2s;
   cursor: pointer;
   padding: 0.75em 1em;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 15%;
   border-radius: 5px;
   font-size: 250%;
@@ -1001,7 +1001,7 @@
   transition: 0.2s;
   cursor: pointer;
   padding: 0.75em 1em;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 15%;
   border-radius: 5px;
   font-size: 250%;
@@ -1233,7 +1233,7 @@
   transition: 0.2s;
   cursor: pointer;
   padding: 0.75em 1em;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 15%;
   border-radius: 5px;
   font-size: 250%;
@@ -1578,7 +1578,7 @@ body .cta-orange, html .cta-orange {
   transition: 0.2s;
   cursor: pointer;
   padding: 0.75em 1em;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 15%;
   border-radius: 5px;
   font-size: 250%;
