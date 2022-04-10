@@ -659,6 +659,11 @@
     font-size: 425%;
   }
 }
+@media screen and (min-width: 1250px) {
+  .why-envysion {
+    min-height: 310vh;
+  }
+}
 @media screen and (min-width: 1300px) {
   .why-envysion h2 {
     font-size: 550%;
