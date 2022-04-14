@@ -1,7 +1,4 @@
 .home {
-    min-height: 100%;
-    // min-width: 100%;
-    max-width: 70vw;
     display: flex;
     flex-direction: column;
     &__logo {
@@ -223,7 +220,7 @@
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 650px) {
     .home {
         &__nav {
             &--button-x {
@@ -282,7 +279,7 @@
         };
         &__nav {
             &--button-x {
-                width: 4%;
+                width: 3.5%;
             };
         };
         .hero-heading {
@@ -294,11 +291,11 @@
     };
 };
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
     .home {
         &__logo {
-            margin-top: -20%;
-        }
+            margin-top: -35%;
+        };
     };
 };
 
@@ -309,8 +306,5 @@
                 width: 3%;
             };
         };
-        &__logo {
-            margin-top: -25%;
-        }
     };
 };

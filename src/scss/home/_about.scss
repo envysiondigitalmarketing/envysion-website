@@ -1,17 +1,12 @@
 .about {
-    min-height: 175vh;
-    // min-height: $sectionHeight + .5vh;
     background-color: $thisWhite;
 
     overflow-x: hidden;
     margin-top: -.5%;
-    // position: relative;
-    // margin-bottom: 10vh;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    // min-width: 102vw;
     min-width: 103vw;
     &-container {
         padding: $paddingForCentering;
@@ -29,7 +24,6 @@
         margin-top: 0;
         margin-bottom: 0;
         margin-top: 5%;
-        // padding: $paddingForCentering
     };
     & p {
         @include homeP;
@@ -40,7 +34,7 @@
 
 @media screen and (min-width: 340px) {
     // .about {
-    //     min-height: 185vh;
+        // min-height: 150vh;
     // }
 }
 
@@ -54,7 +48,6 @@
 
 @media screen and (min-width: 540px) {
     .about {
-        min-height: 180vh;
         &-container {
             padding: 0 10%;
         }
@@ -63,7 +56,7 @@
 
 @media screen and (min-width: 760px) {
     .about {
-        min-height: 160vh;
+        // min-height: 160vh;
         &-container {
             padding: 0 15%;
         }
@@ -91,6 +84,7 @@
 
 @media screen and (min-width: 1300px) {
     .about {
+        min-height: 170vh;
         &-container {
             padding: 0 20%;
         }

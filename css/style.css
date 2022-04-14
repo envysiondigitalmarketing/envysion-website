@@ -97,8 +97,6 @@
   }
 }
 .home {
-  min-height: 100%;
-  max-width: 70vw;
   display: flex;
   flex-direction: column;
 }
@@ -308,7 +306,7 @@
     font-size: 500%;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 650px) {
   .home__nav--button-x {
     width: 6.5%;
   }
@@ -358,7 +356,7 @@
     margin-top: -25%;
   }
   .home__nav--button-x {
-    width: 4%;
+    width: 3.5%;
   }
   .home .hero-heading {
     font-size: 550%;
@@ -367,21 +365,17 @@
     font-size: 375%;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
   .home__logo {
-    margin-top: -20%;
+    margin-top: -35%;
   }
 }
 @media screen and (min-width: 1600px) {
   .home__nav--button-x {
     width: 3%;
   }
-  .home__logo {
-    margin-top: -25%;
-  }
 }
 .about {
-  min-height: 175vh;
   background-color: #FEFDFF;
   overflow-x: hidden;
   margin-top: -0.5%;
@@ -424,17 +418,11 @@
   }
 }
 @media screen and (min-width: 540px) {
-  .about {
-    min-height: 180vh;
-  }
   .about-container {
     padding: 0 10%;
   }
 }
 @media screen and (min-width: 760px) {
-  .about {
-    min-height: 160vh;
-  }
   .about-container {
     padding: 0 15%;
   }
@@ -455,6 +443,9 @@
   }
 }
 @media screen and (min-width: 1300px) {
+  .about {
+    min-height: 170vh;
+  }
   .about-container {
     padding: 0 20%;
   }
@@ -468,7 +459,6 @@
   }
 }
 .services {
-  min-height: 125vh;
   min-width: 103vw;
   background-color: #FEFDFF;
   margin-top: -0.5%;
@@ -540,11 +530,26 @@
   .services {
     max-width: 70vw;
     min-width: 70vw !important;
+    min-height: 100vh;
   }
 }
 @media screen and (min-width: 1050px) {
   .services {
-    min-height: 125vh;
+    min-height: 110vh;
+  }
+  .services__list {
+    padding: 0 20%;
+  }
+  .services h2 {
+    font-size: 500%;
+  }
+  .services__header {
+    font-size: 425%;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .services {
+    min-height: 115vh;
   }
   .services__list {
     padding: 0 20%;
@@ -570,7 +575,6 @@
   }
 }
 .why-envysion {
-  min-height: 275vh;
   background-color: #FEFDFF;
   position: relative;
   overflow-x: hidden;
@@ -644,7 +648,7 @@
     max-width: 70vw;
     min-width: 70vw !important;
     min-height: 300vh;
-    padding-top: 10%;
+    padding-top: 5%;
   }
 
   .tech-focused {
@@ -1150,7 +1154,7 @@
 .contact-section form {
   width: 70%;
   height: 100%;
-  margin: 5% auto 0;
+  margin: 0 auto;
 }
 .contact-section .input-div {
   width: 90%;
@@ -1642,7 +1646,7 @@ body h2, html h2 {
   }
 }
 @media screen and (min-width: 1000px) {
-  .cta-orange {
+  .cta-orange__about, .cta-orange__why-envysion, .cta-orange__services {
     margin-bottom: 0 !important;
   }
 }

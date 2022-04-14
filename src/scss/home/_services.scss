@@ -1,6 +1,6 @@
 .services {
-    // min-height: $sectionHeight + .5vh;
-    min-height: 125vh;
+    // min-height: 100vh;
+    // min-height: 100%;
     // min-height: 200vh;
     min-width: 103vw;
     background-color: $thisWhite;
@@ -82,12 +82,28 @@
     .services {
         max-width: 70vw;
         min-width: 70vw !important;
+        min-height: 100vh;
     }
 }
 
 @media screen and (min-width: 1050px) {
     .services {
-        min-height: 125vh;
+        min-height: 110vh;
+        &__list {
+            padding: 0 20%;
+        }
+        h2 {
+            font-size: $secondH2;
+        }
+        &__header {
+            font-size: 425%;
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .services {
+        min-height: 115vh;
         &__list {
             padding: 0 20%;
         }
