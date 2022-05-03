@@ -1,40 +1,62 @@
-.services-II {
-    @include andSection;
-    animation-name: moveInRight;
-    animation-duration: .7s;
-    min-height: $sectionHeight + .5vh;
-    margin-top: -.5%;
-    padding: $paddingForCentering;
-    background-color: $thisWhite;
+.main {
+    width: 103vw;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+.services--home {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.services-II {
+    height: max-content;
+    overflow-y: scroll;
+
+    margin-top: $navHeight;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 103vw;
+
+    animation-name: moveInRight;
+    animation-duration: .7s;
+
+    h2 {
+        @include nonHomeH2;
+    };
 
     &__list {
         margin-top: 0;
-        margin-bottom: 50%;
+        margin-bottom: 10%;
         height: 5%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     &__div {
         width: 95%;
     }
     &__header {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 400%;
+        @include homeH3;
         align-self: center;
         cursor: pointer;
         display: inline-block;
         margin-bottom: 3%;
+        transition: .6s;
         &:hover {
-            color: $fifthColor;
+            color: $secondColor;
         }
     };
     &__paragraph {
         font-family: 'Open Sans', sans-serif;
-        font-size: 300%;
+        font-size: 250%;
         font-weight: 500;
         color: $mainColor;
         letter-spacing: .1rem;
@@ -44,6 +66,107 @@
     .cta-orange__services {
         @include callToAction;
         align-self: center;
-        margin-top: 20%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .services-II {
+        p {
+            font-size: 300%;
+        }
+        &__header {
+            font-size: 350%;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .services-II {
+            h2 {
+                margin-top: 10%;
+            }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .services-II {
+        &__div {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .services-II {
+        &__header {
+            font-size: 375%;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        display: -ms-grid;
+        display: grid;
+        grid-template-areas: 
+        'one one one one one one'
+        'two two two two two three'
+        ;
+    }
+    body {
+        width: 100vw;
+    }
+    .nav-area {
+        grid-area: one;
+    }
+    .main {
+        width: 70vw;
+    }
+    .services-II {
+        grid-area: two;
+        position: relative;
+        max-width: 70vw;
+        min-width: 70vw;
+        max-height: max-content;
+        overflow: hidden;
+        margin-bottom: 0;
+        align-items: flex-start;
+        &__list {
+            width: 70vw;
+            margin-bottom: 0;
+            max-height: 100%;
+        }
+        .cta-orange__services {
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+        h2 {
+            margin-left: 1.5%;
+        }
+        &__div {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .services-II {
+        &__list {
+        }
+        h2 {
+            font-size: $secondH2;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .services-II {
+        &__list {
+        }
+        h2 {
+            font-size: $thirdH2;
+        }
     }
 }

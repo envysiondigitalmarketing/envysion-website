@@ -1,9 +1,3 @@
-$navHeight: 7vh;
-$sectionHeight: 100vh - $navHeight;
-$box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
-
-$paddingForCentering: 0 4%;
-
 //Classy Palette
 $mainColor: #063831;
 $secondColor: #97B1AB;
@@ -12,9 +6,24 @@ $fourthColor: #1D324B;
 $fifthColor: #4D607C;
 $thisWhite: #FEFDFF;
 
+$navHeight: 10vh;
+$sectionHeight: 100vh - $navHeight;
+$box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
+
+$paddingForCentering: 0 5%;
+
+
+$firstP: 250%;
+
+
+$firstH2: 450%;
+$secondH2: 500%;
+$thirdH2: 550%; 
 
 @mixin cover {
     height: 100vh;
+    overflow: hidden;
+    min-width: 100%;
     object-fit: cover;
     position: fixed;
     left: 0;
@@ -29,8 +38,7 @@ $thisWhite: #FEFDFF;
     transform: translate(-50%, -50%);
 }
 @mixin hero-text {
-    font-size: 500%;
-    margin: .5rem 0 .5rem 1.5rem;
+    margin: .5rem 0 .5rem 0;
     animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 @mixin anchorTags {
@@ -54,21 +62,31 @@ $thisWhite: #FEFDFF;
         transform: translateY(0px);
     }
 }
-@mixin callToAction {
-    padding: .75em 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+@mixin callToActionStandardStuff {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     background-color: #FFA50A;
     color: $thisWhite;
-    font-size: 300%;
     @include hoverButton;
+}
+@mixin callToAction {
+    @include callToActionStandardStuff;
+    padding: .75em 1em;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    border-radius: 5px;
+    font-size: 250%;
+}
+@mixin secondCallToAction {
+    @include callToActionStandardStuff;
+    padding: .75em 1em;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    border-radius: 5px;
+    font-size: 250%;
 }
 @mixin andSection {
     min-height: $sectionHeight + .5vh;
@@ -86,7 +104,7 @@ $thisWhite: #FEFDFF;
     }
 }
 @mixin inputs {
-    height: 3em;
+    height: 4em;
     width: 100%;
     background: transparent;
     border: 1px solid $mainColor;
@@ -112,4 +130,29 @@ $thisWhite: #FEFDFF;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center center;
+}
+
+@mixin homeH2 {
+    margin: 5% 0 5% 0;
+    align-self: center;
+}
+
+@mixin nonHomeH2 {
+    margin: 15% 0 5% 0;
+    align-self: center;
+}
+
+@mixin homeH3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 325%;
+    text-decoration: underline $mainColor;
+    font-style: italic;
+}
+
+@mixin homeP {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $firstP;
+    font-weight: 500;
+    color: $mainColor;
+    letter-spacing: .05rem;
 }

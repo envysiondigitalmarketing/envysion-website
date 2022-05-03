@@ -1,47 +1,50 @@
 .home {
-    min-height: 100%;
     display: flex;
     flex-direction: column;
     &__logo {
-        max-width: 100%;
-        max-height: auto;
-        display: inline-block;
+        height: 6em;
+        width: auto;
+        align-self: center;
+        margin-top: -5%;
     };
     &__nav {
-        @include navHeight($navHeight);
+        // @include navHeight($navHeight);
         width: 100%;
+        height: 10em;
         border-bottom: solid 2px $mainColor;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+
         background-color: $thisWhite;
         position: fixed;
         z-index: 1;
-        max-width: 100%;
         overflow: hidden;
         box-shadow: $box-shadow;
         &--button-logo {
             background: none;
             color: inherit;
             border: none;
-            max-width: 40%;
-            height: 100%;
+            width: max-content;
+            height: max-content;
+            align-self: center;
+            margin-left: 10px;
             cursor: pointer;
-            margin-left: 3%;
-            margin-top: 4%;
             animation-name: moveInRight;
             animation-duration: .5s;
+            margin-top: 3%;
         };
         &--button-x {
             animation-name: moveInRight;
             animation-duration: .5s;
-            width: 10%;
-            height: 60%;
+            height: 53%;
+            width: 11%;
+
             background-image: linear-gradient(to right, $mainColor, #000000);
             cursor: pointer;
             border-radius: 15%;
             position: relative;
-            // margin-right: 4%;
+            align-self: center;
+            margin: auto 0;
             z-index: 3;
 
             right: 4%;
@@ -88,18 +91,25 @@
         @include navHeight($navHeight);
     }
     .hero {
-        position: relative;
         height: 100vh;
         overflow: hidden;
+        // width: 101vw;
+        min-width: 103vw;
+        // min-width: 100vw;
+        // max-width: 100vw;
+        // max-width: 70%;
         background-image: linear-gradient(transparent, $thisWhite);
     }
     .hero-video {
         @include cover;
-        width: 100vw;
+        overflow: hidden;
+        max-width: 100%;
         z-index: -1;
     }
     .hero-text-div {
         display: inline-block;
+        padding: $paddingForCentering;
+        margin-top: 2%;
     }
     .hero-heading {
 
@@ -116,13 +126,15 @@
         &__marketing {
             animation-duration: 2s;
         };
+        color: transparent;
+        -webkit-text-stroke: 1px #063831;
     };
     .hero-slogan {
         @include hero-text;
-        font-family: 'Open Sans', sans-serif;
+        // font-family: 'Open Sans', sans-serif;
         display: inline-block;
         animation-name: moveInSlogan;
-        font-size: 400%;
+        font-size: 275%;
         &__we {
             animation-duration: 3s;
         }
@@ -140,3 +152,159 @@
         }
     }
 }
+
+@media screen and (min-width: 325px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 9%;
+            };
+        };
+    }
+}
+
+@media screen and (min-width: 374px) {
+    .home {
+        &__nav {
+            height: 11em;
+        };
+        .behind-nav {
+            height: 11em;
+        }
+        .hero-heading {
+            &__envysion {
+                margin-top: 7%;
+            };
+        };
+        .hero-slogan {
+            font-size: 325%;
+        }
+        &__logo {
+            margin-top: -10%;
+        };
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 8%;
+            };
+        };
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .home {
+        &__logo {
+            height: 8em;
+            margin-top: -10%;
+            margin-left: 5%;
+        };
+        &__nav {
+            height: 15em;
+            &--button-x {
+                width: 8%;
+            };
+        };
+        .behind-nav {
+            height: 15em;
+        }
+        .hero-text-div {
+            margin-top: 3%;
+        }
+        .hero-heading {
+            font-size: 500%;////////////////////////////////////
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 6.5%;
+            };
+        };
+        &__logo {
+            margin-top: -10%;
+        }
+    };
+};
+
+@media screen and (min-width: 840px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 5.5%;
+            };
+        };
+        &__logo {
+            margin-top: -15%;
+        };
+    };
+};
+
+@media screen and (min-width: 1000px) {
+    .home, .hero {
+        max-width: 70vw;
+        min-width: 70vw !important;
+    }
+    .hero-video {
+        @include cover;
+        overflow: hidden;
+        max-width: 100%;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 4.5%;
+            };
+        };
+        &__logo {
+            margin-top: -20%;
+        }
+    };
+};
+
+@media screen and (min-width: 1200px) {
+    .home {
+        &__logo {
+            margin-top: -25%;
+        };
+        &__nav {
+            &--button-x {
+                width: 3.5%;
+            };
+        };
+        .hero-heading {
+            font-size: 550%;////////////////////////////////////
+        }
+        .hero-slogan {
+            font-size: 375%;////////////////////////////////////
+        }
+    };
+};
+
+@media screen and (min-width: 1300px) {
+    .home {
+        &__logo {
+            margin-top: -35%;
+        };
+    };
+};
+
+@media screen and (min-width: 1600px) {
+    .home {
+        &__nav {
+            &--button-x {
+                width: 3%;
+            };
+        };
+    };
+};

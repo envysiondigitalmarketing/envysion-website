@@ -1,56 +1,136 @@
 .services {
-    min-height: $sectionHeight + .5vh;
-    margin-top: -.5%;
-    padding: $paddingForCentering;
+    // min-height: 100vh;
+    // min-height: 100%;
+    // min-height: 200vh;
+    min-width: 103vw;
     background-color: $thisWhite;
-    // overflow: hidden;
 
+    margin-top: -.5%;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
+    // position: relative; 
+    overflow: hidden;
+
     & h2 {
-        font-size: 500%;
-        display: inline-block;
-        margin-top: 15%;
-        align-self: center;
+        @include homeH2;
     }
 
     &__list {
         margin-top: 0;
         margin-bottom: 10%;
-        height: 5%;
+        // height: 5%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: $paddingForCentering;
     }
     &__div {
         width: 95%;
     }
     &__header {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 400%;
-        align-self: center;
-        cursor: pointer;
-        display: inline-block;
+        @include homeH3;
+        transition: .6s;
         margin-bottom: 3%;
+        cursor: pointer;
+        // align-self: center;
+        display: inline-block;
         &:hover {
-            color: $fifthColor;
+            color: $secondColor;
         }
     };
     &__paragraph {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 300%;
-        font-weight: 500;
-        color: $mainColor;
-        letter-spacing: .1rem;
+        @include homeP;
         margin-top: 0;
         transition: height 0.5s;
     }
-    .cta-orange__services {
-        @include callToAction;
-        align-self: center;
-        margin-top: 20%;
+}
+
+@media screen and (min-width: 470px) {
+    .services {
+        p {
+            font-size: 300%;
+        }
+        &__header {
+            font-size: 350%;
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .services {
+        &__list {
+            padding: 0 10%;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .services {
+        &__list {
+            padding: 0 15%;
+        }
+        &__header {
+            font-size: 375%;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .services {
+        max-width: 70vw;
+        min-width: 70vw !important;
+        min-height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .services {
+        min-height: 110vh;
+        &__list {
+            padding: 0 20%;
+        }
+        h2 {
+            font-size: $secondH2;
+        }
+        &__header {
+            font-size: 425%;
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .services {
+        min-height: 115vh;
+        &__list {
+            padding: 0 20%;
+        }
+        h2 {
+            font-size: $secondH2;
+        }
+        &__header {
+            font-size: 425%;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .services {
+        &__list {
+            padding: 0 20%;
+        }
+        h2 {
+            font-size: $thirdH2;
+        }
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .services {
+        &__list {
+            padding: 0 25%;
+        }
     }
 }

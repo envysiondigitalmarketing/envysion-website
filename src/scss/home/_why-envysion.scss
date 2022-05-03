@@ -1,42 +1,33 @@
 .why-envysion {
-    // min-height: $sectionHeight;
+    // min-height: 275vh;
     background-color: $thisWhite;
-    // background-image: linear-gradient($thisWhite, $secondColor);
-    min-height: $sectionHeight + .5vh;
+
+    position: relative;
+    overflow-x: hidden;
     margin-top: -.5%;
-    min-height: $sectionHeight + .5vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    // min-width: 101%;
+    min-width: 103vw;
 
     & h2 {
-        font-size: 500%;
-        margin-top: 15%;
-        margin-bottom: 10%;
+        @include homeH2;
     }
     & h3 {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 400%;
-        margin: 0;
-        margin-top: 0;
-        margin-bottom: 15%;
-        margin-top: 5%;
-        padding: $paddingForCentering
+        @include homeH3;
+        margin: 5% 0 15% 0;
+        padding: $paddingForCentering;
     }
     & p {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 300%;
-        font-weight: 500;
-        letter-spacing: .1rem;
+        @include homeP;
         margin-top: 15%;
         line-height: 1.3;
     }
     &__list {
-        width: 80%;
         height: fit-content;
-        padding: $paddingForCentering;
+        padding: 0 5%;
         padding-bottom: 10%;
     }
     &__list--div {
@@ -44,14 +35,107 @@
         height: 30%;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
     }
     &__list--icon {
         height: 20em;
     }
-    .cta-orange {
-        @include callToAction;
-        margin-bottom: 30%;
-        margin-top: 15%;
+}
+
+@media screen and (min-width: 340px) {
+    .why-envysion {
+        &__list {
+            // &--icon {
+            //     width: 100%;
+            //     height: auto;
+            // }
+        }
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .why-envysion {
+        &__list {
+            p {
+                font-size: 300%;
+            }
+            h3 {
+                font-size: 350%;
+            }
+            // &--icon {
+            //     width: 60%;
+            //     height: auto;
+            // }
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .why-envysion {
+        &__list {
+            padding: 0 10%;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .why-envysion {
+        &__list {
+            padding: 0 15%;
+            h3 {
+                font-size: 375%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .why-envysion {
+        max-width: 70vw;
+        min-width: 70vw !important;
+        min-height: 300vh;
+        padding-top: 5%;
+    }
+    .tech-focused {
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .why-envysion {
+        h2 {
+            font-size: $secondH2;
+        }
+        &__list {
+            h3 {
+                font-size: 425%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .why-envysion {
+        min-height: 310vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .why-envysion {
+        h2 {
+            font-size: $thirdH2;
+        }
+        &__list {
+            padding: 0 20%;
+        }
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .why-envysion {
+        &__list {
+            padding: 0 25%;
+        }
     }
 }

@@ -1,53 +1,65 @@
 .footer {
-    height: 65vh - $navHeight;
-    // height: $sectionHeight;
-
+    min-height: $sectionHeight + .5vh;
     background-image: linear-gradient($thisWhite, $secondColor, $thirdColor);
     margin-top: -.5%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     position: relative;
-
-    &-bottom {
-        width: 100%; background-color: #063831; height: 7%; position: absolute; bottom: 0; margin-bottom: -1%; display: flex; justify-content: center;
-    }
+    overflow: hidden;
+    min-width: 103vw;
 
     hr {
-        margin: 0; width: 80%; border-color: $mainColor;
+        margin: 0; 
+        width: 98%;
+        border-color: $mainColor;
+        align-self: center;
     }
     
-    // .footer-container {
-    //     height: 100%;
-    // }
+    .footer-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: $paddingForCentering;
+    }
 
-    .footer-logo {
-        margin-top: 15%;
+    &-logo {
+        margin-top: 25%;
         width: 65%;
     }
 
     .footer-mission-statement {
         font-size: 300%;
+
+        font-family: 'Open Sans', sans-serif;
+        // font-family: 'josefin_sansthin';
+        // font-size: 250%;
+        font-weight: 500;
+        // color: $mainColor;
+        // letter-spacing: .01rem;
+        font-weight: bolder;
+        font-style: italic;
+        margin: 5% 0;
+        // margin-top: 5%;
+        // line-height: 1.3;
     }
 
-    .footer-copyright {
-        font-size: 100%;
-        margin-bottom: 2em;
-        position: absolute;
-        bottom: 1%;
-        color: $thisWhite;
-        letter-spacing: .2em;
+    .footer-contacts {
+        font-size: 225%;
+
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 0;
+        margin-bottom: 5%;
     }
 
     .footer-social-links {
         &__div {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             height: 10%;
-            width: 100%;
+            width: 80%;
             margin: 0;
         }
         &__link {
@@ -61,11 +73,15 @@
         }
         &__logo {
             width: 80%;
+            height: auto;
             margin-left: 30%;
             margin-right: 30%;
-            height: auto;
+            margin-top: 15%;
             cursor: pointer;
             transform: translate(0%, -15%);
+        }
+        &__logo--facebook {
+            margin-left: 0%;
         }
         &__logo:hover {
             animation-name: shutter-in-top;
@@ -81,7 +97,83 @@
         }
     }
 
-    .footer-contacts {
+    .footer-copyright {
+        font-family: 'Open Sans', sans-serif;
         font-size: 225%;
+        position: absolute;
+        bottom: 1%;
+        color: $thisWhite;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    .footer {
+        &-logo {
+            margin-top: 25%;
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .footer {
+        &-container {
+            padding: 0 3% !important;
+        }
+        &-logo {
+            margin-top: 15%;
+            width: 35%;
+        }
+        &-mission-statement {
+            margin: 3% 0 !important;
+        }
+        &-contacts {
+            font-size: 300%;
+        }
+    }
+    .footer-social-links {
+        &__logo {
+            width: 60% !important;
+            height: auto;
+            margin-left: 0 !important;
+            margin-right: 5% !important;
+            margin-top: 0 !important;
+        }
+        &__link {
+            padding: 0 !important;
+            justify-content: flex-start !important;
+        }
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .footer-social-links {
+        &__logo {
+            width: 50% !important;
+            height: auto;
+            margin-left: 0 !important;
+            margin-right: 5% !important;
+            margin-top: 0 !important;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .footer {
+        &-logo {
+            margin-top: 20%;
+        }
+    }
+    .footer-social-links {
+        &__div {
+            height: 5% !important;
+        }
+        &__logo {
+            width: 70% !important;
+            height: auto;
+            margin-left: 0 !important;
+            margin-right: 5% !important;
+            margin-top: 0 !important;
+        }
     }
 }

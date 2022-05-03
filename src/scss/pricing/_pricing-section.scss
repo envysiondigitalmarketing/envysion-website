@@ -1,15 +1,26 @@
+.pricing--home {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .pricing-section {
     @include andSection;
+    padding: 0;
+    min-height: 90vh;
     animation-name: moveInRight;
     animation-duration: .7s;
+    margin-top: $navHeight;
+    min-width: 103vw;
 
     .pricing-header {
-        margin-bottom: 1.5em;
+        @include nonHomeH2;
     }
 
     .carousel-container {
         width: 90%;
-        height: 80em;
+        height: 55vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,9 +28,10 @@
         transform-style: preserve-3d;
         transition: all .5s ease;
         position: relative;
+        margin-top: 5%;
 
         &:hover {
-            transform: rotateY(180deg) translateY(-14px);
+            transform: rotateY(180deg) translateY(-3%);
         }
 
         &__content-front, &__content-back {
@@ -43,7 +55,7 @@
             opacity: .85;
             font-family: 'Open sans';
             color: $mainColor;
-            font-size: 4em;
+            font-size: 2.5vh;
             font-weight: 200;
             width: 100%;
             margin-bottom: 0;
@@ -64,6 +76,7 @@
 
         &__content-back--header {
             @include transformTranslateNegative50;
+            top: 40%;
             padding: 1em;
             margin-top: 0;
             border-radius: 5px;
@@ -117,7 +130,7 @@
     }
 
     .next {    
-        margin: 2em 0;
+        margin: 2em 0 4em 0;
         height: 4em;
         width: 8em;
         border-radius: 5em;
@@ -131,6 +144,174 @@
         @include callToAction;
         align-self: center;
         position: absolute;
-        bottom: 1em;
+        bottom: .25em;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .carousel-container {
+        width: 85% !important;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .carousel-container {
+        width: 70% !important;
+    }
+}//height: 55vh;
+
+@media screen and (min-width: 420px) {
+    .carousel-container {
+        width: 75% !important;
+        height: 50vh !important;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .carousel-container {
+        width: 60% !important;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .pricing {
+        &-section {
+            .pricing-header {
+                margin-top: 10%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .carousel-container {
+        width: 55% !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .pricing {
+        &-section {
+            .pricing-header {
+                margin-bottom: 1%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .pricing-header {
+        // margin-top: 10% !important;
+    }
+    .carousel-container {
+        width: 40% !important;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .carousel-container {
+        // width: 45% !important;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .carousel-container {
+        // width: 45% !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .pricing {
+        &-section {
+            .pricing-header {
+                margin-bottom: 0%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .pricing {
+        &-section {
+            .pricing-header {
+                // margin-top: 7% !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .pricing {
+        &-section {
+            .pricing-header {
+                // margin-top: .25%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .pricing {
+        &-section {
+            .pricing-header {
+                // margin-top: .05%;
+            }
+        }
+    }
+    .carousel-container {
+        width: 35% !important;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .pricing-section {
+        max-width: 70vw;
+        min-width: 70vw;
+        // max-height: max-content;
+        // overflow: hidden;
+        // margin-bottom: 0;
+        align-items: flex-start;
+        .next {
+            margin-bottom: 0 !important;
+        }
+        .pricing-header {
+            // margin-top: 7% !important;
+        }
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .carousel-container {
+        width: 40% !important;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .pricing-section {
+        // h2 {
+        //     margin-top: 6% !important;
+        //     margin-bottom: 0% !important;
+        // }
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .carousel-container {
+        width: 35% !important;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .pricing {
+        &-section {
+            .pricing-header {
+                font-size: $thirdH2;
+            }
+        }
+    }
+    .carousel-container {
+        height: 45vh !important;
+        width: 25% !important;
+
     }
 }
