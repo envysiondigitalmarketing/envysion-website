@@ -1493,9 +1493,6 @@
   }
 }
 @media screen and (min-width: 500px) {
-  .footer {
-    box-shadow: inset 0px 0px 0px 2px #063831;
-  }
   .footer-container {
     padding: 0 3% !important;
   }
@@ -1531,6 +1528,9 @@
   }
 }
 @media screen and (min-width: 1000px) {
+  .footer {
+    box-shadow: inset 0px 0px 0px 2px #063831;
+  }
   .footer-logo {
     margin-top: 20%;
   }
