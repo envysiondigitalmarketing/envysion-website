@@ -1358,9 +1358,11 @@
   opacity: 1;
   width: -moz-fit-content;
   width: fit-content;
+  transition: all 0.4s ease-in-out;
 }
 .menu-cover__list--li:hover {
-  color: #97B1AB;
+  font-size: 300%;
+  color: #000000;
 }
 .menu-cover__list--anchor:link {
   text-decoration: inherit;

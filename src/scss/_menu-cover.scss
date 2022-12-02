@@ -35,8 +35,10 @@
         opacity: 1;
         width: -moz-fit-content;
         width: fit-content;
+        transition: all .4s ease-in-out;
         &:hover {
-            color: $secondColor;
+            font-size: 300%;
+            color: #000000;
         }
     }
     &__list--anchor:link {
