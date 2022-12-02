@@ -241,9 +241,7 @@ const carouselScroll = () => {
   }
 };
 
-onload = () => {
-  theHiddenThing(menuCover);
-};
+onload = () => theHiddenThing(menuCover);
 
 xButton.onclick = () => {
   openAndClose();
