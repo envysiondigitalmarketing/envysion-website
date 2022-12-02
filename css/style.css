@@ -327,7 +327,6 @@
     max-width: 70vw;
     min-width: 70vw !important;
   }
-
   .hero-video {
     height: 100vh;
     overflow: hidden;
@@ -650,7 +649,6 @@
     min-height: 300vh;
     padding-top: 5%;
   }
-
   .tech-focused {
     justify-self: center;
   }
@@ -802,19 +800,15 @@
     display: grid;
     grid-template-areas: "one one one one one one" "two two two two two three";
   }
-
   body {
     width: 100vw;
   }
-
   .nav-area {
     grid-area: one;
   }
-
   .main {
     width: 70vw;
   }
-
   .services-II {
     grid-area: two;
     position: relative;
@@ -1097,7 +1091,6 @@
   .pricing-section .pricing-header {
     font-size: 550%;
   }
-
   .carousel-container {
     height: 45vh !important;
     width: 25% !important;
@@ -1287,19 +1280,15 @@
     display: grid;
     grid-template-areas: "one one one one one one" "two two two two two three";
   }
-
   body {
     width: 100vw;
   }
-
   .nav-area {
     grid-area: one;
   }
-
   .main {
     width: 70vw;
   }
-
   .contact {
     grid-area: two;
     position: relative;
@@ -1504,6 +1493,9 @@
   }
 }
 @media screen and (min-width: 500px) {
+  .footer {
+    box-shadow: inset 0px 0px 0px 2px #063831;
+  }
   .footer-container {
     padding: 0 3% !important;
   }
@@ -1517,7 +1509,6 @@
   .footer-contacts {
     font-size: 300%;
   }
-
   .footer-social-links__logo {
     width: 60% !important;
     height: auto;
@@ -1543,7 +1534,6 @@
   .footer-logo {
     margin-top: 20%;
   }
-
   .footer-social-links__div {
     height: 5% !important;
   }
@@ -1613,11 +1603,9 @@ body h2, html h2 {
     display: grid;
     grid-template-areas: "one one one one one one" "two two two two two three";
   }
-
   .nav-area {
     grid-area: one;
   }
-
   .main {
     grid-area: two;
     right: 0;
@@ -1629,7 +1617,6 @@ body h2, html h2 {
     overflow-y: scroll;
     padding: 0;
   }
-
   .footer {
     grid-area: three;
     bottom: 0;

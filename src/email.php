@@ -7,20 +7,20 @@
         $email = $_POST['email'];
         $phone = $_POST['phone'];
     
-        $email_from = 'contact@envysiondm.com';
+        $email_from = 'contact@envysion-dm.com';
         $email_subject = "Interested in $interestedIn";
         $email_body = "Name: $firstName $lastName.\n".
                         "Company: $company.\n".
                             "Contacts: $email $phone.\n".
                                 "Interested in: $interestedIn.\n";
-        $to = "contact@envysiondm.com";
+        $to = "contact@envysion-dm.com";
         $headers = "From: $email \r\n";
         $headers .= "Reply-To: $email \r\n";
 
         mail($to, $email_subject, $email_body, $headers);
 
         if($error == false) {
-            echo '<script>alert("Thank you for your inquiry, we will be in touch.")</script>';
+            echo '<script>alert("Thank you for your inquiry, we will be in touch as soon as possible.")</script>';
         }
     }
 >
