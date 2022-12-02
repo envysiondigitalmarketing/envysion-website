@@ -196,6 +196,24 @@
   overflow: hidden;
   min-width: 103vw;
   background-image: linear-gradient(transparent, #FEFDFF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .cover-photo {
+  height: 100vh;
+  overflow: hidden;
+  min-width: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  max-width: 100%;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
 }
 .home .hero-video {
   height: 100vh;
@@ -213,20 +231,18 @@
 }
 .home .hero-text-div {
   display: inline-block;
-  padding: 0 5%;
-  margin-top: 2%;
 }
 .home .hero-heading {
   animation-name: moveInRight;
   animation-duration: 0.7s;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0 0 0.55rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  font-size: 550%;
   color: transparent;
-  -webkit-text-stroke: 1px #063831;
+  -webkit-text-stroke: 1.5px #063831;
 }
 .home .hero-heading__envysion {
   animation-duration: 1s;
-  margin-top: 10%;
 }
 .home .hero-heading__digital {
   animation-duration: 1.5s;
@@ -235,11 +251,12 @@
   animation-duration: 2s;
 }
 .home .hero-slogan {
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0 0 0.55rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   display: inline-block;
   animation-name: moveInSlogan;
-  font-size: 275%;
+  font-size: 375%;
+  color: #063831;
 }
 .home .hero-slogan__we {
   animation-duration: 3s;
@@ -269,9 +286,6 @@
   .home .behind-nav {
     height: 11em;
   }
-  .home .hero-heading__envysion {
-    margin-top: 7%;
-  }
   .home .hero-slogan {
     font-size: 325%;
   }
@@ -299,11 +313,11 @@
   .home .behind-nav {
     height: 15em;
   }
-  .home .hero-text-div {
-    margin-top: 3%;
-  }
   .home .hero-heading {
-    font-size: 500%;
+    font-size: 650%;
+  }
+  .home .hero-slogan {
+    font-size: 475%;
   }
 }
 @media screen and (min-width: 650px) {
@@ -356,12 +370,6 @@
   }
   .home__nav--button-x {
     width: 3.5%;
-  }
-  .home .hero-heading {
-    font-size: 550%;
-  }
-  .home .hero-slogan {
-    font-size: 375%;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -1346,7 +1354,7 @@
   width: 75%;
 }
 .menu-cover__list--ul {
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0 0 0.55rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   font-size: 450%;
   list-style-type: none;
