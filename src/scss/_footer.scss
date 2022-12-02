@@ -117,6 +117,8 @@
 
 @media screen and (min-width: 500px) {
     .footer {
+        // border-left: solid 2px $mainColor;
+        box-shadow: inset 0px 0px 0px 2px $mainColor;
         &-container {
             padding: 0 3% !important;
         }
