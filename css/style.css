@@ -182,12 +182,6 @@
   display: flex;
   flex-direction: column;
 }
-.home__logo {
-  height: 6em;
-  width: auto;
-  align-self: center;
-  margin-top: -5%;
-}
 .home .behind-nav {
   position: relative;
   height: 10vh;

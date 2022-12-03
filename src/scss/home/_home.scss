@@ -75,16 +75,16 @@
     &__button-x-open .line-2 {
         transform: translate(-45%, -45%) rotate(45deg);
     }
+    // &__logo {
+    //     height: 6em;
+    //     width: auto;
+    //     align-self: center;
+    //     margin-top: -5%;
+    // };
 };
 .home {
     display: flex;
     flex-direction: column;
-    &__logo {
-        height: 6em;
-        width: auto;
-        align-self: center;
-        margin-top: -5%;
-    };
     .behind-nav {
         position: relative;
         @include navHeight($navHeight);
