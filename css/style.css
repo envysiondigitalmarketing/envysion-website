@@ -96,7 +96,7 @@
     transform: translateX(0);
   }
 }
-nav {
+.nav {
   width: 100%;
   height: 10vh;
   border-bottom: solid 2px #063831;
@@ -108,7 +108,7 @@ nav {
   overflow: hidden;
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
 }
-nav__button-logo {
+.nav__button-logo {
   background: none;
   color: inherit;
   border: none;
@@ -121,7 +121,7 @@ nav__button-logo {
   animation-duration: 0.5s;
   margin-top: 3%;
 }
-nav__button-x {
+.nav__button-x {
   animation-name: moveInRight;
   animation-duration: 0.5s;
   height: 53%;
@@ -135,7 +135,7 @@ nav__button-x {
   z-index: 3;
   right: 4%;
 }
-nav__button-x div {
+.nav__button-x div {
   width: 75%;
   height: 12px;
   margin: 0;
@@ -144,7 +144,7 @@ nav__button-x div {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-nav__button-x span {
+.nav__button-x span {
   background: #fff;
   width: 100%;
   height: 2px;
@@ -156,25 +156,25 @@ nav__button-x span {
   transform: translate(-50%, -50%);
   transition: transform 0.5s, width 0.5s;
 }
-nav__button-x .line-1 {
+.nav__button-x .line-1 {
   width: 50%;
   transform: translate(-100%, -10px);
 }
-nav__button-x .line-3 {
+.nav__button-x .line-3 {
   left: auto;
   right: 0;
   width: 50%;
   transform: translate(0, 7px);
 }
-nav__button-x-open .line-1 {
+.nav__button-x-open .line-1 {
   transform: translate(0, 0) rotate(-47deg);
   transform-origin: 0 0;
 }
-nav__button-x-open .line-3 {
+.nav__button-x-open .line-3 {
   transform: translate(-95%, 0) rotate(-45deg);
   transform-origin: 100% 0;
 }
-nav__button-x-open .line-2 {
+.nav__button-x-open .line-2 {
   transform: translate(-45%, -45%) rotate(45deg);
 }
 
@@ -279,12 +279,12 @@ nav__button-x-open .line-2 {
 }
 
 @media screen and (min-width: 325px) {
-  .home__nav--button-x {
+  .nav__button-x {
     width: 9%;
   }
 }
 @media screen and (min-width: 374px) {
-  .home__nav {
+  .nav {
     height: 11em;
   }
   .home .behind-nav {
@@ -298,21 +298,21 @@ nav__button-x-open .line-2 {
   }
 }
 @media screen and (min-width: 450px) {
-  .home__nav--button-x {
+  .nav__button-x {
     width: 8%;
   }
 }
 @media screen and (min-width: 560px) {
+  .nav {
+    height: 15em;
+  }
+  .nav__button-x {
+    width: 8%;
+  }
   .home__logo {
     height: 8em;
     margin-top: -10%;
     margin-left: 5%;
-  }
-  .home__nav {
-    height: 15em;
-  }
-  .home__nav--button-x {
-    width: 8%;
   }
   .home .behind-nav {
     height: 15em;
@@ -325,7 +325,7 @@ nav__button-x-open .line-2 {
   }
 }
 @media screen and (min-width: 650px) {
-  .home__nav--button-x {
+  .nav__button-x {
     width: 6.5%;
   }
   .home__logo {
@@ -333,7 +333,7 @@ nav__button-x-open .line-2 {
   }
 }
 @media screen and (min-width: 840px) {
-  .home__nav--button-x {
+  .nav__button-x {
     width: 5.5%;
   }
   .home__logo {
@@ -361,7 +361,7 @@ nav__button-x-open .line-2 {
   }
 }
 @media screen and (min-width: 1040px) {
-  .home__nav--button-x {
+  .nav__button-x {
     width: 4.5%;
   }
   .home__logo {
@@ -369,11 +369,11 @@ nav__button-x-open .line-2 {
   }
 }
 @media screen and (min-width: 1200px) {
+  .nav__button-x {
+    width: 3.5%;
+  }
   .home__logo {
     margin-top: -25%;
-  }
-  .home__nav--button-x {
-    width: 3.5%;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -382,7 +382,7 @@ nav__button-x-open .line-2 {
   }
 }
 @media screen and (min-width: 1600px) {
-  .home__nav--button-x {
+  .nav__button-x {
     width: 3%;
   }
 }
