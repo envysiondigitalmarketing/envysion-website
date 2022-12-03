@@ -96,19 +96,9 @@
     transform: translateX(0);
   }
 }
-.home {
-  display: flex;
-  flex-direction: column;
-}
-.home__logo {
-  height: 6em;
-  width: auto;
-  align-self: center;
-  margin-top: -5%;
-}
-.home__nav {
+nav {
   width: 100%;
-  height: 10em;
+  height: 10vh;
   border-bottom: solid 2px #063831;
   display: flex;
   justify-content: space-between;
@@ -118,7 +108,7 @@
   overflow: hidden;
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
 }
-.home__nav--button-logo {
+nav__button-logo {
   background: none;
   color: inherit;
   border: none;
@@ -131,7 +121,7 @@
   animation-duration: 0.5s;
   margin-top: 3%;
 }
-.home__nav--button-x {
+nav__button-x {
   animation-name: moveInRight;
   animation-duration: 0.5s;
   height: 53%;
@@ -145,7 +135,7 @@
   z-index: 3;
   right: 4%;
 }
-.home__nav--button-x div {
+nav__button-x div {
   width: 75%;
   height: 12px;
   margin: 0;
@@ -154,7 +144,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.home__nav--button-x span {
+nav__button-x span {
   background: #fff;
   width: 100%;
   height: 2px;
@@ -166,26 +156,37 @@
   transform: translate(-50%, -50%);
   transition: transform 0.5s, width 0.5s;
 }
-.home__nav--button-x .line-1 {
+nav__button-x .line-1 {
   width: 50%;
   transform: translate(-100%, -10px);
 }
-.home__nav--button-x .line-3 {
+nav__button-x .line-3 {
   left: auto;
   right: 0;
   width: 50%;
   transform: translate(0, 7px);
 }
-.home__nav--button-x-open .line-1 {
+nav__button-x-open .line-1 {
   transform: translate(0, 0) rotate(-47deg);
   transform-origin: 0 0;
 }
-.home__nav--button-x-open .line-3 {
+nav__button-x-open .line-3 {
   transform: translate(-95%, 0) rotate(-45deg);
   transform-origin: 100% 0;
 }
-.home__nav--button-x-open .line-2 {
+nav__button-x-open .line-2 {
   transform: translate(-45%, -45%) rotate(45deg);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.home__logo {
+  height: 6em;
+  width: auto;
+  align-self: center;
+  margin-top: -5%;
 }
 .home .behind-nav {
   position: relative;

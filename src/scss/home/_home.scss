@@ -1,3 +1,81 @@
+nav {
+    width: 100%;
+    height: 10vh;
+    border-bottom: solid 2px $mainColor;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $thisWhite;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    &__button-logo {
+        background: none;
+        color: inherit;
+        border: none;
+        width: max-content;
+        height: max-content;
+        align-self: center;
+        margin-left: 10px;
+        cursor: pointer;
+        animation-name: moveInRight;
+        animation-duration: .5s;
+        margin-top: 3%;
+    };
+    &__button-x {
+        animation-name: moveInRight;
+        animation-duration: .5s;
+        height: 53%;
+        width: 11%;
+
+        background-image: linear-gradient(to right, $mainColor, #000000);
+        cursor: pointer;
+        border-radius: 15%;
+        position: relative;
+        align-self: center;
+        margin: auto 0;
+        z-index: 3;
+
+        right: 4%;
+    };
+    &__button-x div  {
+        width: 75%;
+        height: 12px;
+        margin: 0;
+        @include transformTranslateNegative50;
+    }
+    &__button-x span  {
+        background: #fff;
+        width: 100%;
+        height: 2px;
+        border-radius: 100px;
+        display: block;
+        @include transformTranslateNegative50;
+        transition: transform .5s, width .5s;
+    }
+    &__button-x .line-1 {
+        width: 50%;
+        transform: translate(-100%, -10px);
+    }
+    &__button-x .line-3 {
+        left: auto;
+        right: 0;
+        width: 50%;
+        transform: translate(0, 7px);
+    }
+    &__button-x-open .line-1 {
+        transform: translate(0, 0) rotate(-47deg);
+        transform-origin: 0 0;
+    }
+    &__button-x-open .line-3 {
+        transform: translate(-95%, 0) rotate(-45deg);
+        transform-origin: 100% 0;
+    }
+    &__button-x-open .line-2 {
+        transform: translate(-45%, -45%) rotate(45deg);
+    }
+};
 .home {
     display: flex;
     flex-direction: column;
@@ -6,84 +84,6 @@
         width: auto;
         align-self: center;
         margin-top: -5%;
-    };
-    &__nav {
-        width: 100%;
-        height: 10em;
-        border-bottom: solid 2px $mainColor;
-        display: flex;
-        justify-content: space-between;
-
-        background-color: $thisWhite;
-        position: fixed;
-        z-index: 1;
-        overflow: hidden;
-        box-shadow: $box-shadow;
-        &--button-logo {
-            background: none;
-            color: inherit;
-            border: none;
-            width: max-content;
-            height: max-content;
-            align-self: center;
-            margin-left: 10px;
-            cursor: pointer;
-            animation-name: moveInRight;
-            animation-duration: .5s;
-            margin-top: 3%;
-        };
-        &--button-x {
-            animation-name: moveInRight;
-            animation-duration: .5s;
-            height: 53%;
-            width: 11%;
-
-            background-image: linear-gradient(to right, $mainColor, #000000);
-            cursor: pointer;
-            border-radius: 15%;
-            position: relative;
-            align-self: center;
-            margin: auto 0;
-            z-index: 3;
-
-            right: 4%;
-        };
-        &--button-x div  {
-            width: 75%;
-            height: 12px;
-            margin: 0;
-            @include transformTranslateNegative50;
-        }
-        &--button-x span  {
-            background: #fff;
-            width: 100%;
-            height: 2px;
-            border-radius: 100px;
-            display: block;
-            @include transformTranslateNegative50;
-            transition: transform .5s, width .5s;
-        }
-        &--button-x .line-1 {
-            width: 50%;
-            transform: translate(-100%, -10px);
-        }
-        &--button-x .line-3 {
-            left: auto;
-            right: 0;
-            width: 50%;
-            transform: translate(0, 7px);
-        }
-        &--button-x-open .line-1 {
-            transform: translate(0, 0) rotate(-47deg);
-            transform-origin: 0 0;
-        }
-        &--button-x-open .line-3 {
-            transform: translate(-95%, 0) rotate(-45deg);
-            transform-origin: 100% 0;
-        }
-        &--button-x-open .line-2 {
-            transform: translate(-45%, -45%) rotate(45deg);
-        }
     };
     .behind-nav {
         position: relative;
