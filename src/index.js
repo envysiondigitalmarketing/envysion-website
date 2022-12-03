@@ -1,57 +1,57 @@
-const xButton = document.getElementById("home__nav--button-x");
+const xButton = document.getElementById('nav__button-x');
 
-const menuCover = document.getElementById("menu-cover");
+const menuCover = document.getElementById('menu-cover');
 
-const home = document.getElementById("home-button");
-const about = document.getElementById("about-button");
-const services = document.getElementById("services-button");
-const whyEnvysion = document.getElementById("why-envysion-button");
-const pricing = document.getElementById("pricing-button");
-const contact = document.getElementById("contact-button");
+const home = document.getElementById('home-button');
+const about = document.getElementById('about-button');
+const services = document.getElementById('services-button');
+const whyEnvysion = document.getElementById('why-envysion-button');
+const pricing = document.getElementById('pricing-button');
+const contact = document.getElementById('contact-button');
 
-const websitesHeader = document.querySelector(".services__header--websites");
-const seoHeader = document.querySelector(".services__header--seo");
+const websitesHeader = document.querySelector('.services__header--websites');
+const seoHeader = document.querySelector('.services__header--seo');
 const emailAndSMSHeader = document.querySelector(
-  ".services__header--email-and-sms"
+  '.services__header--email-and-sms'
 );
-const advertsHeader = document.querySelector(".services__header--adverts");
-const allHeaders = document.querySelector(".services__header");
+const advertsHeader = document.querySelector('.services__header--adverts');
+const allHeaders = document.querySelector('.services__header');
 
 const twoWebsitesHeader = document.querySelector(
-  ".services-II__header--websites"
+  '.services-II__header--websites'
 );
-const twoSeoHeader = document.querySelector(".services-II__header--seo");
+const twoSeoHeader = document.querySelector('.services-II__header--seo');
 const twoEmailAndSMSHeader = document.querySelector(
-  ".services-II__header--email-and-sms"
+  '.services-II__header--email-and-sms'
 );
 const twoAdvertsHeader = document.querySelector(
-  ".services-II__header--adverts"
+  '.services-II__header--adverts'
 );
-const twoAllHeaders = document.querySelector(".services-II__header");
+const twoAllHeaders = document.querySelector('.services-II__header');
 
 const websitesParagraph = document.querySelector(
-  ".services__paragraph--websites"
+  '.services__paragraph--websites'
 );
-const seoParagraph = document.querySelector(".services__paragraph--seo");
+const seoParagraph = document.querySelector('.services__paragraph--seo');
 const emailAndSMSParagraph = document.querySelector(
-  ".services__paragraph--email-and-sms"
+  '.services__paragraph--email-and-sms'
 );
 const advertsParagraph = document.querySelector(
-  ".services__paragraph--adverts"
+  '.services__paragraph--adverts'
 );
 
 const twoWebsitesParagraph = document.querySelector(
-  ".services-II__paragraph--websites"
+  '.services-II__paragraph--websites'
 );
-const twoSeoParagraph = document.querySelector(".services-II__paragraph--seo");
+const twoSeoParagraph = document.querySelector('.services-II__paragraph--seo');
 const twoEmailAndSMSParagraph = document.querySelector(
-  ".services-II__paragraph--email-and-sms"
+  '.services-II__paragraph--email-and-sms'
 );
 const twoAdvertsParagraph = document.querySelector(
-  ".services-II__paragraph--adverts"
+  '.services-II__paragraph--adverts'
 );
 
-const quoraCreativeLink = document.querySelector(".quoracreative-link");
+const quoraCreativeLink = document.querySelector('.quoracreative-link');
 
 const websitesParagraphSample = `Your website is your digital hub, the place everyone goes when they want to learn more about your business. In many ways [...] <a id='reference-link' href='./services.html''>Read More &#8640;</a>`;
 const websitesParagraphFull = `Your website is your digital hub, the place everyone goes when they want to learn more about your business. In many ways your website will be a chance at a first impression. Let’s make it a good one. Every site we create is designed specifically to encourage customers to take the next step and reach out to your business.`;
@@ -62,35 +62,35 @@ const emailAndSMSParagraphFull = `Email marketing and SMS marketing are great to
 const advertsParagraphSample = `Harness the power of Google, Facebook, or Instagram ads to drive traffic to your website. These platforms [...] <a id='reference-link' href='./services.html''>Read More &#8640;</a>`;
 const advertsParagraphFull = `Harness the power of Google, Facebook, or Instagram ads to drive traffic to your website. These platforms have been refined over time to become great options for gaining visibility and reaching out to potential customers within your niche. Don't have content for your ads? Envysion has you covered. Just let us know what product or service you would like advertised and we will do the rest.`;
 
-const carouselContainer = document.querySelector(".carousel-container");
+const carouselContainer = document.querySelector('.carousel-container');
 
 const carouselWebsites = document.querySelector(
-  ".carousel-container__websites"
+  '.carousel-container__websites'
 );
 const carouselSEO = document.querySelector(
-  ".carousel-container__search-engine-optimization"
+  '.carousel-container__search-engine-optimization'
 );
 const carouselEmailMarketing = document.querySelector(
-  ".carousel-container__email-marketing"
+  '.carousel-container__email-marketing'
 );
 const carouselSMSMarketing = document.querySelector(
-  ".carousel-container__sms-marketing"
+  '.carousel-container__sms-marketing'
 );
 const carouselDigitalAdvertisements = document.querySelector(
-  ".carousel-container__digital-advertisements"
+  '.carousel-container__digital-advertisements'
 );
 
-const nextButton = document.querySelector(".next");
+const nextButton = document.querySelector('.next');
 
 const carouselClasses = [
-  "carousel-container__content-front--websites",
-  "carousel-container__content-front--search-engine-optimization",
-  "carousel-container__content-front--email-marketing",
-  "carousel-container__content-front--sms-marketing",
-  "carousel-container__content-front--digital-advertisements",
+  'carousel-container__content-front--websites',
+  'carousel-container__content-front--search-engine-optimization',
+  'carousel-container__content-front--email-marketing',
+  'carousel-container__content-front--sms-marketing',
+  'carousel-container__content-front--digital-advertisements',
 ];
 
-const currentCarousel = document.getElementById("current-carousel");
+const currentCarousel = document.getElementById('current-carousel');
 
 const websitesDiv = `
 <div class="carousel-container__content-front carousel-container__content-front--websites">
@@ -199,35 +199,35 @@ const carouselDivs = [websitesDiv, SEODiv, emailDiv, SMSDiv, advertisementsDiv];
 let count = 0;
 
 const theHiddenThing = (itemInQuestion) => {
-  itemInQuestion.style.visibility == "hidden"
-    ? (itemInQuestion.style.visibility = "visible")
-    : (itemInQuestion.style.visibility = "hidden");
+  itemInQuestion.style.visibility == 'hidden'
+    ? (itemInQuestion.style.visibility = 'visible')
+    : (itemInQuestion.style.visibility = 'hidden');
 };
 const openAndClose = () => {
-  xButton.classList.toggle("home__nav--button-x-open");
+  xButton.classList.toggle('nav__button-x-open');
   theHiddenThing(menuCover);
 };
 const selectService = (itemInQuestion, theString) => {
   if (!itemInQuestion.innerHTML) {
-    websitesParagraph.innerHTML = "";
-    seoParagraph.innerHTML = "";
-    emailAndSMSParagraph.innerHTML = "";
-    advertsParagraph.innerHTML = "";
+    websitesParagraph.innerHTML = '';
+    seoParagraph.innerHTML = '';
+    emailAndSMSParagraph.innerHTML = '';
+    advertsParagraph.innerHTML = '';
     itemInQuestion.innerHTML = theString;
   } else {
-    itemInQuestion.innerHTML = "";
+    itemInQuestion.innerHTML = '';
   }
 };
 
 const twoSelectService = (itemInQuestion, theString) => {
   if (!itemInQuestion.innerHTML) {
-    twoWebsitesParagraph.innerHTML = "";
-    twoSeoParagraph.innerHTML = "";
-    twoEmailAndSMSParagraph.innerHTML = "";
-    twoAdvertsParagraph.innerHTML = "";
+    twoWebsitesParagraph.innerHTML = '';
+    twoSeoParagraph.innerHTML = '';
+    twoEmailAndSMSParagraph.innerHTML = '';
+    twoAdvertsParagraph.innerHTML = '';
     itemInQuestion.innerHTML = theString;
   } else {
-    itemInQuestion.innerHTML = "";
+    itemInQuestion.innerHTML = '';
   }
 };
 
@@ -305,9 +305,9 @@ twoAdvertsHeader
 quoraCreativeLink
   ? (quoraCreativeLink.onclick = () => {
       window.open(
-        "https://quoracreative.com/article/mobile-marketing-statistics",
-        "_blank",
-        "width=800, height=800"
+        'https://quoracreative.com/article/mobile-marketing-statistics',
+        '_blank',
+        'width=800, height=800'
       );
     })
   : null;
