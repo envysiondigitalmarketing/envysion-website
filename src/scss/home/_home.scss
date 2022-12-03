@@ -1,6 +1,6 @@
 .nav {
     width: 100%;
-    height: 10vh;
+    height: 10%;
     border-bottom: solid 2px $mainColor;
     display: flex;
     justify-content: space-between;
@@ -10,19 +10,25 @@
     z-index: 1;
     overflow: hidden;
     box-shadow: $box-shadow;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     &__button-logo {
         background: none;
         color: inherit;
         border: none;
-        width: max-content;
-        height: max-content;
-        align-self: center;
+        height: 80%;
         margin-left: 10px;
         cursor: pointer;
         animation-name: moveInRight;
         animation-duration: .5s;
-        margin-top: 3%;
+        align-self: center;
     };
+    .logo {
+        height: 100%;
+        // align-self: center;
+    }
     &__button-x {
         animation-name: moveInRight;
         animation-duration: .5s;
@@ -34,7 +40,6 @@
         border-radius: 15%;
         position: relative;
         align-self: center;
-        margin: auto 0;
         z-index: 3;
 
         right: 4%;
