@@ -257,6 +257,9 @@
   animation-name: moveInSlogan;
   font-size: 375%;
   color: #063831;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  font-style: italic;
 }
 .home .hero-slogan__we {
   animation-duration: 3s;
@@ -317,7 +320,7 @@
     font-size: 650%;
   }
   .home .hero-slogan {
-    font-size: 475%;
+    font-size: 425%;
   }
 }
 @media screen and (min-width: 650px) {
@@ -1620,7 +1623,7 @@ body h2, html h2 {
     grid-area: two;
     right: 0;
     position: relative;
-    max-width: 70vw;
+    max-width: 80vw;
     float: left;
     height: 100vh;
     overflow-x: hidden;

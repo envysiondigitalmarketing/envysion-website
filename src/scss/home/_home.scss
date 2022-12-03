@@ -138,6 +138,9 @@
         animation-name: moveInSlogan;
         font-size: 375%;
         color: $mainColor;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bolder;
+        font-style: italic;
         &__we {
             animation-duration: 3s;
         }
@@ -214,7 +217,7 @@
             font-size: 650%;
         }
         .hero-slogan {
-            font-size: 475%;
+            font-size: 425%;
         }
     }
 }
