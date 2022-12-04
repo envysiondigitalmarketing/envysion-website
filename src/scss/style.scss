@@ -1,16 +1,16 @@
-@import './utilities/animations.scss';
-@import './utilities/vars.scss';
+@import './_utilities/animations.scss';
+@import './_utilities/vars.scss';
 
-@import './home/home';
-@import './home/about';
-@import './home/services';
-@import './home/why-envysion';
+@import './pages/home/home';
+@import './pages/home/about';
+@import './pages/home/services';
+@import './pages/home/why-envysion';
 
-@import './services/services-list';
+@import './pages/services/services-list';
 
-@import './pricing/pricing-section';
+@import './pages/pricing/pricing-section';
 
-@import './contact/contact-section';
+@import './pages/contact/contact-section';
 
 @import './_menu-cover';
 @import './footer';
