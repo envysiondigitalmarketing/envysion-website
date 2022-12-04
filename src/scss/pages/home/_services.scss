@@ -15,7 +15,7 @@
     overflow: hidden;
 
     & h2 {
-        @include homeH2;
+        @include heroH2;
     }
 
     &__list {
@@ -31,7 +31,7 @@
         width: 95%;
     }
     &__header {
-        @include homeH3;
+        @include heroH3;
         transition: .6s;
         margin-bottom: 3%;
         cursor: pointer;
@@ -42,7 +42,7 @@
         }
     };
     &__paragraph {
-        @include homeP;
+        @include heroP;
         margin-top: 0;
         transition: height 0.5s;
     }

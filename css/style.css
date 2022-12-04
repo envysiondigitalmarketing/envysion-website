@@ -181,15 +181,15 @@
   transform: translate(-45%, -45%) rotate(45deg);
 }
 
-.home {
+.hero {
   display: flex;
   flex-direction: column;
 }
-.home .behind-nav {
+.hero .behind-nav {
   position: relative;
   height: 10vh;
 }
-.home .hero {
+.hero .hero {
   height: 100vh;
   overflow: hidden;
   min-width: 103vw;
@@ -198,7 +198,7 @@
   align-items: center;
   justify-content: center;
 }
-.home .cover-photo {
+.hero .cover-photo {
   height: 100vh;
   overflow: hidden;
   min-width: 100%;
@@ -213,7 +213,7 @@
   z-index: -1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
 }
-.home .hero-video {
+.hero .hero-video {
   height: 100vh;
   overflow: hidden;
   min-width: 100%;
@@ -227,10 +227,10 @@
   max-width: 100%;
   z-index: -1;
 }
-.home .hero-text-div {
+.hero .hero-text-div {
   display: inline-block;
 }
-.home .hero-heading {
+.hero .hero-heading {
   animation-name: moveInRight;
   animation-duration: 0.7s;
   margin: 0 0 0.55rem 0;
@@ -239,16 +239,16 @@
   color: transparent;
   -webkit-text-stroke: 1.5px #063831;
 }
-.home .hero-heading__envysion {
+.hero .hero-heading__envysion {
   animation-duration: 1s;
 }
-.home .hero-heading__digital {
+.hero .hero-heading__digital {
   animation-duration: 1.5s;
 }
-.home .hero-heading__marketing {
+.hero .hero-heading__marketing {
   animation-duration: 2s;
 }
-.home .hero-slogan {
+.hero .hero-slogan {
   margin: 0 0 0.55rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   display: inline-block;
@@ -259,19 +259,19 @@
   font-weight: bolder;
   font-style: italic;
 }
-.home .hero-slogan__we {
+.hero .hero-slogan__we {
   animation-duration: 3s;
 }
-.home .hero-slogan__can {
+.hero .hero-slogan__can {
   animation-duration: 3.1s;
 }
-.home .hero-slogan__when {
+.hero .hero-slogan__when {
   animation-duration: 3.2s;
 }
-.home .hero-slogan__we--two {
+.hero .hero-slogan__we--two {
   animation-duration: 3.3s;
 }
-.home .hero-slogan__envysion {
+.hero .hero-slogan__envysion {
   animation-duration: 3.4s;
 }
 
@@ -284,13 +284,13 @@
   .nav {
     height: 11em;
   }
-  .home .behind-nav {
+  .hero .behind-nav {
     height: 11em;
   }
-  .home .hero-slogan {
+  .hero .hero-slogan {
     font-size: 325%;
   }
-  .home__logo {
+  .hero__logo {
     margin-top: -10%;
   }
 }
@@ -306,18 +306,18 @@
   .nav__button-x {
     width: 8%;
   }
-  .home__logo {
+  .hero__logo {
     height: 8em;
     margin-top: -10%;
     margin-left: 5%;
   }
-  .home .behind-nav {
+  .hero .behind-nav {
     height: 15em;
   }
-  .home .hero-heading {
+  .hero .hero-heading {
     font-size: 650%;
   }
-  .home .hero-slogan {
+  .hero .hero-slogan {
     font-size: 425%;
   }
 }
@@ -325,7 +325,7 @@
   .nav__button-x {
     width: 6.5%;
   }
-  .home__logo {
+  .hero__logo {
     margin-top: -10%;
   }
 }
@@ -333,12 +333,12 @@
   .nav__button-x {
     width: 5.5%;
   }
-  .home__logo {
+  .hero__logo {
     margin-top: -15%;
   }
 }
 @media screen and (min-width: 1000px) {
-  .home, .hero {
+  .hero, .hero {
     max-width: 70vw;
     min-width: 70vw !important;
   }
@@ -361,7 +361,7 @@
   .nav__button-x {
     width: 4.5%;
   }
-  .home__logo {
+  .hero__logo {
     margin-top: -20%;
   }
 }
@@ -369,12 +369,12 @@
   .nav__button-x {
     width: 3.5%;
   }
-  .home__logo {
+  .hero__logo {
     margin-top: -25%;
   }
 }
 @media screen and (min-width: 1300px) {
-  .home__logo {
+  .hero__logo {
     margin-top: -35%;
   }
 }
@@ -695,7 +695,7 @@
   overflow-x: hidden;
 }
 
-.services--home {
+.services--hero {
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -854,7 +854,7 @@
     font-size: 550%;
   }
 }
-.pricing--home {
+.pricing--hero {
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -1112,14 +1112,14 @@
   overflow-x: hidden;
 }
 
-.contact--home {
+.contact--hero {
   width: 100vw;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-.home__nav {
+.hero__nav {
   z-index: 2;
 }
 

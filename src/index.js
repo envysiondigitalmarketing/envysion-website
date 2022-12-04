@@ -2,7 +2,7 @@ const xButton = document.getElementById('nav__button-x');
 
 const menuCover = document.getElementById('menu-cover');
 
-const home = document.getElementById('home-button');
+const hero = document.getElementById('hero-button');
 const about = document.getElementById('about-button');
 const services = document.getElementById('services-button');
 const whyEnvysion = document.getElementById('why-envysion-button');
@@ -246,7 +246,7 @@ onload = () => theHiddenThing(menuCover);
 xButton.onclick = () => {
   openAndClose();
 };
-home.onclick = () => {
+hero.onclick = () => {
   openAndClose();
 };
 // about.onclick = () => {openAndClose()};

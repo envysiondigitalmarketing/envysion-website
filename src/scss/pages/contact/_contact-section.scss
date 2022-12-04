@@ -5,19 +5,19 @@
     overflow-x: hidden;
 }
 
-.contact--home {
+.contact--hero {
     width: 100vw;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-.home__nav {
+.hero__nav {
     z-index: 2;
 }
 .contact {
     h2{
-        @include nonHomeH2;
+        @include nonheroH2;
     }
     &-section {
         animation-name: moveInRight;

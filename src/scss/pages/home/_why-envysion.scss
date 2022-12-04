@@ -13,15 +13,15 @@
     min-width: 103vw;
 
     & h2 {
-        @include homeH2;
+        @include heroH2;
     }
     & h3 {
-        @include homeH3;
+        @include heroH3;
         margin: 5% 0 15% 0;
         padding: $paddingForCentering;
     }
     & p {
-        @include homeP;
+        @include heroP;
         margin-top: 15%;
         line-height: 1.3;
     }
