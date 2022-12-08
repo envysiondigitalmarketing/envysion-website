@@ -22,12 +22,12 @@
     &-section {
         animation-name: moveInRight;
         animation-duration: .7s;
-        height: max-content;
+        max-height: 100%;
         @include andSection;
         font-size: 75%;
         margin: 0;
         padding: 0;
-        margin-top: $navHeight;
+        // margin-top: $navHeight;
         .form-container {
             height: 100%;
             margin: 0;

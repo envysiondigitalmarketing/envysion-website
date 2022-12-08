@@ -5,13 +5,17 @@
     overflow-x: hidden;
 }
 
+.behind-nav {
+    position: relative;
+    @include navHeight($navHeight);
+}
+
 .pricing-section {
     @include andSection;
     padding: 0;
     min-height: 90vh;
     animation-name: moveInRight;
     animation-duration: .7s;
-    margin-top: $navHeight;
     min-width: 103vw;
 
     .pricing-header {

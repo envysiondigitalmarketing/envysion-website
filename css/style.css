@@ -181,15 +181,15 @@
   transform: translate(-45%, -45%) rotate(45deg);
 }
 
-.hero {
+.main {
   display: flex;
   flex-direction: column;
 }
-.hero .behind-nav {
+.main .behind-nav {
   position: relative;
   height: 10vh;
 }
-.hero .hero {
+.main .hero {
   height: 100vh;
   overflow: hidden;
   min-width: 103vw;
@@ -198,7 +198,7 @@
   align-items: center;
   justify-content: center;
 }
-.hero .cover-photo {
+.main .cover-photo {
   height: 100vh;
   overflow: hidden;
   min-width: 100%;
@@ -213,7 +213,7 @@
   z-index: -1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
 }
-.hero .hero-video {
+.main .hero-video {
   height: 100vh;
   overflow: hidden;
   min-width: 100%;
@@ -227,10 +227,10 @@
   max-width: 100%;
   z-index: -1;
 }
-.hero .hero-text-div {
+.main .hero-text-div {
   display: inline-block;
 }
-.hero .hero-heading {
+.main .hero-heading {
   animation-name: moveInRight;
   animation-duration: 0.7s;
   margin: 0 0 0.55rem 0;
@@ -238,16 +238,16 @@
   font-size: 550%;
   color: #063831;
 }
-.hero .hero-heading__envysion {
+.main .hero-heading__envysion {
   animation-duration: 1s;
 }
-.hero .hero-heading__digital {
+.main .hero-heading__digital {
   animation-duration: 1.5s;
 }
-.hero .hero-heading__marketing {
+.main .hero-heading__marketing {
   animation-duration: 2s;
 }
-.hero .hero-slogan {
+.main .hero-slogan {
   color: #063831;
   margin: 0 0 0.55rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
@@ -257,19 +257,19 @@
   font-family: "Oooh Baby", cursive;
   font-style: italic;
 }
-.hero .hero-slogan__we {
+.main .hero-slogan__we {
   animation-duration: 3s;
 }
-.hero .hero-slogan__can {
+.main .hero-slogan__can {
   animation-duration: 3.1s;
 }
-.hero .hero-slogan__when {
+.main .hero-slogan__when {
   animation-duration: 3.2s;
 }
-.hero .hero-slogan__we--two {
+.main .hero-slogan__we--two {
   animation-duration: 3.3s;
 }
-.hero .hero-slogan__envysion {
+.main .hero-slogan__envysion {
   animation-duration: 3.4s;
 }
 
@@ -693,6 +693,11 @@
   overflow-x: hidden;
 }
 
+.behind-nav {
+  position: relative;
+  height: 10vh;
+}
+
 .services--hero {
   width: 100vw;
   margin: 0;
@@ -703,7 +708,6 @@
 .services-II {
   height: max-content;
   overflow-y: scroll;
-  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -859,6 +863,11 @@
   overflow-x: hidden;
 }
 
+.behind-nav {
+  position: relative;
+  height: 10vh;
+}
+
 .pricing-section {
   min-height: 90.5vh;
   margin-top: -0.5%;
@@ -871,7 +880,6 @@
   min-height: 90vh;
   animation-name: moveInRight;
   animation-duration: 0.7s;
-  margin-top: 10vh;
   min-width: 103vw;
 }
 .pricing-section h2 {
@@ -1128,7 +1136,7 @@
 .contact-section {
   animation-name: moveInRight;
   animation-duration: 0.7s;
-  height: max-content;
+  max-height: 100%;
   min-height: 90.5vh;
   margin-top: -0.5%;
   padding: 0 5%;
@@ -1139,7 +1147,6 @@
   font-size: 75%;
   margin: 0;
   padding: 0;
-  margin-top: 10vh;
 }
 .contact-section h2 {
   font-size: 500%;

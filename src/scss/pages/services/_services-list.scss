@@ -5,6 +5,11 @@
     overflow-x: hidden;
 }
 
+.behind-nav {
+    position: relative;
+    @include navHeight($navHeight);
+}
+
 .services--hero {
     width: 100vw;
     margin: 0;
@@ -15,8 +20,6 @@
 .services-II {
     height: max-content;
     overflow-y: scroll;
-
-    margin-top: $navHeight;
 
     display: flex;
     flex-direction: column;
