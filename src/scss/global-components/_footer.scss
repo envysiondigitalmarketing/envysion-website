@@ -50,7 +50,7 @@
 
         font-family: 'Open Sans', sans-serif;
         margin-top: 0;
-        margin-bottom: 5%;
+        margin-bottom: 4%;
     }
 
     .footer-social-links {
@@ -161,9 +161,6 @@
 @media screen and (min-width: 1000px) {
     .footer {
         box-shadow: inset 0px 0px 0px 2px $mainColor;
-        &-logo {
-            margin-top: 20%;
-        }
     }
     .footer-social-links {
         &__div {
