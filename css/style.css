@@ -96,10 +96,6 @@
     transform: translateX(0);
   }
 }
-@font-face {
-  font-family: feeling_passionate;
-  src: url("../../../font/felling_passionate/FeelingPassionateRegular-gxp34.woff") format("woff");
-}
 .nav {
   width: 100%;
   height: 10%;
@@ -252,15 +248,13 @@
   animation-duration: 2s;
 }
 .hero .hero-slogan {
-  color: transparent;
-  -webkit-text-stroke: 1.25px #063831;
+  color: #063831;
   margin: 0 0 0.55rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   display: inline-block;
   animation-name: moveInSlogan;
   font-size: 375%;
-  font-family: feeling_passionate;
-  font-weight: bolder;
+  font-family: "Oooh Baby", cursive;
   font-style: italic;
 }
 .hero .hero-slogan__we {
@@ -305,7 +299,7 @@
 }
 @media screen and (min-width: 560px) {
   .nav {
-    height: 15em;
+    height: 13em;
   }
   .nav__button-x {
     width: 8%;
