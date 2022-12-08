@@ -255,9 +255,13 @@
 };
 
 @media screen and (min-width: 1000px) {
-    .hero, .hero {
-        max-width: 70vw;
-        min-width: 70vw !important;
+    .wrapper {
+        max-width: 75vw;
+        min-width: 75vw !important;
+    }
+    .hero {
+        max-width: 75vw;
+        min-width: 75vw !important;
     }
     .hero-video {
         @include cover;

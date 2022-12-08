@@ -340,9 +340,13 @@
   }
 }
 @media screen and (min-width: 1000px) {
-  .hero, .hero {
-    max-width: 70vw;
-    min-width: 70vw !important;
+  .wrapper {
+    max-width: 75vw;
+    min-width: 75vw !important;
+  }
+  .hero {
+    max-width: 75vw;
+    min-width: 75vw !important;
   }
   .hero-video {
     height: 100vh;
@@ -439,8 +443,8 @@
 }
 @media screen and (min-width: 1000px) {
   .about {
-    max-width: 70vw;
-    min-width: 70vw !important;
+    max-width: 75vw;
+    min-width: 75vw !important;
     min-height: 180vh;
   }
 }
@@ -538,8 +542,8 @@
 }
 @media screen and (min-width: 1000px) {
   .services {
-    max-width: 70vw;
-    min-width: 70vw !important;
+    max-width: 75vw;
+    min-width: 75vw !important;
     min-height: 100vh;
   }
 }
@@ -655,8 +659,8 @@
 }
 @media screen and (min-width: 1000px) {
   .why-envysion {
-    max-width: 70vw;
-    min-width: 70vw !important;
+    max-width: 75vw;
+    min-width: 75vw !important;
     min-height: 300vh;
     padding-top: 5%;
   }
@@ -822,13 +826,13 @@
     grid-area: one;
   }
   .main {
-    width: 70vw;
+    width: 75vw;
   }
   .services-II {
     grid-area: two;
     position: relative;
-    max-width: 70vw;
-    min-width: 70vw;
+    max-width: 75vw;
+    min-width: 75vw;
     max-height: max-content;
     overflow: hidden;
     margin-bottom: 0;
@@ -1088,8 +1092,8 @@
 }
 @media screen and (min-width: 1000px) {
   .pricing-section {
-    max-width: 70vw;
-    min-width: 70vw;
+    max-width: 75vw;
+    min-width: 75vw;
     align-items: flex-start;
   }
   .pricing-section .next {
@@ -1305,7 +1309,7 @@
     grid-area: one;
   }
   .main {
-    width: 70vw;
+    width: 75vw;
   }
   .contact {
     grid-area: two;
@@ -1641,8 +1645,8 @@ body h2, html h2 {
     position: relative;
     height: 100vh;
     margin: 0;
-    min-width: 30vw;
-    max-width: 30vw;
+    min-width: 25vw;
+    max-width: 25vw;
     float: right;
   }
   .footer-container {
