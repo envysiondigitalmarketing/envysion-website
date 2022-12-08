@@ -96,6 +96,10 @@
     transform: translateX(0);
   }
 }
+.wrapper {
+  max-width: 100vw;
+}
+
 .nav {
   width: 100%;
   height: 10%;
@@ -192,7 +196,7 @@
 .main .hero {
   height: 100vh;
   overflow: hidden;
-  min-width: 103vw;
+  min-width: 100vw;
   background-image: linear-gradient(transparent 10%, #FEFDFF 90%);
   display: flex;
   align-items: center;
@@ -388,7 +392,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-width: 103vw;
+  min-width: 100vw;
 }
 .about-container {
   padding: 0 5%;
@@ -465,7 +469,7 @@
   }
 }
 .services {
-  min-width: 103vw;
+  min-width: 0;
   background-color: #FEFDFF;
   margin-top: -0.5%;
   display: flex;
@@ -588,7 +592,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 103vw;
+  min-width: 100vw;
 }
 .why-envysion h2 {
   margin: 5% 0 5% 0;
@@ -687,7 +691,7 @@
   }
 }
 .main {
-  width: 103vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -711,7 +715,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 103vw;
+  min-width: 100vw;
   animation-name: moveInRight;
   animation-duration: 0.7s;
 }
@@ -880,7 +884,7 @@
   min-height: 90vh;
   animation-name: moveInRight;
   animation-duration: 0.7s;
-  min-width: 103vw;
+  min-width: 100vw;
 }
 .pricing-section h2 {
   font-size: 500%;
@@ -1112,7 +1116,7 @@
   }
 }
 .main {
-  width: 103vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -1420,7 +1424,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  min-width: 103vw;
+  min-width: 100vw;
 }
 .footer hr {
   margin: 0;

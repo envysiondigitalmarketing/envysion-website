@@ -1,5 +1,5 @@
 .main {
-    width: 103vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
 
-    min-width: 103vw;
+    min-width: 100vw;
 
     animation-name: moveInRight;
     animation-duration: .7s;
