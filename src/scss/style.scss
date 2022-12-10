@@ -1,19 +1,19 @@
 @import './utilities/animations.scss';
 @import './utilities/vars.scss';
 
-@import './home/home';
-@import './home/about';
-@import './home/services';
-@import './home/why-envysion';
+@import './pages/home/home';
+@import './pages/home/about';
+@import './pages/home/services';
+@import './pages/home/why-envysion';
 
-@import './services/services-list';
+@import './pages/services/services-list';
 
-@import './pricing/pricing-section';
+@import './pages/pricing/pricing-section';
 
-@import './contact/contact-section';
+@import './pages/contact/contact-section';
 
-@import './_menu-cover';
-@import './footer';
+@import './global-components/menu-cover';
+@import './global-components/footer';
 
 
 body, html {
@@ -62,7 +62,7 @@ body, html {
     .nav-area {
         grid-area: one;
     }
-    .main {
+    .wrapper {
         grid-area: two;
         right: 0;
         position: relative;
@@ -80,8 +80,8 @@ body, html {
         position: relative;
         height: 100vh;
         margin: 0;
-        min-width: 30vw;
-        max-width: 30vw;
+        min-width: 25vw;
+        max-width: 25vw;
         float: right;
         &-container {
             margin-top: 10vh;

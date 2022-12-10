@@ -1,8 +1,13 @@
-.pricing--home {
+.pricing--hero {
     width: 100vw;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+.behind-nav {
+    position: relative;
+    @include navHeight($navHeight);
 }
 
 .pricing-section {
@@ -11,11 +16,10 @@
     min-height: 90vh;
     animation-name: moveInRight;
     animation-duration: .7s;
-    margin-top: $navHeight;
-    min-width: 103vw;
+    min-width: 100vw;
 
     .pricing-header {
-        @include nonHomeH2;
+        @include nonheroH2;
     }
 
     .carousel-container {
@@ -265,8 +269,8 @@
 
 @media screen and (min-width: 1000px) {
     .pricing-section {
-        max-width: 70vw;
-        min-width: 70vw;
+        max-width: 75vw;
+        min-width: 75vw;
         // max-height: max-content;
         // overflow: hidden;
         // margin-bottom: 0;

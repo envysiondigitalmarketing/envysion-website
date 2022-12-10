@@ -10,18 +10,18 @@
     flex-direction: column;
     align-items: center;
     // min-width: 101%;
-    min-width: 103vw;
+    min-width: 100vw;
 
     & h2 {
-        @include homeH2;
+        @include heroH2;
     }
     & h3 {
-        @include homeH3;
+        @include heroH3;
         margin: 5% 0 15% 0;
         padding: $paddingForCentering;
     }
     & p {
-        @include homeP;
+        @include heroP;
         margin-top: 15%;
         line-height: 1.3;
     }
@@ -92,8 +92,8 @@
 
 @media screen and (min-width: 1000px) {
     .why-envysion {
-        max-width: 70vw;
-        min-width: 70vw !important;
+        max-width: 75vw;
+        min-width: 75vw !important;
         min-height: 300vh;
         padding-top: 5%;
     }

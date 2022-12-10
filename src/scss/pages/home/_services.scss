@@ -2,7 +2,7 @@
     // min-height: 100vh;
     // min-height: 100%;
     // min-height: 200vh;
-    min-width: 103vw;
+    min-width: 0;
     background-color: $thisWhite;
 
     margin-top: -.5%;
@@ -15,7 +15,7 @@
     overflow: hidden;
 
     & h2 {
-        @include homeH2;
+        @include heroH2;
     }
 
     &__list {
@@ -31,7 +31,7 @@
         width: 95%;
     }
     &__header {
-        @include homeH3;
+        @include heroH3;
         transition: .6s;
         margin-bottom: 3%;
         cursor: pointer;
@@ -42,7 +42,7 @@
         }
     };
     &__paragraph {
-        @include homeP;
+        @include heroP;
         margin-top: 0;
         transition: height 0.5s;
     }
@@ -80,8 +80,8 @@
 
 @media screen and (min-width: 1000px) {
     .services {
-        max-width: 70vw;
-        min-width: 70vw !important;
+        max-width: 75vw;
+        min-width: 75vw !important;
         min-height: 100vh;
     }
 }

@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-width: 103vw;
+    min-width: 100vw;
     &-container {
         padding: $paddingForCentering;
         display: flex;
@@ -15,7 +15,7 @@
         min-height: max-content;
     }
     & h2 {
-        @include homeH2;
+        @include heroH2;
     }
     & h3 {
         font-family: 'Open Sans', sans-serif;
@@ -26,7 +26,7 @@
         margin-top: 5%;
     };
     & p {
-        @include homeP;
+        @include heroP;
         margin-top: 5%;
         line-height: 1.5;
     }
@@ -65,8 +65,8 @@
 
 @media screen and (min-width: 1000px) {
     .about {
-        max-width: 70vw;
-        min-width: 70vw !important;
+        max-width: 75vw;
+        min-width: 75vw !important;
         min-height: 180vh;
     }
 }

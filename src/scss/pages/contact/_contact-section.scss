@@ -1,33 +1,33 @@
 .main {
-    width: 103vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
 }
 
-.contact--home {
+.contact--hero {
     width: 100vw;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-.home__nav {
+.hero__nav {
     z-index: 2;
 }
 .contact {
     h2{
-        @include nonHomeH2;
+        @include nonheroH2;
     }
     &-section {
         animation-name: moveInRight;
         animation-duration: .7s;
-        height: max-content;
+        max-height: 100%;
         @include andSection;
         font-size: 75%;
         margin: 0;
         padding: 0;
-        margin-top: $navHeight;
+        // margin-top: $navHeight;
         .form-container {
             height: 100%;
             margin: 0;
@@ -176,7 +176,7 @@
         grid-area: one;
     }
     .main {
-        width: 70vw;
+        width: 75vw;
     }
     .contact {
         grid-area: two;

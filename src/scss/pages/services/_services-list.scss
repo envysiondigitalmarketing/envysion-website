@@ -1,11 +1,16 @@
 .main {
-    width: 103vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
 }
 
-.services--home {
+.behind-nav {
+    position: relative;
+    @include navHeight($navHeight);
+}
+
+.services--hero {
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -16,19 +21,17 @@
     height: max-content;
     overflow-y: scroll;
 
-    margin-top: $navHeight;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    min-width: 103vw;
+    min-width: 100vw;
 
     animation-name: moveInRight;
     animation-duration: .7s;
 
     h2 {
-        @include nonHomeH2;
+        @include nonheroH2;
     };
 
     &__list {
@@ -44,7 +47,7 @@
         width: 95%;
     }
     &__header {
-        @include homeH3;
+        @include heroH3;
         align-self: center;
         cursor: pointer;
         display: inline-block;
@@ -122,13 +125,13 @@
         grid-area: one;
     }
     .main {
-        width: 70vw;
+        width: 75vw;
     }
     .services-II {
         grid-area: two;
         position: relative;
-        max-width: 70vw;
-        min-width: 70vw;
+        max-width: 75vw;
+        min-width: 75vw;
         max-height: max-content;
         overflow: hidden;
         margin-bottom: 0;
