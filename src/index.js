@@ -243,23 +243,13 @@ const carouselScroll = () => {
 
 onload = () => theHiddenThing(menuCover);
 
-xButton.onclick = () => {
-  openAndClose();
-};
-hero.onclick = () => {
-  openAndClose();
-};
-// about.onclick = () => {openAndClose()};
-services.onclick = () => {
-  openAndClose();
-};
-// whyEnvysion.onclick = () => {openAndClose()};
-pricing.onclick = () => {
-  openAndClose();
-};
-contact.onclick = () => {
-  openAndClose();
-};
+xButton.onclick = () => openAndClose();
+hero.onclick = () => openAndClose();
+services.onclick = () => openAndClose();
+pricing.onclick = () => openAndClose();
+contact.onclick = () => openAndClose();
+// about.onclick = () => openAndClose
+// whyEnvysion.onclick = () => openAndClose');
 
 websitesHeader
   ? (websitesHeader.onclick = () => {
