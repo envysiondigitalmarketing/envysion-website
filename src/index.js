@@ -1,5 +1,5 @@
-import domElements from './javascript/dom-elements';
-import servicesParagraphs from './javascript/services-paragraphs';
+import domElements from '/src/javascript/dom-elements.js';
+import paragraphs from '/src/javascript/paragraphs.js';
 
 const theHiddenThing = (itemInQuestion) => {
   itemInQuestion.style.visibility == 'hidden'
@@ -46,38 +46,32 @@ domElements.contact.onclick = () => openAndClose();
 
 domElements.websitesHeader
   ? (domElements.websitesHeader.onclick = () => {
-      selectService(
-        domElements.websitesParagraph,
-        servicesParagraphs.samples.websites
-      );
+      selectService(domElements.websitesParagraph, paragraphs.samples.websites);
     })
   : null;
 domElements.twoWebsitesHeader
   ? (domElements.twoWebsitesHeader.onclick = () => {
       twoSelectService(
         domElements.twoWebsitesParagraph,
-        servicesParagraphs.full.websites
+        paragraphs.full.websites
       );
     })
   : null;
 domElements.seoHeader
   ? (domElements.seoHeader.onclick = () => {
-      selectService(domElements.seoParagraph, servicesParagraphs.samples.seo);
+      selectService(domElements.seoParagraph, paragraphs.samples.seo);
     })
   : null;
 domElements.twoSeoHeader
   ? (domElements.twoSeoHeader.onclick = () => {
-      twoSelectService(
-        domElements.twoSeoParagraph,
-        servicesParagraphs.full.seo
-      );
+      twoSelectService(domElements.twoSeoParagraph, paragraphs.full.seo);
     })
   : null;
 domElements.emailAndSMSHeader
   ? (domElements.emailAndSMSHeader.onclick = () => {
       selectService(
         domElements.emailAndSMSParagraph,
-        servicesParagraphs.samples.emailAndSms
+        paragraphs.samples.emailAndSms
       );
     })
   : null;
@@ -85,23 +79,20 @@ domElements.twoEmailAndSMSHeader
   ? (domElements.twoEmailAndSMSHeader.onclick = () => {
       twoSelectService(
         domElements.twoEmailAndSMSParagraph,
-        servicesParagraphs.full.emailAndSms
+        paragraphs.full.emailAndSms
       );
     })
   : null;
 domElements.advertsHeader
   ? (domElements.advertsHeader.onclick = () => {
-      selectService(
-        domElements.advertsParagraph,
-        servicesParagraphs.samples.adverts
-      );
+      selectService(domElements.advertsParagraph, paragraphs.samples.adverts);
     })
   : null;
 domElements.twoAdvertsHeader
   ? (domElements.twoAdvertsHeader.onclick = () => {
       twoSelectService(
         domElements.twoAdvertsParagraph,
-        servicesParagraphs.full.adverts
+        paragraphs.full.adverts
       );
     })
   : null;
