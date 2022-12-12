@@ -1,4 +1,5 @@
 import domElements from './javascript/dom-elements';
+import servicesParagraphs from './javascript/services-paragraphs';
 
 const carouselContainer = document.querySelector('.carousel-container');
 

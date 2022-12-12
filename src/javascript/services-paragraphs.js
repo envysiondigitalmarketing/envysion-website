@@ -1,4 +1,4 @@
-const paragraphs = {
+export default paragraphs = {
   samples: {
     adverts: `Harness the power of Google, Facebook, or Instagram ads to drive traffic to your website. These platforms [...] <a id='reference-link' href='./services.html''>Read More &#8640;</a>`,
     emailAndSms: `Email marketing and SMS marketing are great tools to generate new leads and keep your current customers up to date with the latest information about your business. A recent study has shown that for every dollar your company spends on email marketing alone you can expect a return of $42 <a id='reference-link' onclick='window.open("https://dma.org.uk/uploads/misc/marketers-email-tracker-2019.pdf", "_blank", "width=800, height=800");'>(DMA)</a> and 98% of text messages sent are [...] <a id='reference-link' href='./services.html''>Read More &#8640;</a>`,
