@@ -73,7 +73,7 @@ const carouselDigitalAdvertisements = document.querySelector(
 
 const nextButton = document.querySelector('.next');
 
-const domElements = [
+const domElements = {
   xButton,
   menuCover,
   hero,
@@ -108,6 +108,6 @@ const domElements = [
   carouselSMSMarketing,
   carouselDigitalAdvertisements,
   nextButton,
-];
+};
 
 export default domElements;
