@@ -1,26 +1,6 @@
 import domElements from './javascript/dom-elements';
 import servicesParagraphs from './javascript/services-paragraphs';
 
-const carouselContainer = document.querySelector('.carousel-container');
-
-const carouselWebsites = document.querySelector(
-  '.carousel-container__websites'
-);
-const carouselSEO = document.querySelector(
-  '.carousel-container__search-engine-optimization'
-);
-const carouselEmailMarketing = document.querySelector(
-  '.carousel-container__email-marketing'
-);
-const carouselSMSMarketing = document.querySelector(
-  '.carousel-container__sms-marketing'
-);
-const carouselDigitalAdvertisements = document.querySelector(
-  '.carousel-container__digital-advertisements'
-);
-
-const nextButton = document.querySelector('.next');
-
 const carouselClasses = [
   'carousel-container__content-front--websites',
   'carousel-container__content-front--search-engine-optimization',

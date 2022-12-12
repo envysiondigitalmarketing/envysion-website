@@ -53,7 +53,27 @@ const twoAdvertsParagraph = document.querySelector(
 
 const quoraCreativeLink = document.querySelector('.quoracreative-link');
 
-export default domElements = [
+const carouselContainer = document.querySelector('.carousel-container');
+
+const carouselWebsites = document.querySelector(
+  '.carousel-container__websites'
+);
+const carouselSEO = document.querySelector(
+  '.carousel-container__search-engine-optimization'
+);
+const carouselEmailMarketing = document.querySelector(
+  '.carousel-container__email-marketing'
+);
+const carouselSMSMarketing = document.querySelector(
+  '.carousel-container__sms-marketing'
+);
+const carouselDigitalAdvertisements = document.querySelector(
+  '.carousel-container__digital-advertisements'
+);
+
+const nextButton = document.querySelector('.next');
+
+const domElements = [
   xButton,
   menuCover,
   hero,
@@ -81,4 +101,13 @@ export default domElements = [
   twoEmailAndSMSParagraph,
   twoAdvertsParagraph,
   quoraCreativeLink,
+  carouselContainer,
+  carouselWebsites,
+  carouselSEO,
+  carouselEmailMarketing,
+  carouselSMSMarketing,
+  carouselDigitalAdvertisements,
+  nextButton,
 ];
+
+export default domElements;
