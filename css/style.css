@@ -389,7 +389,7 @@
     width: 3%;
   }
 }
-.about {
+.growth {
   background-color: #FEFDFF;
   overflow-x: hidden;
   margin-top: -0.5%;
@@ -398,17 +398,17 @@
   justify-content: flex-start;
   min-width: 100vw;
 }
-.about-container {
+.growth-container {
   padding: 0 5%;
   display: flex;
   flex-direction: column;
   min-height: max-content;
 }
-.about h2 {
+.growth h2 {
   margin: 5% 0 5% 0;
   align-self: center;
 }
-.about h3 {
+.growth h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 300%;
   margin: 0;
@@ -416,7 +416,7 @@
   margin-bottom: 0;
   margin-top: 5%;
 }
-.about p {
+.growth p {
   font-family: "Open Sans", sans-serif;
   font-size: 250%;
   font-weight: 500;
@@ -427,48 +427,48 @@
 }
 
 @media screen and (min-width: 470px) {
-  .about p {
+  .growth p {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 540px) {
-  .about-container {
+  .growth-container {
     padding: 0 10%;
   }
 }
 @media screen and (min-width: 760px) {
-  .about-container {
+  .growth-container {
     padding: 0 15%;
   }
 }
 @media screen and (min-width: 1000px) {
-  .about {
+  .growth {
     max-width: 75vw;
     min-width: 75vw !important;
     min-height: 180vh;
   }
 }
 @media screen and (min-width: 1050px) {
-  .about-container {
+  .growth-container {
     padding: 0 20%;
   }
-  .about h2 {
+  .growth h2 {
     font-size: 500%;
   }
 }
 @media screen and (min-width: 1300px) {
-  .about {
+  .growth {
     min-height: 170vh;
   }
-  .about-container {
+  .growth-container {
     padding: 0 20%;
   }
-  .about h2 {
+  .growth h2 {
     font-size: 550%;
   }
 }
 @media screen and (min-width: 1450px) {
-  .about-container {
+  .growth-container {
     padding: 0 25%;
   }
 }
@@ -1606,11 +1606,20 @@ body .cta-orange:active, html .cta-orange:active {
   box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
   transform: translateY(0px);
 }
-body .cta-orange__about, body .cta-orange__services, html .cta-orange__about, html .cta-orange__services {
+body .cta-orange__growth, body .cta-orange__services, html .cta-orange__growth, html .cta-orange__services {
   align-self: center;
 }
 body h2, html h2 {
   font-size: 450%;
+}
+
+.blob {
+  position: relative;
+}
+.blob__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #reference-link, .reference-link {
@@ -1654,7 +1663,7 @@ body h2, html h2 {
   }
 }
 @media screen and (min-width: 1000px) {
-  .cta-orange__about, .cta-orange__why-envysion, .cta-orange__services {
+  .cta-orange__growth, .cta-orange__why-envysion, .cta-orange__services {
     margin-bottom: 0 !important;
   }
 }

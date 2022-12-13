@@ -41,7 +41,7 @@ domElements.hero.onclick = () => openAndClose();
 domElements.services.onclick = () => openAndClose();
 domElements.pricing.onclick = () => openAndClose();
 domElements.contact.onclick = () => openAndClose();
-// about.onclick = () => openAndClose
+// growth.onclick = () => openAndClose
 // whyEnvysion.onclick = () => openAndClose');
 
 domElements.websitesHeader
