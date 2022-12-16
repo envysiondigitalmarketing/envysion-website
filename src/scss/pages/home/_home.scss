@@ -142,14 +142,11 @@
     };
     .hero-slogan {
         color: $mainColor;
-        // -webkit-text-stroke: 1.25px $mainColor;
         @include hero-text;
         display: inline-block;
         animation-name: moveInSlogan;
         font-size: 375%;
-        // color: $mainColor;
         font-family: 'Oooh Baby', cursive;
-        // font-weight: bolder;
         font-style: italic;
         &__we {
             animation-duration: 3s;

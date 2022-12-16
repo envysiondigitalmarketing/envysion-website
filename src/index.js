@@ -1,57 +1,28 @@
 import domElements from '/src/javascript/dom-elements.js';
+import functions from '/src/javascript/functions.js';
 import paragraphs from '/src/javascript/paragraphs.js';
 
-const theHiddenThing = (itemInQuestion) => {
-  itemInQuestion.style.visibility == 'hidden'
-    ? (itemInQuestion.style.visibility = 'visible')
-    : (itemInQuestion.style.visibility = 'hidden');
-};
-const openAndClose = () => {
-  domElements.xButton.classList.toggle('nav__button-x-open');
-  theHiddenThing(domElements.menuCover);
-};
-const selectService = (itemInQuestion, theString) => {
-  if (!itemInQuestion.innerHTML) {
-    domElements.websitesParagraph.innerHTML = '';
-    domElements.seoParagraph.innerHTML = '';
-    domElements.emailAndSMSParagraph.innerHTML = '';
-    domElements.advertsParagraph.innerHTML = '';
-    itemInQuestion.innerHTML = theString;
-  } else {
-    itemInQuestion.innerHTML = '';
-  }
-};
+onload = () => functions.theHiddenThing(domElements.menuCover);
 
-const twoSelectService = (itemInQuestion, theString) => {
-  if (!itemInQuestion.innerHTML) {
-    domElements.twoWebsitesParagraph.innerHTML = '';
-    domElements.twoSeoParagraph.innerHTML = '';
-    domElements.twoEmailAndSMSParagraph.innerHTML = '';
-    domElements.twoAdvertsParagraph.innerHTML = '';
-    itemInQuestion.innerHTML = theString;
-  } else {
-    itemInQuestion.innerHTML = '';
-  }
-};
-
-onload = () => theHiddenThing(domElements.menuCover);
-
-domElements.xButton.onclick = () => openAndClose();
-domElements.hero.onclick = () => openAndClose();
-domElements.services.onclick = () => openAndClose();
-domElements.pricing.onclick = () => openAndClose();
-domElements.contact.onclick = () => openAndClose();
+domElements.xButton.onclick = () => functions.openAndClose();
+domElements.hero.onclick = () => functions.openAndClose();
+domElements.services.onclick = () => functions.openAndClose();
+domElements.pricing.onclick = () => functions.openAndClose();
+domElements.contact.onclick = () => functions.openAndClose();
 // growth.onclick = () => openAndClose
 // whyEnvysion.onclick = () => openAndClose');
 
 domElements.websitesHeader
   ? (domElements.websitesHeader.onclick = () => {
-      selectService(domElements.websitesParagraph, paragraphs.samples.websites);
+      functions.selectService(
+        domElements.websitesParagraph,
+        paragraphs.samples.websites
+      );
     })
   : null;
 domElements.twoWebsitesHeader
   ? (domElements.twoWebsitesHeader.onclick = () => {
-      twoSelectService(
+      functions.twoSelectService(
         domElements.twoWebsitesParagraph,
         paragraphs.full.websites
       );
@@ -59,17 +30,20 @@ domElements.twoWebsitesHeader
   : null;
 domElements.seoHeader
   ? (domElements.seoHeader.onclick = () => {
-      selectService(domElements.seoParagraph, paragraphs.samples.seo);
+      functions.selectService(domElements.seoParagraph, paragraphs.samples.seo);
     })
   : null;
 domElements.twoSeoHeader
   ? (domElements.twoSeoHeader.onclick = () => {
-      twoSelectService(domElements.twoSeoParagraph, paragraphs.full.seo);
+      functions.twoSelectService(
+        domElements.twoSeoParagraph,
+        paragraphs.full.seo
+      );
     })
   : null;
 domElements.emailAndSMSHeader
   ? (domElements.emailAndSMSHeader.onclick = () => {
-      selectService(
+      functions.selectService(
         domElements.emailAndSMSParagraph,
         paragraphs.samples.emailAndSms
       );
@@ -77,7 +51,7 @@ domElements.emailAndSMSHeader
   : null;
 domElements.twoEmailAndSMSHeader
   ? (domElements.twoEmailAndSMSHeader.onclick = () => {
-      twoSelectService(
+      functions.twoSelectService(
         domElements.twoEmailAndSMSParagraph,
         paragraphs.full.emailAndSms
       );
@@ -85,12 +59,15 @@ domElements.twoEmailAndSMSHeader
   : null;
 domElements.advertsHeader
   ? (domElements.advertsHeader.onclick = () => {
-      selectService(domElements.advertsParagraph, paragraphs.samples.adverts);
+      functions.selectService(
+        domElements.advertsParagraph,
+        paragraphs.samples.adverts
+      );
     })
   : null;
 domElements.twoAdvertsHeader
   ? (domElements.twoAdvertsHeader.onclick = () => {
-      twoSelectService(
+      functions.twoSelectService(
         domElements.twoAdvertsParagraph,
         paragraphs.full.adverts
       );
@@ -107,7 +84,7 @@ domElements.quoraCreativeLink
     })
   : null;
 
-domElements.nextButton.onclick = () => carouselScroll();
+domElements.nextButton.onclick = () => functions.carouselScrollNext();
 
 // const carouselClasses = [
 //   'carousel-container__content-front--websites',
@@ -224,13 +201,3 @@ domElements.nextButton.onclick = () => carouselScroll();
 // const carouselDivs = [websitesDiv, SEODiv, emailDiv, SMSDiv, advertisementsDiv];
 
 // let count = 0;
-
-// const carouselScroll = () => {
-//   if (count === 4) {
-//     count = 0;
-//     currentCarousel.innerHTML = carouselDivs[count];
-//   } else {
-//     count += 1;
-//     currentCarousel.innerHTML = carouselDivs[count];
-//   }
-// };

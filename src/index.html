@@ -96,19 +96,33 @@
         </section>
         <section class='growth' id='growth'>
             <div class="growth-container">
-                <h2>Taking the guesswork out of growth</h2>
+                <h2 class="scroll growth__h2 growth__h2--one">
+                Taking the <span>guesswork</span><br>
+                </h2> 
+                <h2 class="scroll growth__h2 growth__h2--two">
+                out of <span>growth</span>
+                </h2>
                 <!-- <img style="width: 100%;" src="../src/assets/home/growth.jpg" alt="tiny plant growing"> -->
-                <div class="blob">
-                    <svg class='blob blob__svg--back' viewBox="0 25 400 400">
+                <div class="blob blob__container"
+                style=
+                "position: relative;
+                /* width: 30vw;
+                height: 30vh; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-content: center;"
+                >
+                    <!-- <svg class='blob blob__svg blob__svg--back' width='500' height='500' viewBox="0 45 400 400">
                         <path fill="rgba(6, 56, 49, 0.81)" d="M360.5,319Q331,398,232,411.5Q133,425,99.5,332.5Q66,240,94,137.5Q122,35,218,73Q314,111,352,175.5Q390,240,360.5,319Z" />
-                    </svg>
-                    <svg class='blob blob__svg--front' viewBox="0 25 400 400">
+                    </svg> -->
+                    <svg width='300' height='300' viewBox="0 45 400 400">
                         <defs>
-                            <clipPath id="blob">
+                            <clipPath id="blob-2">
                                 <path fill="#474bff" d="M363.5,324.5Q337,409,245,399.5Q153,390,83.5,315Q14,240,85.5,168.5Q157,97,256.5,68Q356,39,373,139.5Q390,240,363.5,324.5Z" />
                             </clipPath>
                         </defs>
-                        <image x="0" y="0" width="100%" height="100%" clip-path="url(#blob)" xlink:href="./assets/home/growth.jpg" preserveAspectRatio="xMidYMid slice"></image>
+                        <image class='blob blob__svg blob__svg--front' x="0" y="0" width="100%" height="100%" clip-path="url(#blob-2)" xlink:href="./assets/home/growth.jpg" preserveAspectRatio="xMidYMid slice"></image>
                     </svg>
                 </div>
                 <p>

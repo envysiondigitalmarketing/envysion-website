@@ -404,9 +404,14 @@
   flex-direction: column;
   min-height: max-content;
 }
-.growth h2 {
+.growth__h2 {
   margin: 5% 0 5% 0;
   align-self: center;
+  margin: 0;
+}
+.growth__h2 span {
+  color: transparent;
+  -webkit-text-stroke: 1.25px #063831;
 }
 .growth h3 {
   font-family: "Open Sans", sans-serif;
@@ -1611,15 +1616,6 @@ body .cta-orange__growth, body .cta-orange__services, html .cta-orange__growth, 
 }
 body h2, html h2 {
   font-size: 450%;
-}
-
-.blob {
-  position: relative;
-}
-.blob__svg {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 #reference-link, .reference-link {

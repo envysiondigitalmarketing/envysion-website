@@ -45,14 +45,26 @@ body, html {
     }
 };
 
-.blob {
-    position: relative;
-    &__svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-}
+// .blob {
+    // &__container {
+    //     position: relative;
+    //     width: 30vw;
+    //     height: 30vh;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     align-content: center;
+    // };
+    // &__svg {
+    //     max-width: 100%;
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     align-self: center;
+    //     justify-self: center;
+    // };
+// }
 
 #reference-link, .reference-link {
     color: #0000EE;

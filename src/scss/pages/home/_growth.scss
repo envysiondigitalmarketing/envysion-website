@@ -14,8 +14,19 @@
         flex-direction: column;
         min-height: max-content;
     }
-    & h2 {
+    &__h2 {
         @include heroH2;
+        margin: 0;
+        & span {
+        color: transparent;
+        -webkit-text-stroke: 1.25px $mainColor;
+        }
+        &--one {
+            //
+        };
+        &--two {
+            //
+        };
     }
     & h3 {
         font-family: 'Open Sans', sans-serif;

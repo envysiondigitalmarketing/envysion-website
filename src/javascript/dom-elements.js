@@ -3,7 +3,7 @@ const xButton = document.getElementById('nav__button-x');
 const menuCover = document.getElementById('menu-cover');
 
 const hero = document.getElementById('hero-button');
-const about = document.getElementById('about-button');
+const growth = document.getElementById('growth-button');
 const services = document.getElementById('services-button');
 const whyEnvysion = document.getElementById('why-envysion-button');
 const pricing = document.getElementById('pricing-button');
@@ -73,11 +73,13 @@ const carouselDigitalAdvertisements = document.querySelector(
 
 const nextButton = document.querySelector('.next');
 
+const scroll = document.querySelectorAll('.scroll');
+
 const domElements = {
   xButton,
   menuCover,
   hero,
-  about,
+  growth,
   services,
   whyEnvysion,
   pricing,
@@ -108,6 +110,7 @@ const domElements = {
   carouselSMSMarketing,
   carouselDigitalAdvertisements,
   nextButton,
+  scroll,
 };
 
 export default domElements;
