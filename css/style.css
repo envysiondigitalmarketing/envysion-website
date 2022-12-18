@@ -1623,6 +1623,30 @@ body h2, html h2 {
   text-decoration: underline;
 }
 
+.scroll {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+}
+.scroll__left {
+  transform: translateX(-100%);
+}
+.scroll__right {
+  transform: translateX(100%);
+  transition-delay: 100ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .scroll {
+    transition: none;
+  }
+}
 @media screen and (min-width: 1000px) {
   html {
     display: -ms-grid;

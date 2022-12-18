@@ -84,6 +84,10 @@ domElements.quoraCreativeLink
     })
   : null;
 
-domElements.nextButton.onclick = () => functions.carouselScrollNext();
+// domElements.nextButton.onclick = () => functions.carouselScrollNext();
+
+console.log('domElements.scroll --->', domElements.scroll);
+
+domElements.scroll.forEach((el) => functions.observer.observe(el));
 
 // let count = 0;
