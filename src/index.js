@@ -74,20 +74,18 @@ domElements.twoAdvertsHeader
     })
   : null;
 
-domElements.quoraCreativeLink
-  ? (domElements.quoraCreativeLink.onclick = () => {
-      window.open(
-        'https://quoracreative.com/article/mobile-marketing-statistics',
-        '_blank',
-        'width=800, height=800'
-      );
-    })
-  : null;
-
-// domElements.nextButton.onclick = () => functions.carouselScrollNext();
-
-console.log('domElements.scroll --->', domElements.scroll);
-
 domElements.scroll.forEach((el) => functions.observer.observe(el));
 
 // let count = 0;
+
+// domElements.quoraCreativeLink
+//   ? (domElements.quoraCreativeLink.onclick = () => {
+//       window.open(
+//         'https://quoracreative.com/article/mobile-marketing-statistics',
+//         '_blank',
+//         'width=800, height=800'
+//       );
+//     })
+//   : null;
+
+// domElements.nextButton.onclick = () => functions.carouselScrollNext();

@@ -51,7 +51,7 @@ const twoAdvertsParagraph = document.querySelector(
   '.services-II__paragraph--adverts'
 );
 
-const quoraCreativeLink = document.querySelector('.quoracreative-link');
+// const quoraCreativeLink = document.querySelector('.quoracreative-link');
 
 const carouselContainer = document.querySelector('.carousel-container');
 
@@ -102,7 +102,7 @@ const domElements = {
   twoSeoParagraph,
   twoEmailAndSMSParagraph,
   twoAdvertsParagraph,
-  quoraCreativeLink,
+  // quoraCreativeLink,
   carouselContainer,
   carouselWebsites,
   carouselSEO,
