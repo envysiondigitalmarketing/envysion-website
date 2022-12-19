@@ -2,7 +2,7 @@
 @import './utilities/vars.scss';
 
 @import './pages/home/home';
-@import './pages/home/about';
+@import './pages/home/growth';
 @import './pages/home/services';
 @import './pages/home/why-envysion';
 
@@ -36,7 +36,7 @@ body, html {
     }
     .cta-orange {
         @include callToAction;
-        &__about, &__services {
+        &__growth, &__services {
             align-self: center;
         }
     }
@@ -45,9 +45,42 @@ body, html {
     }
 };
 
+.home-section {
+    padding-bottom: 5vh;
+}
+
 #reference-link, .reference-link {
     color: #0000EE;
     text-decoration: underline;
+}
+
+.scroll {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all .6s;
+    &__left {transform: translateX(-100%)}
+    &__right {
+        transform: translateX(100%);
+        transition-delay: 100ms;
+    }
+};
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .scroll {
+        transition: none;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .home-section {
+        padding-bottom:2vh;
+    };
 }
 
 @media screen and (min-width: 1000px) {
@@ -72,7 +105,13 @@ body, html {
         overflow-x: hidden;
         overflow-y: scroll;
         padding: 0;
-    }
+    };
+    .home-section {
+        padding-bottom: 20vh;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    };
     .footer {
         grid-area: three;
         bottom: 0;
@@ -91,7 +130,7 @@ body, html {
 
 @media screen and (min-width: 1000px) {
     .cta-orange {
-        &__about, &__why-envysion, &__services {
+        &__growth, &__why-envysion, &__services {
             margin-bottom: 0 !important;
         }
     }

@@ -389,7 +389,7 @@
     width: 3%;
   }
 }
-.about {
+.growth {
   background-color: #FEFDFF;
   overflow-x: hidden;
   margin-top: -0.5%;
@@ -398,17 +398,22 @@
   justify-content: flex-start;
   min-width: 100vw;
 }
-.about-container {
+.growth-container {
   padding: 0 5%;
   display: flex;
   flex-direction: column;
   min-height: max-content;
 }
-.about h2 {
+.growth__h2 {
   margin: 5% 0 5% 0;
   align-self: center;
+  margin: 0;
 }
-.about h3 {
+.growth__h2 span {
+  color: transparent;
+  -webkit-text-stroke: 1.25px #063831;
+}
+.growth h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 300%;
   margin: 0;
@@ -416,7 +421,7 @@
   margin-bottom: 0;
   margin-top: 5%;
 }
-.about p {
+.growth p {
   font-family: "Open Sans", sans-serif;
   font-size: 250%;
   font-weight: 500;
@@ -427,48 +432,44 @@
 }
 
 @media screen and (min-width: 470px) {
-  .about p {
+  .growth p {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 540px) {
-  .about-container {
+  .growth-container {
     padding: 0 10%;
   }
 }
 @media screen and (min-width: 760px) {
-  .about-container {
+  .growth-container {
     padding: 0 15%;
   }
 }
 @media screen and (min-width: 1000px) {
-  .about {
+  .growth {
     max-width: 75vw;
     min-width: 75vw !important;
-    min-height: 180vh;
   }
 }
 @media screen and (min-width: 1050px) {
-  .about-container {
+  .growth-container {
     padding: 0 20%;
   }
-  .about h2 {
+  .growth h2 {
     font-size: 500%;
   }
 }
 @media screen and (min-width: 1300px) {
-  .about {
-    min-height: 170vh;
-  }
-  .about-container {
+  .growth-container {
     padding: 0 20%;
   }
-  .about h2 {
+  .growth h2 {
     font-size: 550%;
   }
 }
 @media screen and (min-width: 1450px) {
-  .about-container {
+  .growth-container {
     padding: 0 25%;
   }
 }
@@ -487,7 +488,6 @@
 }
 .services__list {
   margin-top: 0;
-  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -544,13 +544,9 @@
   .services {
     max-width: 75vw;
     min-width: 75vw !important;
-    min-height: 100vh;
   }
 }
 @media screen and (min-width: 1050px) {
-  .services {
-    min-height: 110vh;
-  }
   .services__list {
     padding: 0 20%;
   }
@@ -562,9 +558,6 @@
   }
 }
 @media screen and (min-width: 1250px) {
-  .services {
-    min-height: 115vh;
-  }
   .services__list {
     padding: 0 20%;
   }
@@ -622,7 +615,6 @@
 .why-envysion__list {
   height: fit-content;
   padding: 0 5%;
-  padding-bottom: 10%;
 }
 .why-envysion__list--div {
   margin-top: 5%;
@@ -661,8 +653,6 @@
   .why-envysion {
     max-width: 75vw;
     min-width: 75vw !important;
-    min-height: 300vh;
-    padding-top: 5%;
   }
   .tech-focused {
     justify-self: center;
@@ -674,11 +664,6 @@
   }
   .why-envysion__list h3 {
     font-size: 425%;
-  }
-}
-@media screen and (min-width: 1250px) {
-  .why-envysion {
-    min-height: 310vh;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -1559,7 +1544,7 @@
     height: 5% !important;
   }
   .footer-social-links__logo {
-    width: 70% !important;
+    width: 80% !important;
     height: auto;
     margin-left: 0 !important;
     margin-right: 5% !important;
@@ -1606,11 +1591,15 @@ body .cta-orange:active, html .cta-orange:active {
   box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
   transform: translateY(0px);
 }
-body .cta-orange__about, body .cta-orange__services, html .cta-orange__about, html .cta-orange__services {
+body .cta-orange__growth, body .cta-orange__services, html .cta-orange__growth, html .cta-orange__services {
   align-self: center;
 }
 body h2, html h2 {
   font-size: 450%;
+}
+
+.home-section {
+  padding-bottom: 5vh;
 }
 
 #reference-link, .reference-link {
@@ -1618,6 +1607,35 @@ body h2, html h2 {
   text-decoration: underline;
 }
 
+.scroll {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 0.6s;
+}
+.scroll__left {
+  transform: translateX(-100%);
+}
+.scroll__right {
+  transform: translateX(100%);
+  transition-delay: 100ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .scroll {
+    transition: none;
+  }
+}
+@media screen and (min-width: 540px) {
+  .home-section {
+    padding-bottom: 2vh;
+  }
+}
 @media screen and (min-width: 1000px) {
   html {
     display: -ms-grid;
@@ -1638,6 +1656,12 @@ body h2, html h2 {
     overflow-y: scroll;
     padding: 0;
   }
+  .home-section {
+    padding-bottom: 20vh;
+  }
+  .home-section:last-child {
+    padding-bottom: 0;
+  }
   .footer {
     grid-area: three;
     bottom: 0;
@@ -1654,7 +1678,7 @@ body h2, html h2 {
   }
 }
 @media screen and (min-width: 1000px) {
-  .cta-orange__about, .cta-orange__why-envysion, .cta-orange__services {
+  .cta-orange__growth, .cta-orange__why-envysion, .cta-orange__services {
     margin-bottom: 0 !important;
   }
 }

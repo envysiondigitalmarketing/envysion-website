@@ -1,15 +1,11 @@
 .why-envysion {
-    // min-height: 275vh;
     background-color: $thisWhite;
-
     position: relative;
     overflow-x: hidden;
     margin-top: -.5%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    // min-width: 101%;
     min-width: 100vw;
 
     & h2 {
@@ -28,7 +24,6 @@
     &__list {
         height: fit-content;
         padding: 0 5%;
-        padding-bottom: 10%;
     }
     &__list--div {
         margin-top: 5%;
@@ -94,8 +89,6 @@
     .why-envysion {
         max-width: 75vw;
         min-width: 75vw !important;
-        min-height: 300vh;
-        padding-top: 5%;
     }
     .tech-focused {
         justify-self: center;
@@ -117,7 +110,7 @@
 
 @media screen and (min-width: 1250px) {
     .why-envysion {
-        min-height: 310vh;
+        // min-height: 310vh;
     }
 }
 

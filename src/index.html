@@ -77,7 +77,7 @@
                 </section>
             </section>
             <div class='behind-nav'></div>
-            <section class='hero'>
+            <section class='home-section hero'>
                 <!-- <video autoplay loop class='hero-video' muted plays-inline>
                     <source src='assets/home/meeting.mp4' type='video/mp4'>
                 </video> -->
@@ -94,24 +94,51 @@
                 </div>
             </section>
         </section>
-        <section class='about' id='about'>
-            <div class="about-container">
-                <h2>Taking the guesswork out of growth</h2>
-                <img style="width: 100%;" src="../src/assets/home/growth.jpg" alt="tiny plant growing">
+        <section class='home-section growth' id='growth'>
+            <div class="growth-container">
+                <h2 class="scroll scroll__left growth__h2 growth__h2--one">
+                Taking the <span>guesswork</span><br>
+                </h2> 
+                <h2 class="scroll scroll__right growth__h2 growth__h2--two">
+                out of <span>growth</span>
+                </h2>
+                <!-- <img style="width: 100%;" src="../src/assets/home/growth.jpg" alt="tiny plant growing"> -->
+                <div class="blob blob__container"
+                style=
+                "position: relative;
+                /* width: 30vw;
+                height: 30vh; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-content: center;"
+                >
+                    <!-- <svg class='blob blob__svg blob__svg--back' width='500' height='500' viewBox="0 45 400 400">
+                        <path fill="rgba(6, 56, 49, 0.81)" d="M360.5,319Q331,398,232,411.5Q133,425,99.5,332.5Q66,240,94,137.5Q122,35,218,73Q314,111,352,175.5Q390,240,360.5,319Z" />
+                    </svg> -->
+                    <svg width='300' height='300' viewBox="0 45 400 400">
+                        <defs>
+                            <clipPath id="blob-2">
+                                <path fill="#474bff" d="M363.5,324.5Q337,409,245,399.5Q153,390,83.5,315Q14,240,85.5,168.5Q157,97,256.5,68Q356,39,373,139.5Q390,240,363.5,324.5Z" />
+                            </clipPath>
+                        </defs>
+                        <image class='blob blob__svg blob__svg--front' x="0" y="0" width="100%" height="100%" clip-path="url(#blob-2)" xlink:href="./assets/home/growth.jpg" preserveAspectRatio="xMidYMid slice"></image>
+                    </svg>
+                </div>
                 <p>
-                    <!-- You know your web presence is important but it’s not exactly your area of expertise. Welcome to Envysion Digital Marketing. Here at Envysion we specialize in creating beautiful websites, building your reputation on the web, and engaging with your customers. With Envysion you can rest assured that you’re in good hands while you focus on running your business and doing what you do best. Whether you need a new website, want to rank higher on search results, or are looking for ways to increase sales and communicate with your customers don't hesitate to get in touch with us for a free marketing plan to see how we can best assist your business. -->
-                    You know your web presence is important but it’s not exactly your area of expertise. Welcome to Envysion Digital Marketing. Here at Envysion we specialize in creating beautiful websites and building your reputation on the web. With Envysion you can rest assured that you’re in good hands while you focus on running your business and doing what you do best. Whether you need a new website or are looking for ways to increase sales and outreach don't hesitate to get in touch with us for a free marketing plan to see how we can best assist your business.
+                    <!-- You know your web presence is important but it’s not exactly your area of expertise. Welcome to Envysion Digital Marketing. Here at Envysion we specialize in creating beautiful websites, building your reputation on the web, and engaging with your customers. With Envysion you can rest assured that you’re in good hands while you focus on running your business and doing what you do best. Whether you need a new website, want to rank higher on search results, or are looking for ways to increase sales and communicate with your customers get in touch with us for a free marketing plan to see how we can best assist your business. -->
+                    You know your web presence is important but it’s not exactly your area of expertise. Welcome to Envysion Digital Marketing. Here at Envysion we specialize in creating beautiful websites and building your reputation on the web. With Envysion you can rest assured that you’re in good hands while you focus on running your business and doing what you do best. Whether you need a new website or are looking for ways to increase sales or outreach get in touch with us for a free marketing plan to see how we can best assist your business.
                 </p>
             </div>
             <a 
-            class='cta-orange cta-orange__about'
+            class='cta-orange cta-orange__growth'
             href="contact.html" 
             data-text='Contact'
             >
             Contact Us
             </a>
         </section>
-        <section class='services' id='services'>
+        <section class='home-section services' id='services'>
             <div class='services__list'>
                 <h2>Services</h2>
                 <div class='services__div services__div--websites'>
@@ -142,7 +169,7 @@
             >Contact Us
             </a>
         </section>
-        <section class='why-envysion' id='why-envysion'>
+        <section class='home-section why-envysion' id='why-envysion'>
             <h2>Why Envysion</h2>
             <div class='why-envysion__list'>
                 <div class='why-envysion__list--div'>
@@ -163,7 +190,7 @@
                     <h3>Mobile Friendly</h3>
                     <img src='../src/assets/home/why-envysion/mobile.png' alt="up arrow" class='why-envysion__list--icon'>
                     <p class='why-envysion__list--paragraph'>
-                        Not all websites are created with different screen sizes in mind. With 62% of all global internet users viewing a mobile device to access the internet <a class='quoracreative-link' id='reference-link'>(Quoracreative)</a> you want to make sure that your website is prepared to be viewed by the average customer. We make sure that every website we design can be viewed comfortably on devices of all sizes.
+                        Not all websites are created with different screen sizes in mind. With 62% of all global internet users viewing a mobile device to access the internet you want to make sure that your website is prepared to be viewed by the average customer. We make sure that every website we design can be viewed comfortably on devices of all sizes.
                     </p>
                 </div>
             </div>
@@ -199,6 +226,6 @@
             <p class='footer-copyright'>&copy; 2022 Envysion Digital Marketing</p>
         </div>
     </footer>
-    <script src="./index.js"></script>
+    <script defer type="module" src="./index.js"></script>
 </body>
 </html>
