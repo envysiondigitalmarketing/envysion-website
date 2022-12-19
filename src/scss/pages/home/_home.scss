@@ -127,7 +127,7 @@
         animation-name: moveInRight;
         animation-duration: .7s;
         @include hero-text;
-        font-size: 550%;
+        font-size: 1000%;
         &__envysion {
             animation-duration: 1s;
         };
@@ -138,14 +138,13 @@
             animation-duration: 2s;
         };
         color: $mainColor;
-        // -webkit-text-stroke: 1.5px $mainColor;
     };
     .hero-slogan {
         color: $mainColor;
         @include hero-text;
         display: inline-block;
         animation-name: moveInSlogan;
-        font-size: 375%;
+        font-size: 500%;
         font-family: 'Oooh Baby', cursive;
         font-style: italic;
         &__we {
@@ -182,9 +181,6 @@
         .behind-nav {
             height: 11em;
         }
-        .hero-slogan {
-            font-size: 325%;
-        }
         &__logo {
             margin-top: -10%;
         };
@@ -216,11 +212,8 @@
         .behind-nav {
             height: 13em;
         }
-        .hero-heading {
-            font-size: 650%;
-        }
         .hero-slogan {
-            font-size: 425%;
+            // font-size: 425%;
         }
     }
 }

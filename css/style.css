@@ -239,7 +239,7 @@
   animation-duration: 0.7s;
   margin: 0 0 0.55rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  font-size: 550%;
+  font-size: 1000%;
   color: #063831;
 }
 .main .hero-heading__envysion {
@@ -257,7 +257,7 @@
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   display: inline-block;
   animation-name: moveInSlogan;
-  font-size: 375%;
+  font-size: 500%;
   font-family: "Oooh Baby", cursive;
   font-style: italic;
 }
@@ -289,9 +289,6 @@
   .hero .behind-nav {
     height: 11em;
   }
-  .hero .hero-slogan {
-    font-size: 325%;
-  }
   .hero__logo {
     margin-top: -10%;
   }
@@ -315,12 +312,6 @@
   }
   .hero .behind-nav {
     height: 13em;
-  }
-  .hero .hero-heading {
-    font-size: 650%;
-  }
-  .hero .hero-slogan {
-    font-size: 425%;
   }
 }
 @media screen and (min-width: 650px) {
