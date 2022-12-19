@@ -45,26 +45,9 @@ body, html {
     }
 };
 
-// .blob {
-    // &__container {
-    //     position: relative;
-    //     width: 30vw;
-    //     height: 30vh;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     align-content: center;
-    // };
-    // &__svg {
-    //     max-width: 100%;
-    //     display: block;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     align-self: center;
-    //     justify-self: center;
-    // };
-// }
+.home-section {
+    padding-bottom: 5vh;
+}
 
 #reference-link, .reference-link {
     color: #0000EE;
@@ -94,6 +77,12 @@ body, html {
     }
 }
 
+@media screen and (min-width: 540px) {
+    .home-section {
+        padding-bottom:2vh;
+    };
+}
+
 @media screen and (min-width: 1000px) {
     html {
         display: -ms-grid;
@@ -116,7 +105,13 @@ body, html {
         overflow-x: hidden;
         overflow-y: scroll;
         padding: 0;
-    }
+    };
+    .home-section {
+        padding-bottom: 20vh;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    };
     .footer {
         grid-area: three;
         bottom: 0;

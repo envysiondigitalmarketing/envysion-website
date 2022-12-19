@@ -78,7 +78,7 @@
     .growth {
         max-width: 75vw;
         min-width: 75vw !important;
-        min-height: 180vh;
+        // min-height: 150vh;
     }
 }
 
@@ -95,7 +95,7 @@
 
 @media screen and (min-width: 1300px) {
     .growth {
-        min-height: 170vh;
+        // max-height: min-content;
         &-container {
             padding: 0 20%;
         }
