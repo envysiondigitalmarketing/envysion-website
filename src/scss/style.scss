@@ -57,7 +57,7 @@ body, html {
 .scroll {
     opacity: 0;
     filter: blur(5px);
-    transition: all 1s;
+    transition: all .6s;
     &__left {transform: translateX(-100%)}
     &__right {
         transform: translateX(100%);
