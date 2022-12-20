@@ -1630,6 +1630,9 @@ body h2, html h2 {
   .home-section {
     padding-bottom: 2vh;
   }
+  .heading__home--hero {
+    font-size: 1100%;
+  }
 }
 @media screen and (min-width: 1000px) {
   html {

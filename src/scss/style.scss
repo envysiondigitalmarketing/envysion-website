@@ -106,6 +106,13 @@ body, html {
     .home-section {
         padding-bottom:2vh;
     };
+    .heading {
+        &__home {
+            &--hero {
+                font-size: 1100%;
+            };
+        };
+    };
 }
 
 @media screen and (min-width: 1000px) {
