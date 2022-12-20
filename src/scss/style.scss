@@ -49,6 +49,18 @@ body, html {
     padding-bottom: 5vh;
 }
 
+.heading {
+    &__home {
+        &--hero {
+            animation-name: moveInRight;
+            animation-duration: .7s;
+            @include hero-text;
+            font-size: 1000%;
+            color: $mainColor;
+        };
+    };
+};
+
 #reference-link, .reference-link {
     color: #0000EE;
     text-decoration: underline;

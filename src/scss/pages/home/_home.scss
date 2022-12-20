@@ -112,57 +112,51 @@
         max-width: 100%;
         z-index: -1;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
-    }
+    };
     .hero-video {
         @include cover;
         overflow: hidden;
         max-width: 100%;
         z-index: -1;
-    }
+    };
     .hero-text-div {
         display: inline-block;
-
-    }
-    .hero-heading {
-        animation-name: moveInRight;
-        animation-duration: .7s;
-        @include hero-text;
-        font-size: 1000%;
-        &__envysion {
-            animation-duration: 1s;
+        & h2 {
+            &:nth-child(1) {
+                animation-duration: 1s;
+            };
+            &:nth-child(2) {
+                animation-duration: 1.5s;
+            };
+            &:nth-child(3) {
+                animation-duration: 2s;
+            };
         };
-        &__digital {
-            animation-duration: 1.5s;
-        };
-        &__marketing {
-            animation-duration: 2s;
-        };
-        color: $mainColor;
+        & p {
+            color: $mainColor;
+            @include hero-text;
+            display: inline-block;
+            animation-name: moveInSlogan;
+            font-size: 500%;
+            font-family: 'Oooh Baby', cursive;
+            font-style: italic;
+            &:nth-child(4) {
+                animation-duration: 3s;
+            }
+            &:nth-child(5) {
+                animation-duration: 3.1s;
+            }
+            &:nth-child(6) {
+                animation-duration: 3.2s;
+            }
+            &:nth-child(7) {
+                animation-duration: 3.3s;
+            }
+            &:nth-child(8) {
+                animation-duration: 3.4s;
+            }
+        }
     };
-    .hero-slogan {
-        color: $mainColor;
-        @include hero-text;
-        display: inline-block;
-        animation-name: moveInSlogan;
-        font-size: 500%;
-        font-family: 'Oooh Baby', cursive;
-        font-style: italic;
-        &__we {
-            animation-duration: 3s;
-        }
-        &__can {
-            animation-duration: 3.1s;
-        }
-        &__when {
-            animation-duration: 3.2s;
-        }
-        &__we--two {
-            animation-duration: 3.3s;
-        }
-        &__envysion {
-            animation-duration: 3.4s;
-        }
-    }
 }
 
 @media screen and (min-width: 325px) {
@@ -252,12 +246,12 @@
     .hero {
         max-width: 75vw;
         min-width: 75vw !important;
-    }
-    .hero-video {
-        @include cover;
-        overflow: hidden;
-        max-width: 100%;
-        z-index: -1;
+        &-video {
+            @include cover;
+            overflow: hidden;
+            max-width: 100%;
+            z-index: -1;
+        }
     }
 }
 

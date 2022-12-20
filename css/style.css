@@ -234,24 +234,16 @@
 .main .hero-text-div {
   display: inline-block;
 }
-.main .hero-heading {
-  animation-name: moveInRight;
-  animation-duration: 0.7s;
-  margin: 0 0 0.55rem 0;
-  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  font-size: 1000%;
-  color: #063831;
-}
-.main .hero-heading__envysion {
+.main .hero-text-div h2:nth-child(1) {
   animation-duration: 1s;
 }
-.main .hero-heading__digital {
+.main .hero-text-div h2:nth-child(2) {
   animation-duration: 1.5s;
 }
-.main .hero-heading__marketing {
+.main .hero-text-div h2:nth-child(3) {
   animation-duration: 2s;
 }
-.main .hero-slogan {
+.main .hero-text-div p {
   color: #063831;
   margin: 0 0 0.55rem 0;
   animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
@@ -261,19 +253,19 @@
   font-family: "Oooh Baby", cursive;
   font-style: italic;
 }
-.main .hero-slogan__we {
+.main .hero-text-div p:nth-child(4) {
   animation-duration: 3s;
 }
-.main .hero-slogan__can {
+.main .hero-text-div p:nth-child(5) {
   animation-duration: 3.1s;
 }
-.main .hero-slogan__when {
+.main .hero-text-div p:nth-child(6) {
   animation-duration: 3.2s;
 }
-.main .hero-slogan__we--two {
+.main .hero-text-div p:nth-child(7) {
   animation-duration: 3.3s;
 }
-.main .hero-slogan__envysion {
+.main .hero-text-div p:nth-child(8) {
   animation-duration: 3.4s;
 }
 
@@ -1591,6 +1583,15 @@ body h2, html h2 {
 
 .home-section {
   padding-bottom: 5vh;
+}
+
+.heading__home--hero {
+  animation-name: moveInRight;
+  animation-duration: 0.7s;
+  margin: 0 0 0.55rem 0;
+  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  font-size: 1000%;
+  color: #063831;
 }
 
 #reference-link, .reference-link {
