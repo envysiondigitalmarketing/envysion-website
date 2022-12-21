@@ -49,6 +49,31 @@ body, html {
     padding-bottom: 5vh;
 }
 
+.heading-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.heading {
+    @include heroH2;
+    margin: 0;
+    & span {
+    color: transparent;
+    -webkit-text-stroke: 1.25px $mainColor;
+    };
+    &__home {
+        &--hero {
+            animation-name: moveInRight;
+            animation-duration: .7s;
+            @include hero-text;
+            font-size: 1000%;
+        };
+    };
+};
+
 #reference-link, .reference-link {
     color: #0000EE;
     text-decoration: underline;
@@ -80,6 +105,13 @@ body, html {
 @media screen and (min-width: 540px) {
     .home-section {
         padding-bottom:2vh;
+    };
+    .heading {
+        &__home {
+            &--hero {
+                font-size: 1100%;
+            };
+        };
     };
 }
 
