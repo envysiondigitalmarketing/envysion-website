@@ -9,28 +9,7 @@ const openAndClose = () => {
   domElements.xButton.classList.toggle('nav__button-x-open');
   theHiddenThing(domElements.menuCover);
 };
-const selectService = (element, theString) => {
-  if (!element.innerHTML) {
-    domElements.websitesParagraph.innerHTML = '';
-    domElements.seoParagraph.innerHTML = '';
-    domElements.emailAndSMSParagraph.innerHTML = '';
-    domElements.advertsParagraph.innerHTML = '';
-    element.innerHTML = theString;
-  } else {
-    element.innerHTML = '';
-  }
-};
-const twoSelectService = (element, theString) => {
-  if (!element.innerHTML) {
-    domElements.twoWebsitesParagraph.innerHTML = '';
-    domElements.twoSeoParagraph.innerHTML = '';
-    domElements.twoEmailAndSMSParagraph.innerHTML = '';
-    domElements.twoAdvertsParagraph.innerHTML = '';
-    element.innerHTML = theString;
-  } else {
-    element.innerHTML = '';
-  }
-};
+
 const observer = new IntersectionObserver((entries) =>
   entries.forEach((i) => i.isIntersecting && i.target.classList.add('show'))
 );
@@ -38,8 +17,6 @@ const observer = new IntersectionObserver((entries) =>
 const functions = {
   theHiddenThing,
   openAndClose,
-  selectService,
-  twoSelectService,
   observer,
 };
 

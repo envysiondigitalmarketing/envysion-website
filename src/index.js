@@ -12,68 +12,6 @@ domElements.contact.onclick = () => functions.openAndClose();
 // growth.onclick = () => openAndClose
 // whyEnvysion.onclick = () => openAndClose');
 
-domElements.websitesHeader
-  ? (domElements.websitesHeader.onclick = () => {
-      functions.selectService(
-        domElements.websitesParagraph,
-        paragraphs.samples.websites
-      );
-    })
-  : null;
-domElements.twoWebsitesHeader
-  ? (domElements.twoWebsitesHeader.onclick = () => {
-      functions.twoSelectService(
-        domElements.twoWebsitesParagraph,
-        paragraphs.full.websites
-      );
-    })
-  : null;
-domElements.seoHeader
-  ? (domElements.seoHeader.onclick = () => {
-      functions.selectService(domElements.seoParagraph, paragraphs.samples.seo);
-    })
-  : null;
-domElements.twoSeoHeader
-  ? (domElements.twoSeoHeader.onclick = () => {
-      functions.twoSelectService(
-        domElements.twoSeoParagraph,
-        paragraphs.full.seo
-      );
-    })
-  : null;
-domElements.emailAndSMSHeader
-  ? (domElements.emailAndSMSHeader.onclick = () => {
-      functions.selectService(
-        domElements.emailAndSMSParagraph,
-        paragraphs.samples.emailAndSms
-      );
-    })
-  : null;
-domElements.twoEmailAndSMSHeader
-  ? (domElements.twoEmailAndSMSHeader.onclick = () => {
-      functions.twoSelectService(
-        domElements.twoEmailAndSMSParagraph,
-        paragraphs.full.emailAndSms
-      );
-    })
-  : null;
-domElements.advertsHeader
-  ? (domElements.advertsHeader.onclick = () => {
-      functions.selectService(
-        domElements.advertsParagraph,
-        paragraphs.samples.adverts
-      );
-    })
-  : null;
-domElements.twoAdvertsHeader
-  ? (domElements.twoAdvertsHeader.onclick = () => {
-      functions.twoSelectService(
-        domElements.twoAdvertsParagraph,
-        paragraphs.full.adverts
-      );
-    })
-  : null;
-
 domElements.scroll.forEach((el) => functions.observer.observe(el));
 
 // let count = 0;

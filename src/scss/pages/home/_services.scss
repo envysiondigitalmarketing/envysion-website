@@ -1,3 +1,8 @@
+summary {
+    &::marker {
+        content: "";
+    }
+}
 .services {
     min-width: 0;
     background-color: $thisWhite;
@@ -17,13 +22,16 @@
         width: 95%;
     }
     &__header {
-        @include heroH3;
+        @include h3;
         transition: .6s;
         margin-bottom: 3%;
         cursor: pointer;
         display: inline-block;
         &:hover {
             color: $secondColor;
+        }
+        & h3 {
+            margin: 0;
         }
     };
     &__paragraph {
@@ -76,7 +84,7 @@
             padding: 0 20%;
         }
         h2 {
-            font-size: $secondH2;
+            font-size: $secondH1;
         }
         &__header {
             font-size: 425%;
@@ -90,7 +98,7 @@
             padding: 0 20%;
         }
         h2 {
-            font-size: $secondH2;
+            font-size: $secondH1;
         }
         &__header {
             font-size: 425%;
@@ -104,7 +112,7 @@
             padding: 0 20%;
         }
         h2 {
-            font-size: $thirdH2;
+            font-size: $thirdH1;
         }
     }
 }

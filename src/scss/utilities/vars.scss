@@ -16,9 +16,9 @@ $paddingForCentering: 0 5%;
 $firstP: 250%;
 
 
-$firstH2: 450%;
-$secondH2: 500%;
-$thirdH2: 550%; 
+$firstH1: 450%;
+$secondH1: 500%;
+$thirdH1: 550%; 
 
 @mixin cover {
     height: 100vh;
@@ -142,10 +142,9 @@ $thirdH2: 550%;
     align-self: center;
 }
 
-@mixin heroH3 {
+@mixin h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 325%;
-    text-decoration: underline $mainColor;
     font-style: italic;
 }
 
@@ -155,4 +154,10 @@ $thirdH2: 550%;
     font-weight: 500;
     color: $mainColor;
     letter-spacing: .05rem;
+}
+
+@mixin clay {
+    box-shadow: inset -0.6em -0.6em 1em #97b1ab, inset 0.4em 0.4em 0.5em #f7ffef00, 0.8em 0.8em 2em #063831;
+    border-radius: 25px;
+    // border: solid;
 }
