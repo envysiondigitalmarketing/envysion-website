@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -450,7 +451,8 @@
   }
 }
 summary::marker {
-  content: "";
+  content: "👉";
+  font-size: x-large;
 }
 
 .services {
