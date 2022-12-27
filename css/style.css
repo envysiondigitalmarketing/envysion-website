@@ -401,8 +401,11 @@
   font-weight: 500;
   color: #063831;
   letter-spacing: 0.05rem;
-  box-shadow: inset -0.6em -0.6em 1em #97b1ab, inset 0.4em 0.4em 0.5em rgba(247, 255, 239, 0), 0.8em 0.8em 2em #063831;
-  border-radius: 25px;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 26px;
+  box-shadow: 55px 55px 50px 0px rgba(6, 56, 49, 0.5), inset -5px -1px 9px 0px rgba(6, 56, 49, 0.6), inset 0px 11px 20px 0px rgb(255, 255, 255);
   margin-top: 5%;
   line-height: 1.5;
   padding: 5%;
