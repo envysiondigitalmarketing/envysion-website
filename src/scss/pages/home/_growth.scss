@@ -12,7 +12,6 @@
         padding: $paddingForCentering;
         display: flex;
         flex-direction: column;
-        min-height: max-content;
     };
     & h3 {
         font-family: 'Open Sans', sans-serif;
@@ -26,6 +25,7 @@
         @include heroP;
         margin-top: 5%;
         line-height: 1.5;
+        padding: 5%;
     }
 }
 
@@ -74,7 +74,7 @@
             padding: 0 20%;
         }
         h2 {
-            font-size: $secondH2;
+            font-size: $secondH1;
         }
     }
 }
@@ -86,7 +86,7 @@
             padding: 0 20%;
         }
         h2 {
-            font-size: $thirdH2;
+            font-size: $thirdH1;
         }
     }
 }
