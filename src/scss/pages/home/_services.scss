@@ -1,9 +1,4 @@
-summary {
-    &::marker {
-        content: "👉";
-        font-size: x-large;
-    }
-}
+summary::marker {font-size: x-large}
 .services {
     min-width: 0;
     background-color: $thisWhite;
