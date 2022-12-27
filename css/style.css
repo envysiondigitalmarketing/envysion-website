@@ -397,15 +397,10 @@
 }
 .growth p {
   font-family: "Open Sans", sans-serif;
-  font-size: 250%;
+  font-size: 300%;
   font-weight: 500;
   color: #063831;
   letter-spacing: 0.05rem;
-  -webkit-backdrop-filter: blur(100px);
-  backdrop-filter: blur(100px);
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 26px;
-  box-shadow: 55px 55px 50px 0px rgba(6, 56, 49, 0.5), inset -5px -1px 9px 0px rgba(6, 56, 49, 0.6), inset 0px 11px 20px 0px rgb(255, 255, 255);
   margin-top: 5%;
   line-height: 1.5;
   padding: 5%;
@@ -494,7 +489,7 @@ summary::marker {
 }
 .services__paragraph {
   font-family: "Open Sans", sans-serif;
-  font-size: 250%;
+  font-size: 300%;
   font-weight: 500;
   color: #063831;
   letter-spacing: 0.05rem;
@@ -587,7 +582,7 @@ summary::marker {
 }
 .why-envysion p {
   font-family: "Open Sans", sans-serif;
-  font-size: 250%;
+  font-size: 300%;
   font-weight: 500;
   color: #063831;
   letter-spacing: 0.05rem;
@@ -604,7 +599,7 @@ summary::marker {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 .why-envysion__list--icon {
   height: 20em;
@@ -624,11 +619,22 @@ summary::marker {
   }
 }
 @media screen and (min-width: 760px) {
+  .why-envysion h3 {
+    margin: 5% 0;
+  }
   .why-envysion__list {
     padding: 0 15%;
   }
   .why-envysion__list h3 {
     font-size: 375%;
+  }
+  .why-envysion__list p {
+    margin: 0;
+  }
+  .why-envysion__image-and-p {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
   }
 }
 @media screen and (min-width: 1000px) {

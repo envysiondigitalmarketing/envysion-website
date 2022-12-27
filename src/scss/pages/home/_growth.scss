@@ -23,7 +23,6 @@
     };
     & p {
         @include heroP;
-        @include clay;
         margin-top: 5%;
         line-height: 1.5;
         padding: 5%;

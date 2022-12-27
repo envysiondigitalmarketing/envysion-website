@@ -13,7 +13,7 @@ $box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
 $paddingForCentering: 0 5%;
 
 
-$firstP: 250%;
+$firstP: 300%;
 
 
 $firstH1: 450%;
@@ -80,14 +80,6 @@ $thirdH1: 550%;
     border-radius: 5px;
     font-size: 250%;
 }
-@mixin secondCallToAction {
-    @include callToActionStandardStuff;
-    padding: .75em 1em;
-    margin-top: 15%;
-    margin-bottom: 15%;
-    border-radius: 5px;
-    font-size: 250%;
-}
 @mixin andSection {
     min-height: $sectionHeight + .5vh;
     margin-top: -.5%;
@@ -113,7 +105,6 @@ $thirdH1: 550%;
     box-sizing: border-box;
     outline: none;
     font-size: 225%;
-    // font-family: 'League Spartan', sans-serif;
     font-family: 'league_spartanbold';
     font-weight: 100;
     color: $mainColor;
@@ -160,6 +151,6 @@ $thirdH1: 550%;
     -webkit-backdrop-filter: blur(100px); 
     backdrop-filter: blur(100px); 
     background-color: rgba(255, 255, 255, 0.5); 
-    border-radius: 26px; 
+    border-radius: 66px;
     box-shadow: 55px 55px 50px 0px rgb(6 56 49 / 50%), inset -5px -1px 9px 0px rgb(6 56 49 / 60%), inset 0px 11px 20px 0px rgb(255 255 255);
 }
