@@ -1,6 +1,5 @@
 import domElements from '/src/javascript/dom-elements.js';
 import functions from '/src/javascript/functions.js';
-import paragraphs from '/src/javascript/paragraphs.js';
 
 onload = () => functions.theHiddenThing(domElements.menuCover);
 

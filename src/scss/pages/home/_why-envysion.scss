@@ -1,4 +1,4 @@
-.why-envysion {
+.why {
     background-color: $thisWhite;
     position: relative;
     overflow-x: hidden;
@@ -14,7 +14,6 @@
     & h3 {
         @include h3;
         margin: 5% 0 15% 0;
-        padding: $paddingForCentering;
     }
     & p {
         @include heroP;
@@ -39,18 +38,14 @@
 }
 
 @media screen and (min-width: 340px) {
-    .why-envysion {
+    .why {
         &__list {
-            // &--icon {
-            //     width: 100%;
-            //     height: auto;
-            // }
         }
     }
 }
 
 @media screen and (min-width: 470px) {
-    .why-envysion {
+    .why {
         &__list {
             p {
                 font-size: 300%;
@@ -58,16 +53,12 @@
             h3 {
                 font-size: 350%;
             }
-            // &--icon {
-            //     width: 60%;
-            //     height: auto;
-            // }
         }
     }
 }
 
 @media screen and (min-width: 540px) {
-    .why-envysion {
+    .why {
         &__list {
             padding: 0 10%;
         }
@@ -75,7 +66,7 @@
 }
 
 @media screen and (min-width: 760px) {
-    .why-envysion {
+    .why {
         h3 {margin: 5% 0};
         &__list {
             padding: 0 15%;
@@ -90,12 +81,14 @@
             display: flex;
             flex-direction: row;
             margin-bottom: 5%;
+            border-bottom: solid 1px;
+            padding-bottom: 10%;
         }
     }
 }
 
 @media screen and (min-width: 1000px) {
-    .why-envysion {
+    .why {
         max-width: 75vw;
         min-width: 75vw !important;
     }
@@ -105,7 +98,7 @@
 }
 
 @media screen and (min-width: 1050px) {
-    .why-envysion {
+    .why {
         h2 {
             font-size: $secondH1;
         }
@@ -118,13 +111,13 @@
 }
 
 @media screen and (min-width: 1250px) {
-    .why-envysion {
+    .why {
         // min-height: 310vh;
     }
 }
 
 @media screen and (min-width: 1300px) {
-    .why-envysion {
+    .why {
         h2 {
             font-size: $thirdH1;
         }
@@ -135,7 +128,7 @@
 }
 
 @media screen and (min-width: 1450px) {
-    .why-envysion {
+    .why {
         &__list {
             padding: 0 25%;
         }

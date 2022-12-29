@@ -10,20 +10,6 @@ const pricing = document.getElementById('pricing-button');
 const contact = document.getElementById('contact-button');
 
 const allHeaders = document.querySelector('.services__header');
-const allParagraphs = document.querySelectorAll('.services__paragraph');
-
-const websitesParagraph = document.querySelector(
-  '.services__paragraph--websites'
-);
-const seoParagraph = document.querySelector('.services__paragraph--seo');
-const emailAndSMSParagraph = document.querySelector(
-  '.services__paragraph--email-and-sms'
-);
-const advertsParagraph = document.querySelector(
-  '.services__paragraph--adverts'
-);
-
-// const quoraCreativeLink = document.querySelector('.quoracreative-link');
 
 const carouselContainer = document.querySelector('.carousel-container');
 
@@ -57,12 +43,6 @@ const domElements = {
   pricing,
   contact,
   allHeaders,
-  allParagraphs,
-  websitesParagraph,
-  seoParagraph,
-  emailAndSMSParagraph,
-  advertsParagraph,
-  // quoraCreativeLink,
   carouselContainer,
   carouselWebsites,
   carouselSEO,
@@ -188,3 +168,6 @@ export default domElements;
 // </div>`;
 
 // const carouselDivs = [websitesDiv, SEODiv, emailDiv, SMSDiv, advertisementsDiv];
+
+// quoraCreativeLink,
+// const quoraCreativeLink = document.querySelector('.quoracreative-link');
