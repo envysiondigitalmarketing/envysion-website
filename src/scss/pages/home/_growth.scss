@@ -1,4 +1,4 @@
-.growth {
+.second {
     background-color: $thisWhite;
 
     overflow-x: hidden;
@@ -29,14 +29,19 @@
     }
 }
 
+#second > div > ul > li > p {
+    padding: 0;
+    margin: 0 0 2% 0;
+}
+
 @media screen and (min-width: 340px) {
-    // .growth {
+    // .second {
         // min-height: 150vh;
     // }
 }
 
 @media screen and (min-width: 470px) {
-    .growth {
+    .second {
         p {
             font-size: 300%;
         }
@@ -44,7 +49,7 @@
 }
 
 @media screen and (min-width: 540px) {
-    .growth {
+    .second {
         &-container {
             padding: 0 10%;
         }
@@ -52,7 +57,7 @@
 }
 
 @media screen and (min-width: 760px) {
-    .growth {
+    .second {
         // min-height: 160vh;
         &-container {
             padding: 0 15%;
@@ -61,7 +66,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-    .growth {
+    .second {
         max-width: 75vw;
         min-width: 75vw !important;
         // min-height: 150vh;
@@ -69,7 +74,7 @@
 }
 
 @media screen and (min-width: 1050px) {
-    .growth {
+    .second {
         &-container {
             padding: 0 20%;
         }
@@ -80,7 +85,7 @@
 }
 
 @media screen and (min-width: 1300px) {
-    .growth {
+    .second {
         // max-height: min-content;
         &-container {
             padding: 0 20%;
@@ -92,7 +97,7 @@
 }
 
 @media screen and (min-width: 1450px) {
-    .growth {
+    .second {
         &-container {
             padding: 0 25%;
         }

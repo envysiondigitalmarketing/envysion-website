@@ -29,7 +29,7 @@ body, html {
     }
     .cta-orange {
         @include callToAction;
-        &__growth, &__services {
+        &__second, &__services {
             align-self: center;
         }
     }
@@ -58,13 +58,11 @@ body, html {
     color: transparent;
     -webkit-text-stroke: 1.25px $mainColor;
     };
-    &__home {
-        &--hero {
-            animation-name: moveInRight;
-            animation-duration: .7s;
-            @include hero-text;
-            font-size: 1000%;
-        };
+    &__hero {
+        animation-name: moveInRight;
+        animation-duration: .7s;
+        @include hero-text;
+        font-size: 1000%;
     };
 };
 
@@ -154,7 +152,7 @@ body, html {
 
 @media screen and (min-width: 1000px) {
     .cta-orange {
-        &__growth, &__why-envysion, &__services {
+        &__second, &__why-envysion, &__services {
             margin-bottom: 0 !important;
         }
     }

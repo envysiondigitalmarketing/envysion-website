@@ -194,7 +194,7 @@
   height: 10vh;
 }
 .main .hero {
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   min-width: 100vw;
   background-image: linear-gradient(transparent 10%, #FEFDFF 90%);
@@ -372,7 +372,7 @@
     width: 3%;
   }
 }
-.growth {
+.second {
   background-color: #FEFDFF;
   overflow-x: hidden;
   margin-top: -0.5%;
@@ -381,12 +381,12 @@
   justify-content: flex-start;
   min-width: 100vw;
 }
-.growth-container {
+.second-container {
   padding: 0 5%;
   display: flex;
   flex-direction: column;
 }
-.growth h3 {
+.second h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 300%;
   margin: 0;
@@ -394,7 +394,7 @@
   margin-bottom: 0;
   margin-top: 5%;
 }
-.growth p {
+.second p {
   font-family: "Open Sans", sans-serif;
   font-size: 300%;
   font-weight: 500;
@@ -405,45 +405,50 @@
   padding: 5%;
 }
 
+#second > div > ul > li > p {
+  padding: 0;
+  margin: 0 0 2% 0;
+}
+
 @media screen and (min-width: 470px) {
-  .growth p {
+  .second p {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 540px) {
-  .growth-container {
+  .second-container {
     padding: 0 10%;
   }
 }
 @media screen and (min-width: 760px) {
-  .growth-container {
+  .second-container {
     padding: 0 15%;
   }
 }
 @media screen and (min-width: 1000px) {
-  .growth {
+  .second {
     max-width: 75vw;
     min-width: 75vw !important;
   }
 }
 @media screen and (min-width: 1050px) {
-  .growth-container {
+  .second-container {
     padding: 0 20%;
   }
-  .growth h2 {
+  .second h2 {
     font-size: 500%;
   }
 }
 @media screen and (min-width: 1300px) {
-  .growth-container {
+  .second-container {
     padding: 0 20%;
   }
-  .growth h2 {
+  .second h2 {
     font-size: 550%;
   }
 }
 @media screen and (min-width: 1450px) {
-  .growth-container {
+  .second-container {
     padding: 0 25%;
   }
 }
@@ -557,7 +562,7 @@ summary::marker {
     padding: 0 25%;
   }
 }
-.why-envysion {
+.why {
   background-color: #FEFDFF;
   position: relative;
   overflow-x: hidden;
@@ -567,18 +572,17 @@ summary::marker {
   align-items: center;
   min-width: 100vw;
 }
-.why-envysion h2 {
+.why h2 {
   margin: 5% 0 5% 0;
   align-self: center;
 }
-.why-envysion h3 {
+.why h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 325%;
   font-style: italic;
   margin: 5% 0 15% 0;
-  padding: 0 5%;
 }
-.why-envysion p {
+.why p {
   font-family: "Open Sans", sans-serif;
   font-size: 300%;
   font-weight: 500;
@@ -587,11 +591,11 @@ summary::marker {
   margin-top: 15%;
   line-height: 1.3;
 }
-.why-envysion__list {
+.why__list {
   height: fit-content;
   padding: 0 5%;
 }
-.why-envysion__list--div {
+.why__list--div {
   margin-top: 0;
   height: 30%;
   display: flex;
@@ -599,37 +603,37 @@ summary::marker {
   justify-content: space-evenly;
   align-items: flex-start;
 }
-.why-envysion__list--icon {
+.why__list--icon {
   height: 20em;
 }
 
 @media screen and (min-width: 470px) {
-  .why-envysion__list p {
+  .why__list p {
     font-size: 300%;
   }
-  .why-envysion__list h3 {
+  .why__list h3 {
     font-size: 350%;
   }
 }
 @media screen and (min-width: 540px) {
-  .why-envysion__list {
+  .why__list {
     padding: 0 10%;
   }
 }
 @media screen and (min-width: 760px) {
-  .why-envysion h3 {
+  .why h3 {
     margin: 5% 0;
   }
-  .why-envysion__list {
+  .why__list {
     padding: 0 15%;
   }
-  .why-envysion__list h3 {
+  .why__list h3 {
     font-size: 375%;
   }
-  .why-envysion__list p {
+  .why__list p {
     margin: 0;
   }
-  .why-envysion__image-and-p {
+  .why__image-and-p {
     display: flex;
     flex-direction: row;
     margin-bottom: 5%;
@@ -638,7 +642,7 @@ summary::marker {
   }
 }
 @media screen and (min-width: 1000px) {
-  .why-envysion {
+  .why {
     max-width: 75vw;
     min-width: 75vw !important;
   }
@@ -647,23 +651,23 @@ summary::marker {
   }
 }
 @media screen and (min-width: 1050px) {
-  .why-envysion h2 {
+  .why h2 {
     font-size: 500%;
   }
-  .why-envysion__list h3 {
+  .why__list h3 {
     font-size: 425%;
   }
 }
 @media screen and (min-width: 1300px) {
-  .why-envysion h2 {
+  .why h2 {
     font-size: 550%;
   }
-  .why-envysion__list {
+  .why__list {
     padding: 0 20%;
   }
 }
 @media screen and (min-width: 1450px) {
-  .why-envysion__list {
+  .why__list {
     padding: 0 25%;
   }
 }
@@ -1154,7 +1158,7 @@ body .cta-orange:active, html .cta-orange:active {
   box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
   transform: translateY(0px);
 }
-body .cta-orange__growth, body .cta-orange__services, html .cta-orange__growth, html .cta-orange__services {
+body .cta-orange__second, body .cta-orange__services, html .cta-orange__second, html .cta-orange__services {
   align-self: center;
 }
 body h1, html h1 {
@@ -1183,7 +1187,7 @@ body h1, html h1 {
   color: transparent;
   -webkit-text-stroke: 1.25px #063831;
 }
-.heading__home--hero {
+.heading__hero {
   animation-name: moveInRight;
   animation-duration: 0.7s;
   margin: 0 0 0.55rem 0;
@@ -1274,7 +1278,7 @@ body h1, html h1 {
   }
 }
 @media screen and (min-width: 1000px) {
-  .cta-orange__growth, .cta-orange__why-envysion, .cta-orange__services {
+  .cta-orange__second, .cta-orange__why-envysion, .cta-orange__services {
     margin-bottom: 0 !important;
   }
 }
