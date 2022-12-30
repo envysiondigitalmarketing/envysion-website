@@ -1,5 +1,4 @@
 const paragraphs = {
-  adverts: `Harness the power of Facebook and Instagram ads to drive traffic to your website. These platforms have been refined over time to become great options for gaining visibility and reaching out to potential customers within your niche. Don't have content for your ads? Envysion has you covered. Just let us know what product or service you would like advertised and we will do the rest.`,
   googleMyBusiness: `
   Are you looking to improve your local search visibility and reach more customers in your area? Do you want to stand out from the competition and make it easy for potential customers to find and contact your business? Our Google "My Business" Optimization service can help.
 
