@@ -580,7 +580,6 @@ summary::marker {
   font-family: "Open Sans", sans-serif;
   font-size: 325%;
   font-style: italic;
-  margin: 5% 0 15% 0;
 }
 .why p {
   font-family: "Open Sans", sans-serif;
@@ -588,7 +587,6 @@ summary::marker {
   font-weight: 500;
   color: #063831;
   letter-spacing: 0.05rem;
-  margin-top: 15%;
   line-height: 1.3;
 }
 .why__list {
@@ -636,7 +634,6 @@ summary::marker {
   .why__image-and-p {
     display: flex;
     flex-direction: row;
-    margin-bottom: 5%;
     border-bottom: solid 1px;
     padding-bottom: 10%;
   }
@@ -1165,7 +1162,7 @@ body h1, html h1 {
   font-size: 450%;
 }
 
-.home-section {
+.section-padding {
   padding-bottom: 5vh;
 }
 
@@ -1229,7 +1226,7 @@ body h1, html h1 {
   }
 }
 @media screen and (min-width: 540px) {
-  .home-section {
+  .section-padding {
     padding-bottom: 2vh;
   }
   h1 {
@@ -1256,10 +1253,10 @@ body h1, html h1 {
     overflow-y: scroll;
     padding: 0;
   }
-  .home-section {
+  .section-padding {
     padding-bottom: 20vh;
   }
-  .home-section:last-child {
+  .section-padding:last-child {
     padding-bottom: 0;
   }
   .footer {

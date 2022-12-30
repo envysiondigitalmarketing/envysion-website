@@ -38,7 +38,7 @@ body, html {
     }
 };
 
-.home-section {
+.section-padding {
     padding-bottom: 5vh;
 }
 
@@ -97,7 +97,7 @@ body, html {
 }
 
 @media screen and (min-width: 540px) {
-    .home-section {
+    .section-padding {
         padding-bottom:2vh;
     };
     h1 {
@@ -128,7 +128,7 @@ body, html {
         overflow-y: scroll;
         padding: 0;
     };
-    .home-section {
+    .section-padding {
         padding-bottom: 20vh;
         &:last-child {
             padding-bottom: 0;
