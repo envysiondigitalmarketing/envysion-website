@@ -30,8 +30,6 @@ const nextButton = document.querySelector('.next');
 const scroll = document.querySelectorAll('.scroll');
 
 const domElements = {
-  xButton,
-  menuCover,
   hero,
   growth,
   services,

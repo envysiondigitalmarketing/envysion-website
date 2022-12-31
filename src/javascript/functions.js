@@ -9,7 +9,6 @@ const observer = new IntersectionObserver((entries) =>
 
 const functions = {
   theHiddenThing,
-  openAndClose,
   observer,
 };
 
