@@ -110,7 +110,6 @@
   position: fixed;
   z-index: 4;
   overflow: hidden;
-  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
