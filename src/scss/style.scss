@@ -38,7 +38,7 @@ body, html {
     }
 };
 
-.home-section {
+.section-padding {
     padding-bottom: 5vh;
 }
 
@@ -52,7 +52,7 @@ body, html {
 
 .heading {
     @include heroH2;
-    font-size: 1000%;
+    font-size: 900%;
     margin: 0;
     & span {
     color: transparent;
@@ -62,7 +62,6 @@ body, html {
         animation-name: moveInRight;
         animation-duration: .7s;
         @include hero-text;
-        font-size: 1000%;
     };
 };
 
@@ -80,7 +79,7 @@ body, html {
         transform: translateX(100%);
         transition-delay: 100ms;
     };
-    &__up {transform: translateY(50%)};
+    &__up {transform: translateY(25%)};
 };
 
 .show {
@@ -97,12 +96,13 @@ body, html {
 }
 
 @media screen and (min-width: 540px) {
-    .home-section {
+    .section-padding {
         padding-bottom:2vh;
     };
     h1 {
         font-size: 1100%;
     }
+    .heading {font-size: 1000%;}
 }
 
 @media screen and (min-width: 1000px) {
@@ -128,7 +128,7 @@ body, html {
         overflow-y: scroll;
         padding: 0;
     };
-    .home-section {
+    .section-padding {
         padding-bottom: 20vh;
         &:last-child {
             padding-bottom: 0;
