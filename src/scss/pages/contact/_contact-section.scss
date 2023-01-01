@@ -81,7 +81,7 @@
         border: none;
         max-width: 50%;
         @include hoverButton;
-        margin-top: 5%;
+        margin-top: 25%;
     }
     .cta-orange__services {
         @include callToAction;
@@ -137,6 +137,9 @@
     .contact {
         form {
             width: 30%;
+        }
+        input[type='submit'] {
+            margin-top: 5%;
         }
     }
 }

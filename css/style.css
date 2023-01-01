@@ -771,7 +771,7 @@ summary::marker {
   max-width: 50%;
   transition: 0.2s;
   cursor: pointer;
-  margin-top: 5%;
+  margin-top: 25%;
 }
 .contact input[type=submit]:hover {
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
@@ -834,6 +834,9 @@ summary::marker {
 @media screen and (min-width: 900px) {
   .contact form {
     width: 30%;
+  }
+  .contact input[type=submit] {
+    margin-top: 5%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1013,6 +1016,10 @@ summary::marker {
 @media screen and (min-width: 1000px) {
   .footer {
     box-shadow: inset 0px 0px 0px 2px #063831;
+  }
+  .footer-logo {
+    margin-top: 10%;
+    width: 45%;
   }
   .footer-social-links__div {
     height: 5% !important;
