@@ -10,10 +10,17 @@
     min-width: 100vw;
 
     hr {
-        margin: 0; 
-        width: 98%;
+        margin: 5% 0; 
+        width: 20%;
         border-color: $mainColor;
-        align-self: center;
+        border-top: solid .5px;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        @include heroP;
+        font-size: 200%;
+        color: $mainColor !important;
+        text-decoration: none;
     }
     
     .footer-container {
@@ -160,7 +167,7 @@
 
 @media screen and (min-width: 1000px) {
     .footer {
-        box-shadow: inset 0px 0px 0px 2px $mainColor;
+        box-shadow: inset 0px 0px 0px .5px $mainColor;
         &-logo {
             margin-top: 10%;
             width: 45%;

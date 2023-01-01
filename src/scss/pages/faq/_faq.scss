@@ -1,0 +1,124 @@
+.faq {
+    min-width: 0;
+    background-color: $thisWhite;
+    margin-top: -.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    &__list {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: $paddingForCentering;
+    }
+    &__div {
+        width: 95%;
+        ::marker {
+            content: ''
+        }
+    }
+    &__header {
+        @include h3;
+        transition: .6s;
+        margin-bottom: 3%;
+        cursor: pointer;
+        display: inline-block;
+        &:hover {
+            color: $secondColor;
+        }
+        & h3 {
+            margin: 0;
+        }
+    };
+    &__paragraph {
+        @include heroP;
+        margin-top: 0;
+        transition: height 0.5s;
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .faq {
+        p {
+            font-size: 300%;
+        }
+        &__header {
+            font-size: 350%;
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .faq {
+        &__list {
+            padding: 0 10%;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .faq {
+        &__list {
+            padding: 0 15%;
+        }
+        &__header {
+            font-size: 375%;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .faq {
+        max-width: 75vw;
+        min-width: 75vw !important;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .faq {
+        &__list {
+            padding: 0 20%;
+        }
+        h2 {
+            font-size: $secondH1;
+        }
+        &__header {
+            font-size: 425%;
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .faq {
+        &__list {
+            padding: 0 20%;
+        }
+        h2 {
+            font-size: $secondH1;
+        }
+        &__header {
+            font-size: 425%;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .faq {
+        &__list {
+            padding: 0 20%;
+        }
+        h2 {
+            font-size: $thirdH1;
+        }
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .faq {
+        &__list {
+            padding: 0 25%;
+        }
+    }
+}
