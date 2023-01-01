@@ -81,7 +81,6 @@ $thirdH1: 550%;
     font-size: 250%;
 }
 @mixin andSection {
-    min-height: $sectionHeight + .5vh;
     margin-top: -.5%;
     padding: $paddingForCentering;
     background-color: $thisWhite;
@@ -91,7 +90,7 @@ $thirdH1: 550%;
     & h2 {
         font-size: 500%;
         display: inline-block;
-        margin-top: 15%;
+        margin-top: 10%;
         align-self: center;
     }
 }

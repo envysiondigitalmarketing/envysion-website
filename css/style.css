@@ -110,7 +110,6 @@
   position: fixed;
   z-index: 4;
   overflow: hidden;
-  box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -188,10 +187,6 @@
 .main {
   display: flex;
   flex-direction: column;
-}
-.main .behind-nav {
-  position: relative;
-  height: 10vh;
 }
 .main .hero {
   height: 90vh;
@@ -686,15 +681,10 @@ summary::marker {
   z-index: 2;
 }
 
-.contact h2 {
-  margin: 15% 0 5% 0;
-  align-self: center;
-}
-.contact-section {
+.contact {
+  padding-top: 5%;
   animation-name: moveInRight;
   animation-duration: 0.7s;
-  max-height: 100%;
-  min-height: 90.5vh;
   margin-top: -0.5%;
   padding: 0 5%;
   background-color: #FEFDFF;
@@ -705,34 +695,35 @@ summary::marker {
   margin: 0;
   padding: 0;
 }
-.contact-section h2 {
-  font-size: 500%;
-  display: inline-block;
-  margin-top: 15%;
+.contact h2 {
+  margin: 15% 0 5% 0;
   align-self: center;
 }
-.contact-section .form-container {
-  height: 100%;
+.contact h2 {
+  font-size: 500%;
+  display: inline-block;
+  margin-top: 10%;
+  align-self: center;
+}
+.contact .form-container {
   margin: 0;
 }
-.contact-section form {
+.contact form {
   width: 70%;
-  height: 100%;
   margin: 0 auto;
 }
-.contact-section .input-div {
+.contact .input-div {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15em;
   margin-bottom: 6em;
-  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   position: relative;
 }
-.contact-section input, .contact-section select, .contact-section option {
+.contact input, .contact select, .contact option {
   height: 4em;
   width: 100%;
   background: transparent;
@@ -747,10 +738,9 @@ summary::marker {
   color: #063831;
   z-index: 1;
 }
-.contact-section span {
+.contact span {
   z-index: 0;
   position: absolute;
-  height: 50%;
   width: 100%;
   background: transparent;
   border: none;
@@ -765,15 +755,15 @@ summary::marker {
   transition: 0.5s;
   pointer-events: none;
 }
-.contact-section input:focus, .contact-section select:focus, .contact-section option:focus {
+.contact input:focus, .contact select:focus, .contact option:focus {
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
 }
-.contact-section input:focus ~ span,
-.contact-section input:valid ~ span {
+.contact input:focus ~ span,
+.contact input:valid ~ span {
   transform: translateX(-10px) translateY(-32px);
   font-size: 200%;
 }
-.contact-section input[type=submit] {
+.contact input[type=submit] {
   background: #063831;
   color: #FEFDFF;
   cursor: pointer;
@@ -781,12 +771,13 @@ summary::marker {
   max-width: 50%;
   transition: 0.2s;
   cursor: pointer;
+  margin-top: 25%;
 }
-.contact-section input[type=submit]:hover {
+.contact input[type=submit]:hover {
   box-shadow: 0 2.5rem 3rem rgba(8, 6, 6, 0.5);
   transform: translateY(-7px);
 }
-.contact-section input[type=submit]:active {
+.contact input[type=submit]:active {
   box-shadow: 0 1.75rem 1.5rem rgba(8, 6, 6, 0.5);
   transform: translateY(0px);
 }
@@ -818,31 +809,34 @@ summary::marker {
 }
 
 @media screen and (min-width: 420px) {
-  .contact-section form {
+  .contact form {
     width: 60%;
   }
 }
 @media screen and (min-width: 470px) {
-  .contact-section p {
+  .contact p {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 500px) {
-  .contact-section form {
+  .contact form {
     width: 50%;
   }
-  .contact-section h2 {
-    margin-top: 10%;
+  .contact h2 {
+    margin-top: 5%;
   }
 }
 @media screen and (min-width: 650px) {
-  .contact-section form {
+  .contact form {
     width: 40%;
   }
 }
 @media screen and (min-width: 900px) {
-  .contact-section form {
+  .contact form {
     width: 30%;
+  }
+  .contact input[type=submit] {
+    margin-top: 5%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -865,15 +859,10 @@ summary::marker {
     position: relative;
     max-width: 70vw;
     min-width: 70vw;
-    max-height: max-content;
     overflow: hidden;
     margin-bottom: 0;
-    align-items: flex-start;
-  }
-  .contact-section {
     width: 70vw;
     margin-bottom: 0;
-    max-height: 100%;
   }
   .contact .cta-orange__services {
     margin-bottom: 25%;
@@ -883,88 +872,12 @@ summary::marker {
   }
 }
 @media screen and (min-width: 1050px) {
-  .contact-section h2 {
+  .contact h2 {
     font-size: 500%;
   }
 }
 @media screen and (min-width: 1300px) {
-  .contact-section h2 {
-    font-size: 550%;
-  }
-}
-.menu-cover {
-  height: 100%;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-image: linear-gradient(transparent, #97B1AB 75%), url("../../src/assets/global/stripes-light.png");
-  z-index: 2;
-  opacity: 0.95;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.menu-cover__list {
-  margin-top: 13vh;
-  margin-left: 1%;
-  margin-right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 75%;
-}
-.menu-cover__list--ul {
-  margin: 0 0 0.55rem 0;
-  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  font-size: 450%;
-  list-style-type: none;
-  padding: 0;
-  margin-left: 5%;
-}
-.menu-cover__list--li {
-  margin-bottom: 4%;
-  opacity: 1;
-  width: -moz-fit-content;
-  width: fit-content;
-  transition: all 0.4s ease-in-out;
-}
-.menu-cover__list--li:hover {
-  font-size: 300%;
-  color: #000000;
-}
-.menu-cover__list--anchor:link {
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
-  cursor: pointer;
-}
-.menu-cover__list--anchor:visited {
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
-  cursor: pointer;
-}
-.menu-cover--button-x {
-  width: 10%;
-  height: 60%;
-  background-image: linear-gradient(to right, #063831, #000000);
-  cursor: pointer;
-  border-radius: 15%;
-  position: relative;
-  z-index: 3;
-  right: 4%;
-}
-
-@media screen and (min-width: 560px) {
-  .menu-cover__list {
-    margin-top: 18vh;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .menu-cover__list--ul {
+  .contact h2 {
     font-size: 550%;
   }
 }
@@ -1104,6 +1017,10 @@ summary::marker {
   .footer {
     box-shadow: inset 0px 0px 0px 2px #063831;
   }
+  .footer-logo {
+    margin-top: 10%;
+    width: 45%;
+  }
   .footer-social-links__div {
     height: 5% !important;
   }
@@ -1160,6 +1077,11 @@ body .cta-orange__second, body .cta-orange__services, html .cta-orange__second, 
 }
 body h1, html h1 {
   font-size: 450%;
+}
+
+.behind-nav {
+  position: relative;
+  height: 10vh;
 }
 
 .section-padding {

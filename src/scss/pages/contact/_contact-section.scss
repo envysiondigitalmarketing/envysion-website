@@ -19,76 +19,69 @@
     h2{
         @include nonheroH2;
     }
-    &-section {
-        animation-name: moveInRight;
-        animation-duration: .7s;
-        max-height: 100%;
-        @include andSection;
-        font-size: 75%;
+    padding-top: 5%;
+    animation-name: moveInRight;
+    animation-duration: .7s;
+    @include andSection;
+    font-size: 75%;
+    margin: 0;
+    padding: 0;
+    .form-container {
         margin: 0;
-        padding: 0;
-        // margin-top: $navHeight;
-        .form-container {
-            height: 100%;
-            margin: 0;
-        }
-        form {
-            width: 70%;
-            height: 100%;
-            margin: 0 auto;
-        }
-        .input-div {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 15em;
-            margin-bottom: 6em;
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+    }
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .input-div {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15em;
+        margin-bottom: 6em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-            position: relative;
-        }
-        input, select, option {
-            @include inputs;
-        }
-        span {
-            z-index: 0;
-            position: absolute;
-            height: 50%;
-            width: 100%;
-            background: transparent;
-            border: none;
-            border-radius: 4px;
-            padding: 10px;
-            box-sizing: border-box;
-            outline: none;
-            
-            font-size: 225%;
-            // font-family: 'League Spartan', sans-serif;
-            font-family: 'league_spartanbold';
-            font-weight: 100;
-            color: $mainColor;
-            transition: .5s;
-            pointer-events: none;
-        }
-        input:focus, select:focus, option:focus {
-            box-shadow: $box-shadow;
-        }
-        input:focus ~ span,
-        input:valid ~ span {
-            transform: translateX(-10px) translateY(-32px);
-            font-size: 200%;
-        }
-        input[type='submit'] {
-            background: $mainColor;
-            color: $thisWhite;
-            cursor: pointer;
-            border: none;
-            max-width: 50%;
-            @include hoverButton;
-        }
+        position: relative;
+    }
+    input, select, option {
+        @include inputs;
+    }
+    span {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+        box-sizing: border-box;
+        outline: none;
+        
+        font-size: 225%;
+        font-family: 'league_spartanbold';
+        font-weight: 100;
+        color: $mainColor;
+        transition: .5s;
+        pointer-events: none;
+    }
+    input:focus, select:focus, option:focus {
+        box-shadow: $box-shadow;
+    }
+    input:focus ~ span,
+    input:valid ~ span {
+        transform: translateX(-10px) translateY(-32px);
+        font-size: 200%;
+    }
+    input[type='submit'] {
+        background: $mainColor;
+        color: $thisWhite;
+        cursor: pointer;
+        border: none;
+        max-width: 50%;
+        @include hoverButton;
+        margin-top: 25%;
     }
     .cta-orange__services {
         @include callToAction;
@@ -99,63 +92,54 @@
 
 @media screen and (min-width: 420px) {
     .contact {
-        &-section {
-            form {
-                width: 60%;
-            }
+        form {
+            width: 60%;
         }
     }
 }
 
 @media screen and (min-width: 470px) {
     .contact {
-        &-section {
-            p {
-                font-size: 300%;
-            }
+        p {
+            font-size: 300%;
         }
     }
 }
 
 @media screen and (min-width: 500px) {
     .contact {
-        &-section {
-            form {
-                width: 50%;
-            }
-            h2 {
-                margin-top: 10%;
-            }
+        form {
+            width: 50%;
+        }
+        h2 {
+            margin-top: 5%;
         }
     }
 }
 
 @media screen and (min-width: 540px) {
     .contact {
-        &-section {
-            // &__div {
-            //     width: 70%;
-            // }
-        }
+        // &__div {
+        //     width: 70%;
+        // }
     }
 }
 
 @media screen and (min-width: 650px) {
     .contact {
-        &-section {
-            form {
-                width: 40%;
-            }
+        form {
+            width: 40%;
         }
     }
 }
 
 @media screen and (min-width: 900px) {
     .contact {
-        &-section {
-            form {
-                width: 30%;
-            }
+        form {
+            width: 30%;
+        }
+        input[type='submit'] {
+            margin-top: 5%;
         }
     }
 }
@@ -183,15 +167,10 @@
         position: relative;
         max-width: 70vw;
         min-width: 70vw;
-        max-height: max-content;
         overflow: hidden;
         margin-bottom: 0;
-        align-items: flex-start;
-        &-section {
-            width: 70vw;
-            margin-bottom: 0;
-            max-height: 100%;
-        }
+        width: 70vw;
+        margin-bottom: 0;
         .cta-orange__services {
             margin-bottom: 25%;
         }
@@ -203,23 +182,19 @@
 
 @media screen and (min-width: 1050px) {
     .contact {
-        &-section {
-            h2 {
-                font-size: $secondH1;
-            }
-            // &__header {
-            //     font-size: 425%;
-            // }
+        h2 {
+            font-size: $secondH1;
         }
+        // &__header {
+        //     font-size: 425%;
+        // }
     }
 }
 
 @media screen and (min-width: 1300px) {
     .contact {
-        &-section {
-            h2 {
-                font-size: $thirdH1;
-            }
+        h2 {
+            font-size: $thirdH1;
         }
     }
 }

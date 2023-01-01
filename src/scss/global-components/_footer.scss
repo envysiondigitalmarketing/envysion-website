@@ -161,6 +161,10 @@
 @media screen and (min-width: 1000px) {
     .footer {
         box-shadow: inset 0px 0px 0px 2px $mainColor;
+        &-logo {
+            margin-top: 10%;
+            width: 45%;
+        }
     }
     .footer-social-links {
         &__div {

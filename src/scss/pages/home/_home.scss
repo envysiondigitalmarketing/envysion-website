@@ -12,7 +12,6 @@
     position: fixed;
     z-index: 4;
     overflow: hidden;
-    box-shadow: $box-shadow;
 
     display: flex;
     flex-direction: row;
@@ -93,10 +92,6 @@
 .main {
     display: flex;
     flex-direction: column;
-    .behind-nav {
-        position: relative;
-        @include navHeight($navHeight);
-    }
     .hero {
         height: 90vh;
         overflow: hidden;
