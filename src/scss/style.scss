@@ -6,9 +6,8 @@
 @import './pages/home/services';
 @import './pages/home/why-envysion';
 
-@import './pages/contact/contact-section';
+@import './pages/contact/_contact-section';
 
-@import './global-components/menu-cover';
 @import './global-components/footer';
 
 
@@ -37,6 +36,11 @@ body, html {
         font-size: $firstH1;
     }
 };
+
+.behind-nav {
+    position: relative;
+    @include navHeight($navHeight);
+}
 
 .section-padding {
     padding-bottom: 5vh;

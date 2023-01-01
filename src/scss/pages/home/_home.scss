@@ -92,10 +92,6 @@
 .main {
     display: flex;
     flex-direction: column;
-    .behind-nav {
-        position: relative;
-        @include navHeight($navHeight);
-    }
     .hero {
         height: 90vh;
         overflow: hidden;
