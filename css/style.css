@@ -887,7 +887,7 @@ summary::marker {
   margin-top: -0.5%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   overflow: hidden;
   min-width: 100vw;
