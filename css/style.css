@@ -881,6 +881,14 @@ summary::marker {
     font-size: 550%;
   }
 }
+.blog h2 {
+  margin-top: 0;
+  padding: 0 5%;
+}
+.blog p {
+  padding: 0 5% 0 5% !important;
+}
+
 .footer {
   min-height: 90.5vh;
   background-image: linear-gradient(#FEFDFF, #97B1AB, #647C77);
@@ -1193,6 +1201,9 @@ body .cta-orange:active, html .cta-orange:active {
 }
 body .cta-orange__second, body .cta-orange__services, html .cta-orange__second, html .cta-orange__services {
   align-self: center;
+}
+body .cta-orange__second--blog, body .cta-orange__services--blog, html .cta-orange__second--blog, html .cta-orange__services--blog {
+  margin-bottom: 10% !important;
 }
 body h1, html h1 {
   font-size: 450%;

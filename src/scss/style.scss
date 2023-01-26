@@ -8,6 +8,8 @@
 
 @import './pages/contact/_contact-section';
 
+@import './pages/blog/blog-entries.scss';
+
 @import './global-components/footer';
 
 @import './pages/faq/faq';
@@ -32,6 +34,9 @@ body, html {
         @include callToAction;
         &__second, &__services {
             align-self: center;
+            &--blog {
+                margin-bottom: 10% !important;
+            }
         }
     }
     h1 {
