@@ -1290,6 +1290,9 @@ body h1, html h1 {
   position: relative;
   height: 10vh;
 }
+.behind-nav__two {
+  background-color: #FEFDFF;
+}
 
 .section-padding {
   padding-bottom: 5vh;
