@@ -1,4 +1,10 @@
 .blog-home {
     padding-bottom: 5%;
     overflow-y: scroll;
+    &__paragraph--intro {
+        margin: 0 0 10% 0 !important;
+    }
+    &__main {
+        overflow-y: scroll;
+    }
 }

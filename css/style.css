@@ -957,6 +957,13 @@ summary::marker {
 }
 .blog-home {
   padding-bottom: 5%;
+  overflow-y: scroll;
+}
+.blog-home__paragraph--intro {
+  margin: 0 0 10% 0 !important;
+}
+.blog-home__main {
+  overflow-y: scroll;
 }
 
 .footer {
@@ -1282,6 +1289,7 @@ body h1, html h1 {
 .behind-nav {
   position: relative;
   height: 10vh;
+  background-color: #FEFDFF;
 }
 
 .section-padding {
