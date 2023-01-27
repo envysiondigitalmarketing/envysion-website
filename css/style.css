@@ -955,6 +955,10 @@ summary::marker {
     padding: 0 25%;
   }
 }
+.blog-home {
+  padding-bottom: 5%;
+}
+
 .footer {
   min-height: 90.5vh;
   background-image: linear-gradient(#FEFDFF, #97B1AB, #647C77);
