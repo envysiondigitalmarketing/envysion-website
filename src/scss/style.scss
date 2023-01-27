@@ -48,7 +48,6 @@ body, html {
 .behind-nav {
     position: relative;
     @include navHeight($navHeight);
-    background-color: $thisWhite;
 }
 
 .section-padding {
