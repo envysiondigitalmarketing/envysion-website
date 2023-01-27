@@ -1,12 +1,103 @@
 .blog {
     h3 {
-        margin-top: 0;
+        margin: 0 0 5% 0;
         padding: 0 5%;
     }
     p {
         padding: 0 5% 0 5% !important;
+        font-family: "Open Sans", sans-serif;
+        font-size: 300%;
+        font-weight: 500;
+        color: #063831;
+        letter-spacing: 0.05rem;
+        margin-top: 0;
+        transition: height 0.5s;
     }
     &__gif {
         margin: 10% 0;
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .blog {
+        p {
+            font-size: 300%;
+        }
+        h3 {
+            font-size: 350%;
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .blog {
+        &__list {
+            padding: 0 10%;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .blog {
+        &__list {
+            padding: 0 15%;
+        }
+        h3 {
+            font-size: 375%;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    // .blog {
+    //     max-width: 75vw;
+    //     min-width: 75vw !important;
+    // }
+}
+
+@media screen and (min-width: 1050px) {
+    .blog {
+        &__list {
+            padding: 0 20%;
+        }
+        h2 {
+            font-size: $secondH1;
+        }
+        h3 {
+            font-size: 425%;
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .blog {
+        &__list {
+            padding: 0 20%;
+        }
+        h2 {
+            font-size: $secondH1;
+        }
+        h3{
+            font-size: 425%;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .blog {
+        &__list {
+            padding: 0 20%;
+        }
+        h2 {
+            font-size: $thirdH1;
+        }
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .blog {
+        &__list {
+            padding: 0 25%;
+        }
     }
 }
