@@ -17,6 +17,28 @@
     &__gif {
         margin: 10% 0;
     }
+    ul {
+        margin-bottom: 5%;
+    }
+    li {
+        font-family: "Open Sans", sans-serif;
+        font-size: 300%;
+        font-weight: 500;
+        color: #063831;
+        letter-spacing: 0.05rem;
+        margin-top: 0;
+        transition: height 0.5s;
+    }
+    details {
+        cursor: pointer;
+        ::marker {
+            content: ''
+        }
+    }
+}
+
+.dropdown {
+    font-weight: bold !important;
 }
 
 @media screen and (min-width: 470px) {

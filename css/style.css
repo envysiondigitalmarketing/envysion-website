@@ -899,6 +899,28 @@ summary::marker {
 .blog__gif {
   margin: 10% 0;
 }
+.blog ul {
+  margin-bottom: 5%;
+}
+.blog li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 300%;
+  font-weight: 500;
+  color: #063831;
+  letter-spacing: 0.05rem;
+  margin-top: 0;
+  transition: height 0.5s;
+}
+.blog details {
+  cursor: pointer;
+}
+.blog details ::marker {
+  content: "";
+}
+
+.dropdown {
+  font-weight: bold !important;
+}
 
 @media screen and (min-width: 470px) {
   .blog p {
