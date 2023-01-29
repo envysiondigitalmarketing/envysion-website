@@ -962,6 +962,11 @@ summary::marker {
 .blog-home__paragraph--intro {
   margin: 0 0 10% 0 !important;
 }
+.blog-home__paragraph--hashtag {
+  font-style: italic;
+  color: #647C77 !important;
+  margin-top: 5% !important;
+}
 .blog-home__main {
   overflow-y: scroll;
 }
