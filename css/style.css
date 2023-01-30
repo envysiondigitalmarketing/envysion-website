@@ -917,6 +917,9 @@ summary::marker {
 .blog details ::marker {
   content: "";
 }
+.blog summary {
+  font-style: italic;
+}
 
 .dropdown {
   font-weight: bold !important;
