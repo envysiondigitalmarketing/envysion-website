@@ -11,10 +11,6 @@
     padding: 0;
     overflow-x: hidden;
 }
-
-.hero__nav {
-    z-index: 2;
-}
 .contact {
     h2{
         @include nonheroH2;
@@ -155,9 +151,6 @@
     }
     body {
         width: 100vw;
-    }
-    .nav-area {
-        grid-area: one;
     }
     .main {
         width: 75vw;

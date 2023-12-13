@@ -1,94 +1,6 @@
 .wrapper {
     max-width: 100vw;
 }
-.nav {
-    width: 100%;
-    height: 10%;
-    border-bottom: solid .5px $mainColor;
-    display: flex;
-    justify-content: space-between;
-
-    background-color: $thisWhite;
-    position: fixed;
-    z-index: 4;
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    &__button-logo {
-        background: none;
-        color: inherit;
-        border: none;
-        height: 80%;
-        margin-left: 10px;
-        cursor: pointer;
-        animation-name: moveInRight;
-        animation-duration: .5s;
-        align-self: center;
-    };
-    .logo {
-        height: 100%;
-        // align-self: center;
-    }
-    &__button-x {
-        animation-name: moveInRight;
-        animation-duration: .5s;
-        height: 53%;
-        width: 11%;
-
-        background-image: linear-gradient(to right, $mainColor, #000000);
-        cursor: pointer;
-        border-radius: 15%;
-        position: relative;
-        align-self: center;
-        z-index: 3;
-
-        right: 4%;
-    };
-    &__button-x div  {
-        width: 75%;
-        height: 12px;
-        margin: 0;
-        @include transformTranslateNegative50;
-    }
-    &__button-x span  {
-        background: #fff;
-        width: 100%;
-        height: 2px;
-        border-radius: 100px;
-        display: block;
-        @include transformTranslateNegative50;
-        transition: transform .5s, width .5s;
-    }
-    &__button-x .line-1 {
-        width: 50%;
-        transform: translate(-100%, -10px);
-    }
-    &__button-x .line-3 {
-        left: auto;
-        right: 0;
-        width: 50%;
-        transform: translate(0, 7px);
-    }
-    &__button-x-open .line-1 {
-        transform: translate(0, 0) rotate(-47deg);
-        transform-origin: 0 0;
-    }
-    &__button-x-open .line-3 {
-        transform: translate(-95%, 0) rotate(-45deg);
-        transform-origin: 100% 0;
-    }
-    &__button-x-open .line-2 {
-        transform: translate(-45%, -45%) rotate(45deg);
-    }
-    // &__logo {
-    //     height: 6em;
-    //     width: auto;
-    //     align-self: center;
-    //     margin-top: -5%;
-    // };
-};
 .main {
     display: flex;
     flex-direction: column;
@@ -154,22 +66,8 @@
     };
 }
 
-@media screen and (min-width: 325px) {
-    .nav {
-        &__button-x {
-            width: 9%;
-        };
-    };
-}
-
 @media screen and (min-width: 374px) {
-    .nav {
-        height: 11em;
-    };
     .hero {
-        .behind-nav {
-            height: 11em;
-        }
         &__logo {
             margin-top: -10%;
         };
@@ -177,30 +75,13 @@
     }
 }
 
-@media screen and (min-width: 450px) {
-    .nav {
-        &__button-x {
-            width: 8%;
-        };
-    };
-}
-
 @media screen and (min-width: 560px) {
-    .nav {
-        height: 13em;
-        &__button-x {
-            width: 8%;
-        };
-    };
     .hero {
         &__logo {
             height: 8em;
             margin-top: -10%;
             margin-left: 5%;
         };
-        .behind-nav {
-            height: 13em;
-        }
         .hero-slogan {
             // font-size: 425%;
         }
@@ -208,11 +89,6 @@
 }
 
 @media screen and (min-width: 650px) {
-    .nav {
-        &__button-x {
-            width: 6.5%;
-        };
-    };
     .hero {
         &__logo {
             margin-top: -10%;
@@ -221,11 +97,6 @@
 };
 
 @media screen and (min-width: 840px) {
-    .nav {
-        &__button-x {
-            width: 5.5%;
-        };
-    };
     .hero {
         &__logo {
             margin-top: -15%;
@@ -251,11 +122,6 @@
 }
 
 @media screen and (min-width: 1040px) {
-    .nav {
-        &__button-x {
-            width: 4.5%;
-        };
-    };
     .hero {
         &__logo {
             margin-top: -20%;
@@ -264,11 +130,6 @@
 };
 
 @media screen and (min-width: 1200px) {
-    .nav {
-        &__button-x {
-            width: 3.5%;
-        };
-    };
     .hero {
         &__logo {
             margin-top: -25%;
@@ -280,14 +141,6 @@
     .hero {
         &__logo {
             margin-top: -35%;
-        };
-    };
-};
-
-@media screen and (min-width: 1600px) {
-    .nav {
-        &__button-x {
-            width: 3%;
         };
     };
 };

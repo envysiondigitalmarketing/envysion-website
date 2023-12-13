@@ -45,14 +45,6 @@ body, html {
     }
 };
 
-.behind-nav {
-    position: relative;
-    @include navHeight($navHeight);
-    &__two {
-        background-color: $thisWhite;
-    }
-}
-
 .section-padding {
     padding-bottom: 5vh;
 }
@@ -129,9 +121,6 @@ body, html {
         'two two two two two three'
         ;
     }
-    .nav-area {
-        grid-area: one;
-    }
     .wrapper {
         grid-area: two;
         right: 0;
@@ -159,9 +148,6 @@ body, html {
         min-width: 25vw;
         max-width: 25vw;
         float: right;
-        &-container {
-            margin-top: 10vh;
-        }
     }
 }
 
