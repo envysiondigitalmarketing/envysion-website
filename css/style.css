@@ -249,6 +249,7 @@
   flex-direction: column;
   justify-content: flex-start;
   min-width: 100vw;
+  padding-top: 10vh;
 }
 .second-container {
   padding: 0 5%;
@@ -538,6 +539,7 @@ summary::marker {
   }
 }
 .main {
+  margin-top: 10vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -1126,7 +1128,7 @@ summary::marker {
   }
   .footer-logo {
     margin-top: 10%;
-    width: 45%;
+    width: 60%;
   }
   .footer-social-links__div {
     height: 5% !important;
