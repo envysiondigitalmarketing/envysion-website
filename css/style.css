@@ -1320,7 +1320,7 @@ body h1, html h1 {
 }
 .heading span {
   color: transparent;
-  -webkit-text-stroke: 0.1vh #063831;
+  -webkit-text-stroke: 0.11vh #063831;
 }
 .heading__hero {
   animation-name: moveInRight;
