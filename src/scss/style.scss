@@ -62,8 +62,8 @@ body, html {
     font-size: 900%;
     margin: 0;
     & span {
-    color: transparent;
-    -webkit-text-stroke: .11vh $mainColor;
+    // color: transparent;
+    // -webkit-text-stroke: .11vh $mainColor;
     };
     &__hero {
         animation-name: moveInRight;
