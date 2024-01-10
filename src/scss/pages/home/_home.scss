@@ -43,25 +43,25 @@
             color: $mainColor;
             @include hero-text;
             display: inline-block;
-            animation-name: moveInSlogan;
+            // animation-name: moveInSlogan;
             font-size: 500%;
             font-family: 'Oooh Baby', cursive;
             font-style: italic;
-            &:nth-child(4) {
-                animation-duration: 3s;
-            }
-            &:nth-child(5) {
-                animation-duration: 3.1s;
-            }
-            &:nth-child(6) {
-                animation-duration: 3.2s;
-            }
-            &:nth-child(7) {
-                animation-duration: 3.3s;
-            }
-            &:nth-child(8) {
-                animation-duration: 3.4s;
-            }
+            // &:nth-child(4) {
+            //     animation-duration: 3s;
+            // }
+            // &:nth-child(5) {
+            //     animation-duration: 3.1s;
+            // }
+            // &:nth-child(6) {
+            //     animation-duration: 3.2s;
+            // }
+            // &:nth-child(7) {
+            //     animation-duration: 3.3s;
+            // }
+            // &:nth-child(8) {
+            //     animation-duration: 3.4s;
+            // }
         }
     };
 }

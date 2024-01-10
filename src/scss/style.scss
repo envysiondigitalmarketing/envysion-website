@@ -61,13 +61,9 @@ body, html {
     @include heroH2;
     font-size: 900%;
     margin: 0;
-    & span {
-    // color: transparent;
-    // -webkit-text-stroke: .11vh $mainColor;
-    };
     &__hero {
-        animation-name: moveInRight;
-        animation-duration: .7s;
+        // animation-name: moveInRight;
+        // animation-duration: .7s;
         @include hero-text;
     };
 };

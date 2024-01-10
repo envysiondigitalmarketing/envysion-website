@@ -39,7 +39,6 @@ $thirdH1: 550%;
 }
 @mixin hero-text {
     margin: 0 0 .55rem 0;
-    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 @mixin anchorTags {
     text-decoration: inherit;

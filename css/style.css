@@ -157,27 +157,10 @@
 .main .hero-text-div p {
   color: #063831;
   margin: 0 0 0.55rem 0;
-  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
   display: inline-block;
-  animation-name: moveInSlogan;
   font-size: 500%;
   font-family: "Oooh Baby", cursive;
   font-style: italic;
-}
-.main .hero-text-div p:nth-child(4) {
-  animation-duration: 3s;
-}
-.main .hero-text-div p:nth-child(5) {
-  animation-duration: 3.1s;
-}
-.main .hero-text-div p:nth-child(6) {
-  animation-duration: 3.2s;
-}
-.main .hero-text-div p:nth-child(7) {
-  animation-duration: 3.3s;
-}
-.main .hero-text-div p:nth-child(8) {
-  animation-duration: 3.4s;
 }
 
 @media screen and (min-width: 374px) {
@@ -1319,10 +1302,7 @@ body h1, html h1 {
   margin: 0;
 }
 .heading__hero {
-  animation-name: moveInRight;
-  animation-duration: 0.7s;
   margin: 0 0 0.55rem 0;
-  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 #reference-link, .reference-link {
