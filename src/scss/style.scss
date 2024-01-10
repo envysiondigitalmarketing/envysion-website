@@ -62,8 +62,6 @@ body, html {
     font-size: 900%;
     margin: 0;
     &__hero {
-        // animation-name: moveInRight;
-        // animation-duration: .7s;
         @include hero-text;
     };
 };
