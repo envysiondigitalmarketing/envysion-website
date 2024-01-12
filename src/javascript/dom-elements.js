@@ -4,11 +4,8 @@ const services = document.getElementById('services-button');
 const whyEnvysion = document.getElementById('why-envysion-button');
 const pricing = document.getElementById('pricing-button');
 const contact = document.getElementById('contact-button');
-
 const allHeaders = document.querySelector('.services__header');
-
 const carouselContainer = document.querySelector('.carousel-container');
-
 const carouselWebsites = document.querySelector(
   '.carousel-container__websites'
 );
@@ -24,9 +21,7 @@ const carouselSMSMarketing = document.querySelector(
 const carouselDigitalAdvertisements = document.querySelector(
   '.carousel-container__digital-advertisements'
 );
-
 const nextButton = document.querySelector('.next');
-
 const scroll = document.querySelectorAll('.scroll');
 
 const domElements = {
