@@ -10,7 +10,7 @@
     min-width: 100vw;
 
     hr {
-        margin: 5% 0; 
+        margin: 1% 0; 
         width: 20%;
         border-color: $mainColor;
         border-top: solid .5px;
@@ -47,7 +47,7 @@
         // letter-spacing: .01rem;
         font-weight: bolder;
         font-style: italic;
-        margin: 5% 0;
+        margin: 1% 0;
         // margin-top: 5%;
         // line-height: 1.3;
     }
@@ -57,7 +57,7 @@
 
         font-family: 'Open Sans', sans-serif;
         margin-top: 0;
-        margin-bottom: 4%;
+        margin-bottom: 1%;
     }
 
     .footer-social-links {
@@ -67,7 +67,7 @@
             justify-content: flex-start;
             height: 10%;
             width: 80%;
-            margin: 0;
+            margin: 2% 0;
         }
         &__link {
             width: 10%;
