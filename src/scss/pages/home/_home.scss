@@ -42,7 +42,7 @@
         & p {
             color: $mainColor;
             @include hero-text;
-            display: inline-block;
+            //////////////// display: inline-block;
             // animation-name: moveInSlogan;
             font-size: 500%;
             font-family: 'Oooh Baby', cursive;
@@ -64,6 +64,10 @@
             // }
         }
     };
+}
+
+#logo {
+    width: 60vw;
 }
 
 @media screen and (min-width: 374px) {
@@ -135,6 +139,9 @@
             margin-top: -25%;
         };
     };
+    #logo {
+        width: 40vw;
+    }
 };
 
 @media screen and (min-width: 1300px) {
