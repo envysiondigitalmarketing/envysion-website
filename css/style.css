@@ -163,7 +163,7 @@
 }
 
 #logo {
-  width: 60vw;
+  width: 90vw;
 }
 
 @media screen and (min-width: 374px) {
@@ -981,7 +981,7 @@ summary::marker {
   min-width: 100vw;
 }
 .footer hr {
-  margin: 5% 0;
+  margin: 1% 0;
   width: 20%;
   border-color: #063831;
   border-top: solid 0.5px;
@@ -1013,13 +1013,13 @@ summary::marker {
   font-weight: 500;
   font-weight: bolder;
   font-style: italic;
-  margin: 5% 0;
+  margin: 1% 0;
 }
 .footer .footer-contacts {
   font-size: 225%;
   font-family: "Open Sans", sans-serif;
   margin-top: 0;
-  margin-bottom: 4%;
+  margin-bottom: 1%;
 }
 .footer .footer-social-links__div {
   display: flex;
@@ -1027,7 +1027,7 @@ summary::marker {
   justify-content: flex-start;
   height: 10%;
   width: 80%;
-  margin: 0;
+  margin: 2% 0;
 }
 .footer .footer-social-links__link {
   width: 10%;
