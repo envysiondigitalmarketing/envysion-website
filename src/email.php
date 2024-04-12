@@ -7,13 +7,13 @@
         $email = $_POST['email'];
         $phone = $_POST['phone'];
     
-        $email_from = 'contact@envysionwithawhy.com';
+        $email_from = 'inbox@envysionwithawhy.com';
         $email_subject = "Interested in $interestedIn";
         $email_body = "Name: $firstName $lastName.\n".
                         "Company: $company.\n".
                             "Contacts: $email $phone.\n".
                                 "Interested in: $interestedIn.\n";
-        $to = "contact@envysionwithawhy.com";
+        $to = "inbox@envysionwithawhy.com";
         $headers = "From: $email \r\n";
         $headers .= "Reply-To: $email \r\n";
 
